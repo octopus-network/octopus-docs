@@ -91,10 +91,10 @@ Change the value of constant **AppchainId** with your Appchain ID, and you can f
 pub const AppchainId: pallet_octopus_appchain::ChainId = 3;
 ```
 
-You can get the value of **RELAY_CONTRACT_NAME** from the Octopus [testnet](https://testnet.oct.network/), e.g. Relay contract: dev-1618284355026-5339538
+You can get the value of **RELAY_CONTRACT_NAME** from the Octopus [testnet](https://testnet.oct.network/), e.g. Relay contract: oct-relay.testnet
 
 ```Rust
-const RELAY_CONTRACT_NAME: &'static [u8] = b"dev-1618284355026-5339538";
+const RELAY_CONTRACT_NAME: &'static [u8] = b"oct-relay.testnet";
 ```
 
 3. Include it in your `construct_runtime!` macro:
