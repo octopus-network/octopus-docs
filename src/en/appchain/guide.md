@@ -115,7 +115,7 @@ You can see the last commit of [Barnacle](https://github.com/octopus-network/bar
 
     More details [Create a Custom Chain Spec](https://substrate.dev/docs/en/tutorials/start-a-private-network/customspec)
 
-2. You can download the chainspec snippet from the Octopus [testnet](https://testnet.oct.network/).
+2. You can download the chainspec snippet from the Octopus [testnet](https://testnet.oct.network/), this information is mainly used for the initial validator nodes of the Appchain.
 
 3. For your chainspec file, update these fields with the related content from the chainspec snippet.
 
@@ -123,22 +123,9 @@ You can see the last commit of [Barnacle](https://github.com/octopus-network/bar
    * `palletSession`
    * `palletOctopusAppchain`
 
-   Then generate the raw chainspec, e.g.:
-
-   ```bash
-   ./target/debug/node-template build-spec --chain=chain-spec.json --raw --disable-default-bootnode > chain-spec-raw.json
-   ```
-
-4. Generate the hash of the chainspec file, e.g.:
-
-   ```bash
-   # unix
-   sha256sum chain-spec-raw.json
-   ```
-
 #### Provide the link and hash of Chain Spec file
 
-To start the network, we need the chainspec file. You can upload it to your network space, and logon to Octopus [testnet](https://testnet.oct.network/) to fill in the file URL and hash.
+To start the network, we need the chainspec file. You can upload it to your network space, e.g. the github of the project, and logon to Octopus [testnet](https://testnet.oct.network/) to fill in the file URL and hash.
 
 Finally, to start the network, you can contact the Octopus team on the [Discord](https://discord.gg/6GTJBkZA9Q) #testnet channel of the Octopus network. 
 

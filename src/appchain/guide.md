@@ -116,26 +116,13 @@ OctopusAppchain: pallet_octopus_appchain::{Module, Call, Storage, Config<T>, Eve
 
     更多细节可以参考 Substrate 开发文档 [Create a Custom Chain Spec](https://substrate.dev/docs/en/tutorials/start-a-private-network/customspec)
 
-2. 其次，可以从Octopus [testnet](https://testnet.oct.network/) 下载 chainspec 代码段。
+2. 其次，可以从Octopus [testnet](https://testnet.oct.network/) 下载 chainspec 代码段，这些信息主要用于应用链的初始验证节点。
 
 3. 然后基于下载的 chainspec 代码片段，更新如下字段生成应用链的 chainspec 文件。
 
    * `palletBalance`
    * `palletSession`
    * `palletOctopusAppchain`
-
-   生成 raw chainspec，示例命令如下：
-
-   ```bash
-   ./target/debug/node-template build-spec --chain=chain-spec.json --raw --disable-default-bootnode > chain-spec-raw.json
-   ```
-
-4. 最后生成 chainspec 文件的哈希，示例命令如下：
-
-   ```bash
-   # unix
-   sha256sum chain-spec-raw.json
-   ```
 
 #### 提供Chain Spec文件的链接和哈希
 
