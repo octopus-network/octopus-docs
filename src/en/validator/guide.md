@@ -6,8 +6,8 @@ In this tutorial, we will learn and practice how to run a validator node for the
 
 Before we even get started, let's lay out what we are going to do over the course of this tutorial. We will:
 
-1. Generate your Appchain account
-2. Set up your Appchain validator node
+1. Generate your Appchain validator account
+2. Deploy your Appchain validator node
 3. Set Session Keys
-4. Stake your OCT as Appchain validator
+4. Stake your OCT
 
