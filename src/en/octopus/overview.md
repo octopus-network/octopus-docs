@@ -2,7 +2,7 @@
 
 Octopus Network is a host for Web3.0 applications in the form of independent blockchains, aka Appchains. Octopus Network provides leased security, interoperability, infrastructure and many other useful and affordable services to Appchains.
 
-![Octopus Network Architecture](https://raw.githubusercontent.com/octopus-network/pallet-octopus-appchain/master/docs/architecture.jpg)
+![Octopus Network Architecture](./Octopus_Architecture.png)
 
 ### Relay
 

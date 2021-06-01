@@ -20,4 +20,4 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 2. 在弹出页面中，选择你的应用链账户，RPC 选择`session`，Callables 选择`setKeys`，字段`keys`中输入`author_rotateKeys`操作的输出，字段`proof`中输入`0x00`，然后点击`Submit`。
 
 如下图所示：
-![set session key]()
+![set session key](./set_session_key.jpg)

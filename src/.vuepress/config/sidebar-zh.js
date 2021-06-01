@@ -13,8 +13,10 @@ module.exports = [
       path: '/appchain/guide',
       collapsable: false,
       children: [
-        '/appchain/register',
+        '/appchain/develop',
         '/appchain/integrate',
+        '/appchain/release',
+        '/appchain/register',
       ]
     },
     {

@@ -2,7 +2,7 @@
 
 章鱼网络服务于 Web3.0 应用的区块链，也称为应用链。章鱼网络为应用链提供租赁安全性，互操作性，基础设施以及许多其它有用的服务。
 
-![章鱼网络体系结构](https://raw.githubusercontent.com/octopus-network/pallet-octopus-appchain/master/docs/architecture.jpg)
+![章鱼网络体系结构](../en/octopus/Octopus_Architecture.png)
 
 ### 中继
 

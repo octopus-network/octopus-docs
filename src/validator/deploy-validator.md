@@ -8,4 +8,4 @@
 2. 在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；**注**：仅用于此次部署。
 
 如下图所示：
-![deploy validator]()
+![deploy validator](./deploy_validator.jpg)
