@@ -25,6 +25,9 @@ module.exports = [
       collapsable: false,
       children: [
         '/validator/generate-keys',
+        '/validator/deploy-validator',
+        '/validator/set-session-key',
+        '/validator/stake',
       ]
     }
 ];

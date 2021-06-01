@@ -1,10 +1,8 @@
 ## 设置会话密钥
 
-在设置验证节点的会话密钥前，需要完成以下准备：
+验证节点需要通过签名和提交交易来告知验证人的会话密钥，这将验证节点与验证人在应用链上的帐户相关联。
 
-首先，需要已安装好 Polkadot{.js} 浏览器插件，并已创建了应用链的账户。
-
-其次，需要远程登录进部署验证节点的服务器，完成`author_rotateKeys`操作，通过执行以下命令：
+远程登录进入部署验证节点的服务器，完成`author_rotateKeys`操作，通过执行以下命令：
 
 ```bash
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933

@@ -1,4 +1,4 @@
-## Generate your Appchain account
+## Generate validator account
 
 Each validator who wants to join the Appchain validator sets should generate their own Appchain account. This section provides several options for generating account, and each participant only needs to choose one such option. Regardless of which option you choose, be sure to record all of the output from this section as you will need it later.
 

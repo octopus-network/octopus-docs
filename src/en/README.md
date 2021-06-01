@@ -8,4 +8,7 @@
     * [Release your Appchain](./appchain/release.md)
     * [Register your Appchain](./appchain/register.md)
 * [Validator](./validator/guide.md)
-    * [Generate your Appchain account](./validator/generate-keys.md)
+    * [Generate validator account](./validator/generate-keys.md)
+    * [Deploy validator node](./validator/deploy-validator.md)
+    * [Set Session key](./validator/set-session-key.md)
+    * [Stake OCT](./validator/stake.md)
