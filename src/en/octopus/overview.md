@@ -14,6 +14,6 @@ An Appchain is a Substrate-based blockchain that is made for a specific decentra
 
 ### Validator
 
-Octopus Validators provide security to a Appchain by staking OCT tokens on Octopus Relay and [running validator](../validator/guide.md) nodes for this Appchain.
+Octopus Validators provide security to an Appchain by staking OCT tokens on Octopus Relay and [running validator](../validator/guide.md) nodes for this Appchain.
 
 All validator nodes for one Appchain will form a quorum to reach consensus on block production. They will be rewarded by Appchain native token issuing, and malicious actors will be slashed 

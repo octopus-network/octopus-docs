@@ -9,7 +9,12 @@
 应用链注册的操作步骤如下：
 
 1. 用 NEAR 帐户登录到章鱼网络，[测试网](https://testnet.oct.network/)。
-2. 点击 **Appchain** 按钮，输入 *Appchain ID, Bond Token*，以及包含*chainspec*文件的Github地址；
+2. 导航到 **Appchains** 页面，点击 **+ Appchain** 按钮，填写以下内容：
+    * Appchain name，由数字和大小写字母组成的3～20个字符
+    * Website
+    * Github，团队的 Github 地址
+    * Github release，一个[应用链发布](./release.md)版本的 Github 链接
+    * Commit id
+    * Email
+    * Bond token，绑定的 OCT，应用链成功激活后将会被返还
 3. 点击 *Register* 发送注册交易。
-
-备注：Appchain ID，由数字和大小写字母组成的3～20个字符。

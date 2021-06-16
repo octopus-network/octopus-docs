@@ -2,7 +2,7 @@
 
 Each validator who wants to join the Appchain validator sets should generate their own Appchain account. This section provides several options for generating account, and each participant only needs to choose one such option. Regardless of which option you choose, be sure to record all of the output from this section as you will need it later.
 
-Appchain is developed based on the Substrate, so there are the same ways to generate a Appchain account like any Sustrate-based chain (e.g. Polkadot).
+Appchain is developed based on the Substrate, so there are the same ways to generate an Appchain account like any Sustrate-based chain (e.g. Polkadot).
 
 * Polkadot{.js} Browser Plugin **RECOMMENDED FOR MOST USERS**
 * Subkey **ADVANCED and MOST SECURE**
