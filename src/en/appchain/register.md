@@ -11,10 +11,10 @@ The operation steps of Appchain registration are as follows:
 1. Log in to Octopus Network with NEAR account, [Testnet](https://testnet.oct.network/).
 2. Navigate to the **Appchains** page, click the button  **+ Appchain** , and then fill the below fields:
     * Appchain name, 3~20 alphanumeric characters
-    * Website
-    * Github, team's Github address
-    * Github release, Github link of the [Appchain](./release.md) release
-    * Commit id
-    * Email
+    * Website, Appchain official website URL
+    * Github, Appchain's Github repository
+    * Github release, Github URL of the [Appchain](./release.md) release
+    * Commit id, Git commit hash of the [Appchain](./release.md) release
+    * Email, the official contact Email
     * Bond token, bonded token would be returned once the Appchain was successfully activated
 3. Click *Register* to send the registration transaction.
