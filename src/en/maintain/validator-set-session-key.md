@@ -19,4 +19,4 @@ Go to the Octopus network, [testnet](https://testnet.oct.network/), click the `A
 
 As shown below:
 
-![set session key](../../validator/set_session_key.jpg)
+![set session key](../../maintain/validator_set_session_key.jpg)

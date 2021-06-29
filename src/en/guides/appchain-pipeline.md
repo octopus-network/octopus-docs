@@ -1,16 +1,4 @@
-## Appchain Guide
-
-In this tutorial, we will learn and practice how to connect your Appchain to the Octopus network.
-
-**What you will be doing**
-
-Before we even get started, let's lay out what Appchain team is going to do over the course of this tutorial.
-
-1. [Develop your Appchain](./develop.md)
-2. [Integrate your Appchain](./integrate.md)
-3. [Release your Appchain](./release.md)
-4. [Register your Appchain](./register.md)
-
+## Appchain Pipeline
 
 The Appchain startup process as below:
 

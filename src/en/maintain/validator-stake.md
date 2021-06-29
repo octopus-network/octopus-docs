@@ -9,4 +9,4 @@ Go to the Octopus network, [testnet](https://testnet.oct.network/), click the `A
 
 As shown below:
 
-![stake](../../validator/stake.jpg)
+![stake](../../maintain/validator_stake.jpg)

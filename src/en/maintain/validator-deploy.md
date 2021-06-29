@@ -9,4 +9,4 @@ Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appch
 
 As shown below:
 
-![deploy validator](../../validator/deploy_validator.jpg)
+![deploy validator](../../maintain/validator_deploy.jpg)
