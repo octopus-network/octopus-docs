@@ -1,33 +1,39 @@
 module.exports = [
     '',
     {
-      title: '章鱼网络',
-      path: '/octopus/overview',
+      title: '基础知识',
+      path: '/general/octopus-overview',
       collapsable: false,
       children: [
-        '/octopus/overview',
+        '/general/octopus-overview',
       ]
     },    
     {
-      title: '应用链',
-      path: '/appchain/guide',
+      title: '指南',
+      path: '/guides/appchain-develop',
       collapsable: false,
       children: [
-        '/appchain/develop',
-        '/appchain/integrate',
-        '/appchain/release',
-        '/appchain/register',
+        '/guides/appchain-develop',
+        '/guides/appchain-integrate',
+        '/guides/appchain-pipeline',
       ]
     },
     {
-      title: '验证人',
-      path: '/validator/guide',
+      title: '维护',
+      path: '/maintain/validator-guide',
       collapsable: false,
       children: [
-        '/validator/generate-keys',
-        '/validator/deploy-validator',
-        '/validator/set-session-key',
-        '/validator/stake',
+        {
+          title: '验证人指南',
+          path: '/maintain/validator-guide',
+          collapsable: false,
+          children: [
+            '/maintain/validator-generate-keys',
+            '/maintain/validator-deploy-validator',
+            '/maintain/validator-set-session-key',
+            '/maintain/validator-stake',
+          ]
+        }
       ]
     }
 ];

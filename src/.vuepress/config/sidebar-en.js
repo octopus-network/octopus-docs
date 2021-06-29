@@ -1,33 +1,39 @@
 module.exports = [
     '/en/',
     {
-      title: 'Octopus',
-      path: '/en/octopus/overview',
+      title: 'General',
+      path: '/en/general/octopus-overview',
       collapsable: false,
       children: [
-        '/en/octopus/overview',
+        '/en/general/octopus-overview',
       ]
     },    
     {
-      title: 'Appchain',
-      path: '/en/appchain/guide',
+      title: 'Guides',
+      path: '/en/guides/appchain-develop',
       collapsable: false,
       children: [
-        '/en/appchain/develop',
-        '/en/appchain/integrate',
-        '/en/appchain/release',
-        '/en/appchain/register',
+        '/en/guides/appchain-develop',
+        '/en/guides/appchain-integrate',
+        '/en/guides/appchain-pipeline',
       ]
     },
     {
-      title: 'Validator',
-      path: '/en/validator/guide',
+      title: 'Maintain',
+      path: '/en/maintain/validator-guide',
       collapsable: false,
       children: [
-        '/en/validator/generate-keys',
-        '/en/validator/deploy-validator',
-        '/en/validator/set-session-key',
-        '/en/validator/stake',
+        {
+          title: 'Validator Guide',
+          path: '/en/maintain/validator-guide',
+          collapsable: false,
+          children: [
+            '/en/maintain/validator-generate-keys',
+            '/en/maintain/validator-deploy',
+            '/en/maintain/validator-set-session-key',
+            '/en/maintain/validator-stake',
+          ]
+        }
       ]
     }
 ];

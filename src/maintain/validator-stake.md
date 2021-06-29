@@ -8,4 +8,4 @@
 2. 在弹出页面中，输入你的`Validator ID`和`Staking Amount`，点击`Stake`。
 
 如下图所示：
-![stake](./stake.jpg)
+![stake](./validator_stake.jpg)
