@@ -29,7 +29,7 @@ module.exports = [
           collapsable: false,
           children: [
             '/maintain/validator-generate-keys',
-            '/maintain/validator-deploy-validator',
+            '/maintain/validator-deploy',
             '/maintain/validator-set-session-key',
             '/maintain/validator-stake',
           ]
