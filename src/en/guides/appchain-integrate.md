@@ -1,20 +1,54 @@
-## Register your Appchain
+## Appchain integration guide
 
-Appchain team provided needed information to the Octopus network, and used its NEAR account to send a registration transaction to the relay contract in the Octopus network to complete the Appchain registration. Octopus Network is an Appchain network running on the NEAR blockchain network, so Appchain team needs to have an account on the NEAR network, and registering Appchain needs to bond OCT.
+In this guide, we will practice how to integrate the Appchain into the Octopus test network. We will:
 
-The easiest way to create an account on NEAR is to use the NEAR wallet. For more details, please refer to [Create NEAR Account](https://docs.near.org/docs/develop/basics/create-account).
+1. Compile the Appchain and generate the Chain Spec
+2. Publish the Appchain release
+3. Register the Appchain
 
-If it is a testnet, you can open NEAR [testnet wallet link](https://wallet.testnet.near.org) and follow the instructions to create an account. Appchain team can join the [Discord](https://discord.gg/6GTJBkZA9Q) of Octopus. In the **#testnet** channel, apply for OCT for testing, and team members will help you.
+## Compile the Appchain and generate the Chain Spec
 
-The operation steps of Appchain registration are as follows:
+The Appchain based on Barnacle had integrated `pallet-octopus-appchain`, which can be deployed as an Appchain and connected to the Octopus network.
 
-1. Log in to Octopus Network with NEAR account, [Testnet](https://testnet.oct.network/).
-2. Navigate to the **Appchains** page, click the button  **+ Appchain** , and then fill the below fields:
-    * Appchain name, 3~20 alphanumeric characters
-    * Website, Appchain official website URL
-    * Github, Appchain's Github repository
-    * Github release, Github URL of the [Appchain](./release.md) release
-    * Commit id, Git commit hash of the [Appchain](./release.md) release
-    * Email, the official contact Email
-    * Bond token, bonded token would be returned once the Appchain was successfully activated
+**Note**: The Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain node name.
+
+Let's take Barnacle as an example. To compile and generate the Chain Spec file by executing the following command:
+
+```bash
+git clone --depth 1 https://github.com/octopus-network/barnacle.git
+cd barnacle
+# this will take a while!
+cargo build --release
+
+./target/release/appchain-barnacle build-spec --disable-default-bootnode --chain dev> barnacleSpec.json
+# Generate sha256 hash
+sha256sum barnacleSpec.json> SHA256SUMS
+```
+
+## Publish the Appchain release
+
+Before registering the Appchain, the team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file of the Appchain.
+
+![Release screenshot](./release.png)
+
+## Register the Appchain
+
+To login to the [Octopus Test Network](https://testnet.oct.network/) with a NEAR testnet account, fill in the Appchain info and bond OCT.
+
+Note: You can open NEAR [testnet wallet link](https://wallet.testnet.near.org/) and follow the instructions to create a NEAR testnet account. And you can apply for the OCT from the [Discord](https://discord.gg/6GTJBkZA9Q) **#testnet** channel of Octopus Network.
+
+The steps of Appchain registration are as follows:
+
+1. Log in to the Octopus test network with a NEAR account.
+2. Navigate to the **Appchains** page, click the **+ Appchain** button, and fill in the following:
+    * Appchain name, 3-20 characters consisting of numbers and uppercase and lowercase letters
+    * Website, the official website of the Appchain
+    * Github, the Github repository of AppChain
+    * Github release, the Github URL of the release of the Appchain
+    * Commit id, the Git commit hash of the Appchain release
+    * Email, the contact email of the Appchain
+    * Bond token, the bonded OCT will be returned after the Appchain is successfully activated
+
+   ![Register Screenshot](./register.png)
+
 3. Click *Register* to send the registration transaction.
