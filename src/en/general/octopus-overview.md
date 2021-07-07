@@ -4,6 +4,16 @@ Octopus Network is a host for Web3.0 applications in the form of independent blo
 
 ![Octopus Network Architecture](./Octopus_Architecture.png)
 
+The full name of abbreviations in the architecture as below table.
+
+| Abbreviations | Full Name  |
+|------|------|
+| D | Delegator |
+| S | Staking |
+| V | Validator |
+| RT | Runtime |
+| N | Node | 
+
 ### Relay
 
 Octopus Relay is a set of [smart contracts](https://github.com/octopus-network/octopus-relay-contract) running on the NEAR blockchain.

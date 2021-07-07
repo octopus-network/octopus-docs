@@ -5,6 +5,15 @@
 章鱼网络体系结构如下图所示
 ![章鱼网络体系结构](../en/general/Octopus_Architecture.png)
 
+架构图中缩写的全称如下表。
+
+| 缩写 | 全称  |
+|------|------|
+| D | Delegator |
+| S | Staking |
+| V | Validator |
+| RT | Runtime |
+| N | Node | 
 ### 章鱼中继
 
 章鱼中继是运行在 NEAR 区块链网络上的一组智能合约。
