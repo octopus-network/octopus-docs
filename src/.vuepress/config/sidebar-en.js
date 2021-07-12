@@ -6,6 +6,7 @@ module.exports = [
       collapsable: false,
       children: [
         '/en/general/octopus-overview',
+        '/en/general/octopus-faq'
       ]
     },    
     {

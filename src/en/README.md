@@ -2,6 +2,7 @@
 
 * [General](./general/octopus-overview.md)
     * [Overview of Octopus](./general/octopus-overview.md)
+    * [Frequently Asked Questions (FAQs)](./general/octopus-faq.md)
 * [Guides](./guides/appchain-develop.md)
     * [Appchain Develop Guide](./guides/appchain-develop.md)
     * [Appchain Integration Guide](./guides/appchain-integrate.md)

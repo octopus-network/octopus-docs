@@ -2,6 +2,7 @@
 
 * [基础知识](./general/octopus-overview.md)
     * [章鱼网络概述](./general/octopus-overview.md)
+    * [常见问答](./general/octopus-faq.md)
 * [指南](./guides/appchain-develop.md)
     * [应用链开发](./guides/appchain-develop.md)
     * [应用链集成](./guides/appchain-integrate.md)
