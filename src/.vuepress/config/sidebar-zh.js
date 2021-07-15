@@ -17,6 +17,7 @@ module.exports = [
         '/guides/appchain-develop',
         '/guides/appchain-integrate',
         '/guides/appchain-pipeline',
+        '/guides/mainchain-stablecoin',
       ]
     },
     {

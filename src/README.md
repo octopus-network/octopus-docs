@@ -7,6 +7,7 @@
     * [应用链开发](./guides/appchain-develop.md)
     * [应用链集成](./guides/appchain-integrate.md)
     * [应用链启动流程](./guides/appchain-pipeline.md)
+    * [主链稳定币转移](./guides/mainchain-stablecoin.md)
 * [维护](./maintain/validator-guide.md)
     * [验证人指南](./maintain/validator-guide.md)
         * [生成验证节点帐户](./maintain/validator-generate-keys.md)
