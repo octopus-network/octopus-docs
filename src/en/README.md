@@ -7,6 +7,7 @@
     * [Appchain Develop Guide](./guides/appchain-develop.md)
     * [Appchain Integration Guide](./guides/appchain-integrate.md)
     * [Appchain Pipeline](./guides/appchain-pipeline.md)
+    * [Mainchain Stablecoin Transfer Guide](./guides/mainchain-stablecoin.md)
 * [Maintain](./maintain/validator-guide.md)
     * [Validator Guide](./maintain/validator-guide.md)
         * [Generate validator account](./maintain/validator-generate-keys.md)
