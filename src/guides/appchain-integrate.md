@@ -10,9 +10,19 @@
 
 基于 Barnacle 开发的应用链已经集成了`pallet-octopus-appchain`，可以作为应用链部署并接入到章鱼网络。
 
-**注**：基于 Barnacle 开发的应用链，团队需要全局搜索 **barnacle** 这个关键字，并用自己的应用链节点名称全局替换它。
+**注**：在编译前，基于 Barnacle 开发的应用链，团队需要全局搜索 **barnacle** 这个关键字，并用自己的应用链节点名称全局替换它。同时请确保应用链`runtime/src/lib.rs`中的`spec_name`的值为`appchain`，`spec_version`是大于`100`的值。如下所示：
 
-我们以 Barnacle 为例，编译  Barnacle 并生成 Chain Spec 文件，命令如下：
+```Rust
+#[sp_version::runtime_version]
+pub const VERSION: RuntimeVersion = RuntimeVersion {
+	spec_name: create_runtime_str!("appchain"),
+	...
+	spec_version: 101,
+	...
+};
+```
+
+编译应用链并生成 Chain Spec 文件，我们以 Barnacle 为例，命令如下：
 
 ```
 git clone --depth 1 https://github.com/octopus-network/barnacle.git

@@ -10,9 +10,19 @@ In this guide, we will practice how to integrate the Appchain into the Octopus t
 
 The Appchain based on Barnacle had integrated `pallet-octopus-appchain`, which can be deployed as an Appchain and connected to the Octopus network.
 
-**Note**: The Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain node name.
+**Note**: Prior to compiling, the Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain node name. Also in the file `runtime/src/lib.rs`, please make sure that the value of `spec_name` is `appchain` and `spec_version` is a value greater than `100`. Like:
 
-Let's take Barnacle as an example. To compile and generate the Chain Spec file by executing the following command:
+```Rust
+#[sp_version::runtime_version]
+pub const VERSION: RuntimeVersion = RuntimeVersion {
+	spec_name: create_runtime_str!("appchain"),
+	...
+	spec_version: 101,
+	...
+};
+```
+
+To compile and generate the Chain Spec file, let's take Barnacle as an example. By executing the following command:
 
 ```bash
 git clone --depth 1 https://github.com/octopus-network/barnacle.git
