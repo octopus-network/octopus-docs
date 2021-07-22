@@ -13,7 +13,8 @@
 | S | Staking |
 | V | Validator |
 | RT | Runtime |
-| N | Node | 
+| N | Node, 不参与质押的节点 | 
+| CEXs | 中心化交易所 | 
 ### 章鱼中继
 
 章鱼中继是运行在 NEAR 区块链网络上的一组智能合约。

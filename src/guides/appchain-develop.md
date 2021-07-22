@@ -8,7 +8,7 @@
 
 ## 搭建应用链的开发环境
 
-我们基于 Substrate 框架来进行应用链开发。应用链的节点可以使用章鱼网络提供的[模板 Barnacle](https://github.com/octopus-network/barnacle)，它和 [Substrate 节点模版](https://github.com/substrate-developer-hub/substrate-node-template)类似，是一个最小可运行的 Substrate 区块链节点，使用它可以快速开始构建自己的自定义区块链。应用链的前端可以使用 Substrate 开发者中心提供的[前端模版](https://github.com/substrate-developer-hub/substrate-front-end-template)，它是使用 ReactJS 构建。
+我们基于 Substrate 框架来进行应用链开发。应用链的节点可以使用章鱼网络提供的[模板 Barnacle](https://github.com/octopus-network/barnacle)，它和 [Substrate 节点模版](https://github.com/substrate-developer-hub/substrate-node-template)类似，是一个最小可运行的应用链节点，使用它可以快速开始构建自己的应用链。应用链的前端可以使用 Substrate 开发者中心提供的[前端模版](https://github.com/substrate-developer-hub/substrate-front-end-template)，它是使用 ReactJS 构建。
 
 首先，搭建 Rust 开发环境。
 
@@ -63,8 +63,42 @@ cargo build
 ./target/debug/appchain-barnacle --dev --tmp
 ```
 
-如果想要运行一个本地的前端和本地节点进行交互，可以参考 Substrate 开发者中心的[运行本地前端](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/interact#start-the-front-end-template)。
+如果想要运行一个本地的前端和本地节点进行交互，可以从以下两个方法中选择一个:
+* 参考 Substrate 开发者中心的[运行本地前端](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/interact#start-the-front-end-template)。
+* 参考Polkadot-JS[连接本地节点](https://substrate.dev/docs/en/knowledgebase/integrate/polkadot-js#connecting-to-local-node) 
 
 ### 自定义类型
 
 目前当调用 Substrate RPC 获取数据返回至前端时，并不会返回元数据。如果应用链的 Runtime 开发中有自定义类型时，我们相应地需要在前端把这些类型的定义作为参数输入，这样 Polkadot JS API 在收到这些数据时，就可重构回这些对象。
+
+#### 如何添加自定义类型
+以下是一个添加自定义的范例。
+##### 1, Pallet中添加自定义类型
+在pallet-octopus-appchain下的src/lib.rs, 添加如下自定义类型：
+```rust
+#[derive(Deserialize, Encode, Decode, Clone, PartialEq, Eq, RuntimeDebug)]
+pub enum Observation<AccountId> {
+	#[serde(bound(deserialize = "AccountId: Decode"))]
+	UpdateValidatorSet(ValidatorSet<AccountId>),
+	#[serde(bound(deserialize = "AccountId: Decode"))]
+	LockToken(LockEvent<AccountId>),
+}
+```
+
+##### 2, 在Polkadot JS中添加相应类型
+使用 Polkadot JS 连接应用链，设置自定义类型。选择 Settings -> Developer，添加以下 JSON 内容并保存。
+```json
+{
+  "Observation": {
+    "_enum": {
+      "UpdateValidatorSet": "(ValidatorSet)",
+      "LockToken": "(LockEvent)"
+    }
+  }
+}
+```
+
+##### 3, 查询自定义类型
+Polkadot JS中， 选择 Developer -> Chain State -> Storage -> octopusAppchain -> observations 即可查询当前链上的数值。
+
+![查询自定义类型](../en/guides/query_customized_type.png)
