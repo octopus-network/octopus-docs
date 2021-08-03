@@ -1,28 +1,29 @@
-## Overview of Octopus
+## Overview of Octopus Network
 
-Octopus Network is a host for Web3.0 applications in the form of independent blockchains, aka Appchains. Octopus Network provides flexible and affordable rental security, cross-chain interoperability, infrastructure and community development guidance for the Appchains.
+Octopus Network is a brand new multichain network born to serve application specific blockchains, aka Appchain. Octopus Network provides flexible and affordable leased security, out-of-box cross-chain interoperability, one-stop infrastructure, and a ready-to-be-engaged community for the appchains.
 
 ![Octopus Network Architecture](./Octopus_Architecture.png)
 
-The full name of abbreviations in the architecture as below table.
+The full name of abbreviations in the architecture diagram.
 
 | Abbreviations | Full Name  |
 |------|------|
 | D | Delegator |
 | S | Staking |
-| V | Validator |
+| V | Validator, a node involved in staking |
 | RT | Runtime |
 | N | Node | 
 
-### Relay
+### Octopus Relay
 
-Octopus Relay is a set of [smart contracts](https://github.com/octopus-network/octopus-relay-contract) running on the NEAR blockchain.
+Octopus Relay is core of the Octopus Network — a set of  [smart contracts](https://github.com/octopus-network/octopus-relay-contract) running on the NEAR blockchain, aka mainchain, that implements the security leasing market.
+
 ### Appchain
 
-An Appchain is a Substrate-based blockchain that is made for a specific decentralized web application. A Substrate-based blockchain could integrate the pallet [pallet-octopus-appchain](https://github.com/octopus-network/pallet-octopus-appchain) as an Octopus Appchain.
+An Octopus Appchain is a Substrate-based blockchain that is made for a specific decentralized application. Once integrated the pallet [pallet-octopus-appchain](https://github.com/octopus-network/pallet-octopus-appchain), the Substrate-based blockchain is prepared to anchor off the Octopus Network.
 
 ### Validator
 
-In the Octopus Network, OCT holders can stake OCTs as validators or nominators. Validators secure the Appchain by staking OCT and [running the validator node](../maintain/validator-guide.md) of the Appchain. Nominators secure the Appchain by selecting good validators and staking OCT that they delegate the bonded OCTs to the selected validators.
+In the Octopus Network, OCT holders can stake OCTs to become validators or delegators. Validators secure an Appchain by staking OCT and [running the validator nodes](../maintain/validator-guide.md) of the Appchain. Delegators secure an Appchain by delegating the OCT they stake to honest validators.
 
-The validator will be rewarded with validators receiving block rewards (including transaction fees) in the form of the native token of the Appchain. Slashing will happen if a validator misbehaves (e.g. goes offline, attacks the network, or runs modified software) in the network. They and their nominators will get slashed by losing a percentage of their bonded/staked OCT.
+The validators are rewarded with the native token of the corresponding Appchains by validating transactions and blocks. If a validator misbehaves (e.g. be offline, attacks the network, or runs malware) in the network, the staked OCT of both the validator and its delegators will be slashed proportionally.
