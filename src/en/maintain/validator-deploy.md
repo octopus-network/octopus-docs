@@ -11,6 +11,6 @@ As shown below:
 
 ![deploy validator](../../maintain/validator_deploy.jpg)
 
-**Note**: `AWS Access Key` will only be used for this deployment and the `AWS Secret Key` wouldn't be stored anywhere and the account is very low risk.
+**Note**: `AWS Access Key` will only be used for this deployment and the `AWS Secret Key` wouldn't be stored anywhere, so the account is very low risk.
 
 In the meantime, this one-click service is designed to simplify the deployment process of the validator node, but it is not the only method. Validator node operators can also deploy and run it manually, and we will provide a tutorial on this later.

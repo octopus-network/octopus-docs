@@ -2,16 +2,16 @@
 
 Octopus Network provides out-of-the-box cross-chain functions for Appchains, including mainchain (NEAR) stablecoin transfer and Appchain native asset transfer.
 
-This guide takes the stablecoin USDC in the Octopus Test Network as an example to describe how to complete the transfer of mainchain stablecoin between the mainchain and Appchain through Octopus' built-in cross-chain function. The specific steps include.
+This guide describes how to complete the cross-chain transfer of mainchain stablecoin through Octopus' built-in cross-chain function. 
 
-* Create mapped assets on Appchain
+* Create wrapper assets on Appchain
 * Transfer mainchain assets to Appchain
 * Transfer back to mainchain from Appchain
 
 
-### Create mapped assets
+### Create wrapper assets
 
-After the Appchain goes live, if we want to use a stable coin on the mainchain, such as USDC, we need to create the corresponding mapped asset on the Appchain first. Usually, this step is done through the governance of the Appchain. However, we use `sudo` to perform this operation in this guide.
+After the Appchain goes live, if we want to use a stable coin on the mainchain, such as USDC, we need to create the corresponding wrapper asset on the Appchain first. Usually, this step is done through the governance of the Appchain. However, we use `sudo` to perform this operation in this guide.
 
 We use Polkadot JS to connect to the Appchain. First set the custom type, select `Settings -> Developer`, add the following JSON content and save it. As shown in the following image.
 
