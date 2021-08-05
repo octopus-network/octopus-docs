@@ -1,16 +1,16 @@
-# 应用链集成指南
+## Appchain integration guide
 
-在本指南中，我们将实践如何将应用链接入章鱼测试网络。在本教程中将要做的事情包括：
+In this guide, we will practice how to integrate the Appchain into the Octopus test network. We will:
 
-1. 编译并导出 Chain Spec
-2. 发布
-3. 注册
+1. Compile the Appchain and generate the Chain Spec
+2. Publish the Appchain release
+3. Register the Appchain
 
-## 编译并导出 Chain Spec
+## Compile the Appchain and generate the Chain Spec
 
-基于 Barnacle 开发的应用链已经集成了`pallet-octopus-appchain`，可以作为应用链部署并接入到章鱼网络。
+The Appchain based on Barnacle had integrated `pallet-octopus-appchain`, which can be deployed as an Appchain and connected to the Octopus network.
 
-**注**：在编译前，基于 Barnacle 开发的应用链，团队需要全局搜索 **barnacle** 这个关键字，并用自己的应用链节点名称全局替换它。同时请确保应用链`runtime/src/lib.rs`中的`spec_name`的值为`appchain`，`spec_version`是大于`100`的值。如下所示：
+**Note**: Prior to compiling, the Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain node name. Also in the file `runtime/src/lib.rs`, please make sure that the value of `spec_name` is `appchain` and `spec_version` is a value greater than `100`. Like:
 
 ```Rust
 #[sp_version::runtime_version]
@@ -22,43 +22,43 @@ pub const VERSION: RuntimeVersion = RuntimeVersion {
 };
 ```
 
-编译应用链并生成 Chain Spec 文件，我们以 Barnacle 为例，命令如下：
+To compile and generate the Chain Spec file, let's take Barnacle as an example. By executing the following command:
 
-```
+```bash
 git clone --depth 1 https://github.com/octopus-network/barnacle.git
 cd barnacle
 # this will take a while!
 cargo build --release
 
-./target/release/appchain-barnacle build-spec --disable-default-bootnode --chain dev > barnacleSpec.json
-# 生成 sha256 hash
-sha256sum barnacleSpec.json > SHA256SUMS
+./target/release/appchain-barnacle build-spec --disable-default-bootnode --chain dev> barnacleSpec.json
+# Generate sha256 hash
+sha256sum barnacleSpec.json> SHA256SUMS
 ```
 
-## 发布
+## Publish the Appchain release
 
-在注册应用链之前，应用链团队需要在项目的 Github 仓库发布一个应用链版本，其中包括应用链人类可读的 ChainSpec 文件。 
+Before registering the Appchain, the team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file of the Appchain.
 
-![发布截图](../en/guides/release.png)
+![Release screenshot](./release.png)
 
-## 注册
+## Register the Appchain
 
-应用链注册需要用 NEAR 测试网帐户登录[章鱼测试网络Web端](https://testnet.oct.network/)可以完成。章鱼网络是在 NEAR 区块链网络上运行的应用链网络，因此注册应用链需要登录 NEAR 帐户，同时需要锁定一定的 OCT。
+To login to the [Octopus Test Network](https://testnet.oct.network/) with a NEAR testnet account, fill in the Appchain info and bond OCT.
 
-备注：可以打开 NEAR [测试网钱包链接](https://wallet.testnet.near.org/) 按照说明创建 NEAR 测试网帐户，同时加入章鱼网络的[Discord](https://discord.gg/6GTJBkZA9Q)，在 **#testnet** 频道中可以申请接入测试网所需的 OCT。
+Note: You can open NEAR [testnet wallet link](https://wallet.testnet.near.org/) and follow the instructions to create a NEAR testnet account. And you can apply for the OCT from the [Discord](https://discord.gg/6GTJBkZA9Q) **#testnet** channel of Octopus Network.
 
-应用链注册的操作步骤如下：
+The steps of Appchain registration are as follows:
 
-1. 用 NEAR 帐户登录到章鱼测试网络。
-2. 导航到 **Appchains** 页面，点击 **+ Appchain** 按钮，填写以下内容：
-    - Appchain name，由数字和大小写字母组成的3～20个字符
-    - Website，应用链官网
-    - Github，应用链的 Github 仓库
-    - Github release，应用链发布版本的 Github URL
-    - Commit id，应用链发布版本的 Git 提交哈希
-    - Email，应用链联系人邮箱
-    - Bond token，绑定的 OCT，应用链成功激活后将会被返还
+1. Log in to the Octopus test network with a NEAR account.
+2. Navigate to the **Appchains** page, click the **+ Appchain** button, and fill in the following:
+    * Appchain name, 3-20 characters consisting of numbers and uppercase and lowercase letters
+    * Website, the official website of the Appchain
+    * Github, the Github repository of AppChain
+    * Github release, the Github URL of the release of the Appchain
+    * Commit id, the Git commit hash of the Appchain release
+    * Email, the contact email of the Appchain
+    * Bond token, the bonded OCT will be returned after the Appchain is successfully activated
 
-   ![注册截图](../en/guides/register.png)
+   ![Register Screenshot](./register.png)
 
-3. 点击 *Register* 发送注册交易。
+3. Click *Register* to send the registration transaction.

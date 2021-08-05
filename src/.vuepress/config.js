@@ -18,10 +18,10 @@ module.exports = {
 
   locales: {
     '/': {
-      lang: 'zh-CN'
-    },
-    '/en/': {
       lang: 'en-US'
+    },
+    '/cn/': {
+      lang: 'zh-CN'
     }
   },
 
@@ -36,20 +36,6 @@ module.exports = {
 
     locales: {
       '/': {
-        label: '简体中文',
-        nav: [
-          {
-            text: '主页',
-            link: 'https://oct.network/',
-            target: '_self',
-            rel: '',
-            icon: 'reco-home'
-          },
-          { text: '首页', link: '/', icon: '' }
-        ],
-        sidebar: require('./config/sidebar-zh')
-      },
-      '/en/': {
         label: 'English',
         nav: [
           {
@@ -59,9 +45,23 @@ module.exports = {
             rel: '',
             icon: 'reco-home'
           },
-          { text: 'Index', link: '/en/' }
+          { text: 'Index', link: '/' }
         ],
         sidebar: require('./config/sidebar-en')
+      },
+      '/cn/': {
+        label: '简体中文',
+        nav: [
+          {
+            text: '主页',
+            link: 'https://oct.network/',
+            target: '_self',
+            rel: '',
+            icon: 'reco-home'
+          },
+          { text: '首页', link: '/cn/', icon: '' }
+        ],
+        sidebar: require('./config/sidebar-zh')        
       }
     }
   }

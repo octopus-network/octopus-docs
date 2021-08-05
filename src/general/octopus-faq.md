@@ -1,15 +1,11 @@
-## 常见问题
+## Frequently Asked Questions (FAQs)
 
-*此常见问题侧重于解答 Octopus 应用链开发者提出的技术问题。如果有更一般的问题，希望我们的[Octopus 网络常见问题](https://oct.network/#faqs)可以解答。如果有未解决的问题，请随时在[Octopus Discord](https://discord.gg/6GTJBkZA9Q)上提问。*
+*This FAQ focuses on technical questions for users interested in developing Octopus Appchain. If you have a more general question, you may wish to search for the answer on our [Octopus Network FAQ](https://oct.network/#faqs). If you have a question that is not answered, please feel free to ask on [Octopus Discord](https://discord.gg/6GTJBkZA9Q).*
 
-**章鱼网络中的应用链，是否有类似波卡网络中的 Collator(收集人节点)？**
+**Does the Octopus Network have the Collator as like Polkadot?**
 
-没有。波卡收集人是平行链和中继链的全节点，它收集平行链交易并为中继链上的验证节点生成状态转换证明。而每个章鱼网络中的应用链是一个**独立的**为特定应用构建的区块链，类似[Compound Gateway](https://compound.cash/)和[Polymesh](https://polymath.network/polymesh)，章鱼网络中的 Relay 是 NEAR 上的智能合约，应用链的安全性是由 OCT 持有者参与质押并运行应用链验证节点来提供的，故章鱼网络不需要收集人。
+No. The Collator maintain parachain by collecting parachain transactions and producing state transition proofs for Relay Chain validators. But each Appchain in Octopus Network is an **independent** blockchain built for specific applications, similar to [Compound Gateway](https://compound.cash/) and [Polymesh](https:// polymath.network/polymesh), the Octopus Relay is a smart contract on the NEAR. The security of the Appchain is provided by the OCT holders participating in the Staking and running the Appchain Validators, so the Octopus Network does not require Collators.
 
-**应用链开发者可以自定义出块时间吗？**
+**Can Appchain developers customize the block time?**
 
-出块时间是可自定义的，在 Barnacle 模版中是[3s](https://github.com/octopus-network/barnacle/blob/master/runtime/src/lib.rs#L156)。
-
-
-
-
+The block time is customizable, and it is [3s](https://github.com/octopus-network/barnacle/blob/master/runtime/src/lib.rs#L156) in the Barnacle template.

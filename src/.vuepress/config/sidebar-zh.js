@@ -1,39 +1,39 @@
 module.exports = [
-    '',
+    '/cn/',
     {
       title: '基础知识',
-      path: '/general/octopus-overview',
+      path: '/cn/general/octopus-overview',
       collapsable: false,
       children: [
-        '/general/octopus-overview',
-        '/general/octopus-faq'
+        '/cn/general/octopus-overview',
+        '/cn/general/octopus-faq'
       ]
     },    
     {
       title: '指南',
-      path: '/guides/appchain-develop',
+      path: '/cn/guides/appchain-develop',
       collapsable: false,
       children: [
-        '/guides/appchain-develop',
-        '/guides/appchain-integrate',
-        '/guides/appchain-pipeline',
-        '/guides/mainchain-stablecoin',
+        '/cn/guides/appchain-develop',
+        '/cn/guides/appchain-integrate',
+        '/cn/guides/appchain-pipeline',
+        '/cn/guides/mainchain-stablecoin',
       ]
     },
     {
       title: '维护',
-      path: '/maintain/validator-guide',
+      path: '/cn/maintain/validator-guide',
       collapsable: false,
       children: [
         {
           title: '验证人指南',
-          path: '/maintain/validator-guide',
+          path: '/cn/maintain/validator-guide',
           collapsable: false,
           children: [
-            '/maintain/validator-generate-keys',
-            '/maintain/validator-deploy',
-            '/maintain/validator-set-session-key',
-            '/maintain/validator-stake',
+            '/cn/maintain/validator-generate-keys',
+            '/cn/maintain/validator-deploy',
+            '/cn/maintain/validator-set-session-key',
+            '/cn/maintain/validator-stake',
           ]
         }
       ]

@@ -1,16 +1,14 @@
-## 手动搭建验证节点
+## Manually Deploy validator node
 
-本指南以 [Barnacle 应用链](https://github.com/octopus-network/barnacle)为例，介绍在章鱼网络中，如何手动搭建验证节点。
+This guide takes [Barnacle Appchain](https://github.com/octopus-network/barnacle) as an example to introduce how to deploy a validator node manually in Octopus Network.
 
-验证节点一般是在 Linux 云服务器上运行，可以选择自己喜欢的 VPS 供应商以及操作系统。本指南中我们将使用 **Ubuntu 18.04** ，在其它 Unix 操作系统上类似。
+The most common way to run a validator is on a cloud server running Linux. You may choose whatever VPS provider that your prefer, and whatever operating system you are comfortable with. For this guide we will be using **Ubuntu 18.04**, but the instructions should be similar for other platforms.
 
-### 先决条件
+### Prerequisites
 
-#### 1.安装 Rust
+#### 1. Install Rust
 
-如果服务器的系统没有安装 Rust，则首先要进行安装。
-
-下面这个命令可以下载安装最新版本的 Rust。
+If you have never installed Rust, you should do this first. This command will fetch the latest version of Rust and install it.
 
 ```bash
 # Install
@@ -19,7 +17,7 @@ curl https://sh.rustup.rs -sSf | sh
 source ~/.cargo/env
 ```
 
-如果已经安装了 Rust，则配置 Rust 工具链默认为最新的稳定版本，添加 nightly 和 nightly wasm 编译目标。
+If you have already installed Rust, run the following command to make sure you are using the latest version.
 
 ```bash
 rustup default stable
@@ -28,9 +26,9 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
-#### 2. 安装依赖项
+#### 2. Install Dependencies
 
-首先安装一些必要的依赖项，以便编译和运行应用链的节点，运行下面的命令。
+Run this command to install the necessary dependencies for compiling and running the substrate-based Appchain node software.
 
 ```bash
 sudo apt update
@@ -38,15 +36,15 @@ sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential
 ```
 
-对于其它操作系统，安装依赖可以参考[ Substrate 开发者中心的文档](https://substrate.dev/docs/en/knowledgebase/getting-started/#1-build-dependencies)。
+For other platforms, please refer to the [document of Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/getting-started/#1-build-dependencies)。
 
-### 搭建验证节点
+### Deploy validator node
 
-#### 1. 获取应用链的节点二进制文件
+#### 1. Get the Appchain node binary
 
-你可以从应用链的源代码仓库中，通过编译源码，创建应用链的节点二进制文件。当然你也可以直接从应用链源代码仓库的 release 中获取编译好的二进制文件。
+You can generate the Appchain node binary by compiling the source code from the Appchain repo. Of course, you can also fetch the compiled binary directly from the release page of the Appchain repo.
 
-编译源码生成节点文件，执行以下命令：
+To compile the source code to generate a node binary, execute the following command.
 
 ```bash
 git clone https://github.com/octopus-network/barnacle.git
@@ -54,32 +52,36 @@ cd barnacle
 cargo build --release
 ```
 
-这一步骤将需要一段时间，一般为10-40分钟，速度取决于你的硬件。
+This step will take a while (generally 10 - 40 minutes, depending on your hardware).
 
-> 注意：如果你遇到编译错误，可能需要将 Rust 切换到一个较新的 nightly 版本。
+> Note if you run into compile errors, you may have to switch to a less recent nightly. 
 
-#### 2. 下载应用链的 Chain Spec 文件
+#### 2. Download the Chain Spec file 
 
-章鱼网络的应用链页面有 Chain Spec Raw文件的URL。
+Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appchain Tab page.
 
-通过执行以下命令：
+Copy the **Chain Spec Raw** file URL, execute the following command.
 
 ```bash
 # cd barnacle 
 curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/barnacleSpecRaw.json
 ```
 
-#### 3. 获取应用链的启动节点信息
+#### 3. Get the Bootnodes
 
-章鱼网络的应用链页面有Boot Nodes启动节点信息，如下所示是应用链的 Boot Nodes 数组：
+The application chain page of Octopus Network has  boot node information, .
+
+Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appchain Tab page.
+
+Copy the **Boot Nodes**, the following is the bootnodes array of the Appchain.
 
 ```bash
 [   "/ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY",   "/ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq",   "/ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y",   "/ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ", ]
 ```
 
-#### 4. 启动验证节点
+#### 4. Start the validator node
 
-启动验证节点。指定 Chain Spec文件，以及使用 Boot Nodes 数组中的元素指定 bootnodes 对应的值，执行以下命令：
+Set the Chain Spec file, and the values of bootnodes using the elements in the Boot Nodes array, execute the following command.
 
 ```bash
 

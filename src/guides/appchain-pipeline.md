@@ -1,12 +1,12 @@
-## 应用链启动流程
+## Appchain Pipeline
 
-应用链网络启动流程如下图所示：
+The Appchain startup process as below:
 
-![启动流程](../en/guides/appchain_pipeline.png)
+![Appchain_Pipeline](./appchain_pipeline.png)
 
-1. 完成应用链注册后，流程进入 **Auditing** 审计阶段，应用链团队必须使用注册时的邮箱发邮件通知章鱼团队（appchain@oct.network）进行审计。
-2. 应用链的代码及其版本发布中的 ChainSpec 文件通过审查后，流程进入 **InQueue** 排队阶段，OCT 持有者将投票决定应用链是否进入下个阶段。
-3. 如果应用链获得赞成票数排名第一，则流程进入 **Staging** 阶段（一次只会有一个应用链）。这时想要成为该应用链验证节点的 OCT 持有者可以为其质押他们的 OCTs。
-4. 当有足够的验证节点和 OCTs 质押数量时，章鱼团队会运行几个验证节点作为启动节点，启动应用链网络，这时流程进入 **Booting** 阶段，应用链会生成区块，并可以加入新的验证节点。
+* After completing the Appchain registration, the process goes through **Auditing**. Appchain team should send an email to the Octopus team (appchain@oct.network) for auditing. 
+* After Appchain's code and the ChainSpec file in its release have passed the review, the process goes through **InQueue**, which OCT holders would vote on whether Appchain goes into the next phase. 
+* If the Appchain was approved, the process goes through **Staging**, only one Appchain at a time will be staged, and then OCT holders who want to be a [validator](../maintain/validator-guide.md) of this Appchain could stake their OCTs for the Appchain. 
+* When there are enough validators and staked OCTs, the Octopus team would stake several validators as bootnodes to start Appchain network, the process goes through **Booting**, which Appchain would produce blocks and new validators would be welcome.
 
-🎉🎉🎉恭喜！我们很高兴看到应用链团队可以使用这项令人兴奋的技术共同构建 Web3.0！如果还有其它疑问，请随时在 Discord 上与我们聊天！我们将回复您的所有信息🤟
+🎉🎉🎉 Yay Congratulations! Excited to see what we could build together using this exciting technology! If you have anymore questions, please feel free to chat with us on Discord! We will reply to every message from you 🤟

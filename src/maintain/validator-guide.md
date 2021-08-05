@@ -1,8 +1,13 @@
-## 验证人指南
+## Validator Guide
 
-在本教程中，我们将学习如何在章鱼网络中运行应用链的验证人节点。我们将要做的事情包括：
+In this tutorial, we will learn and practice how to run a validator node for the Appchain in the Octopus network.
 
-1. [生成验证节点帐户](./validator-generate-keys.md)
-2. [部署验证节点](./validator-deploy.md)
-3. [设置会话密钥](./validator-set-session-key.md)
-4. [质押 OCT](./validator-stake.md)
+**What you will be doing**
+
+Before we even get started, let's lay out what we are going to do over the course of this tutorial. We will:
+
+1. [Generate validator account](./validator-generate-keys.md)
+2. [Deploy validator node](./validator-deploy.md)
+3. [Set Session key](./validator-set-session-key.md)
+4. [Stake OCT](./validator-stake.md)
+

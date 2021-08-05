@@ -1,18 +1,18 @@
-## 搭建验证节点
+## Deploy validator node
 
-章鱼网络提供了一键搭建验证节点的服务。这是为了简化部署过程，但它不是唯一的方法，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
-### 自动搭建验证节点
+Octopus Network provides a one-click-deploy service for the validator node. It is designed to simplify the deployment process of the validator node, but it is not the only method. Validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
-**注**：目前仅支持部署验证节点到 AWS 服务器。
+### Automatically deploy
 
-验证人访问章鱼网络[测试网](https://testnet.oct.network/)，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，只需进行以下2步操作：
+**Note**: Currently only supports deploying validator node to AWS server.
 
-1. 在操作页面中，点击`Deploy Validator`；
-2. 在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appchain Tab page, click Appchain to enter the operation page and complete the following 2 steps:
 
-如下图所示：
+1. In the operation page, click `Deploy Validator`;
+2. In the pop-up page, enter your `AWS Access Key` and click `Enter`;
+
+As shown below:
+
 ![deploy validator](./validator_deploy.jpg)
 
-**注**：AWS Access Key 仅会被用于此次部署，并且AWS Secret Key不会在任何地方被存储，帐户的风险非常低。
-
-
+**Note**: `AWS Access Key` will only be used for this deployment and the `AWS Secret Key` wouldn't be stored anywhere, so the account is very low risk.
