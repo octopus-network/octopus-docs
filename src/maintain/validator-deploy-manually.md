@@ -1,8 +1,8 @@
-## Manually Deploy validator node
+## Manually Deploy Validator Node
 
-This guide takes [Barnacle Appchain](https://github.com/octopus-network/barnacle) as an example to introduce how to deploy a validator node manually in Octopus Network.
+This guide takes [Barnacle Appchain](https://github.com/octopus-network/barnacle) as an example to introduce how to deploy a validator node manually in the Octopus Network.
 
-The most common way to run a validator is on a cloud server running Linux. You may choose whatever VPS provider that your prefer, and whatever operating system you are comfortable with. For this guide we will be using **Ubuntu 18.04**, but the instructions should be similar for other platforms.
+The most common way to run a validator is on a Linux cloud server. You may choose whatever VPS provider that you prefer, and whatever operating system you are comfortable with. In this guide, we will be using **Ubuntu 18.04**, and the instructions should be applicable to other Unix-based OS.
 
 ### Prerequisites
 
@@ -36,15 +36,15 @@ sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential
 ```
 
-For other platforms, please refer to the [document of Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/getting-started/#1-build-dependencies)。
+For other OSs, please refer to the [document of Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/getting-started/#1-build-dependencies)。
 
-### Deploy validator node
+### Deploy Validator Node
 
-#### 1. Get the Appchain node binary
+#### 1. Get the Appchain Node Binary
 
 You can generate the Appchain node binary by compiling the source code from the Appchain repo. Of course, you can also fetch the compiled binary directly from the release page of the Appchain repo.
 
-To compile the source code to generate a node binary, execute the following command.
+To compile the source code to generate a node binary, execute the following command:
 
 ```bash
 git clone https://github.com/octopus-network/barnacle.git
@@ -54,26 +54,26 @@ cargo build --release
 
 This step will take a while (generally 10 - 40 minutes, depending on your hardware).
 
-> Note if you run into compile errors, you may have to switch to a less recent nightly. 
+> Note if you run into compiling errors, you may have to switch to a more recent nightly version of Rust. 
 
 #### 2. Download the Chain Spec file 
 
-Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appchain Tab page.
+Go to the [Octopus Network testnet](https://testnet.oct.network/), select the `Appchains` Tab -> the corresponding appchain.
 
-Copy the **Chain Spec Raw** file URL, execute the following command.
+Copy the **Chain Spec Raw** file URL, execute the following command:
 
 ```bash
 # cd barnacle 
 curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/barnacleSpecRaw.json
 ```
 
-#### 3. Get the Bootnodes
+#### 3. Get the Bootnodes Information
 
-The application chain page of Octopus Network has  boot node information, .
+The appchain page of Octopus Network has the bootnode information.
 
-Go to the Octopus network, [testnet](https://testnet.oct.network/), select Appchain Tab page.
+Go to the [Octopus Network testnet](https://testnet.oct.network/), select `Appchains` Tab -> the corresponding appchain.
 
-Copy the **Boot Nodes**, the following is the bootnodes array of the Appchain.
+Copy the **Boot Nodes**' information, similar to the following:
 
 ```bash
 [   "/ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY",   "/ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq",   "/ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y",   "/ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ", ]
@@ -81,7 +81,7 @@ Copy the **Boot Nodes**, the following is the bootnodes array of the Appchain.
 
 #### 4. Start the validator node
 
-Set the Chain Spec file, and the values of bootnodes using the elements in the Boot Nodes array, execute the following command.
+Set option `--chain` with the Chain Spec file name downloaded from the step 2 above, and the option `--bootnodes` with the bootnodes' information from the step 3 above, execute the following command:
 
 ```bash
 

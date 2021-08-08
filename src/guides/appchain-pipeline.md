@@ -1,12 +1,10 @@
-## Appchain Pipeline
-
-The Appchain startup process as below:
+## Appchain Startup Pipeline
 
 ![Appchain_Pipeline](./appchain_pipeline.png)
 
-* After completing the Appchain registration, the process goes through **Auditing**. Appchain team should send an email to the Octopus team (appchain@oct.network) for auditing. 
-* After Appchain's code and the ChainSpec file in its release have passed the review, the process goes through **InQueue**, which OCT holders would vote on whether Appchain goes into the next phase. 
-* If the Appchain was approved, the process goes through **Staging**, only one Appchain at a time will be staged, and then OCT holders who want to be a [validator](../maintain/validator-guide.md) of this Appchain could stake their OCTs for the Appchain. 
-* When there are enough validators and staked OCTs, the Octopus team would stake several validators as bootnodes to start Appchain network, the process goes through **Booting**, which Appchain would produce blocks and new validators would be welcome.
+* After completing the Appchain registration, the first phase in the startup pipeline is **Auditing**. Appchain team should have sent an email to the Octopus team (appchain@oct.network) for auditing in the last step of registration. 
+* Once Appchain's code and the ChainSpec file in its release are audited, the next phase is **InQueue**, during which OCT holders would vote to decide whether Appchain would be promoted into the next phase. 
+* After passing the **InQueue**, the Appchain would be in **Staging**. Only one Appchain at a time can be staged, and then OCT holders who want to be [validator](../maintain/validator-guide.md)s of the Appchain can stake their OCTs for the Appchain. 
+* When there are enough validators and staked OCTs, the Octopus team would start several validator nodes as bootnodes to start the Appchain network, then phase comes to **Booting**, in which the Appchain would produce blocks and be ready for new validators to join.
 
-🎉🎉🎉 Yay Congratulations! Excited to see what we could build together using this exciting technology! If you have anymore questions, please feel free to chat with us on Discord! We will reply to every message from you 🤟
+🎉🎉🎉 Yay Congratulations! Excited to see that we are together to contribute to the Web3.0 world! If you have more questions, please feel free to discuss them with us on Discord! We will reply to all of your messages 🤟

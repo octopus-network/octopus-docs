@@ -1,11 +1,11 @@
 ## Frequently Asked Questions (FAQs)
 
-*This FAQ focuses on technical questions for users interested in developing Octopus Appchain. If you have a more general question, you may wish to search for the answer on our [Octopus Network FAQ](https://oct.network/#faqs). If you have a question that is not answered, please feel free to ask on [Octopus Discord](https://discord.gg/6GTJBkZA9Q).*
+*This FAQ focuses on technical questions for users interested in developing Octopus Appchain. If you have more general questions, please search for the answers in our [Octopus Network FAQ](https://oct.network/#faqs). Furthermore, feel free to ask questions on [Octopus Discord](https://discord.gg/6GTJBkZA9Q).*
 
-**Does the Octopus Network have the Collator as like Polkadot?**
+**Does the Octopus Network have Collators like Polkadot?**
 
-No. The Collator maintain parachain by collecting parachain transactions and producing state transition proofs for Relay Chain validators. But each Appchain in Octopus Network is an **independent** blockchain built for specific applications, similar to [Compound Gateway](https://compound.cash/) and [Polymesh](https:// polymath.network/polymesh), the Octopus Relay is a smart contract on the NEAR. The security of the Appchain is provided by the OCT holders participating in the Staking and running the Appchain Validators, so the Octopus Network does not require Collators.
+No. The collators in Polkadot maintain parachain by collecting parachain transactions and producing state transition proofs for Relay Chain validators. In Octopus Network, each Appchain is an **independent** blockchain, similar to [Compound Gateway](https://compound.cash/) and [Polymesh](https://polymath.network/polymesh), and an Appchain node can be bootstrapped as a validator by staking OCT on the Octopus Relay or being delegated by delegators, which are leased as security by the Appchain. Therefore, no Collators needed to collect Appchains' data. For more information, please refer to the section "Security" in Octopus Network White Paper.
 
-**Can Appchain developers customize the block time?**
+**Can Appchain developers customize the block creation time?**
 
-The block time is customizable, and it is [3s](https://github.com/octopus-network/barnacle/blob/master/runtime/src/lib.rs#L156) in the Barnacle template.
+The block creation time is customizable, and it has a [default value](https://github.com/octopus-network/barnacle/blob/master/runtime/src/lib.rs#L156) in the Barnacle template.
