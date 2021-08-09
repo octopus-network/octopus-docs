@@ -1,16 +1,16 @@
-## Appchain integration guide
+## Appchain Connection Guide
 
-In this guide, we will practice how to integrate the Appchain into the Octopus test network. We will:
+The Appchain based on Barnacle has integrated the `pallet-octopus-appchain`, and can be connected to the Octopus Network.
+
+Steps to connect the Appchain to the Octopus testnet:
 
 1. Compile the Appchain and generate the Chain Spec
 2. Publish the Appchain release
 3. Register the Appchain
 
-## Compile the Appchain and generate the Chain Spec
+## Compile the Appchain and Generate the Chain Spec
 
-The Appchain based on Barnacle had integrated `pallet-octopus-appchain`, which can be deployed as an Appchain and connected to the Octopus network.
-
-**Note**: Prior to compiling, the Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain node name. Also in the file `runtime/src/lib.rs`, please make sure that the value of `spec_name` is `appchain` and `spec_version` is a value greater than `100`. Like:
+**Note**: Prior to compiling, the Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain's name. Additionally, in the file `runtime/src/lib.rs`, please make sure that the value of `spec_name` is `appchain` and `spec_version` is greater than `100`:
 
 ```Rust
 #[sp_version::runtime_version]
@@ -22,7 +22,7 @@ pub const VERSION: RuntimeVersion = RuntimeVersion {
 };
 ```
 
-To compile and generate the Chain Spec file, let's take Barnacle as an example. By executing the following command:
+Generate the Chain Spec file and hash by the following commands(use Barnacle as an example):
 
 ```bash
 git clone --depth 1 https://github.com/octopus-network/barnacle.git
@@ -30,35 +30,36 @@ cd barnacle
 # this will take a while!
 cargo build --release
 
-./target/release/appchain-barnacle build-spec --disable-default-bootnode --chain dev> barnacleSpec.json
+# Generate the chainspec file, feel free to use any filename you wish
+./target/release/appchain-barnacle build-spec --disable-default-bootnode --chain dev> barnacleSpec.json 
 # Generate sha256 hash
 sha256sum barnacleSpec.json> SHA256SUMS
 ```
 
-## Publish the Appchain release
+## Publish the Appchain Release
 
-Before registering the Appchain, the team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file of the Appchain.
+Before registering the Appchain, the Appchain team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file generated above.
 
 ![Release screenshot](./release.png)
 
 ## Register the Appchain
 
-To login to the [Octopus Test Network](https://testnet.oct.network/) with a NEAR testnet account, fill in the Appchain info and bond OCT.
+### Prerequisites
+* NEAR accounts: To log in to the [Octopus testnet](https://testnet.oct.network/), you need a NEAR testnet account. Please visit NEAR [testnet wallet](https://wallet.testnet.near.org/) to create a NEAR account. 
+* OCT token: OCT tokens are needed during the registration. For testnet, please visit [OCT faucet](https://faucet.testnet.oct.network/) to retrieve your OCT tokens.
 
-Note: You can open NEAR [testnet wallet link](https://wallet.testnet.near.org/) and follow the instructions to create a NEAR testnet account. And you can apply for the OCT from the [Discord](https://discord.gg/6GTJBkZA9Q) **#testnet** channel of Octopus Network.
+### Steps of Appchain Registration
 
-The steps of Appchain registration are as follows:
-
-1. Log in to the Octopus test network with a NEAR account.
+1. Log in to the [Octopus testnet](https://testnet.oct.network/) via a NEAR account.
 2. Navigate to the **Appchains** page, click the **+ Appchain** button, and fill in the following:
-    * Appchain name, 3-20 characters consisting of numbers and uppercase and lowercase letters
-    * Website, the official website of the Appchain
-    * Github, the Github repository of AppChain
-    * Github release, the Github URL of the release of the Appchain
-    * Commit id, the Git commit hash of the Appchain release
-    * Email, the contact email of the Appchain
-    * Bond token, the bonded OCT will be returned after the Appchain is successfully activated
+    * Appchain name: 3-20 characters consisting of numbers and letters of both uppercase and lowercase 
+    * Website(Optional): The official website of the Appchain
+    * Github: The Github repository of AppChain
+    * Github release: The Github URL of the release of the Appchain
+    * Commit id: The Git commit hash URL of the Appchain release
+    * Email: The contact email of the Appchain
+    * Bond token: The bonded OCT will be returned after the Appchain is successfully activated
 
    ![Register Screenshot](./register.png)
 
-3. Click *Register* to send the registration transaction.
+3. Click *Register* to send the registration request.

@@ -45,7 +45,7 @@ sha256sum barnacleSpec.json > SHA256SUMS
 
 应用链注册需要用 NEAR 测试网帐户登录[章鱼测试网络Web端](https://testnet.oct.network/)可以完成。章鱼网络是在 NEAR 区块链网络上运行的应用链网络，因此注册应用链需要登录 NEAR 帐户，同时需要锁定一定的 OCT。
 
-备注：可以打开 NEAR [测试网钱包链接](https://wallet.testnet.near.org/) 按照说明创建 NEAR 测试网帐户，同时加入章鱼网络的[Discord](https://discord.gg/6GTJBkZA9Q)，在 **#testnet** 频道中可以申请接入测试网所需的 OCT。
+备注：可以打开 NEAR [测试网钱包链接](https://wallet.testnet.near.org/) 按照说明创建 NEAR 测试网帐户，同时通过的[OCT水龙头](https://faucet.testnet.oct.network/)获取接入测试网所需的OCT。
 
 应用链注册的操作步骤如下：
 
