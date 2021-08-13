@@ -4,9 +4,9 @@ Octopus Network provides out-of-the-box cross-chain functions for Appchains, inc
 
 This guide describes how to transfer the mainchain's stablecoin through Octopus' built-in cross-chain function. 
 
-* Create stabecoin's wrapper asset on Appchain
-* Transfer stabecoin to Appchain
-* Transfer stabecoin's wrapper asset to mainchain from Appchain
+* Create stablecoin's wrapper asset on Appchain
+* Transfer stablecoin to Appchain
+* Transfer stablecoin's wrapper asset to mainchain from Appchain
 
 
 ### Create Wrapper Assets
