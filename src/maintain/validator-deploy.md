@@ -15,4 +15,8 @@ As shown below:
 
 ![deploy validator](../maintain/validator_deploy.jpg)
 
+![deploy new](../maintain/validator_deploy_new.jpg)
+
 **Note**: `AWS Access Key` will only be used for this deployment and wouldn't be stored anywhere.
+
+![deploy apply](../maintain/validator_deploy_apply.jpg)
