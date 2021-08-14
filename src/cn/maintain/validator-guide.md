@@ -4,5 +4,5 @@
 
 1. [生成验证节点帐户](./validator-generate-keys.md)
 2. [部署验证节点](./validator-deploy.md)
-3. [设置会话密钥](./validator-set-session-key.md)
+3. [设置会话密钥](./validator-set-session-keys.md)
 4. [质押 OCT](./validator-stake.md)

@@ -1,6 +1,6 @@
 ## 设置会话密钥
 
-验证节点需要通过签名和提交交易来告知验证人的会话密钥，这将验证节点与验证人在应用链上的帐户相关联。远程登录进入部署验证节点的服务器，完成author_rotateKeys操作，通过执行以下命令：
+验证节点需要通过签名和提交交易来告知验证人的会话密钥，这将验证节点与验证人在应用链上的帐户相关联。远程登录进入部署验证节点的服务器，完成`author_rotateKeys`操作，通过执行以下命令：
 
 ```bash
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
@@ -14,4 +14,4 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 2. 在弹出页面中，选择你的应用链账户，RPC 选择`session`，Callables 选择`setKeys`，字段`keys`中输入`author_rotateKeys`操作的输出，字段`proof`中输入`0x00`，然后点击`Submit`。
 
 如下图所示：
-![set session key](../../maintain/validator_set_session_key.jpg)
+![set session keys](../../maintain/validator_set_session_keys.jpg)

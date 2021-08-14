@@ -12,5 +12,5 @@
     * [验证人指南](./maintain/validator-guide.md)
         * [生成验证节点帐户](./maintain/validator-generate-keys.md)
         * [部署验证节点](./maintain/validator-deploy.md)
-        * [设置会话密钥](./maintain/validator-set-session-key.md)
+        * [设置会话密钥](./maintain/validator-set-session-keys.md)
         * [质押 OCT](./maintain/validator-stake.md)

@@ -12,5 +12,5 @@
     * [Validator Guide](./maintain/validator-guide.md)
         * [Generate Validator Account](./maintain/validator-generate-keys.md)
         * [Deploy Validator Node](./maintain/validator-deploy.md)
-        * [Set Session Key](./maintain/validator-set-session-key.md)
+        * [Set Session Keys](./maintain/validator-set-session-keys.md)
         * [Stake OCT](./maintain/validator-stake.md)

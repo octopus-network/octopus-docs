@@ -20,7 +20,7 @@ Subkey is a command-line utility included with Substrate that generates or resto
 
 For detailed build and usage instructions of subkey, please refer to the [subkey readme](https://github.com/paritytech/substrate/tree/master/bin/utils/subkey).
 
-### Option 3: Polkadot Apps
+### Option 3: PolkadotJS-Apps
 
 To create an Appchain account by following a few steps:
 
