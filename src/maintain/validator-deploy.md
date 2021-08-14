@@ -12,20 +12,22 @@ Go to the [Octopus Network Testnet](https://testnet.oct.network/), select `Appch
 
 ![deploy validator](../maintain/validator_deploy.jpg)
 
-3. Click `Deploy New`, and then select `Base Image` and click `Deploy`;
+2. Click `Deploy New`, and then select `Base Image` and click `Deploy`;
 
 ![deploy new](../maintain/validator_deploy_new.jpg)
 
-4. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and click `Apply`;
+3. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and click `Apply`;
 
 ![deploy apply](../maintain/validator_deploy_apply.jpg)
 
 **Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
 
-5. The deployment process lasts about 5-10 minutes, refresh the page, and then click `Deploy log` to check the status.
+4. The deployment process lasts about 3-5 minutes, click `Deploy log` to get the log information;
 
 ![deploy log](../maintain/validator_deploy_log.jpg)
 
+And then refresh the page to check the status, the successful deployment is as shown in the figure below.
+
 ![deploy success](../maintain/validator_deploy_success.jpg)
 
-The successful deployment is shown in the figure above.
+5. Record the login information of the instance and click the `RSA` to download the ssh key file.
