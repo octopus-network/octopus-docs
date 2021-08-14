@@ -32,7 +32,7 @@ module.exports = [
           children: [
             '/maintain/validator-generate-keys',
             '/maintain/validator-deploy',
-            '/maintain/validator-set-session-key',
+            '/maintain/validator-set-session-keys',
             '/maintain/validator-stake',
           ]
         }
