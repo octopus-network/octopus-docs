@@ -25,7 +25,8 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 > **Note**: 
 >
 > * Polkadot{.js} Browser Plugin was installed;
-> * The validator account have a little the Appchain tokens.
+> * The validator's appchain account have a few the Appchain tokens.
+> * For the test network, please request Barnacle tokens(BAR) via PolkadotJS Apps with its RPC endpoint.
 
 Go to the [Octopus Network Testnet](https://testnet.oct.network/), select the `Appchains` tab -> the corresponding appchain, and follow 2 steps to set the session keys:
 
