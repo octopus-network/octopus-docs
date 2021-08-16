@@ -28,7 +28,7 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 > * The validator's appchain account have a few the Appchain tokens.
 > * For the test network, please request Barnacle tokens(BAR) via PolkadotJS Apps with its RPC endpoint.
 
-Go to the [Octopus Network Testnet](https://testnet.oct.network/), select the `Appchains` tab -> the corresponding appchain, and follow 2 steps to set the session keys:
+Go to the [Octopus Network Testnet](https://testnet.oct.network/), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 
 1. In the operation page, click `RPC Call`;
 2. In the pop-up window, configure for your validator account: for RPC select `session`, for Callables select `setKeys`;

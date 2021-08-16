@@ -6,7 +6,7 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 **Note**: Currently, the auto-deployment tool only supports deploying validator nodes to AWS server.
 
-Go to the [Octopus Network Testnet](https://testnet.oct.network/), select `Appchains` Tab ->  the corresponding appchain, follow the 2 steps to deploy:
+Go to the [Octopus Network Testnet](https://testnet.oct.network/), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
 1. Click `Deploy Validator`, and then in the pop-up window, enter your `AWS Access Key` and click `Enter`;
 
