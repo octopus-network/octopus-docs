@@ -6,6 +6,7 @@ To become a validator of Appchain, you need to stake OCT.
 >
 > * The validator's NEAR account should have a few NEAR tokens and enough OCT tokens for the staking.
 > * For the test network, please request OCTs from the [Faucet](https://faucet.testnet.oct.network/).
+> * If you plan to stop your validator, please firstly do the `Unstake` operation and keep the node running until the next round validator set is live (~20 minutes in the test network), after that, do the `Destory` operation for one-click deployment case, or stop the validator node for manually deployment case.
 
 Go to the [Octopus Network Testnet](https://testnet.oct.network/), click the `Appchains` tab and follow the steps:
 
