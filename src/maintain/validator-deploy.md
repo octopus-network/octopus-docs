@@ -2,6 +2,9 @@
 
 Octopus Network provides a one-click deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
+> **About the hardware configuration**
+>
+> * In the test network, our one-click deployment tool uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
 ### Automatically Deploy
 
 **Note**: Currently, the auto-deployment tool only supports deploying validator nodes to AWS server.
