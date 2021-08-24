@@ -18,6 +18,7 @@ module.exports = [
         '/guides/appchain-integrate',
         '/guides/appchain-pipeline',
         '/guides/mainchain-stablecoin',
+        '/guides/appchain-nativetoken.md',
       ]
     },
     {

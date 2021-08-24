@@ -37,11 +37,15 @@ nvm install node
 # Install Yarn
 npm install --global yarn
 # Clone the frontend template from github
-git clone -b v3.0.0+monthly-2021-05 --depth 1 https://github.com/substrate-developer-hub/substrate-front-end-template
+git clone -b v3.0.0+monthly-2021-08 --depth 1 https://github.com/substrate-developer-hub/substrate-front-end-template
 # Install the dependencies
 cd substrate-front-end-template
 yarn install
 ```
+
+> **Note**
+>
+> If there is a newer version of `substrate-front-end-template`, It is recommended to replace `v3.0.0+monthly-2021-08` with it in the above command.
 
 ### Integrate Your Application into the Appchain
 
