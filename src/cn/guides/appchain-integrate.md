@@ -51,7 +51,7 @@ sha256sum barnacleSpec.json > SHA256SUMS
 
 1. 用 NEAR 帐户登录到章鱼测试网络。
 2. 导航到 **Appchains** 页面，点击 **+ Appchain** 按钮，填写以下内容：
-    - Appchain name，由数字和大小写字母组成的3～20个字符
+    - Appchain name，由小写字母和数字组成的3～20个字符，并且不能以数字开头
     - Website，应用链官网
     - Github，应用链的 Github 仓库
     - Github release，应用链发布版本的 Github URL

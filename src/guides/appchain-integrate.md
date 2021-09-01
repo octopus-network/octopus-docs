@@ -52,7 +52,7 @@ Before registering the Appchain, the Appchain team needs to publish a release of
 
 1. Log in to the [Octopus testnet](https://testnet.oct.network/) via a NEAR account.
 2. Navigate to the **Appchains** page, click the **+ Appchain** button, and fill in the following:
-    * Appchain name: 3-20 characters consisting of numbers and letters of both uppercase and lowercase 
+    * Appchain name: 3-20 characters consisting of lowercase letters and numbers, and cannot start with a number 
     * Website(Optional): The official website of the Appchain
     * Github: The Github repository of AppChain
     * Github release: The Github URL of the release of the Appchain
