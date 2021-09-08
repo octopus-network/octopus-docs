@@ -10,33 +10,35 @@ module.exports = [
       ]
     },    
     {
-      title: 'Guides',
+      title: 'Developer Guides',
       path: '/guides/appchain-develop',
       collapsable: false,
       children: [
         '/guides/appchain-develop',
         '/guides/appchain-integrate',
+        '/guides/appchain-register',
         '/guides/appchain-pipeline',
         '/guides/mainchain-stablecoin',
-        '/guides/appchain-nativetoken.md',
+        '/guides/appchain-nativetoken',
       ]
     },
     {
-      title: 'Maintain',
+      title: 'User Guides',
+      path: '/guides/voting-appchain',
+      collapsable: false,
+      children: [
+        '/guides/voting-appchain',
+      ]
+    },    
+    {
+      title: 'Validator Guide',
       path: '/maintain/validator-guide',
       collapsable: false,
       children: [
-        {
-          title: 'Validator Guide',
-          path: '/maintain/validator-guide',
-          collapsable: false,
-          children: [
-            '/maintain/validator-generate-keys',
-            '/maintain/validator-deploy',
-            '/maintain/validator-set-session-keys',
-            '/maintain/validator-stake',
-          ]
-        }
+        '/maintain/validator-generate-keys',
+        '/maintain/validator-deploy',
+        '/maintain/validator-set-session-keys',
+        '/maintain/validator-stake',
       ]
     }
 ];

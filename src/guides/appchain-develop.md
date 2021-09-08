@@ -1,4 +1,4 @@
-## Appchain Development Guide
+## Appchain Development
 
 In this tutorial, we will:
 

@@ -10,32 +10,34 @@ module.exports = [
       ]
     },    
     {
-      title: '指南',
+      title: '开发者指南',
       path: '/cn/guides/appchain-develop',
       collapsable: false,
       children: [
         '/cn/guides/appchain-develop',
         '/cn/guides/appchain-integrate',
+        '/cn/guides/appchain-register',
         '/cn/guides/appchain-pipeline',
         '/cn/guides/mainchain-stablecoin',
       ]
     },
     {
-      title: '维护',
+      title: '用户指南',
+      path: '/cn/guides/voting-appchain',
+      collapsable: false,
+      children: [
+        '/cn/guides/voting-appchain',
+      ]
+    },
+    {
+      title: '验证人指南',
       path: '/cn/maintain/validator-guide',
       collapsable: false,
       children: [
-        {
-          title: '验证人指南',
-          path: '/cn/maintain/validator-guide',
-          collapsable: false,
-          children: [
-            '/cn/maintain/validator-generate-keys',
-            '/cn/maintain/validator-deploy',
-            '/cn/maintain/validator-set-session-keys',
-            '/cn/maintain/validator-stake',
-          ]
-        }
+        '/cn/maintain/validator-generate-keys',
+        '/cn/maintain/validator-deploy',
+        '/cn/maintain/validator-set-session-keys',
+        '/cn/maintain/validator-stake',
       ]
     }
 ];

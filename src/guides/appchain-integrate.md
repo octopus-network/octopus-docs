@@ -1,14 +1,13 @@
-## Appchain Connection Guide
+## Appchain Release
 
-The Appchain based on Barnacle has integrated the `pallet-octopus-appchain`, and can be connected to the Octopus Network.
+The Appchain based on Barnacle has integrated the `pallet-octopus-appchain`, once finishing the Appchain development, it can be released, and then the team could prepare to register the Appchain into the Octopus Network.
 
-Steps to connect the Appchain to the Octopus testnet:
+Steps to release the Appchain:
 
 1. Compile the Appchain and generate the Chain Spec
 2. Publish the Appchain release
-3. Register the Appchain
 
-## Compile the Appchain and Generate the Chain Spec
+### Compile the Appchain and Generate the Chain Spec
 
 **Note**: Prior to compiling, the Appchain team should globally search for the keyword **barnacle** and replace it with your Appchain's name. Additionally, in the file `runtime/src/lib.rs`, please make sure that the value of `spec_name` is `appchain` and `spec_version` is greater than `100`:
 
@@ -36,30 +35,8 @@ cargo build --release
 sha256sum barnacleSpec.json> SHA256SUMS
 ```
 
-## Publish the Appchain Release
+### Publish the Appchain Release
 
 Before registering the Appchain, the Appchain team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file generated above.
 
 ![Release screenshot](./release.png)
-
-## Register the Appchain
-
-### Prerequisites
-* NEAR accounts: To log in to the [Octopus testnet](https://testnet.oct.network/), you need a NEAR testnet account. Please visit NEAR [testnet wallet](https://wallet.testnet.near.org/) to create a NEAR account. 
-* OCT token: OCT tokens are needed during the registration. For testnet, please visit [OCT faucet](https://faucet.testnet.oct.network/) to retrieve your OCT tokens.
-
-### Steps of Appchain Registration
-
-1. Log in to the [Octopus testnet](https://testnet.oct.network/) via a NEAR account.
-2. Navigate to the **Appchains** page, click the **+ Appchain** button, and fill in the following:
-    * Appchain name: 3-20 characters consisting of lowercase letters, numbers and hyphen `-`, and cannot start with a number, and a hyphen `-` cannot be used at the beginning and end, a.k.a the regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?` 
-    * Website(Optional): The official website of the Appchain
-    * Github: The Github repository of AppChain
-    * Github release: The Github URL of the release of the Appchain
-    * Commit id: The Git commit hash URL of the Appchain release
-    * Email: The contact email of the Appchain
-    * Bond token: The bonded OCT will be returned after the Appchain is successfully activated
-
-   ![Register Screenshot](./register.png)
-
-3. Click *Register* to send the registration request.
