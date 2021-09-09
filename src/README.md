@@ -7,7 +7,7 @@
     * [Appchain Development](./guides/appchain-develop.md)
     * [Appchain Release](./guides/appchain-integrate.md)
     * [Appchain Register](./guides/appchain-register.md)
-    * [Appchain Startup Pipeline](./guides/appchain-pipeline.md)
+    * [Appchain Startup](./guides/appchain-startup.md)
     * [Transfer Mainchain Stablecoin](./guides/mainchain-stablecoin.md)
     * [Transfer Appchain Nativetoken](./guides/appchain-nativetoken.md) 
 * [User Guides](./guides/appchain-develop.md)

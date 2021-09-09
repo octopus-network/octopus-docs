@@ -7,7 +7,7 @@
     * [应用链开发](./guides/appchain-develop.md)
     * [应用链发布](./guides/appchain-integrate.md)
     * [应用链注册](./guides/appchain-register.md)
-    * [应用链启动流程](./guides/appchain-pipeline.md)
+    * [应用链启动流程](./guides/appchain-startup.md)
     * [转移主链稳定币](./guides/mainchain-stablecoin.md) 
 * [用户指南](./guides/voting-appchain.md)
     * [应用链投票](./guides/voting-appchain.md)
