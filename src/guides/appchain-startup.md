@@ -11,7 +11,7 @@ During the whole Appchain startup process, there are four phases:
 4. **Booting**: When the Appchain obtains enough validator nodes, the Octopus team will run several validator nodes as the booting nodes of the Appchain network, and then the Appchain will go through the Booting phase.
 
 > Notes:
-> * The number of Appchain validator nodes is at least 11;
+> * An appchain network only needs 7 validator nodes to startup, Octopus Foundation will run 4 boot-nodes for each appchain, and those boot-nodes will not accept delegation.
 > * To be a validator, the minimum amount of stake OCT is 10,000;
 
 ### Step by Step: Appchain Onboarding
