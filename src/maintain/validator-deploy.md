@@ -34,3 +34,9 @@ And then refresh the page to check the status, the successful deployment is as s
 ![deploy success](../maintain/validator_deploy_success.jpg)
 
 5. Record the login information of the instance and click the `RSA` to download the ssh key file.
+
+**Note**: Login to the AWS server with the downloaded ssh key file, if you encounter an error `Permissions 0644 for 'id_rsa' are too open`, please execute the following command:
+
+```bash
+chmod 400 ~/.ssh/id_rsa
+```

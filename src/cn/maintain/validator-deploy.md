@@ -35,4 +35,8 @@
 
 5. 记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
 
+**备注**：使用下载的密钥文件 SSH 登录到 AWS 服务器实例时，如果遇到错误`Permissions 0644 for 'id_rsa' is too open`，请执行以下命令：
 
+```bash
+chmod 400 ~/.ssh/id_rsa
+```
