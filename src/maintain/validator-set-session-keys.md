@@ -1,5 +1,9 @@
 ## Set Session Keys
 
+> **Note**:
+>
+> * The validator node must complete the synchronization of the chain data.
+
 ### Generating the Session Keys
 
 You need to tell the chain your Session keys by signing and submitting an extrinsic. There are 2 options to associate your validator node with your validator account on the Appchain.

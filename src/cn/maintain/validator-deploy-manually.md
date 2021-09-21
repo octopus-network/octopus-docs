@@ -79,7 +79,7 @@ curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/bar
 
 #### 4. 启动验证节点
 
-启动验证节点。指定 Chain Spec文件，以及使用 Boot Nodes 数组中的元素指定 bootnodes 对应的值，执行以下命令：
+以验证人模式启动节点：指定 Chain Spec文件，以及使用 Boot Nodes 数组中的元素指定 bootnodes 对应的值，执行以下命令：
 
 ```bash
 
@@ -94,7 +94,7 @@ curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/bar
 --ws-external \
 --rpc-methods Unsafe \
 --validator \
---no-telemetry \
+--name "name on telemetry" \
 --prometheus-port 9615 \
 --prometheus-external \
 --wasm-execution Compiled \
@@ -103,4 +103,16 @@ curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/bar
 --bootnodes /ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq \
 --bootnodes /ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y \
 --bootnodes /ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ
+```
+
+确保节点已完成链数据的同步，检查是否有类似的输出如下：
+
+```bash
+2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)
+2021-09-21 00:12:12 ✨ Imported #54412 (0xdf36…2c87)
+2021-09-21 00:12:12 [54412] 🐙 Current block: 54412 (parent hash: 0x9cc7f31a20793f50cf885835de0e3977a1e080431ebc002469aa176046ba094a)
+......
+2021-09-21 00:13:18 ✨ Imported #54434 (0xba36…ee68)
+2021-09-21 00:13:18 [54434] 🐙 Current block: 54434 (parent hash: 0x84aa3d1b6455859f9503d6ecc70b50b183141fe08f5b0695357e00fe1d24d915)
+2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
 ```
