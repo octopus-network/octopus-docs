@@ -3,7 +3,7 @@
 ### Prerequisites
 
 * NEAR account
-* OCT token: The appchain team needs to deposit 1k NEP OCT which is an **Auditing Fee**. For the testnet, the appchain team can request OCTs from Discord.
+* OCT token: The appchain team needs pay 1k OCT tokens as an **Auditing Fee**. For the testnet, the appchain team can request OCTs from Discord.
 
 ### Steps of Appchain Registration
 
