@@ -37,6 +37,13 @@ sha256sum barnacleSpec.json> SHA256SUMS
 
 ### Publish the Appchain Release
 
-Before registering the Appchain, the Appchain team needs to publish a release of the Appchain, which includes the human-readable ChainSpec file generated above.
+Before registering the Appchain, the appchain team needs to publish a release of the appchain, it should include:
+
+* A human-readable ChainSpec file.
+* An appchain node binary file.
 
 ![Release screenshot](./release.png)
+
+And then get the Github release URL and the Commit ID ready. 
+
+Also, the appchain team needs to tell the Octopus team the appchain native token amount which is for the block reward. The Octopus team would write the value to the ChainSpec file and then generate a raw ChainSpec file.

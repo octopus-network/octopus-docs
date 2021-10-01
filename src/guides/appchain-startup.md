@@ -2,8 +2,18 @@
 
 ![Appchain_Pipeline](./appchain_pipeline.png)
 
-During the whole Appchain startup process, there are four phases:
-1. **Auditing**: Once the appchain [registration](./appchain-register.md) is completed, the Octopus team will start the audit within 1-2 weeks. During the Auditing phase, the Octopus team mainly audits for two aspects:
+### Prerequisite
+
+An appchain goes to live, the appchain team firstly needs to do:
+
+* [Publish](./appchain-integrate.md) the appchain release
+* [Register](./appchain-register.md) the appchain
+
+### Appchain Status
+
+After the registration is completed, there are the below fours phases:
+
+1. **Auditing**: The Octopus team will start the audit within 1-2 weeks. During the Auditing phase, the Octopus team mainly audits for two aspects:
     * Whether there are known security vulnerabilities in the Substrate codes;
     * Whether the implementation of Appchain is consistent with its specification or white paper.
 2. **InQueue**: If the Appchain passes the audit, it will go through the InQueue phase. This is the **critical stage** for the Appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the Appchain would go through the next phase.
@@ -13,6 +23,16 @@ During the whole Appchain startup process, there are four phases:
 > Notes:
 > * An appchain network only needs 7 validator nodes to startup, Octopus Foundation will run 4 boot-nodes for each appchain, and those boot-nodes will not accept delegation.
 > * To be a validator, the minimum amount of stake OCT is 10,000;
+
+### Booting the Appchain
+
+The Octopus team will do the below for each appchain network:
+
+* Run the booting nodes and provide the list;
+* Run the full node and provide the RPC gateway;
+* Run the relayer of the Octopus bridge;
+* Deploy NEP141 token of the appchain native token;
+
 
 ### Step by Step: Appchain Onboarding
 
