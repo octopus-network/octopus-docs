@@ -1,4 +1,4 @@
-## Transfer Appchain Native Token
+## Transfer Appchain Token to Mainchain
 
 This guide describes how to transfer Appchain's native token between Appchains and mainchain. 
 

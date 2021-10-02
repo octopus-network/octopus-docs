@@ -1,4 +1,4 @@
-## Transfer Mainchain Stablecoin 
+## Transfer Mainchain Token to Appchain
 
 Octopus Network provides out-of-the-box cross-chain functions for Appchains, including mainchain (NEAR) stablecoin transfer and Appchain native asset transfer.
 
