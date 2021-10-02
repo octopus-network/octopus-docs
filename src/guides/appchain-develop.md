@@ -2,13 +2,13 @@
 
 In this tutorial, we will:
 
-1. Setup the development environment for the Appchain;
+1. Setup a development environment for an Appchain;
 2. Integrate an application into the Appchain;
 3. Start the local network of the Appchain;
 
 ### Setup the Development Environment of the Appchain
 
-It's suggested to start an Appchain node based on the [Barnacle](https://github.com/octopus-network/barnacle) which is a template developed by the Octopus Network team. Based on the [Substrate node template](https://github.com/substrate-developer-hub/substrate-node-template), Barnacle is a minimal working Appchain node template for developers to quickly start their own Appchain. The frontend of the Appchain can be developed based on the [Front-end template](https://github.com/substrate-developer-hub/substrate-front-end-template).
+It's suggested to start an Appchain node based on [Barnacle](https://github.com/octopus-network/barnacle) which is a template developed by the Octopus Network team. Originate from the [Substrate node template](https://github.com/substrate-developer-hub/substrate-node-template), Barnacle is a minimal working Appchain node template for developers to quickly start their Octopus Appchain project. The frontend of an Appchain can be developed based on the [Front-end template](https://github.com/substrate-developer-hub/substrate-front-end-template).
 
 #### Setup a Rust Development Environment.
 
