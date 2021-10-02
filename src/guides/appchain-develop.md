@@ -3,8 +3,8 @@
 In this tutorial, we will:
 
 1. Setup a development environment for an Appchain;
-2. Integrate an application into the Appchain;
-3. Start the local network of the Appchain;
+2. Implement an Web3.0 application with an Appchain;
+3. Start a local testnet for an Appchain;
 
 ### Setup the Development Environment of the Appchain
 
@@ -47,9 +47,9 @@ yarn install
 >
 > If there is a newer version of `substrate-front-end-template`, It is recommended to replace `v3.0.0+monthly-2021-08` with it in the above command.
 
-### Integrate Your Application into the Appchain
+### Implement an Web3.0 application with an Appchain
 
-Steps to integrate your application into the Appchain([Barnacle](https://github.com/octopus-network/barnacle)):
+Steps to implement an application with an Appchain([Barnacle](https://github.com/octopus-network/barnacle)):
 
 1. Add a `pallet`, and implement application specific logic in `pallets/<pallet-name>/src/lib.rs`;
 2. Add the `pallet` into `runtime/Cargo.toml`, `runtime/src/lib.rs`;
@@ -57,7 +57,7 @@ Steps to integrate your application into the Appchain([Barnacle](https://github.
 
 For more information, please refer to the [Add Pallet to Runtime Guide](https://substrate.dev/docs/en/tutorials/add-a-pallet/) in the Substrate Developer Center.
 
-### Start the Local Network of the Appchain
+### Start the Local Testnet for an Appchain
 
 Execute the following command to compile and start the local blockchain node:
 
@@ -67,7 +67,7 @@ cargo build
 ./target/debug/appchain-barnacle --dev --tmp
 ```
 
-If you want to run a local front-end application to interact with local nodes, you can refer to [Run Local Front End](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/interact#start-the-front-end-template).
+If you want to run a local front-end to interact with local nodes, you can refer to [Run Local Front End](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/interact#start-the-front-end-template).
 
 #### Custom Type
 
