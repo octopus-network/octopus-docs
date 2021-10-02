@@ -1,4 +1,4 @@
-## Overview of Octopus Network
+## Octopus Network Overview
 
 Octopus Network is a brand new multichain network born to serve application-specific blockchains, aka Appchain. Octopus Network provides flexible and affordable leased security, out-of-box cross-chain interoperability, one-stop infrastructure, and a ready-to-be-engaged community for the appchains.
 
