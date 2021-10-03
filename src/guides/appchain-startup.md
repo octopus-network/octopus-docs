@@ -33,7 +33,7 @@ The Octopus team will do the below for each appchain network:
 * Run the relayer of the Octopus bridge;
 * Deploy NEP141 token of the appchain native token;
 
-
+The appchain team needs to provide premined appchain native token amount and block reward amount(for each day) to Octopus team. The Octopus team will make sure premined appchain native token amount and block reward amount are properly set in wrapper token contract on Mainchain and ChainSpec of appchain.
 ### Step by Step: Appchain Onboarding
 
 Taking the testnet as an example, the steps to start the appchain are as follows:
