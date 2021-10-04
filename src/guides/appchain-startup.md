@@ -18,7 +18,7 @@ After the registration is completed, there are the below fours phases:
     * Whether the implementation of Appchain is consistent with its specification or white paper.
 2. **InQueue**: If the Appchain passes the audit, it will go through the InQueue phase. This is the **critical stage** for the Appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the Appchain would go through the next phase.
 3. **Staging**: The Appchain with the highest vote scores will go through the Staging phase, which is the pre-launch stage of the Appchain network. There will only be one Appchain at this phase. The Appchain team needs to encourage OCT holders to be the [validator](../maintain/validator-guide.md) of their network, and OCT holders can run the validator node and stake OCT.
-4. **Booting**: When the Appchain obtains enough validator nodes, the Octopus team will run several validator nodes as the booting nodes of the Appchain network, and then the Appchain will go through the Booting phase.
+4. **Booting**: When the Appchain obtains enough validator nodes, and the total value staked OCTs be at $2 million which is the lowest safety limit, the Octopus team will run several validator nodes as the booting nodes of the Appchain network, the Appchain will go through the Booting phase.
 
 > Notes:
 > * An appchain network only needs 7 validator nodes to startup, Octopus Foundation will run 4 boot-nodes for each appchain, and those boot-nodes will not accept delegation.
