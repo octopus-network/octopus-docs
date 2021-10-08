@@ -14,6 +14,9 @@
     * **Github**: The Github repository of AppChain
     * **Github Release**: The Github URL of the release of the Appchain
     * **Commit ID**: The Git commit hash URL of the Appchain release
+    * **Preminted Amount**: The Appchain native token amount of the initial issues
+    * **IDO Amount**: The Appchain token amounts through the DEX offer liquidity before the mainnet goes live 
+    * **Era Reward**: The Appchain native token amount as its block reward for each day (1 era = 1 day)
     * **Email**: The contact email of the Appchain
 
    ![Register Screenshot](./register.png)
