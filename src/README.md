@@ -2,6 +2,7 @@
 
 * [General](./general/octopus-overview.md)
     * [Octopus Network Overview](./general/octopus-overview.md)
+    * [Octopus Network Staking](./general/octopus-staking.md)
     * [Frequently Asked Questions (FAQs)](./general/octopus-faq.md)
 * [Developer Guides](./guides/appchain-develop.md)
     * [Appchain Development](./guides/appchain-develop.md)

@@ -6,7 +6,8 @@ module.exports = [
       collapsable: false,
       children: [
         '/general/octopus-overview',
-        '/general/octopus-faq'
+        '/general/octopus-staking',
+        '/general/octopus-faq',
       ]
     },    
     {
