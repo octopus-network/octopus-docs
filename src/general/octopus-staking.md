@@ -4,8 +4,8 @@ The LPoS (Leased Proof-of-Stake) of Octopus Network is to select a group of netw
 
 In staking, there are two roles: validator and delegator. OCT holders can participate in the staking to become:
 
-* Validator, with the responsibility to run a validation node for the specific appchain
-* Delegator, who delegates his OCT to the validators and share appchain block rewards with them.
+* Validator, which needs to stake OCT, and then run a validator node for the appchain
+* Delegator, which only needs to select validators to stake (delegate) OCT
 
 The validator needs:
 
