@@ -17,7 +17,7 @@ After the registration is completed, there are the below fours phases:
     * Whether there are known security vulnerabilities in the Substrate codes;
     * Whether the implementation of Appchain is consistent with its functional specification file.
 2. **Voting**: If the Appchain passes the audit, it will go through the Voting phase. This is the **critical stage** for the Appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the Appchain would go through the next phase.
-3. **Staking**: The Appchain with the highest vote scores will go through the Staking phase, which is the pre-launch stage of the Appchain network. There will only be one Appchain at this phase. The Appchain team needs to encourage OCT holders to be the [validator](../maintain/validator-guide.md) of their network, and OCT holders can run the validator node and stake OCT.
+3. **Staking**: The Appchain with the highest vote scores will go through the Staking phase, which is the pre-launch stage of the Appchain network. At this phase, OCT holders can stake OCT as appchain [validator](../maintain/validator-guide.md) or [delegator](./staking-delegate.md), and the validator doesn't need to run a validator node.
 4. **Booting**: When the Appchain obtains enough validator nodes, and the total value staked OCTs be at $2 million which is the lowest safety limit, the Octopus team will run several validator nodes as the booting nodes of the Appchain network, the Appchain will go through the Booting phase.
 
 > Notes:
