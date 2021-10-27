@@ -13,6 +13,7 @@
     * [Transfer Appchain Token to Mainchain](./guides/appchain-nativetoken.md) 
 * [User Guides](./guides/appchain-develop.md)
     * [Voting for Appchain](./guides/voting-appchain.md)
+    * [How to Delegate](./guides/staking-delegate.md)
 * [Validator Guide](./maintain/validator-guide.md)
     * [Generate Validator Account](./maintain/validator-generate-keys.md)
     * [Deploy Validator Node](./maintain/validator-deploy.md)

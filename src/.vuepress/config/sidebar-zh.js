@@ -28,6 +28,7 @@ module.exports = [
       collapsable: false,
       children: [
         '/cn/guides/voting-appchain',
+        '/cn/guides/staking-delegate',
       ]
     },
     {
