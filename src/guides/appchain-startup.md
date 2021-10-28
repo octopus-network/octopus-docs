@@ -21,7 +21,7 @@ After the registration is completed, there are the below fours phases:
 4. **Booting**: When the Appchain obtains enough validator nodes, and the total value staked OCTs be at $2 million which is the lowest safety limit, the Octopus team will run several validator nodes as the booting nodes of the Appchain network, the Appchain will go through the Booting phase.
 
 > Notes:
-> * An appchain network only needs 7 validator nodes to startup, Octopus Foundation will run 4 boot-nodes for each appchain, and those boot-nodes will not accept delegation.
+> * An appchain network only needs 6 validator nodes to startup, Octopus Foundation will run 4 boot-nodes for each appchain, and those boot-nodes will not accept delegation.
 > * To be a validator, the minimum amount of stake OCT is 10,000;
 
 ### Booting the Appchain
