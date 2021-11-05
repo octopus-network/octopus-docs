@@ -4,6 +4,8 @@ Delegators are one type of participant in the [staking]((../general/octopus-stak
 
 While the validators are active participants in the network that engage in the block production and finality mechanisms, delegators take a slightly more passive role. Being a delegator does not require running a node of your own, when looking for validators to delegate, a delegator should pay attention to their reputation for delegating a specific validator - as well as the risk that they bear of being slashed if the validator gets slashed.
 
+:warning: **Warning**: If the validator gets slashed, the delegators of this validator would also get slashed.
+
 The delegating steps are as follows:
 
 1. Log in to [Octopus Network Mainnet](https://mainnet.oct.network) with your NEAR account.
