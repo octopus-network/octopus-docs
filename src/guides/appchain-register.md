@@ -15,11 +15,10 @@
         - **Token Symbol**: The symbol of the appchain native token
         - **Icon**: The icon url of the appchain native token
         - **Decimals**: The decimals of the appchain native token
-    * **Function Spec**: The url of the appchain functional specification file
     * **Website**: The official website of the Appchain
+    * **Function Spec**: The url of the appchain functional specification file
     * **Github**: The Github repository of AppChain
     * **Github Release**: The Github URL of the release of the Appchain
-    * **Commit ID**: The Git commit hash URL of the Appchain release
     * **Premined Amount**: The Appchain native token amount of the initial issues
     * **Beneficiary**: The NEAR account to receive the premined native token
     * **IDO Amount**: The Appchain token amounts through the DEX offer liquidity before the mainnet goes live 
