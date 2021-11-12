@@ -27,4 +27,4 @@
 
    ![注册截图](../../guides/register.png)
 
-3. 点击 *Register* 发送注册交易。
+3. 点击 *Submit* 发送注册交易。
