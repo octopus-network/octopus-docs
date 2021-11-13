@@ -44,9 +44,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 
 #### 1. 获取应用链的节点二进制文件
 
-你可以从应用链的源代码仓库中，通过编译源码，创建应用链的节点二进制文件。当然你也可以直接从应用链源代码仓库的 release 中获取编译好的二进制文件。
-
-编译源码生成节点文件，执行以下命令：
+你可以从应用链的源代码仓库中，通过编译源码，创建应用链的节点二进制文件。编译源码生成节点文件，执行以下命令：
 
 ```bash
 git clone https://github.com/octopus-network/barnacle.git
@@ -58,51 +56,17 @@ cargo build --release
 
 > 注意：如果你遇到编译错误，可能需要将 Rust 切换到一个较新的 nightly 版本。
 
-#### 2. 下载应用链的 Chain Spec 文件
+#### 2. 启动验证节点
 
-章鱼网络的应用链页面有 Chain Spec Raw文件的URL。
-
-通过执行以下命令：
+用 Appchain ID 设置选项`--chain`，并以验证人模式启动节点，例如 Barnacle 应用链的命令如下：
 
 ```bash
-# cd barnacle 
-curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/barnacleSpecRaw.json
-```
-
-#### 3. 获取应用链的启动节点信息
-
-章鱼网络的应用链页面有Boot Nodes启动节点信息，如下所示是应用链的 Boot Nodes 数组：
-
-```bash
-[   "/ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY",   "/ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq",   "/ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y",   "/ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ", ]
-```
-
-#### 4. 启动验证节点
-
-以验证人模式启动节点：指定 Chain Spec文件，以及使用 Boot Nodes 数组中的元素指定 bootnodes 对应的值，执行以下命令：
-
-```bash
-
 ./target/release/appchain-barnacle \
 --base-path ./data \
---chain ./chainSpec.json \
---port 30333 \
---rpc-port 9933 \
---rpc-cors all \
---rpc-external \
---ws-port 9944 \
---ws-external \
---rpc-methods Unsafe \
+--chain barnacle \
 --validator \
---name "name on telemetry" \
---prometheus-port 9615 \
---prometheus-external \
 --wasm-execution Compiled \
---enable-offchain-indexing true \
---bootnodes /ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY \
---bootnodes /ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq \
---bootnodes /ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y \
---bootnodes /ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ
+--enable-offchain-indexing true
 ```
 
 确保节点已完成链数据的同步，检查是否有类似的输出如下：

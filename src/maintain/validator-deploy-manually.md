@@ -42,9 +42,7 @@ For other OSs, please refer to the [document of Substrate Developer Hub](https:/
 
 #### 1. Get the Appchain Node Binary
 
-You can generate the Appchain node binary by compiling the source code from the Appchain repo. Of course, you can also fetch the compiled binary directly from the release page of the Appchain repo.
-
-To compile the source code to generate a node binary, execute the following command:
+You can generate the Appchain node binary by compiling the source code from the Appchain repo. To compile the source code to generate a node binary, execute the following command:
 
 ```bash
 git clone https://github.com/octopus-network/barnacle.git
@@ -54,57 +52,19 @@ cargo build --release
 
 This step will take a while (generally 10 - 40 minutes, depending on your hardware).
 
-> Note if you run into compiling errors, you may have to switch to a more recent nightly version of Rust. 
+> Note if you run into compiling errors, you may have to switch to a more recent nightly version of Rust.
 
-#### 2. Download the Chain Spec file 
+#### 2. Start the validator node
 
-Go to the [Octopus Network testnet](https://testnet.oct.network/), select the `Appchains` Tab -> the corresponding appchain.
-
-Copy the **Chain Spec Raw** file URL, execute the following command:
+Set option `--chain` with the Appchain ID and start the node in validator mode. E.g. for Barnacle by executing the following command:
 
 ```bash
-# cd barnacle 
-curl -o chainSpec.json https://storage.googleapis.com/dl-testnet/barnacle-ng/barnacleSpecRaw.json
-```
-
-#### 3. Get the Bootnodes Information
-
-The appchain page of Octopus Network has the bootnode information.
-
-Go to the [Octopus Network testnet](https://testnet.oct.network/), select `Appchains` Tab -> the corresponding appchain.
-
-Copy the **Boot Nodes**' information, similar to the following:
-
-```bash
-[   "/ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY",   "/ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq",   "/ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y",   "/ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ", ]
-```
-
-#### 4. Start the validator node
-
-Set option `--chain` with the Chain Spec file name downloaded from the step 2 above, and the option `--bootnodes` with the bootnodes' information from the step 3 above, execute the following command:
-
-```bash
-
 ./target/release/appchain-barnacle \
 --base-path ./data \
---chain ./chainSpec.json \
---port 30333 \
---rpc-port 9933 \
---rpc-cors all \
---rpc-external \
---ws-port 9944 \
---ws-external \
---rpc-methods Unsafe \
+--chain barnacle \
 --validator \
---no-telemetry \
---prometheus-port 9615 \
---prometheus-external \
 --wasm-execution Compiled \
---enable-offchain-indexing true \
---bootnodes /ip4/34.80.79.216/tcp/30333/p2p/12D3KooWAxYKgdmTczLioD1jkzMyaDuV2Q5VHBsJxPr5zEmHr8nY \
---bootnodes /ip4/34.81.106.94/tcp/30333/p2p/12D3KooWSmLVShww4w9PVW17cCAS5C1JnXBU4NbY7FcGGjMyUGiq \
---bootnodes /ip4/35.187.144.17/tcp/30333/p2p/12D3KooWT2umkS7F8GzUTLrfUzVBJPKn6YwCcuv6LBFQ27UPoo2Y \
---bootnodes /ip4/34.80.21.68/tcp/30333/p2p/12D3KooWHNf9JxUZKHoF7rrsmorv86gonXSb2ZU44CbMsnBNFSAJ
+--enable-offchain-indexing true
 ```
 
 Finally, the validator node must complete the synchronization of the chain data, and to check whether there is an similar output as the following:
