@@ -6,7 +6,6 @@
     * [常见问答](./general/octopus-faq.md)
 * [开发者指南](./guides/appchain-develop.md)
     * [应用链开发](./guides/appchain-develop.md)
-    * [应用链发布](./guides/appchain-integrate.md)
     * [应用链注册](./guides/appchain-register.md)
     * [应用链启动流程](./guides/appchain-startup.md)
     * [转移主链稳定币](./guides/mainchain-stablecoin.md) 

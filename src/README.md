@@ -6,7 +6,6 @@
     * [Frequently Asked Questions (FAQs)](./general/octopus-faq.md)
 * [Developer Guides](./guides/appchain-develop.md)
     * [Appchain Development](./guides/appchain-develop.md)
-    * [Appchain Release](./guides/appchain-integrate.md)
     * [Appchain Register](./guides/appchain-register.md)
     * [Appchain Startup](./guides/appchain-startup.md)
     * [Transfer Mainchain Token to Appchain](./guides/mainchain-stablecoin.md)

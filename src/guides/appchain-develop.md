@@ -69,38 +69,13 @@ cargo build
 
 If you want to run a local front-end to interact with local nodes, you can refer to [Run Local Front End](https://substrate.dev/docs/en/tutorials/create-your-first-substrate-chain/interact#start-the-front-end-template).
 
-#### Custom Type
+### Publish the Appchain Release
 
-When the front end makes a Substrate RPC to retrieve data, the metadata(definitions of custom data type) is not returned. If there are custom data types defined in the runtime of the Appchain, we correspondingly need to submit the definitions of these data types in JSON format from the front end for the Polkadot JS to parse these data upon receiving.
+Once finishing the Appchain development, and the integration of the Octopus [Pallets](https://github.com/octopus-network/octopus-pallets), the Appchain team needs to publish a release of the Appchain. And then record the Github release URL which is used to register the Appchain into the Octopus Network.
 
-#### Create a Custom Data Type
-Here's an example of how to create a custom data type.
-##### Example Custom Data Type in the Pallet
-In the src/lib.rs under pallet-octopus-appchain, the type definition：
-```rust
-#[derive(Deserialize, Encode, Decode, Clone, PartialEq, Eq, RuntimeDebug)]
-pub enum Observation<AccountId> {
-	#[serde(bound(deserialize = "AccountId: Decode"))]
-	UpdateValidatorSet(ValidatorSet<AccountId>),
-	#[serde(bound(deserialize = "AccountId: Decode"))]
-	LockToken(LockEvent<AccountId>),
-}
-```
+![release](./release.png)
 
-##### Submit the Type Definition in Polkadot
-Connect Polkadot JS to the Appchain, navigate to Settings -> Developer, add the following JSON data and save.
-```json
-{
-  "Observation": {
-    "_enum": {
-      "UpdateValidatorSet": "(ValidatorSet)",
-      "LockToken": "(LockEvent)"
-    }
-  }
-}
-```
-
-##### Enquiry Custom Data
-In Polkadot JS, navigate to Developer -> Chain State -> Storage -> octopusAppchain -> observations to query the custom data created:
-
-![EnquiryCustomData](../guides/query_customized_type.png)
+> **Note**
+>
+> * The Chain Spec file could be placed under one folder of source code. E.g:[resources](https://github.com/octopus-network/barnacle/tree/master/resources)
+> * For the integration, please refer to the [Barnacle](https://github.com/octopus-network/barnacle)
