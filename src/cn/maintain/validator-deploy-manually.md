@@ -54,20 +54,22 @@ cargo build --release
 
 这一步骤将需要一段时间，一般为10-40分钟，速度取决于你的硬件。
 
-> 注意：如果你遇到编译错误，可能需要将 Rust 切换到一个较新的 nightly 版本。
+> 备注：如果你遇到编译错误，可能需要将 Rust 切换到一个较新的 nightly 版本。
 
 #### 2. 启动验证节点
 
-用 Appchain ID 设置选项`--chain`，并以验证人模式启动节点，例如 Barnacle 应用链的命令如下：
+用 `octopus-mainnet` 设置选项`--chain`，并以验证人模式启动节点，例如 Barnacle 应用链的命令如下：
 
 ```bash
 ./target/release/appchain-barnacle \
 --base-path ./data \
---chain barnacle \
+--chain octopus-mainnet \
 --validator \
 --wasm-execution Compiled \
 --enable-offchain-indexing true
 ```
+
+> 备注：[测试网](https://testnet.oct.network/) 设置选项 `--chain` 值为 `octopus-testnet`
 
 确保节点已完成链数据的同步，检查是否有类似的输出如下：
 

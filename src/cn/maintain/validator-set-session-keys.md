@@ -5,6 +5,7 @@
 > * 确保验证节点已完成链数据的同步。
 
 ### 生成 Session Keys
+
 您需要通过签名和提交外部信息来告诉链您的会话密钥。有2种方式可以将验证节点与应用链的验证人帐户相关联。
 
 **选项1：CLI**
@@ -31,7 +32,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 > * 验证人的应用链帐户有一些应用链的 Token。
 > * 对于测试网络，通过 Polkadotjs Apps 连接其 RPC，可自行转账获得 Barnacle 应用链的 Token（BAR）。
 
-完成上述准备后，验证人访问章鱼网络[测试网](https://testnet.oct.network/)，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，然后按照步骤设置会话密钥：
+完成上述准备后，验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，然后按照步骤设置会话密钥：
 
 1. 在操作页面中，点击`RPC Call`；
 2. 在弹出页面中，选择你的应用链账户，RPC 选择`session`，Callables 选择`setKeys`，

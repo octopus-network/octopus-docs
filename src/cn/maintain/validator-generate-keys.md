@@ -24,11 +24,11 @@ Subkey 是个 Substrate 命令行程序，用于生成或还原 Substrate 密钥
 
 ### 选项3：PolkadotJS-Apps
 
-通过以下步骤创建验证人 Appchain 帐户：
+通过以下步骤创建验证人应用链帐户：
 
 #### 1. 获取应用链的 RPC
 
-章鱼网络[测试网络](https://testnet.oct.network/)，可以从 Appchain 页面获取 RPC Endpoint。
+访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，选择`Appchains`选项，进入应用链列表页面，从应用链页面可以获取应用链的 RPC Endpoint。
 
 ![appchain_rpc](../../maintain/appchain_rpc.jpg)
 

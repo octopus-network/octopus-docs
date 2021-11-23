@@ -9,9 +9,9 @@
 
 **注**：目前一键部署服务仅支持部署验证节点到 AWS 服务器。
 
-验证人访问章鱼网络[测试网](https://testnet.oct.network/)，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，进行以下操作：
+验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，进行以下操作：
 
-1. 在操作页面中，点击`Deploy Validator`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+1. 在操作页面中，点击`Deploy Tool`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
 
 ![deploy validator](../../maintain/validator_deploy.jpg)
 
@@ -25,11 +25,7 @@
 
 **注**：AWS Secret Key 仅会被用于此次部署，并且不会在任何地方被存储，帐户的风险非常低。
 
-4. 部署过程大约持续3-5分钟，点击`Deploy log`获取日志信息；
-
-![deploy log](../../maintain/validator_deploy_log.jpg)
-
-然后刷新页面查看状态，部署成功如下图所示。
+4. 部署过程大约持续3-5分钟，然后刷新页面查看状态，部署成功如下图所示。
 
 ![deploy success](../../maintain/validator_deploy_success.jpg)
 
