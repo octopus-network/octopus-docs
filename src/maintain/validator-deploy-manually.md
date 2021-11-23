@@ -52,20 +52,22 @@ cargo build --release
 
 This step will take a while (generally 10 - 40 minutes, depending on your hardware).
 
-> Note if you run into compiling errors, you may have to switch to a more recent nightly version of Rust.
+> Note: if you run into compiling errors, you may have to switch to a more recent nightly version of Rust.
 
 #### 2. Start the validator node
 
-Set option `--chain` with the Appchain ID and start the node in validator mode. E.g. for Barnacle by executing the following command:
+Set option `--chain` with the value `octopus-mainnet` for the [Mainnet](https://mainnet.oct.network/) and start the node in validator mode. E.g. for Barnacle by executing the following command:
 
 ```bash
 ./target/release/appchain-barnacle \
 --base-path ./data \
---chain barnacle \
+--chain octopus-mainnet \
 --validator \
 --wasm-execution Compiled \
 --enable-offchain-indexing true
 ```
+
+> Note: Set option `--chain` with the value `octopus-testnet` for the [testnet](https://testnet.oct.network/)
 
 Finally, the validator node must complete the synchronization of the chain data, and to check whether there is an similar output as the following:
 

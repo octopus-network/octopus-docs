@@ -28,7 +28,7 @@ To create an Appchain account by following a few steps:
 
 #### 1. Get the RPC Endpoint of the Appchain. 
 
-For the Octopus [test network](https://testnet.oct.network/), you can get the RPC Endpoint from the Appchain page.
+Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain. You can get the RPC Endpoint of the appchain from the appchain page. 
 
 ![appchain_rpc](./appchain_rpc.jpg)
 
