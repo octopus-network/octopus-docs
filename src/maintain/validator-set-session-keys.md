@@ -34,9 +34,10 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 
-1. In the operation page, click `RPC Call`;
-2. In the pop-up window, configure for your validator account: for RPC select `session`, for Callables select `setKeys`;
-3. Enter the result `author_rotateKeys` in the field `keys`, enter `0x00` in the field `proof`;
-4. Click `Submit`.
+1. Click `Deploy Tool`, and then in the pop-up window, select `Set Session Key`;
+2. In the pop-up window, select your validator account;
+3. Enter your `Session Key` with the result `author_rotateKeys`;
+4. Click `Set`.
 
 ![set session keys](../maintain/validator_set_session_keys.jpg)
+![set session keys](../maintain/validator_set_session_keys2.jpg)

@@ -32,12 +32,13 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 > * 验证人的应用链帐户有一些应用链的 Token。
 > * 对于测试网络，通过 Polkadotjs Apps 连接其 RPC，可自行转账获得 Barnacle 应用链的 Token（BAR）。
 
-完成上述准备后，验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入操作页面，然后按照步骤设置会话密钥：
+完成上述准备后，验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，然后按照步骤设置会话密钥：
 
-1. 在操作页面中，点击`RPC Call`；
-2. 在弹出页面中，选择你的应用链账户，RPC 选择`session`，Callables 选择`setKeys`，
-3. 字段`keys`中输入`author_rotateKeys`操作的输出，字段`proof`中输入`0x00`，
-4. 点击`Submit`。
+1. 在应用链页面，点击`Deploy Tool`，在弹出页面中，选择`Set Session Key`；
+2. 在弹出页面中，选择你的应用链账户；
+3. 在`Session Key`输入框中输入`author_rotateKeys`操作输出的`result`字段的内容；
+4. 点击`Set`。
 
 如下图所示：
 ![set session keys](../../maintain/validator_set_session_keys.jpg)
+![set session keys](../../maintain/validator_set_session_keys2.jpg)

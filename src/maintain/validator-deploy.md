@@ -12,27 +12,45 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Click `Deploy Tool`, and then in the pop-up window, enter your `AWS Access Key` and click `Enter`;
+1. Click `Deploy Tool`, in the pop-up window, select `Deploy Node`;
 
-![deploy validator](../maintain/validator_deploy.jpg)
+![deploy node](../maintain/validator_deploy_node.jpg)
 
-2. Click `Deploy New`, and then select `Base Image` and click `Deploy`;
+2. In the pop-up window, enter your `AWS Access Key` and click `Enter`;
+
+![deploy login](../maintain/validator_deploy_login.jpg)
+
+3. Click `Deploy New`, and then select `Base Image` and click `Deploy`;
 
 ![deploy new](../maintain/validator_deploy_new.jpg)
 
-3. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and click `Apply`;
+4. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and click `Apply`;
 
 ![deploy apply](../maintain/validator_deploy_apply.jpg)
 
 **Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
 
-4. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below.
+5. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
 
 ![deploy success](../maintain/validator_deploy_success.jpg)
 
-5. Record the login information of the instance and click the `RSA` to download the ssh key file.
+### Check the synchronization of the validator node
 
-The validator node must complete the synchronization of the chain data. Log in to the AWS instance and to check the docker logs of validator whether there is an similar output as the following:
+The validator node must complete the synchronization of the chain data. 
+
+1. Log in to the AWS instance;
+
+```bash
+ssh -i <Path of the id_rsa file> ubuntu@<IP address of AWS instance>
+```
+
+2. Check the docker logs of validator;
+
+```bash
+docker logs seashell
+```
+
+whether there is an similar output as the following:
 
 ```bash
 2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)
