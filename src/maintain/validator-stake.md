@@ -21,3 +21,9 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 And then click `Register`. 
 
 ![stake](../maintain/validator_stake.jpg)
+
+> **Note**: 
+>
+> After staking OCT,  your validator ID would be with the status **STAKER**, it means you are pending as a appchain validator. 
+>
+> If your validator node had synced, and the validator set have been updated,  you would become a appchain validator, and your validator ID will be with the status **VALIDATING**.

@@ -8,7 +8,11 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 ### Automatically Deploy
 
-**Note**: Currently, the auto-deployment tool only supports deploying validator nodes to AWS server.
+> **Note**: Currently, the auto-deployment tool only supports deploying validator nodes to AWS server.
+>
+> If no AWS account, please firstly [create and setup AWS account](https://aws.amazon.com/getting-started/guides/setup-environment/?nc1=h_ls)
+>
+> To create [AWS Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
@@ -20,7 +24,9 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ![deploy login](../maintain/validator_deploy_login.jpg)
 
-3. Click `Deploy New`, and then select `Base Image` and click `Deploy`;
+3. Click `Deploy New`, select `Base Image` with the right image for the appchain and click `Deploy`;
+
+**Note**: The following picture is the appchain Barnacle as an example.
 
 ![deploy new](../maintain/validator_deploy_new.jpg)
 
@@ -36,7 +42,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ### Check the synchronization of the validator node
 
-The validator node must complete the synchronization of the chain data. 
+For the validator node, it would last about 1~6 hours (it depends on how long the appchain had been running) to complete the synchronization of the appchain data.
 
 1. Log in to the AWS instance;
 
@@ -50,7 +56,7 @@ ssh -i <Path of the id_rsa file> ubuntu@<IP address of AWS instance>
 docker logs seashell
 ```
 
-whether there is an similar output as the following:
+To check whether the best block number is the same with the current block number, like the following output:
 
 ```bash
 2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)

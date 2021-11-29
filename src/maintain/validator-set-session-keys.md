@@ -2,7 +2,7 @@
 
 > **Note**:
 >
-> * The validator node must complete the synchronization of the chain data.
+> To execute this step, it is better that your validator node have completed the synchronization of the appchain data.
 
 ### Generating the Session Keys
 
@@ -16,7 +16,11 @@ It is easier to run the `author_rotateKeys` command on your remote server (e.g. 
 curl -H "Content-Type: application/json" -d'{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 ```
 
-The output will have a hex-encoded "result" field. The result is the concatenation of the four public keys, save it for a later step.
+The output will have a hex-encoded "result" field which is the concatenation of the several public keys, save it as the session key which would be used in the next step.
+
+```bash
+{"jsonrpc":"2.0","result":"0xb143b87b83d16a43f444e94fed9cd87491802b9fae635c0de37b52609900fd398bbb0acd67d345a75ca0ef523acfc94fa63b462109f20684701a6150810231f7f92800d8f740e15187a4723f7671d0db7bb2ee46b87602b9f86bfa478a889c768da183a5d25673cf30424d649c95351a1c41f11c92c5bc8e84251406069999055a8cf21e44d9fd5fb41fa77ecb6cf0ea2ac62c4001083fd638fe70153a5f37c661","id":1}
+```
 
 **Option 2: PolkadotJS-Apps**
 
@@ -35,9 +39,13 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 
 1. Click `Deploy Tool`, and then in the pop-up window, select `Set Session Key`;
-2. In the pop-up window, select your validator account;
-3. Enter your `Session Key` with the result `author_rotateKeys`;
-4. Click `Set`.
 
 ![set session keys](../maintain/validator_set_session_keys.jpg)
+
+2. In the pop-up window, select your validator account;
+
+3. Enter your `Session Key` which is the hex-encoded "result" field from the output content of `author_rotateKeys`;
+
+4. Click `Set`.
+
 ![set session keys](../maintain/validator_set_session_keys2.jpg)
