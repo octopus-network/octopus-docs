@@ -1,6 +1,8 @@
 ## 搭建验证节点
 
-章鱼网络提供了一键部署验证节点的服务。这是为了简化部署过程，但它不是唯一的方法，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
+章鱼网络提供了一键部署验证节点的服务。这是为了简化部署过程，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
+
+![deploy mode](../../maintain/validator_deploy_mode.jpg)
 
 **关于验证节点的硬件配置**
 
@@ -12,17 +14,13 @@
 
 验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
-1. 在应用链页面中，点击`Deploy Tool`，在弹出页面中，选择`Deploy Node`；
-
-![deploy node](../../maintain/validator_deploy_node.jpg)
-
-2. 在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+1. 在应用链页面中，点击`Validator Panel`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
 
 ![deploy login](../../maintain/validator_deploy_login.jpg)
 
-3. 点击`Deploy New`，在弹出页面中，选择`Base Image`，点击`Deploy`；
+3. 点击`Deploy Node`，在弹出页面中，选择`Base Image`，点击`Deploy`；
 
-![deploy new](../../maintain/validator_deploy_new.jpg)
+![deploy node](../../maintain/validator_deploy_node.jpg)
 
 4. 完成初始化后，点击`Apply`，在弹出的窗口中，输入你的`AWS Access Secret`，点击`Apply`；
 

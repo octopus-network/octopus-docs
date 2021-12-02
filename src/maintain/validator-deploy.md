@@ -2,6 +2,8 @@
 
 Octopus Network provides a one-click deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
+![deploy mode](../maintain/validator_deploy_mode.jpg)
+
 > **About the hardware configuration**
 >
 > * In the test network, our one-click deployment tool uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
@@ -16,21 +18,17 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Click `Deploy Tool`, in the pop-up window, select `Deploy Node`;
-
-![deploy node](../maintain/validator_deploy_node.jpg)
-
-2. In the pop-up window, enter your `AWS Access Key` and click `Enter`;
+1. Click `Validator Panel`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
 
 ![deploy login](../maintain/validator_deploy_login.jpg)
 
-3. Click `Deploy New`, select `Base Image` with the right image for the appchain and click `Deploy`;
+2. Click `Deploy Node`, select `Base Image` with the right image for the appchain and click `Deploy`;
 
 **Note**: The following picture is the appchain Barnacle as an example.
 
-![deploy new](../maintain/validator_deploy_new.jpg)
+![deploy node](../maintain/validator_deploy_node.jpg)
 
-4. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and click `Apply`;
+4. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and confirm;
 
 ![deploy apply](../maintain/validator_deploy_apply.jpg)
 

@@ -38,9 +38,7 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 
-1. Click `Deploy Tool`, and then in the pop-up window, select `Set Session Key`;
-
-![set session keys](../maintain/validator_set_session_keys.jpg)
+1. Click `Validator Panel`, and then in the pop-up window, select `Set Session Key`;
 
 2. In the pop-up window, select your validator account;
 
@@ -48,4 +46,4 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 4. Click `Set`.
 
-![set session keys](../maintain/validator_set_session_keys2.jpg)
+![set session keys](../maintain/validator_set_session_keys.jpg)
