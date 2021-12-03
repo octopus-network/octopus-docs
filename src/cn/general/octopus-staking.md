@@ -33,11 +33,21 @@
 
 #### 领取奖励
 
-验证人或委托人需要通过章鱼网络App页面手动领取奖励。质押奖励最高保持84个时代，约84天。
+验证人或委托人需要通过章鱼网络页面手动领取奖励。质押奖励最高保持84个时代，约84天。
 
 **警告**：如果验证人或委托人未在规定时间内领取质押奖励，则奖励将上缴国库，无法再领取。
 
-登录[章鱼网络 App](https://mainnet.oct.network/) ，点击`Appchains`，选择你参与质押的应用链，进入`Validators`页面，点击`Claim Rewards`领取奖励。
+**验证人**
+
+登录章鱼网络[主网](https://mainnet.oct.network)或[测试网](https://testnet.oct.network)，点击 "Appchains"标签，选择参与质押的应用链，然后按照以下步骤进行：
+
+1. 点击 "Validator Panel"。
+
+2. 在弹出的窗口中，点击 "Claim"。
+
+**备注**：下图是以 DeBio 应用链为例。
+
+![claim](../../maintain/validator_claim_rewards.jpg)
 
 ### 削减
 
