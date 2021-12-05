@@ -33,8 +33,9 @@ Once ensuring that you have connected to your node, the easiest way to set sessi
 > **Note**: 
 >
 > * Polkadot{.js} Browser Plugin was installed;
-> * The validator's appchain account should have a few the appchain native tokens. If the account has no balance, you can exchange the appchain wrapped token in the NEAR network via [Ref Finance](https://app.ref.finance/), and then cross-chain transfer it to your validator account in the appchain via [Octopus Bridge](https://mainnet.oct.network/bridge).
-> * For the test network, please request Barnacle tokens(BAR) via PolkadotJS Apps with its RPC endpoint.
+> * The validator's appchain account should have a few the appchain native tokens.
+>   * For the mainnet, if the account has no balance, you can exchange the appchain wrapped token in the NEAR network via [Ref Finance](https://app.ref.finance/), and then cross-chain transfer it to your validator account in the appchain via [Octopus Bridge](https://mainnet.oct.network/bridge).
+>   * For the testnet, please request the appchain native tokens from `testnet` channel in Discord.
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 

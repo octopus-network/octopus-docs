@@ -29,8 +29,9 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 > **注意**：
 >
 > * Polkadot{.js} 浏览器插件已安装。
-> * 验证人的应用链帐户有应用链的原生Token。如果帐户没有余额，可以先通过[Ref Finance](https://app.ref.finance/) 兑换应用链在 NEAR 网络的Token，然后通过[章鱼网络跨链桥](https://mainnet.oct.network/bridge) 转账到在应用链上的验证人帐户。
-> * 对于测试网络，通过 Polkadotjs Apps 连接其 RPC，可自行转账获得 Barnacle 应用链的 Token（BAR）。
+> * 验证人的应用链帐户有应用链的原生Token。
+>   * 对于主网，如果帐户没有余额，可以先通过[Ref Finance](https://app.ref.finance/) 兑换应用链在 NEAR 网络的Token，然后通过[章鱼网络跨链桥](https://mainnet.oct.network/bridge) 转账到在应用链上的验证人帐户。
+>   * 对于测试网络，可以通过在 Discord testnet 频道向团队请求应用链的 Token。
 
 完成上述准备后，验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，然后按照步骤设置会话密钥：
 
