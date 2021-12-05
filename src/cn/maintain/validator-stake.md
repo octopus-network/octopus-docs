@@ -10,7 +10,8 @@
 
 验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，选择`Appchains`选项，进入应用链列表页面，并选择想要参与质押的应用链，进行以下操作：
 
-1. 在应用链页面，点击`Validator Panel`；
+1. 在应用链页面，点击`Validator Panel`，在弹出页面中，点击`Register Validator`；
+
 2. 在弹出页面中，输入：
     * `Validator Account`，验证人的应用链账号，是在[生成验证人帐户](./validator-generate-keys.md)步骤中生成的 SS58 地址。
     * `Staking Amount`，验证人参与质押的 OCT 数量，主网最低为10,000 OCT；

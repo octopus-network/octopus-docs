@@ -10,7 +10,8 @@ To become a validator of Appchain, you need to stake OCT.
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), click the `Appchains` tab and select the Appchain you wish to stake for, and then follow the steps:
 
-1. Click the `Validator Panel`;
+1. Click the `Validator Panel` and in the pop-up window, click `Register Validator`;
+
 2. In the pop-up window, enter the below value:
     * `Validator Account`, the validator's appchain account, it is a SS58 address generated in the step [Generate Validator Account](./validator-generate-keys.md);
     * `Staking Amount`, the validator's staking amount, the minimum is 10,000 OCT for mainnet;
