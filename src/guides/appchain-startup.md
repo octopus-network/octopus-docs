@@ -6,8 +6,8 @@
 
 An appchain goes to live, the appchain team firstly needs to do:
 
-* [Publish](./appchain-integrate.md) the appchain release
-* [Register](./appchain-register.md) the appchain
+* [Develop](./appchain-develop.md) and complete the implementation for the appchain functional specification file, include: publish the appchain release;
+* Firstly need to [register](./appchain-register.md) the appchain and pass the audit and the other process in [testnet](https://testnet.oct.network). And then register the appchain in [mainnet](https://mainnet.oct.network).
 
 ### Appchain Status
 

@@ -8,8 +8,9 @@
 
 应用链上线，应用链团队首先需要做的是：
 
-* [发布](./appchain-integrate.md)应用链版本
-* [注册](./appchain-register.md)应用链
+* [开发]((./appchain-develop.md)并完成应用链功能规范文件的实现，包括发布一个主网的应用链版本；
+* 首先在[测试网](https://testnet.oct.network)完成应用链[注册](./appchain-register.md)，并通过审计和其它流程；然后再在[主网](https://mainnet.oct.network)注册应用链。
+
 
 ### 应用链状态
 

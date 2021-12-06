@@ -12,7 +12,7 @@
 
 **注**：目前一键部署服务仅支持部署验证节点到 AWS 服务器。
 
-验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
+验证人访问章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
 1. 在应用链页面中，点击`Validator Panel`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
 

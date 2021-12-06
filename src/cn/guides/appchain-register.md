@@ -7,7 +7,7 @@
 
 ### 应用链注册的操作步骤
 
-1. 用 NEAR 帐户登录到章鱼测试网络。
+1. 用 NEAR 帐户登录到章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)。
 2. 导航到 **Appchains** 页面，点击 **+ Appchain** 按钮，填写以下内容：
     * **Appchain ID**: 3-20个字符，由小写字母、数字和连字符`-`组成，不能以数字开头，开头和结尾不能使用连字符`-`，也就是要符合正则表达式 `[a-z]([-a-z0-9]*[a-z0-9])?`
     * **Token Info**
