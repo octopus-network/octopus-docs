@@ -28,6 +28,14 @@ You can generate your Session keys in the client via the apps RPC. If you are do
 
 Once ensuring that you have connected to your node, the easiest way to set session keys for your node is by calling the `author_rotateKeys` RPC request to create new keys in your validator's keystore. Navigate to Toolbox tab and select RPC Calls then select the `author > rotateKeys()` option and remember to save the output that you get back for a later step.
 
+You can restart your node at this point.
+
+You can login to the remote server where the validator node is deployed. If you are using a one-click deployment tool, the command is as follows:
+
+```bash
+docker restart seashell
+```
+
 ### Submitting the `setKeys` Transaction
 
 > **Note**: 

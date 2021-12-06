@@ -24,6 +24,14 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 确保已连接到你的验证节点后，设置节点会话密钥的方法是调用`author_rotateKeys`RPC 请求在验证节点的密钥库中创建新密钥。 选择`开发者`选项并选择`RPC Calls`，然后选择`author > rotateKeys()`，记住保存返回的输出，以供后续步骤使用。
 
+此时你可以重新启动你的节点。
+
+可以登录到部署验证节点的远程服务器，如果使用的是一键部署工具，命令如下：
+
+```bash
+docker restart seashell
+```
+
 ### 提交`setKeys`交易
 
 > **注意**：
