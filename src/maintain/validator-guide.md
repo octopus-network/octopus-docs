@@ -6,7 +6,7 @@ Running a validator on a live network is a lot of responsibility! You will be ac
 
 :warning: **Warning**: It is highly recommended that you have significant system administration experience before attempting to run your own validator. You must be able to handle technical issues and anomalies with your node which you must be able to tackle yourself. Being a validator involves more than just executing the Appchain binary.
 
-If you need help, please reach out on the **Validators** channel on [Discord](https://discord.gg/6GTJBkZA9Q). The team and other validators are there to help answer questions and provide tips from experience.
+If you need help, please reach out on the **validator-chat** channel under **VALIDATORS** category on [Discord](https://discord.gg/6GTJBkZA9Q). The team and other validators are there to help answer questions and provide tips from experience.
 
 In this tutorial, we will learn how to run a validator node for an Appchain in the Octopus network.
 
