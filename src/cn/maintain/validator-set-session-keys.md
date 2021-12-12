@@ -53,3 +53,14 @@ docker restart seashell
 
 如下图所示：
 ![set session keys](../../maintain/validator_set_session_keys.jpg)
+
+
+### 通过 PolkadotJS-Apps 检查 session keys 
+
+你可以通过 PolkadotJS-Apps 检查你的会话密钥是否设置，你可以配置 Apps 的`自定义终端`，使用应用链的 RPC Endpoit，用以连接到应用链, 可以从该应用链在章鱼网络 Apps([Mainnet](https://mainnet.oct.network)和[Testnet](https://testnet.oct.network))的页面上获得。
+
+一旦确保已经连接到应用链的，导航到`开发者`选项，并选择`链状态`，然后选择`session > nextKeys(AccountId32)`选项，并选择你验证节点使用的验证人账户，然后点击`+`。
+
+![check session keys](../../maintain/validator_check_session_keys.jpg)
+
+检查返回值是否和你设置的 Session keys 一致。

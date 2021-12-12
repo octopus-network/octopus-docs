@@ -56,3 +56,14 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 4. Click `Set`.
 
 ![set session keys](../maintain/validator_set_session_keys.jpg)
+
+
+### Check session keys via PolkadotJS-Apps
+
+You can check whether your Session keys via the PolkadotJS-Apps, you can configure the `custom endpoint` with the appchain RPC endpoit which you can get it from Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)) appchain page.
+
+Once ensuring that you have connected to appchain RPC endpoit, navigate to `Developer` tab and select `Chain State` then select the `session > nextKeys(AccountId32)` option, and select your validator account, and then click `+`. 
+
+![check session keys](../maintain/validator_check_session_keys.jpg)
+
+Check whether the return value is consistent with the Session keys you have set.
