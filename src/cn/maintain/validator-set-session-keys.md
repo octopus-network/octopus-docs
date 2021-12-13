@@ -43,13 +43,9 @@ docker restart seashell
 
 完成上述准备后，验证人访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，然后按照步骤设置会话密钥：
 
-1. 在应用链页面，点击`Validator Panel`，在弹出页面中，选择`Set Session Key`；
+1. 在应用链页面 **My Node** 区域，点击 `Set Session Key`，在弹出页面中，选择你的应用链账户，在`Session Key`输入框中输入`author_rotateKeys`操作输出的`result`字段的内容；
 
-2. 在弹出页面中，选择你的应用链账户；
-
-3. 在`Session Key`输入框中输入`author_rotateKeys`操作输出的`result`字段的内容；
-
-4. 点击`Set`。
+2. 点击`Set`。
 
 如下图所示：
 ![set session keys](../../maintain/validator_set_session_keys.jpg)

@@ -47,13 +47,9 @@ docker restart seashell
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select the `Appchains` tab -> the corresponding appchain, and follow the steps to set the session keys:
 
-1. Click `Validator Panel`, and then in the pop-up window, select `Set Session Key`;
+1. Go to **My Node** panel, click `Set Session Key`, in the pop-up window, select your validator account, enter your `Session Key` which is the hex-encoded "result" field from the output content of `author_rotateKeys`;
 
-2. In the pop-up window, select your validator account;
-
-3. Enter your `Session Key` which is the hex-encoded "result" field from the output content of `author_rotateKeys`;
-
-4. Click `Set`.
+2. Click `Set`.
 
 ![set session keys](../maintain/validator_set_session_keys.jpg)
 

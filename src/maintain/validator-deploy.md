@@ -2,8 +2,6 @@
 
 Octopus Network provides a one-click deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
-![deploy mode](../maintain/validator_deploy_mode.jpg)
-
 > **About the hardware configuration**
 >
 > * In the test network, our one-click deployment tool uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
@@ -18,23 +16,19 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Click `Validator Panel`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
+1. Go to **My Node** panel, click `Deploy Node(Auto Deploy)`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
 
 ![deploy login](../maintain/validator_deploy_login.jpg)
 
-2. Click `Deploy Node`, select `Base Image` with the right image for the appchain and click `Deploy`;
-
-**Note**: The following picture is the appchain Barnacle as an example.
-
 ![deploy node](../maintain/validator_deploy_node.jpg)
 
-4. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and confirm;
+2. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and confirm;
 
 ![deploy apply](../maintain/validator_deploy_apply.jpg)
 
 **Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
 
-5. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
+3. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
 
 ![deploy success](../maintain/validator_deploy_success.jpg)
 

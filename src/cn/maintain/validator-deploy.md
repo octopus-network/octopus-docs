@@ -2,8 +2,6 @@
 
 章鱼网络提供了一键部署验证节点的服务。这是为了简化部署过程，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
 
-![deploy mode](../../maintain/validator_deploy_mode.jpg)
-
 **关于验证节点的硬件配置**
 
 > 在测试网络中，我们的一键部署工具使用AWS EC2实例**t3.small**，默认配置为CPU 2核，内存 2G，SSD存储 80G。如果你手动搭建验证节点，可以参考这个配置。
@@ -14,21 +12,19 @@
 
 验证人访问章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
-1. 在应用链页面中，点击`Validator Panel`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+1. 在应用链页面 **My Node** 区域，点击`Deploy Node(Auto Deploy)`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
 
 ![deploy login](../../maintain/validator_deploy_login.jpg)
 
-3. 点击`Deploy Node`，在弹出页面中，选择`Base Image`，点击`Deploy`；
-
 ![deploy node](../../maintain/validator_deploy_node.jpg)
 
-4. 完成初始化后，点击`Apply`，在弹出的窗口中，输入你的`AWS Access Secret`，点击`Apply`；
+2. 完成初始化后，点击`Apply`，在弹出的窗口中，输入你的`AWS Access Secret`，点击`Apply`；
 
 ![deploy apply](../../maintain/validator_deploy_apply.jpg)
 
 **注**：AWS Secret Key 仅会被用于此次部署，并且不会在任何地方被存储，帐户的风险非常低。
 
-5. 部署过程大约持续3-5分钟，然后刷新页面查看状态，部署成功如下图所示。记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
+3. 部署过程大约持续3-5分钟，然后刷新页面查看状态，部署成功如下图所示。记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
 
 ![deploy success](../../maintain/validator_deploy_success.jpg)
 
