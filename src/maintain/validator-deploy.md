@@ -36,10 +36,11 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 For the validator node, it would last about 1~6 hours (it depends on how long the appchain had been running) to complete the synchronization of the appchain data.
 
-1. Log in to the AWS instance;
+1. Open a Terminal, and log in to the AWS instance via SSH;
 
 ```bash
 ssh -i <Path of the id_rsa file> ubuntu@<IP address of AWS instance>
+# e.g. ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
 ```
 
 2. Check the docker logs of validator;
@@ -63,5 +64,6 @@ To check whether the best block number is the same with the current block number
 **Note**: Login to the AWS server with the downloaded ssh key file, if you encounter an error `Permissions 0644 for 'id_rsa' are too open`, please execute the following command:
 
 ```bash
-chmod 400 ~/.ssh/id_rsa
+chmod 400 <Path of the id_rsa file>
+# e.g. chmod 400 /home/ubuntu/.ssh/id_rsa
 ```

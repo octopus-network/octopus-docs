@@ -30,10 +30,11 @@
 
 ### 检查节点是否完成同步
 
-1. 登录 AWS 实例
+1. 打开终端，用 SSH 登录 AWS 实例
 
 ```bash
 ssh -i <id_rsa文件路径> ubuntu@<AWS实例的IP地址>
+# 示例：ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
 ```
 
 2. 输入以下命令检查验证节点的 Docker 日志
@@ -57,7 +58,8 @@ docker logs seashell
 **备注**：使用下载的密钥文件 SSH 登录到 AWS 服务器实例时，如果遇到错误`Permissions 0644 for 'id_rsa' is too open`，请执行以下命令：
 
 ```bash
-chmod 400 ~/.ssh/id_rsa
+chmod 400 <id_rsa文件路径>
+# 示例：chmod 400 ~/.ssh/id_rsa
 ```
 
 
