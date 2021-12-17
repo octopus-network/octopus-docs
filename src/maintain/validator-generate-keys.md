@@ -40,6 +40,10 @@ Go to the [Polkadot Apps](https://polkadot.js.org/apps/#/explorer), you should s
 
 #### 3. Create the Appchain account
 
-After connecting to the network, you can and create new account.
+After connecting to the network, you can create the new account.
 
 ![create_account](./create_account.jpg)
+
+> **Disclaimer: Webapp and Extension are Separate**
+>
+> * If you followed option 1 or 3 to create the account, you must also load it into your browser plugin. This can be done with your mnemonic or private key json file, detailed here https://support.polkadot.network/support/solutions/articles/65000169952-how-to-restore-your-account-in-polkadot-js-and-the-polkadot-js-browser-plugin*
