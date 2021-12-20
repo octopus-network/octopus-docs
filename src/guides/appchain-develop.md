@@ -2,17 +2,17 @@
 
 In this tutorial, we will:
 
-1. Setup a development environment for an Appchain;
-2. Implement an Web3.0 application with an Appchain;
-3. Start a local testnet for an Appchain;
+1. Setup the development environment;
+2. Implement appchain runtime;
+3. Start the local testnet;
 
-### Setup the Development Environment of the Appchain
+### Setup the Development Environment
 
-It's suggested to start an Appchain node based on [Barnacle](https://github.com/octopus-network/barnacle) which is a template developed by the Octopus Network team. Originate from the [Substrate node template](https://github.com/substrate-developer-hub/substrate-node-template), Barnacle is a minimal working Appchain node template for developers to quickly start their Octopus Appchain project. The frontend of an Appchain can be developed based on the [Front-end template](https://github.com/substrate-developer-hub/substrate-front-end-template).
+It's suggested to start an Appchain node based on [Barnacle](https://github.com/octopus-network/barnacle) which is a template developed by the Octopus Network team. Originating from the [Substrate node template](https://github.com/substrate-developer-hub/substrate-node-template), Barnacle is a minimal working Appchain node template for developers quickly start their Octopus Appchain project. The frontend of an Appchain can be developed based on the [Front-end template](https://github.com/substrate-developer-hub/substrate-front-end-template).
 
-#### Setup a Rust Development Environment.
+#### Setup Rust Development Environment.
 
-Note: Substrate development is easiest on Unix-based operating systems like macOS or Linux and it is highly recommended to use Windows Subsystem Linux (WSL) and follow the instructions for Ubuntu/Debian.
+Note: Substrate development is easiest on Unix-based operating systems like macOS or Linux, and for Windows user, it is highly recommended to use Windows Subsystem Linux (WSL) and follow the instructions for Ubuntu/Debian.
 
 For most users, you can execute the following commands to install the environment.
 
@@ -47,7 +47,7 @@ yarn install
 >
 > If there is a newer version of `substrate-front-end-template`, It is recommended to replace `v3.0.0+monthly-2021-08` with it in the above command.
 
-### Implement an Web3.0 application with an Appchain
+### Implement appchain runtime
 
 Steps to implement an application with an Appchain([Barnacle](https://github.com/octopus-network/barnacle)):
 
@@ -57,7 +57,7 @@ Steps to implement an application with an Appchain([Barnacle](https://github.com
 
 For more information, please refer to the [Add Pallet to Runtime Guide](https://substrate.dev/docs/en/tutorials/add-a-pallet/) in the Substrate Developer Center.
 
-### Start the Local Testnet for an Appchain
+### Start the Local Testnet
 
 Execute the following command to compile and start the local blockchain node:
 

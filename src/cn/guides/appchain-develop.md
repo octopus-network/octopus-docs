@@ -46,6 +46,7 @@ yarn install
 > **备注**
 >
 > 若`substrate-front-end-template`有更新的版本，则建议用其替换掉上述命令中的`v3.0.0+monthly-2021-08`。
+
 ## 实现应用链的业务逻辑
 
 通过分析 [Barnacle](https://github.com/octopus-network/barnacle)，我们知道在应用链中新增业务逻辑，一般使用的开发模式如下：
