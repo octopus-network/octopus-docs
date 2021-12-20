@@ -39,11 +39,7 @@
 
 **验证人**
 
-登录章鱼网络[主网](https://mainnet.oct.network)或[测试网](https://testnet.oct.network)，点击 "Appchains"标签，选择参与质押的应用链，然后按照以下步骤进行：
-
-1. 点击 "Validator Panel"。
-
-2. 在弹出的窗口中，点击 "Claim"。
+登录章鱼网络[主网](https://mainnet.oct.network)或[测试网](https://testnet.oct.network)，点击 "Appchains"标签，选择参与质押的应用链，然后在 "My Staking" 区域，如果已成为验证人超过 1 个奖励周期，将会看到领取奖励的按钮 "Claim ..." ，点击按钮即可。
 
 **备注**：下图是以 DeBio 应用链为例。
 
