@@ -47,9 +47,9 @@
 
 ![自定义类型](../../guides/custom_type.jpg)
 
-然后，选择 Develper -> Sudo -> asserts -> forceCreate，发行一个资产 ID 为 0 的资产。如下图所示：
+然后，选择 Develper -> Sudo -> assets -> forceCreate，发行一个资产 ID 为 0 的资产。如下图所示：
 
-![创建资产](../../guides/create_assert.png)
+![创建资产](../../guides/create_asset.png)
 
 最后，我们可以检查链状态以查看资产是否正确发行。其中 Asset 0 对应主链上的稳定币USDC（我们在ChainSpec中预设了这个映射，usdc.testnet）。
 
@@ -60,7 +60,7 @@
 
 ![转移USDC资产](../../guides/transfer_usdc.jpg)
 
-几分钟后，应用链验证人验证转账交易后，则会为接收方铸造映射资产。我们可以检查链状态以查看资产是否正确转移，选择 Chain State -> Storage -> asserts -> account，可以看到余额为2,000,000，注：精度是6。如下图所示：
+几分钟后，应用链验证人验证转账交易后，则会为接收方铸造映射资产。我们可以检查链状态以查看资产是否正确转移，选择 Chain State -> Storage -> assets -> account，可以看到余额为2,000,000，注：精度是6。如下图所示：
 
 ![映射资产余额](../../guides/appchain_balance.jpg)
 

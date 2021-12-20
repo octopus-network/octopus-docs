@@ -13,13 +13,13 @@ An appchain goes live, the appchain team firstly needs to do:
 
 There are the below five phases:
 
-1. **Registered**: The Appchain will go through the Registered phase after the appchain team submits the registration with the appchain information.
+1. **Registered**: The appchain will go through the Registered phase after the appchain team submits the registration with the appchain information.
 2. **Auditing**: The Octopus team will start the audit within 1-2 weeks. During the Auditing phase, the Octopus team mainly audits for two aspects:
     * The protocol functions are usable/valuable for business purposes;
     * Both the protocol apps and appchain node are implemented as the same with the protocol function specification file provided;
-3. **Voting**: If the Appchain passes the audit, it will go through the Voting phase. This is the **critical stage** for the Appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the Appchain would go through the next phase.
-4. **Booting**: The Appchain with the highest vote scores will go through the Booting phase, the Octopus team will do some preparations for the appchain to go live.
-5. **Running**: After the Octopus team boots the appchain and the Appchain team activates the chain with the Sudo account,  the Octopus team will execute the go-live step, the Appchain will go through the Running phase.
+3. **Voting**: If the appchain passes the audit, it will go through the Voting phase. This is the **critical stage** for the appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the appchain would go through the next phase.
+4. **Booting**: The appchain with the highest vote scores will go through the Booting phase, the Octopus team will do some preparations for the appchain to go live.
+5. **Running**: After the Octopus team boots the appchain and the appchain team activates the chain with the Sudo account,  the Octopus team will execute the go-live step, the appchain will go through the Running phase.
 
 🎉🎉🎉 Congratulations! If you've made it this far, you are now part of the Octopus Network! As an appchain partner, your leased security is valid as long as the community continues to support the project with staking OCT tokens. If you have any questions, please reach out to us on [Discord](https://discord.gg/6GTJBkZA9Q). If you don't have your own appchain channel there, please contact `sheldon@oct.network` to affirm your registration and keep a channel open for your appchain in our Octopus Network community.
 

@@ -48,9 +48,9 @@ After the Appchain goes live, if Appchain users want to use a stable coin on the
 
 ![custom_type](./custom_type.jpg)
 
-* Select `Develper -> Sudo -> asserts -> forceCreate` to issue an asset with asset ID 0:
+* Select `Develper -> Sudo -> assets -> forceCreate` to issue an asset with asset ID 0:
 
-![Create Asset](./create_assert.png)
+![Create Asset](./create_asset.png)
 
 * Check the chain status if the asset was issued correctly, where Asset 0 corresponds to the stable coin USDC on the mainchain (we have this mapping preset in ChainSpec, `usdc.testnet`).
 
@@ -61,7 +61,7 @@ On the [cross-chain bridge](https://bridge.testnet.oct.network/) of Octopus Test
 
 ![Transfer USDC assets](./transfer_usdc.jpg)
 
-A few minutes later, the transfer transaction is verified by the Appchain validators, then the corresponding wrapped assets are minted for the recipient. We can check the chain state to verify if the assets are transferred correctly by selecting `Chain State -> Storage -> asserts -> account` and the balance should be 2,000,000 units(note: the decimal place is 6).
+A few minutes later, the transfer transaction is verified by the Appchain validators, then the corresponding wrapped assets are minted for the recipient. We can check the chain state to verify if the assets are transferred correctly by selecting `Chain State -> Storage -> assets -> account` and the balance should be 2,000,000 units(note: the decimal place is 6).
 
 ![Map Asset Balance](./appchain_balance.jpg)
 
