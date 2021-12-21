@@ -42,9 +42,10 @@ For other OSs, please refer to the [document of Substrate Developer Hub](https:/
 
 #### 1. Get the Appchain Node Binary
 
-You can generate the Appchain node binary by compiling the source code from the Appchain repo. To compile the source code to generate a node binary, execute the following command:
+You can generate the Appchain node binary by compiling the source code from the Appchain repo. Please refer to the following command:
 
 ```bash
+# Only for barnacle appchain
 git clone https://github.com/octopus-network/barnacle.git
 cd barnacle
 cargo build --release

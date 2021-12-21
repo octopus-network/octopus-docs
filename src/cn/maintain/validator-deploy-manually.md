@@ -44,9 +44,10 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 
 #### 1. 获取应用链的节点二进制文件
 
-你可以从应用链的源代码仓库中，通过编译源码，创建应用链的节点二进制文件。编译源码生成节点文件，执行以下命令：
+你可以从应用链的源代码仓库中，通过编译源码，创建应用链的节点二进制文件。编译源码生成节点文件，参考命令如下：
 
 ```bash
+# Barnacle 应用链
 git clone https://github.com/octopus-network/barnacle.git
 cd barnacle
 cargo build --release
