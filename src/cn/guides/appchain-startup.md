@@ -15,12 +15,6 @@
 ### 应用链状态
 
 应用链状态有以下5个阶段：
-1. **Registered**：
-2. **审核**：八达通团队会在1-2周内开始审核。在审核阶段，八达通团队主要审核两个方面：
-
-3. **投票**：如果Appchain通过审核，将进入投票阶段。这是 Appchain 团队向 OCT 持有者请求支持的**关键阶段**。 OCT 持有者可以[投票](./voting-appchain.md) 来决定 Appchain 是否进入下一阶段。
-4. **Booting**：投票得分最高的Appchain将进入下一阶段，Octopus团队将运行四个验证器节点作为Appchain网络的启动节点，Appchain将进入Booting阶段。
-5. **Running**：Octopus团队启动应用链，Appchain团队使用Sudo账户激活链后，Octopus团队将执行上线步骤，Appchain将进入Running阶段。
 
 1. **已注册（Registered）**：应用链团队填写注册信息并提交后将进入 Registered 阶段。
 2. **审计（Auditing）**：通常章鱼网络团队会在1-2周内开始审核，审核通过后会进入 Auditing 阶段，章鱼网络团队主要从两个方面进行审计：
