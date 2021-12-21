@@ -12,7 +12,7 @@
 > 
 > 如果没有 AWS 账户，请先[创建和设置 AWS 账户](https://aws.amazon.com/cn/getting-started/guides/setup-environment/?nc1=h_ls)
 >
-> [创建 AWS Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
+> [创建 AWS Access Key](https://docs.aws.amazon.com/zh_cn/IAM/latest/UserGuide/id_credentials_access-keys.html)
 
 
 验证人访问章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
