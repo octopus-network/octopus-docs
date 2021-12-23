@@ -75,8 +75,6 @@ cargo build
 
 一旦完成应用链的开发，以及和章鱼网络 [Pallets](https://github.com/octopus-network/octopus-pallets) 的集成，应用链团队需要发布一个应用链的版本。记录Github发布的URL，注册应用链到章鱼网络中时会用到。
 
-![发布](../../guides/release.png)
-
 > 备注：
 >
 > * Chain Spec文件可以放在源代码的一个文件夹下。例如：[resources](https://github.com/octopus-network/barnacle/tree/master/resources)

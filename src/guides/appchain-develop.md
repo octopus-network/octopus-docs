@@ -73,8 +73,6 @@ If you want to run a local front-end to interact with local nodes, you can refer
 
 Once finishing the Appchain development, and the integration of the Octopus [Pallets](https://github.com/octopus-network/octopus-pallets), the Appchain team needs to publish a release of the Appchain. And then record the Github release URL which is used to register the Appchain into the Octopus Network.
 
-![release](./release.png)
-
 > **Note**
 >
 > * The Chain Spec file could be placed under one folder of source code. E.g:[resources](https://github.com/octopus-network/barnacle/tree/master/resources)
