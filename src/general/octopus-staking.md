@@ -7,10 +7,10 @@ In staking, there are two roles: validator and delegator. OCT holders can partic
 * Validator
     - Choose appchain and stake 10,000 OCT as least;
     - Run the validator node, ensure its availability is as high as possible
-    - The un-bond period is 28 days;
+    - The unbond period is 28 days;
 * Delegator
-    - Stake (delegate) the OCT to the validator, no other operations are required;
-    - The un-bond period is 7 days;
+    - Delegate the OCT to the validator, no other operations are required;
+    - The unbond period is 28 days;
 
 ### Rewards
 

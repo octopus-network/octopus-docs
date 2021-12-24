@@ -18,4 +18,4 @@ Your delegation will become active in the next Era. Eras last 24 hours by defaul
 
 ### Stop delegating
 
-You can not stop delegating during the appchain **Staking** phase. For an appchain that is already running, you can stop delegating, and you can unstake, and then your delegated OCT will give back after the unbinding period. The delegator's unbinding period is 7 days.
+You can not stop delegating during the appchain **Staking** phase. For an appchain that is already running, you can stop delegating, and you can unstake, and then your delegated OCT will give back after the unbinding period. The delegator's unbinding period is 28 days.
