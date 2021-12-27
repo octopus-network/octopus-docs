@@ -1,14 +1,14 @@
 ## 搭建验证节点
 
-章鱼网络提供了一键部署验证节点的服务。这是为了简化部署过程，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
+章鱼网络提供了自动部署验证节点的服务。这是为了简化部署过程，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
 
 **关于验证节点的硬件配置**
 
-> 在测试网络中，我们的一键部署工具使用AWS EC2实例**t3.small**，默认配置为CPU 2核，内存 2G，SSD存储 80G。如果你手动搭建验证节点，可以参考这个配置。
+> 在测试网络中，我们的自动部署工具使用AWS EC2实例**t3.small**，默认配置为CPU 2核，内存 2G，SSD存储 80G。如果你手动搭建验证节点，可以参考这个配置。
 
 ### 自动搭建验证节点
 
-> **注**：目前一键部署服务仅支持部署验证节点到 AWS 服务器。
+> **注**：目前自动部署服务仅支持部署验证节点到 AWS 服务器。
 > 
 > 如果没有 AWS 账户，请先[创建和设置 AWS 账户](https://aws.amazon.com/cn/getting-started/guides/setup-environment/?nc1=h_ls)
 >
@@ -17,7 +17,7 @@
 
 验证人访问章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
-1. 在应用链页面 **My Node** 区域，点击`Deploy Node(Auto Deploy)`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+1. 在应用链页面 **My Node** 区域，点击`Auto Deploy Node`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
 
 ![deploy login](../../maintain/validator_deploy_login.jpg)
 

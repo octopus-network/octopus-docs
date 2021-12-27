@@ -1,14 +1,14 @@
 ## Deploy Validator Node
 
-Octopus Network provides a one-click deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
+Octopus Network provides a auto-deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
 > **About the hardware configuration**
 >
-> * In the test network, our one-click deployment tool uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
+> * In the test network, our auto-deploy service uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
 
 ### Automatically Deploy
 
-> **Note**: Currently, the auto-deployment tool only supports deploying validator nodes to AWS server.
+> **Note**: Currently, the auto-deploy service only supports deploying validator nodes to AWS server.
 >
 > If no AWS account, please firstly [create and setup AWS account](https://aws.amazon.com/getting-started/guides/setup-environment/?nc1=h_ls)
 >
@@ -16,7 +16,7 @@ Octopus Network provides a one-click deploy service of validator nodes. Optional
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Go to **My Node** panel, click `Deploy Node(Auto Deploy)`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
+1. Go to **My Node** panel, click `Auto Deploy Node`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
 
 ![deploy login](../maintain/validator_deploy_login.jpg)
 
