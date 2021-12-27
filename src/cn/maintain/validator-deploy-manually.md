@@ -72,7 +72,15 @@ cargo build --release
 
 > 备注：[测试网](https://testnet.oct.network/) 设置选项 `--chain` 值为 `octopus-testnet`
 
-确保节点已完成链数据的同步，检查是否有类似的输出如下：
+### Telemetry
+
+Telemetry 会暴露节点的信息，你可以使用`--telemetry-url`选项连接到指定的 telemetry 服务器。如果你决定将节点信息发送到公共 telemetry，对于主网你可以使用`'wss://telemetry.mainnet.octopus.network/submit 9 '`。 此外需要用`--name`选项设置节点名称。这样访问[telemetry](https://telemetry.mainnet.octopus.network/)，就可以通过你的节点名查看你节点的状态。
+
+> 注意：
+
+> * 对于测试网，使用`'wss://telemetry.mainnet.octopus.network/submit 9'`设置`--telemetry-url`选项，并访问[telemetry](https://telemetry.testnet.octopus.network/）查看节点状态。
+
+另外一种方式检查节点是否已完成链数据的同步，检查节点的日志，是否有类似的输出如下：
 
 ```bash
 2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)

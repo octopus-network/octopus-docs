@@ -70,7 +70,15 @@ Set option `--chain` with the value `octopus-mainnet` for the [Mainnet](https://
 
 > Note: Set option `--chain` with the value `octopus-testnet` for the [testnet](https://testnet.oct.network/)
 
-Finally, the validator node must complete the synchronization of the chain data, and to check whether there is an similar output as the following:
+### Telemetry
+
+The telemetry will expose the node’s information, you can connect to specified telemetry servers with the `--telemetry-url` option. If you decided to send your node’s information to public telemetry, for the mainnet, you can use the value `'wss://telemetry.mainnet.octopus.network/submit 9'` to set the `--telemetry-url` option. Also, you need set the `--name` option with the node name. And then you can access the [telemetry](https://telemetry.mainnet.octopus.network/), and check the status of node via the node name.
+
+> Note: 
+
+> * For the testnet, set the `--telemetry-url` option with the value `'wss://telemetry.mainnet.octopus.network/submit 9'` and access the [telemetry](https://telemetry.testnet.octopus.network/) to check the status of node.
+
+Other option, you can check whether the validator node complete the synchronization of the chain data, check the log whether there is an similar output as the following:
 
 ```bash
 2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)
