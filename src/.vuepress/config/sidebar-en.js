@@ -40,6 +40,7 @@ module.exports = [
         '/maintain/validator-deploy',
         '/maintain/validator-set-session-keys',
         '/maintain/validator-stake',
+        '/maintain/monitor-node',
       ]
     }
 ];

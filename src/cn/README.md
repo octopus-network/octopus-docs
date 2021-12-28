@@ -17,3 +17,4 @@
     * [部署验证节点](./maintain/validator-deploy.md)
     * [设置会话密钥](./maintain/validator-set-session-keys.md)
     * [质押 OCT](./maintain/validator-stake.md)
+    * [监控节点](./maintain/monitor-node.md)
