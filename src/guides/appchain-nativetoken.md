@@ -8,6 +8,11 @@ We will cover the 3 topics below, employing Appchain "Barnacle" and its native t
 * Transfer Appchain's native token from Appchain to mainchain
 * Redeem Appchain's native token from mainchain to Appchain 
 
+### The limitation for the cross-chain transfer
+
+1. Appchain -> NEAR: the total market value of the wrapped appchain tokens is not higher than 2/3 of the total market value of the OCT token staking in the anchor contract of the appchain;
+2. NEAR -> Appchain: the total market value of all non-appchain native tokens is not higher than 1/3 of the total market value of the OCT token staking in the anchor contract of the appchain.
+
 ### Create Wrapper Token on NEAR
 
 After an Appchain goes live, if the Appchain users want to use the Appchain's native token on the mainchain, the contract of the corresponding wrapper token, a NEP-141 asset, must be deployed on the mainchain beforehand.  
