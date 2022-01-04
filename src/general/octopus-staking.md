@@ -37,14 +37,6 @@ The validator or delegator needs to manually claim the rewards via Octopus App. 
 
 **Warning**: If the validator or delegator does not claim his staking reward within the period, the reward will go to a public treasury, and can’t be claimed anymore.
 
-**Validator**
-
-Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), click the `Appchains` tab and select the Appchain you had staked for. And then in the "My Staking" area, if you have become a validator for more than 1 reward cycle, you would see the reward button "Claim ...", just click the button.
-
-**Note**: The following picture is the appchain DeBio as an example.
-
-![claim](../maintain/validator_claim_rewards.jpg)
-
 ### Slashing
 
 In LPoS, if the validator node misbehaves in the network, both the validator and their delegators will be slashed, thus losing a certain percentage of the stake OCT.

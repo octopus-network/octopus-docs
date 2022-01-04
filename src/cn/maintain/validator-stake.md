@@ -22,3 +22,19 @@
 点击`Register`。
 
 ![stake](../../maintain/validator_stake.jpg)
+
+### 领取奖励
+
+登录章鱼网络[主网](https://mainnet.oct.network)或[测试网](https://testnet.oct.network)，点击 "Appchains"标签，选择参与质押的应用链，然后在 "My Staking" 区域，如果已成为验证人超过 1 个奖励周期，将会看到领取奖励的按钮 "Claim ..." ，点击按钮即可。
+
+**备注**：下图是以 DeBio 应用链为例。
+
+![claim](../../maintain/validator_claim_rewards.jpg)
+
+### 停止验证并提现质押
+
+您可以停止做验证人并取回您的质押，有一个延迟退出期，称为解绑期。验证人的解绑期为 28 天，在解绑期结束之前，您将无法转移您的代币，并且在此期间您不会获得任何质押奖励。
+
+解绑期结束后，您可以通过点击`My Staking`面板中的`Withdraw Stakes`按钮来取回质押。
+
+![withdraw stakes](../../maintain/withdraw_stakes.jpg)

@@ -27,9 +27,17 @@ module.exports = [
       collapsable: false,
       children: [
         '/cn/guides/voting-appchain',
-        '/cn/guides/staking-delegate',
       ]
     },
+    {
+      title: '委托人指南',
+      path: '/cn/maintain/delegator-delegate',
+      collapsable: false,
+      children: [
+        '/cn/maintain/delegator-delegate',
+        '/cn/maintain/delegator-operations',
+      ]
+    },    
     {
       title: '验证人指南',
       path: '/cn/maintain/validator-guide',

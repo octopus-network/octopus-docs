@@ -28,11 +28,19 @@ module.exports = [
       collapsable: false,
       children: [
         '/guides/voting-appchain',
-        '/guides/staking-delegate',
       ]
-    },    
+    },
     {
-      title: 'Validator Guide',
+      title: 'Delegator Guides',
+      path: '/maintain/delegator-delegate',
+      collapsable: false,
+      children: [
+        '/maintain/delegator-delegate',
+        '/maintain/delegator-operations',
+      ]
+    },        
+    {
+      title: 'Validator Guides',
       path: '/maintain/validator-guide',
       collapsable: false,
       children: [
