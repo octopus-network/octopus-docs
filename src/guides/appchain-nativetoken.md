@@ -10,8 +10,7 @@ We will cover the 3 topics below, employing Appchain "Barnacle" and its native t
 
 ### The limitation for the cross-chain transfer
 
-1. Appchain -> NEAR: the total market value of the wrapped appchain tokens is not higher than 2/3 of the total market value of the OCT token staking in the anchor contract of the appchain;
-2. NEAR -> Appchain: the total market value of all non-appchain native tokens is not higher than 1/3 of the total market value of the OCT token staking in the anchor contract of the appchain.
+* NEAR -> Appchain: the total market value of all non-appchain native tokens is not higher than 1/3 of the total market value of the OCT token staking in the anchor contract of the appchain.
 
 ### Create Wrapper Token on NEAR
 
