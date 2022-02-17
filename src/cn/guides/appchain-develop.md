@@ -5,6 +5,7 @@
 1. 搭建应用链的开发环境；
 2. 实现应用链的业务逻辑；
 3. 启动应用链的本地网络；
+4. 使用索引器 Indexer；
 
 ### 搭建应用链的开发环境
 
@@ -142,3 +143,9 @@ cargo build
 >
 > * Chain Spec文件可以放在源代码的一个文件夹下。例如：[resources](https://github.com/octopus-network/barnacle/tree/master/resources)
 > * 和章鱼网络 Pallets 的集成，请参考[Barnacle](https://github.com/octopus-network/barnacle)
+
+### 使用索引器
+
+章鱼网络会为每条应用链准备索引器，它提供 GraphQL 接口并使前端开发比 RPC 更加简化。现在每条应用链的区块链浏览器，就是基于这个索引器实现服务。
+
+如何使用索引器？请参考 SubQuery 项目中的[教程](https://doc.subquery.network/tutorials_examples/run-indexer/)。

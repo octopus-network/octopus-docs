@@ -5,6 +5,7 @@ In this tutorial, we will:
 1. Setup the development environment;
 2. Implement appchain runtime;
 3. Start the local testnet;
+4. Use the Indexer;
 
 ### Setup the Development Environment
 
@@ -148,3 +149,9 @@ Once finishing the Appchain development, and the integration of the Octopus Pall
 >
 > * The Chain Spec file could be placed under one folder of source code. E.g:[resources](https://github.com/octopus-network/barnacle/tree/master/resources)
 > * For the integration, please refer to the [Barnacle](https://github.com/octopus-network/barnacle)
+
+### Use the Indexer
+
+The Octopus Network will prepare an indexer for each appchain, which provide GraphQL interface and make frond-end development much more simplified than the RPC. Now each Appchain explorer is based on this indexer service.
+
+How to use the Indexer? Please refer to the [tutorials](https://doc.subquery.network/tutorials_examples/run-indexer/) from the SubQuery.
