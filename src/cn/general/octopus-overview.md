@@ -9,12 +9,13 @@
 
 | 缩写 | 全称  |
 |------|------|
-| D | Delegator |
-| S | Staking |
-| V | Validator |
-| RT | Runtime |
-| N | Node, 不参与质押的节点 | 
+| D | Delegator, 通过委托OCT给验证人参与质押 |
+| S | Staking, 维护应用链的安全 |
+| V | Validator, 通过质押OCT并运行验证节点参与质押 |
+| RT | (Substrate) Runtime, 应用链的应用逻辑 |
+| N | Node, 应用链的全节点 | 
 | CEXs | 中心化交易所 | 
+
 ### 章鱼中继
 
 章鱼中继是运行在 NEAR 区块链网络上的一组智能合约。

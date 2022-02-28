@@ -8,11 +8,11 @@ The full name of abbreviations in the architecture diagram:
 
 | Abbreviations | Full Name  |
 |------|------|
-| D | Delegator |
-| S | Staking |
-| V | Validator, a node involved in staking |
-| RT | Runtime |
-| N | Node | 
+| D | Delegator, delegate OCT to the validator for the staking |
+| S | Staking, maintain the secure of appchain |
+| V | Validator, stake OCT and run validator node for the staking |
+| RT | (Substrate) RunTime, the appchain application logic |
+| N | Node, the appchain full nodes | 
 
 ### Octopus Relay
 
