@@ -44,6 +44,6 @@ After the unbonding period, you can withdraw your stakes via clicking the `Withd
 
 ![withdraw stakes](../maintain/withdraw_stakes.jpg)
 
-If you plan to stop the validator node, firstly you **MUST** do the `Unbond` operation and keep the validator node running until the next round validators comes online（next era ended）.
+If you plan to stop the validator node, firstly you **MUST** do the `Unbond` operation and keep the validator node running until the next round validators comes online（current era ended）.
 
 For one-click deployment, you can do the `Destory` operation in **My Node** panel. For manual deployment, you can manually stop the validator node.
