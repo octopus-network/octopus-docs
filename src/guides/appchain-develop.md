@@ -14,7 +14,7 @@ Note: Substrate development is easiest on Unix-based operating systems like macO
 
 For most users, you can execute the following commands to install the environment.
 
-`curl [https://getsubstrate.io](https://getsubstrate.io/) -sSf | bash -s - --fast`
+`curl https://getsubstrate.io/ -sSf | bash -s - --fast`
 
 For more information, please refer to the [Installation Guide](https://substrate.dev/docs/en/knowledgebase/getting-started/) in the Substrate Developer Center.
 
