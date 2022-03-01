@@ -38,3 +38,7 @@
 解绑期结束后，您可以通过点击`My Staking`面板中的`Withdraw Stakes`按钮来取回质押。
 
 ![withdraw stakes](../../maintain/withdraw_stakes.jpg)
+
+如果您打算停止验证节点，首先您**必须**执行 Unbond 操作并保持验证节点运行，直到下一轮验证人上线（当前 Era 结束）。
+
+对于一键部署的节点，您可以在 **My Node** 面板中进行 **Destory** 操作。对于手动部署，您可以手动停止验证节点。

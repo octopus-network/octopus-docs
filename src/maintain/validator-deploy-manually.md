@@ -81,3 +81,7 @@ You can check whether the validator node complete the synchronization of the cha
 2021-09-21 00:13:18 [54434] 🐙 Current block: 54434 (parent hash: 0x84aa3d1b6455859f9503d6ecc70b50b183141fe08f5b0695357e00fe1d24d915)
 2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
 ```
+
+Previous step：[Generate Validator Account](./maintain/validator-generate-keys.html)
+
+Next step：[Set Session Keys](./maintain/validator-set-session-keys.html)
