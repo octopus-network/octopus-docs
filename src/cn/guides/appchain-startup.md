@@ -91,13 +91,23 @@
       }
    ```
 
-    应用链团队基于它生成 raw chainspec，并将其命名为`octopus-mainnet.json`用于主网或`octopus-testnet.json`用于测试网，将其提交到应用链 Github 仓库（例如 <APPCHAIN_REPO>/resources/）。示例命令：
+    应用链团队基于它，生成 raw chainspec，将其提交到应用链 Github 仓库（例如 <APPCHAIN_REPO>/resources/）。示例命令：
 
     ```bash
     $ ./target/debug/debio build-spec --chain=debionetwork.json --raw > octopus-testnet.json
     ```
 
     同时请将人类可读的 chainspec 文件发送到 Discord，章鱼网络团队需要做再次检查。
+
+   > **备注**：检查应用链 node 的实现，文件`<APPCHAIN_REPO>/node/src/command.rs`中的`load_spec`函数，是否添加了以下的内容设置选项`--chain`值：
+   > * 主网，用`octopus-mainnet`
+   > * 测试网，用`octopus-testnet`
+
+   Barnacle模版的参考代码如下：
+   
+   ```Rust
+   "octopus-testnet" => Box::new(chain_spec::octopus_testnet_config()?),
+   ```
 
 3. 章鱼网络团队使用应用链团队发布的代码构建 Docker 镜像，然后会启动4个验证节点，4个引导节点的链，部署 API 网关、中继等服务，并会将 API 网关的 wss 端点发送给应用链团队。
 

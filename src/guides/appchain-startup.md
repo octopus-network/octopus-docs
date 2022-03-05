@@ -80,6 +80,16 @@ When an appchain is ready to boot, the Octopus team moves it to the booting phas
 
     At the same time, please send the human-readable chainspec file to Discord, the Octopus team need to do a double check.
 
+   > **Note**: Check the appchain node, the `load_spec` function in the file `<APPCHAIN_REPO>/node/src/command.rs`, whether the following content is added to set the option `--chain` value:
+    > * for mainnet, use `octopus-mainnet`
+    > * for testnet, use `octopus-testnet`
+
+   The example code in the Barnacle template is as follows:
+   
+    ```Rust
+    "octopus-testnet" => Box::new(chain_spec::octopus_testnet_config()?),
+    ```    
+
 3. The Octopus team use the code appchain team released to build a docker image, and then will launch a four-validators + four-bootnodes chain, deploy the API gateway, relayer and other services, and then send the wss endpoint of API gateway to the Appchain team.
 
 4. The Appchain team connect the polkadotjs apps with the wss endpoint, and then use `sudo` account to activate the appchain, do the `sudo` call `octopusAppchain -> forceSetIsActivated` with `yes`.
