@@ -16,6 +16,7 @@ module.exports = [
       collapsable: false,
       children: [
         '/cn/guides/appchain-develop',
+        '/cn/guides/appchain-evm',
         '/cn/guides/appchain-indexer',
         '/cn/guides/appchain-register',
         '/cn/guides/appchain-startup',
