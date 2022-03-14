@@ -22,9 +22,8 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ![deploy node](../maintain/validator_deploy_node.jpg)
 
-2. After deployment initialization, click `Apply`, and then in the pop-up window, enter your `AWS Access Secret` and confirm;
+2. After deployment initialization, click `Deploy`, enter your `AWS Access Secret` and finish.
 
-![deploy apply](../maintain/validator_deploy_apply.jpg)
 
 **Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
 

@@ -32,7 +32,7 @@ And then click `Register`.
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), click the `Appchains` tab and select the Appchain you had staked for. And then in the "My Staking" area, if you have become a validator for more than 1 reward cycle, you would see the reward button "Claim ...", just click the button.
 
-**Note**: The following picture is the appchain DeBio as an example.
+**Note**: The following picture is the appchain DISC as an example.
 
 ![claim](../maintain/validator_claim_rewards.jpg)
 
