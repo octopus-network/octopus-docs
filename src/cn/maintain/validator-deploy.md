@@ -23,7 +23,7 @@
 
 ![deploy node](../../maintain/validator_deploy_node.jpg)
 
-2. 完成初始化后，点击`Apply`，在弹出的窗口中，输入你的`AWS Access Secret`，点击`Apply`；
+2. 完成初始化后，点击`Deploy`，输入你的`AWS Access Secret`，完成；
 
 ![deploy apply](../../maintain/validator_deploy_apply.jpg)
 

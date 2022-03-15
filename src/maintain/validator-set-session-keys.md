@@ -49,9 +49,11 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 1. Go to **My Node** panel, click `Set Session Key`, in the pop-up window, select your validator account, enter your `Session Key` which is the hex-encoded "result" field from the output content of `author_rotateKeys`;
 
+![set session keys0](../maintain/validator_set_session_keys0.jpg)
+
 2. Click `Set`.
 
-![set session keys](../maintain/validator_set_session_keys.jpg)
+![set session keys1](../maintain/validator_set_session_keys1.jpg)
 
 
 ### Check session keys via PolkadotJS-Apps
