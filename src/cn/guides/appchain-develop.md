@@ -62,6 +62,8 @@ yarn install
 - 然后在 `runtime/Cargo.toml` 和 `runtime/src/lib.rs` 中添加 `pallet` ，将其包含到 `runtime` 中；
 - 最后在 `node/Cargo.toml` 中添加 `runtime` 名称和相对路径，将其安装在节点中。
 
+**注意**：目前，请将 `MILLISECS_PER_BLOCK` 的值设置为 6000。
+
 想了解更多信息，可以参考 Substrate 开发者中心的[添加 Pallet 到 Runtime 指南](https://substrate.dev/docs/en/tutorials/add-a-pallet/)。
 
 #### 应用链的配置

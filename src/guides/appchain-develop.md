@@ -71,6 +71,8 @@ Steps to implement an application specific pallets:
 2. Add the `pallet` into `runtime/Cargo.toml`, `runtime/src/lib.rs`;
 3. Add the `runtime` into `node/Cargo.toml`, install it in the node.
 
+**Note**: Currently, please set the value of `MILLISECS_PER_BLOCK` with 6000. 
+
 For more information, please refer to the [Add Pallet to Runtime Guide](https://substrate.dev/docs/en/tutorials/add-a-pallet/) in the Substrate Developer Center.
 
 #### Appchain configuration
