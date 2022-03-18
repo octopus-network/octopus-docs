@@ -84,4 +84,4 @@ You can check whether the validator node complete the synchronization of the cha
 
 Previous step：[Generate Validator Account](./maintain/validator-generate-keys.html)
 
-Next step：[Set Session Keys](./maintain/validator-set-session-keys.html)
+Next step：[Set Session Keys](./validator-set-session-keys.html)
