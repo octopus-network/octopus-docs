@@ -82,6 +82,6 @@ You can check whether the validator node complete the synchronization of the cha
 2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
 ```
 
-Previous step：[Generate Validator Account](./maintain/validator-generate-keys.html)
+Previous step：[Generate Validator Account](./validator-generate-keys.md)
 
-Next step：[Set Session Keys](./validator-set-session-keys.html)
+Next step：[Set Session Keys](./validator-set-session-keys.md)

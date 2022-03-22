@@ -84,6 +84,6 @@ cargo build --release
 2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
 ```
 
-上一步：[生成验证人帐户](./maintain/validator-generate-keys.html)
+上一步：[生成验证人帐户](./validator-generate-keys.md)
 
-下一步：[设置会话密钥](./maintain/validator-set-session-keys.html)
+下一步：[设置会话密钥](./validator-set-session-keys.md)
