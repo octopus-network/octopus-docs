@@ -38,7 +38,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ### Stop validating and withdraw stake
 
-You can stop validating and retrieve your stake, and there is a delayed exit period, called the unbonding period and it is 28 days. You will not be able to transfer your tokens before this period has elapsed, and you will not receive any staking rewards during this period.
+You can stop validating and retrieve your stake, and there is a delayed exit period, called the unbonding period and it is 21 days. You will not be able to transfer your tokens before this period has elapsed, and you will not receive any staking rewards during this period.
 
 After the unbonding period, you can withdraw your stakes via clicking the `Withdraw Stakes` button from `My Staking` panel.
 
