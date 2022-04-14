@@ -20,9 +20,9 @@
     * **Github**: The Github repository of AppChain
     * **Github Release**: The Github URL of the release of the Appchain
     * **Initial Supply**: The Appchain native token amount of the initial issues
-    * **Premined**: Part of Initial Supply, owned by Beneficiary
-    * **Beneficiary**: The NEAR account to receive the premined native token
-    * **IDO Amount**: The Appchain token amounts through the DEX offer liquidity before the mainnet goes live 
+    * **Premined**: The number of wrapped tokens that be Premined to the NEAR network in the total initial issuance
+    * **Beneficiary**: The NEAR account to receive the Premined wrapped token
+    * **IDO Amount**: The number of tokens used by the Appchain team to use Skyward for IDO before the Mainnet launch
     * **Era Reward**: The Appchain native token amount as its block reward for each day (1 era = 1 day)
     * **Email**: The contact email of the Appchain
 

@@ -20,9 +20,9 @@
     * **Github**: 应用链的 Github 仓库
     * **Github Release**: 应用链上线章鱼网络，发布版本的Github URL
     * **Initial Supply**: 应用链初始发行的原生通证数量
-    * **Premined**: 初始发行总量的一部分，归受益人所有
-    * **Beneficiary**: 受益人NEAR 钱包账户，应用链用来接收初始发行的原生通证
-    * **IDO Amount**: 在主网上线前，应用链通过去中心化交易所提供流动性的通证数量
+    * **Premined**: 初始发行总量中 Premined 到 NEAR 网络的 wrapped 通证数量
+    * **Beneficiary**: 应用链团队接收 wrapped 通证的 NEAR 钱包账户
+    * **IDO Amount**: 在主网上线前，应用链团队使用 Skyward 进行 IDO 的通证数量
     * **Era Reward**: 应用链每天区块奖励的通证数量（1 era = 1天）
     * **Email**: 应用链联系人邮箱
 
