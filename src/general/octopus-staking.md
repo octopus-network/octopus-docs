@@ -35,7 +35,7 @@ We assume that: a validator node, the validator stake 10,000 OCT, the delegator 
 
 The validator or delegator needs to manually claim the rewards via Octopus App. The staking reward keeps up to 84 Era, which is approximately 84 days.
 
-**Warning**: If the validator or delegator does not claim his staking reward within the period, the reward will go to a public treasury, and can’t be claimed anymore.
+**Warning**: If the validator or delegator does not claim his staking reward within the period, currently, the reward is locked in the contract, and can’t be claimed.
 
 ### Slashing
 
