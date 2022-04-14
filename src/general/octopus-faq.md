@@ -5,7 +5,3 @@
 **Does the Octopus Network have Collators like Polkadot?**
 
 No. The collators in Polkadot maintain parachain by collecting parachain transactions and producing state transition proofs for relaychain/Polkadot validators. In Octopus Network, each appchain is an **independent** blockchain, there are validator nodes of the appchain in the Octopus network, which collect and verify the transactions of the appchain. These validator nodes are run by OCT holders who stake OCTs to provide security for the appchain.
-
-**Can Appchain developers customize the block creation time?**
-
-The block creation time is customizable, and it has a [default value](https://github.com/octopus-network/barnacle/blob/master/runtime/src/lib.rs#L156) in the Barnacle template.

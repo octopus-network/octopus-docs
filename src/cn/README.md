@@ -2,6 +2,7 @@
 
 * [基础知识](./general/octopus-overview.md)
     * [章鱼网络概述](./general/octopus-overview.md)
+    * [章鱼网络基础设施](./general/infrastructure.md)
     * [章鱼网络质押](./general/octopus-staking.md)
     * [常见问答](./general/octopus-faq.md)
 * [开发者指南](./guides/appchain-develop.md)
