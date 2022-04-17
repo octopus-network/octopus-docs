@@ -46,11 +46,11 @@ After the Appchain goes live, if Appchain users want to use a stable coin on the
 }
 ```
 
-![custom_type](./custom_type.jpg)
+![custom_type](../images/guides/custom_type.jpg)
 
 * Select `Develper -> Sudo -> assets -> forceCreate` to issue an asset with asset ID 0:
 
-![Create Asset](./create_asset.png)
+![Create Asset](../images/guides/create_asset.png)
 
 * Check the chain status if the asset was issued correctly, where Asset 0 corresponds to the stable coin USDC on the mainchain (we have this mapping preset in ChainSpec, `usdc.testnet`).
 
@@ -59,16 +59,16 @@ After the Appchain goes live, if Appchain users want to use a stable coin on the
 
 On the [cross-chain bridge](https://bridge.testnet.oct.network/) of Octopus Test Network, we select the Appchain `easydeal-demo` which will receive the stablecoin USDC  transferred from the mainchain and the account `oct.testnet` as the sender; The recipient is an SS58 address of an Appchain account, which will receive the 2 USDC after transferred.
 
-![Transfer USDC assets](./transfer_usdc.jpg)
+![Transfer USDC assets](../images/guides/transfer_usdc.jpg)
 
 A few minutes later, the transfer transaction is verified by the Appchain validators, then the corresponding wrapped assets are minted for the recipient. We can check the chain state to verify if the assets are transferred correctly by selecting `Chain State -> Storage -> assets -> account` and the balance should be 2,000,000 units(note: the decimal place is 6).
 
-![Map Asset Balance](./appchain_balance.jpg)
+![Map Asset Balance](../images/guides/appchain_balance.jpg)
 
 ### Transfer Back to the Mainchain from Appchain
 
 Following to the previous operation, we switch the sender and receiver accounts to transfer the stablecoin asset back.
 
-![Redeem USDC assets](./redeem_usdc.jpg)
+![Redeem USDC assets](../images/guides/redeem_usdc.jpg)
 
 The asset balance will be updated after the transfer back event is verified by Octopus Relay on the mainchain.

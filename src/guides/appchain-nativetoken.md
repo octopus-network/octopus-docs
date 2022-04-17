@@ -22,23 +22,23 @@ Appchain teams may refer to the [sample contract](https://github.com/octopus-net
 
 On the [Octopus testnet bridge](https://bridge.testnet.oct.network/), we select  Barnacle as the Appchain in the cross-chain transfer.
 
-![BarnacleAsAppchain](./BarnacleAsAppchain.png)
+![BarnacleAsAppchain](../images/guides/BarnacleAsAppchain.png)
 
 Select the Appchain's account as the sender.
 
-![AppchainAccAsSender](./AppchainAccAsSender.png)
+![AppchainAccAsSender](../images/guides/AppchainAccAsSender.png)
 
 > Note: If your Appchain account doesn't have a balance of BAR, You may transfer some BAR from Appchain's built-in account ALICE to your account via Polkadot.js.
 
-![AppchainAliceSend](./AppchainAliceSend.png)
+![AppchainAliceSend](../images/guides/AppchainAliceSend.png)
 
 Set the NEAR account hellocto.testnet as the receiver and fire the transaction.
 
-![FireAppNativeToMainchain](./FireAppNativeToMainchain.png)
+![FireAppNativeToMainchain](../images/guides/FireAppNativeToMainchain.png)
 
 
 ### Redeem Appchain's native token from mainchain to Appchain
 
 Following the previous operation, we switch the sender and receiver to redeem the Appchain's native token back to the Appchain.
 
-![RedeemAppNativeToAppchain](./RedeemAppNativeToAppchain.png)
+![RedeemAppNativeToAppchain](../images/guides/RedeemAppNativeToAppchain.png)

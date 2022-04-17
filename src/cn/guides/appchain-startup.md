@@ -2,7 +2,7 @@
 
 应用链网络启动流程如下图所示：
 
-![启动流程](../../guides/appchain_pipeline.png)
+![启动流程](../../images/guides/appchain_pipeline.png)
 
 ### 先决条件
 

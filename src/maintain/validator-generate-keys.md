@@ -30,19 +30,19 @@ To create an Appchain account by following a few steps:
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain. You can get the RPC Endpoint of the appchain from the appchain page. 
 
-![appchain_rpc](./appchain_rpc.jpg)
+![appchain_rpc](../images/maintain/appchain_rpc.jpg)
 
 #### 2. Set the Polkadot Apps
 
 Go to the [Polkadot Apps](https://polkadot.js.org/apps/#/explorer), you should set the custom rpc with the RPC Endpoint, click the Switch, and then you could connect to the Appchain network.
 
-![set_network](./set_network.jpg)
+![set_network](../images/maintain/set_network.jpg)
 
 #### 3. Create the Appchain account
 
 After connecting to the network, you can create the new account.
 
-![create_account](./create_account.jpg)
+![create_account](../images/maintain/create_account.jpg)
 
 > **Disclaimer: Webapp and Extension are Separate**
 >

@@ -30,16 +30,16 @@ Subkey 是个 Substrate 命令行程序，用于生成或还原 Substrate 密钥
 
 访问章鱼网络([Mainnet](https://mainnet.oct.network) 和 [Testnet](https://testnet.oct.network))，选择`Appchains`选项，进入应用链列表页面，从应用链页面可以获取应用链的 RPC Endpoint。
 
-![appchain_rpc](../../maintain/appchain_rpc.jpg)
+![appchain_rpc](../../images/maintain/appchain_rpc.jpg)
 
 #### 2. 设置 PolkadotJS Apps
 
 进入[Polkadot Apps](https://polkadot.js.org/apps/#/explorer)，用上一步中的 RPC Endpoint 设置自定义 RPC，即可连接到应用链网络。
 
-![set_network](../../maintain/set_network.jpg)
+![set_network](../../images/maintain/set_network.jpg)
 
 #### 3. 创建应用链账户
 
 连接到网络后，即可创建新帐户。
 
-![create_account](../../maintain/create_account.jpg)
+![create_account](../../images/maintain/create_account.jpg)

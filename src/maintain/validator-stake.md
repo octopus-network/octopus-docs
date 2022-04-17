@@ -20,7 +20,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
  
 And then click `Register`. 
 
-![stake](../maintain/validator_stake.jpg)
+![stake](../images/maintain/validator_stake.jpg)
 
 > **Note**: 
 >
@@ -34,7 +34,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 **Note**: The following picture is the appchain DISC as an example.
 
-![claim](../maintain/validator_claim_rewards.jpg)
+![claim](../images/maintain/validator_claim_rewards.jpg)
 
 ### Stop validating and withdraw stake
 
@@ -42,7 +42,7 @@ You can stop validating and retrieve your stake, and there is a delayed exit per
 
 After the unbonding period, you can withdraw your stakes via clicking the `Withdraw Stakes` button from `My Staking` panel.
 
-![withdraw stakes](../maintain/withdraw_stakes.jpg)
+![withdraw stakes](../images/maintain/withdraw_stakes.jpg)
 
 If you plan to stop the validator node, firstly you **MUST** do the `Unbond` operation and keep the validator node running until the next round validators comes online（current era ended）.
 

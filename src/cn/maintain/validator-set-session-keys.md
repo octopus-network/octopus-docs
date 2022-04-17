@@ -45,12 +45,12 @@ docker restart seashell
 
 1. 在应用链页面 **My Node** 区域，点击 `Set Session Key`，在弹出页面中，选择你的应用链账户，在`Session Key`输入框中输入`author_rotateKeys`操作输出的`result`字段的内容；
 
-![set session keys0](../../maintain/validator_set_session_keys0.jpg)
+![set session keys0](../../images/maintain/validator_set_session_keys0.jpg)
 
 2. 点击`Set`。
 
 如下图所示：
-![set session keys1](../../maintain/validator_set_session_keys1.jpg)
+![set session keys1](../../images/maintain/validator_set_session_keys1.jpg)
 
 
 ### 通过 PolkadotJS-Apps 检查 session keys 
@@ -59,6 +59,6 @@ docker restart seashell
 
 一旦确保已经连接到应用链的，导航到`开发者`选项，并选择`链状态`，然后选择`session > nextKeys(AccountId32)`选项，并选择你验证节点使用的验证人账户，然后点击`+`。
 
-![check session keys](../../maintain/validator_check_session_keys.jpg)
+![check session keys](../../images/maintain/validator_check_session_keys.jpg)
 
 检查返回值是否和你设置的 Session keys 一致。

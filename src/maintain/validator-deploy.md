@@ -18,9 +18,9 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 1. Go to **My Node** panel, click `Auto Deploy Node`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
 
-![deploy login](../maintain/validator_deploy_login.jpg)
+![deploy login](../images/maintain/validator_deploy_login.jpg)
 
-![deploy node](../maintain/validator_deploy_node.jpg)
+![deploy node](../images/maintain/validator_deploy_node.jpg)
 
 2. After deployment initialization, click `Deploy`, enter your `AWS Access Secret` and finish.
 
@@ -29,7 +29,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 3. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
 
-![deploy success](../maintain/validator_deploy_success.jpg)
+![deploy success](../images/maintain/validator_deploy_success.jpg)
 
 ### Check the synchronization of the validator node
 

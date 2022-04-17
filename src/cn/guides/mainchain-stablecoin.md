@@ -45,11 +45,11 @@
 }
 ```
 
-![自定义类型](../../guides/custom_type.jpg)
+![自定义类型](../../images/guides/custom_type.jpg)
 
 然后，选择 Develper -> Sudo -> assets -> forceCreate，发行一个资产 ID 为 0 的资产。如下图所示：
 
-![创建资产](../../guides/create_asset.png)
+![创建资产](../../images/guides/create_asset.png)
 
 最后，我们可以检查链状态以查看资产是否正确发行。其中 Asset 0 对应主链上的稳定币USDC（我们在ChainSpec中预设了这个映射，usdc.testnet）。
 
@@ -58,17 +58,17 @@
 
 打开章鱼测试网的[跨链桥](https://bridge.testnet.oct.network/)页面，我们选择应用链`easydeal-demo`，将稳定币USDC从主链转移到该应用链。同时选择账户`oct.testnet`作为发送人，收款人是个应用链账户的 SS58 地址，我们转账 2 USDC。如下图所示：
 
-![转移USDC资产](../../guides/transfer_usdc.jpg)
+![转移USDC资产](../../images/guides/transfer_usdc.jpg)
 
 几分钟后，应用链验证人验证转账交易后，则会为接收方铸造映射资产。我们可以检查链状态以查看资产是否正确转移，选择 Chain State -> Storage -> assets -> account，可以看到余额为2,000,000，注：精度是6。如下图所示：
 
-![映射资产余额](../../guides/appchain_balance.jpg)
+![映射资产余额](../../images/guides/appchain_balance.jpg)
 
 ### 应用链转回主链
 
 和上一步操作类似，我们仅需切换发送方和接收方账户，即可赎回主链USDC，完成稳定币转账。如下图所示：
 
-![赎回USDC资产](../../guides/redeem_usdc.jpg)
+![赎回USDC资产](../../images/guides/redeem_usdc.jpg)
 
 资产赎回事件由主链的Octopus Relay验证后，资产余额将会更新。
 

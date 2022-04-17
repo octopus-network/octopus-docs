@@ -26,6 +26,6 @@
     * **Era Reward**: The Appchain native token amount as its block reward for each day (1 era = 1 day)
     * **Email**: The contact email of the Appchain
 
-   ![Register Screenshot](./register.png)
+   ![Register Screenshot](../images/guides/register.png)
 
 3. Click *Submit* to send the registration request.

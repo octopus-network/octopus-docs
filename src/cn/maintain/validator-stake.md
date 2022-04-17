@@ -21,7 +21,7 @@
     
 点击`Register`。
 
-![stake](../../maintain/validator_stake.jpg)
+![stake](../../images/maintain/validator_stake.jpg)
 
 ### 领取奖励
 
@@ -29,7 +29,7 @@
 
 **备注**：下图是以 DeBio 应用链为例。
 
-![claim](../../maintain/validator_claim_rewards.jpg)
+![claim](../../images/maintain/validator_claim_rewards.jpg)
 
 ### 停止验证并提现质押
 
@@ -37,7 +37,7 @@
 
 解绑期结束后，您可以通过点击`My Staking`面板中的`Withdraw Stakes`按钮来取回质押。
 
-![withdraw stakes](../../maintain/withdraw_stakes.jpg)
+![withdraw stakes](../../images/maintain/withdraw_stakes.jpg)
 
 如果您打算停止验证节点，首先您**必须**执行 Unbond 操作并保持验证节点运行，直到下一轮验证人上线（当前 Era 结束）。
 

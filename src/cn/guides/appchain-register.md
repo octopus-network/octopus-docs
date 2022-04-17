@@ -26,6 +26,6 @@
     * **Era Reward**: 应用链每天区块奖励的通证数量（1 era = 1天）
     * **Email**: 应用链联系人邮箱
 
-   ![注册截图](../../guides/register.png)
+   ![注册截图](../../images/guides/register.png)
 
 3. 点击 *Submit* 发送注册交易。

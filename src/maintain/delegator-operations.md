@@ -9,7 +9,7 @@ After delegating, you can do the below operations via clicking the `Action` butt
 
 **Note**: The following picture is the appchain Myriad as an example.
 
-![delegator action](../maintain/delegator_action.jpg)
+![delegator action](../images/maintain/delegator_action.jpg)
 
 ### Unbond delegation and withdraw stake
 
@@ -17,7 +17,7 @@ You can stop delegating and retrieve your stake, and there is a delayed exit per
 
 After the unbonding period, you can withdraw your stakes via clicking the `Withdraw Stakes` button from `My Staking` panel as the same with the validator.
 
-![withdraw stakes](../maintain/withdraw_stakes.jpg)
+![withdraw stakes](../images/maintain/withdraw_stakes.jpg)
 
 
 

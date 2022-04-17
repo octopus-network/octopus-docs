@@ -6,7 +6,7 @@ For the Appchains in the **Voting** phase, all OCT holders can upvote or downvot
 2. Navigate to the **Appchains** page and select an Appchain in the **Voting**, and then click it.
 3. Click **Upvote** or **Downvote** and deposit a certain amount of ​OCTs for voting the Appchain. The more OCT amount you are willing to deposit, the stronger your vote will be weighted. You can withdraw your OCT tokens at any time. However, in order for your votes to be counted, you must leave your OCT in deposit until the conclusion of the Voting phase.
 
-![voting appchain](./voting_appchain.jpg)
+![voting appchain](../images/guides/voting_appchain.jpg)
 
 > Notes:
 >

@@ -7,7 +7,7 @@
 * 领取奖励
 * 解绑委托（若有未领取的奖励，需先领取奖励）
 
-![委托人操作](../../maintain/delegator_action.jpg)
+![委托人操作](../../images/maintain/delegator_action.jpg)
 
 ### 解绑委托并提现质押
 
@@ -15,4 +15,4 @@
 
 解绑期结束后，与验证人相同，您可以通过点击`My Staking`面板中的`Withdraw Stakes`按钮来取回质押。
 
-![withdraw stakes](../../maintain/withdraw_stakes.jpg)
+![withdraw stakes](../../images/maintain/withdraw_stakes.jpg)

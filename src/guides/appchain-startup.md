@@ -1,6 +1,6 @@
 ## Appchain Startup
 
-![Appchain_Pipeline](./appchain_pipeline.png)
+![Appchain_Pipeline](../images/guides/appchain_pipeline.png)
 
 ### Appchain Status
 
