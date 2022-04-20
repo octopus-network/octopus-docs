@@ -35,14 +35,21 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 For the validator node, it would last about 1~6 hours (it depends on how long the appchain had been running) to complete the synchronization of the appchain data.
 
-1. Open a Terminal, and log in to the AWS instance via SSH;
+1. Firstly, please change the permissions of the downloaded ssh key file 'id_rsa' via executing the following command:
+
+```bash
+chmod 400 <Path of the id_rsa file>
+# e.g. chmod 400 /home/ubuntu/.ssh/id_rsa
+```
+
+2. Open a Terminal, and log in to the AWS instance via SSH;
 
 ```bash
 ssh -i <Path of the id_rsa file> ubuntu@<IP address of AWS instance>
 # e.g. ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
 ```
 
-2. Check the docker logs of validator;
+3. Check the docker logs of validator;
 
 ```bash
 docker logs seashell
@@ -58,11 +65,4 @@ To check whether the best block number is the same with the current block number
 2021-09-21 00:13:18 ✨ Imported #54434 (0xba36…ee68)
 2021-09-21 00:13:18 [54434] 🐙 Current block: 54434 (parent hash: 0x84aa3d1b6455859f9503d6ecc70b50b183141fe08f5b0695357e00fe1d24d915)
 2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
-```
-
-**Note**: Login to the AWS server with the downloaded ssh key file, if you encounter an error `Permissions 0644 for 'id_rsa' are too open`, please execute the following command:
-
-```bash
-chmod 400 <Path of the id_rsa file>
-# e.g. chmod 400 /home/ubuntu/.ssh/id_rsa
 ```
