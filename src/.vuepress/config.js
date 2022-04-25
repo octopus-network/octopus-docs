@@ -28,7 +28,7 @@ module.exports = {
   themeConfig: {
     logo: '/logo-blue.png',
     lastUpdated: true,
-    editLinks: true,
+    editLinks: false,
     sidebar: 'auto',
 
     author: 'Octopus Team',
@@ -61,7 +61,7 @@ module.exports = {
           },
           { text: '首页', link: '/cn/', icon: '' }
         ],
-        sidebar: require('./config/sidebar-zh')        
+        sidebar: require('./config/sidebar-zh')
       }
     }
   }
