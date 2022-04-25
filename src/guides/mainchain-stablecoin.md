@@ -2,19 +2,18 @@
 
 Octopus Network provides out-of-the-box cross-chain functions for Appchains, including mainchain (NEAR) stablecoin transfer and Appchain native asset transfer.
 
-This guide describes how to transfer the mainchain's stablecoin through Octopus' built-in cross-chain function. 
+This guide describes how to transfer the mainchain's stablecoin through Octopus' built-in cross-chain function.
 
-* Create stablecoin's wrapper asset on Appchain
-* Transfer stablecoin to Appchain
-* Transfer stablecoin's wrapper asset to mainchain from Appchain
-
+- Create stablecoin's wrapper asset on Appchain
+- Transfer stablecoin to Appchain
+- Transfer stablecoin's wrapper asset to mainchain from Appchain
 
 ### Create Wrapper Assets
 
 After the Appchain goes live, if Appchain users want to use a stable coin on the mainchain, such as USDC, we need to create the corresponding wrapper asset on the Appchain first. Usually, this step is done through the governance of the Appchain. However, we use `sudo` instead to demo.
 
-* Connect to the Appchain on Polkadot JS. 
-* Set the custom type, select `Settings -> Developer`, add the following JSON content and save it:
+- Connect to the Appchain on Polkadot JS.
+- Set the custom type, select `Settings -> Developer`, add the following JSON content and save it:
 
 ```json
 {
@@ -48,16 +47,15 @@ After the Appchain goes live, if Appchain users want to use a stable coin on the
 
 ![custom_type](../images/guides/custom_type.jpg)
 
-* Select `Develper -> Sudo -> assets -> forceCreate` to issue an asset with asset ID 0:
+- Select `Develper -> Sudo -> assets -> forceCreate` to issue an asset with asset ID 0:
 
 ![Create Asset](../images/guides/create_asset.png)
 
-* Check the chain status if the asset was issued correctly, where Asset 0 corresponds to the stable coin USDC on the mainchain (we have this mapping preset in ChainSpec, `usdc.testnet`).
-
+- Check the chain status if the asset was issued correctly, where Asset 0 corresponds to the stable coin USDC on the mainchain (we have this mapping preset in ChainSpec, `usdc.testnet`).
 
 ### Transfer Mainchain to Appchain
 
-On the [cross-chain bridge](https://bridge.testnet.oct.network/) of Octopus Test Network, we select the Appchain `easydeal-demo` which will receive the stablecoin USDC  transferred from the mainchain and the account `oct.testnet` as the sender; The recipient is an SS58 address of an Appchain account, which will receive the 2 USDC after transferred.
+On the [cross-chain bridge](https://testnet.oct.network/bridge) of Octopus Test Network, we select the Appchain `easydeal-demo` which will receive the stablecoin USDC transferred from the mainchain and the account `oct.testnet` as the sender; The recipient is an SS58 address of an Appchain account, which will receive the 2 USDC after transferred.
 
 ![Transfer USDC assets](../images/guides/transfer_usdc.jpg)
 
