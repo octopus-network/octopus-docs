@@ -30,7 +30,7 @@ When an appchain is ready to boot, the Octopus team moves it to the booting phas
    ./target/debug/debio build-spec --disable-default-bootnode --chain dev > debionetwork.json
    ```
 
-   And then please carefully copy the snippet information provided from the Octopus team into the chainspec file. Example:
+   And then, the Octopus team will provide the snippet information file directly to you. Please carefully copy the snippet information provided into the chainspec file. Example:
 
    ```bash
    
@@ -78,8 +78,8 @@ When an appchain is ready to boot, the Octopus team moves it to the booting phas
     $ ./target/debug/debio build-spec --chain=debionetwork.json --raw  > octopus-testnet.json
     ```
 
-    At the same time, please send the human-readable chainspec file to Discord, the Octopus team need to do a double check.
-
+    At the same time, please send the human-readable chainspec file to the Octopus team for review. 
+    
    > **Note**: Check the appchain node, the `load_spec` function in the file `<APPCHAIN_REPO>/node/src/command.rs`, whether the following content is added to set the option `--chain` value:
     > * for mainnet, use `octopus-mainnet`
     > * for testnet, use `octopus-testnet`
