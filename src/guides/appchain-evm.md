@@ -1,6 +1,6 @@
 ## EVM Compatible Appchain
 
-The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) is an EVM compatible appchain development template provided by Octopus Network. It uses the [Frontier](https://github.com/paritytech/frontier) developed by Parity, and its functionality is basically the same as [Moonbeam Network](https://moonbeam.network/).
+The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) is an EVM compatible appchain development template provided by Octopus Network. It uses the [Frontier](https://github.com/paritytech/frontier) developed by Parity.
 
 The developer team can use this template to develop an EVM compatible appchain, and it supports the team directly deploying their DApp written by Solidity as an appchain running in the Octopus Network. The appchain benefit from being an autonomous blockchain, and also, it obtains what [Octopus Network](https://oct.network/) provides flexible leased security, out-of-the-box interoperability, rich infrastructure services, and an active community.
 
@@ -9,11 +9,11 @@ The Barnacle EVM appchain is **Running** in the [Octopus Testnet](https://testne
 ## How to Use Octopus Barnacle EVM 
 ### A walkthrough on how you can use Octopus Network's Barnacle EVM
 
-Ethereum has become the Fat-Hub of the blockchain ecosystem. Follow the money - as they say. All interoperable blockchain projects that seek growth must connect to the Ethereum network because most Web 3.0 assets are there. Most independent blockchain projects have some EVM compatibility system in place. Some prefer bridges, and others create an EVM-compatible environment on their native chain. 
+Ethereum has become the Fat-Hub of the blockchain ecosystem. Follow the money - as they say. All interoperable blockchain projects that seek growth must connect to the Ethereum network because most Web 3.0 assets are there. Most independent blockchain projects have some EVM compatibility system in place. Some prefer bridges, and others create an EVM-compatible environment on their native chain. The goal of having an EVM-compatible Appchain is to streamline the environment for the validators and app users. App users use EVM toolsets like MetaMask, but validators still can use the Polkadot.js plugin wallet.
 
 For example, Parity, the company behind Substrate, created the Frontier pallet to allow Substrate-based blockchains to have EVM compatible smart contracts within their Substrate blockchains. A Polkadot Parachain bases itself on the promise of 100% EVM compatibility, Moonbeam.
 
-Octopus Network also supports a basic level of EVM compatibility. Because Appchains are Substrate chains on NEAR, you can use Parity's Frontier pallets directly in your Appchain. The base template of Octopus' EVM compatible blockchain is the [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) using Parity's Frontier pallet and functions similar to the Moonbeam network.
+Octopus Network also supports a basic level of EVM compatibility. Because Appchains are Substrate chains on NEAR, you can use Parity's Frontier pallets directly in your Appchain. The base template of Octopus' EVM compatible blockchain is the [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) using Parity's Frontier pallet.
 
 To give you a better feeling of how it works, you can follow along in this tutorial.
 
@@ -155,7 +155,7 @@ You can interact with your smart contract like in any other network using `ether
 
 ### Conclusion
 
-The Barnacle EVM is the basis for your EVM compatible Appchain. You can deploy your smart contracts in Barnacle EVM just like any other Testnet or Mainnet environment. Barnacle EVM is similar to Moonbeam because it is a Substrate-based EVM.
+The Barnacle EVM is the basis for your EVM compatible Appchain. You can deploy your smart contracts in Barnacle EVM just like any other Testnet or Mainnet environment. While it is easy to mistake Barnacle EVM with Moonbeam because of its similarities, the Barnacle EVM is not just a Substrate-based EVM. The road that the Octopus developers chose is to give a streamline approach for the dApp users to use EVM toolsets like MetaMask, but validators still can use the Polkadot.js plugin wallet. Considering the good experience of EVM-compatible Appchain's validators and app users.
 
 You can use any Ethereum development tools to interact with Barnacle EVM. In this walkthrough, you used Hardhat. But there are other environments that you can use, including Truffle, Remix, Brownie, and many more. You can read other examples in the Moonbeam docs.
 
