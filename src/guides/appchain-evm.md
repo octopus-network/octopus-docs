@@ -2,9 +2,9 @@
 
 The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) is an EVM compatible appchain development template provided by Octopus Network. It uses the [Frontier](https://github.com/paritytech/frontier) developed by Parity.
 
-The developer team can use this template to develop an EVM compatible appchain, and it supports the team directly deploying their DApp written by Solidity as an appchain running in the Octopus Network. The appchain benefit from being an autonomous blockchain, and also, it obtains what [Octopus Network](https://oct.network/) provides flexible leased security, out-of-the-box interoperability, rich infrastructure services, and an active community.
+The developer team can use this template to develop an EVM-compatible Appchain. It supports the team directly deploying their DApp written by Solidity as an Appchain running in the Octopus Network. The Appchain benefits from being an autonomous blockchain. Also, it obtains what [Octopus Network](https://oct.network/) provides flexible leased security, out-of-the-box interoperability, rich infrastructure services, and an active community.
 
-The Barnacle EVM appchain is **Running** in the [Octopus Testnet](https://testnet.oct.network/appchains).
+The Barnacle EVM Appchain is **Running** in the [Octopus Testnet](https://testnet.oct.network/appchains).
 
 ## How to Use Octopus Barnacle EVM 
 ### A walkthrough on how you can use Octopus Network's Barnacle EVM
@@ -82,11 +82,11 @@ When running the blockchain, don't forget to add the `--dev` and `--tmp` flags t
 
 Congratulations, you ran your first Barnacle EVM! You can connect directly to the EVM through `http://127.0.0.1:9933`.
 
-> Note: use the port `9933`, it will be different from the default Substrate Websocket port `9944`.
+> Note: use the port `9933`. It will be different from the default Substrate Websocket port `9944`.
 
 ### Deploying Contracts to the Barnacle EVM Using Hardhat
 
-Deploying smart contracts to Barnacle EVM is easy. To simplify the process, you can use the smart contract templates provided within `docs/example`. Hardhat is an Ethereum development environment built using NodeJS, so to use it, you would need to have NodeJS and NPM pre-installed.
+Deploying smart contracts to Barnacle EVM is easy. You can use the smart contract templates provided within `docs/example` to simplify the process. Hardhat is an Ethereum development environment built using NodeJS, so to use it, you would need to have NodeJS and NPM pre-installed.
 
 Enter the `docs/example` repository, and install the dependencies using NPM:
 
@@ -95,7 +95,7 @@ cd docs/example
 npm i
 ```
 
-Within the directory, you will see a `contracts` and, `.maintain` folder. You can see the ready-to-use smart contracts within the `contracts` folder. `.maintain` will house all the necessary scripts, including deployment and testing scripts.
+Within the directory, you will see a `contracts` and `.maintain` folder. You can see the ready-to-use smart contracts within the `contracts` folder. `.maintain` will house all the necessary scripts, including deployment and testing.
 
 The Hardhat project template needs a `.env` file to function:
 
@@ -151,7 +151,7 @@ Executor ERC20 Account Balance:  80000000000000000000
 
 There you go! You deployed your first (two) smart contracts on Barnacle EVM, an ERC20 token, and a simple escrow smart contract.
 
-You can interact with your smart contract like in any other network using `ethers.js` you can look to the `.maintain/deployment.js` script for examples.
+You can interact with your smart contract like in any other network using `ethers.js`; you can look to the `.maintain/deployment.js` script for examples.
 
 ### Conclusion
 
