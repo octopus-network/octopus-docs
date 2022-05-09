@@ -5,7 +5,7 @@ The LPoS (Leased Proof-of-Stake) of Octopus Network is to select a group of netw
 In staking, there are two roles: validator and delegator. OCT holders can participate in the staking to become:
 
 * Validator
-    - Choose appchain and stake 10,000 OCT as least;
+    - Choose appchain and stake 5,000 OCT as least;
     - Run the validator node, ensure its availability is as high as possible
     - The unbond period is 21 days;
 * Delegator
