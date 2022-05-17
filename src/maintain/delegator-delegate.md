@@ -12,6 +12,10 @@ The delegating steps are as follows:
 2. Navigate to the **Appchains** page, select the appchain and click it.
 3. From the validators list, select the validator you want to delegate, and then click the "Delegate" button. You will see a pop-up window, input the amount of OCT you want to delegate, confirm the transaction, and you're done - you are now delegating.
 
+**Note**: The following picture is the appchain Myriad as an example.
+
+![delegator action](../images/maintain/delegator_action.jpg)
+
 **Note**: For delegator, the current minimum amount is 200 OCT. (From April 14th, 2022)
 
 Your delegation will become active in the next Era. Eras last 24 hours by default - depending on when you do this, your delegation may become active almost immediately, or you may have to wait almost the entire 24 hours. When your delegation are active, you will start to get rewards allocated to you. In order to claim them (i.e. add them to your account), you must manually claim them.
