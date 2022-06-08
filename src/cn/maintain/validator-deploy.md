@@ -4,12 +4,14 @@
 
 **关于验证节点的硬件配置**
 
-> 在测试网络中，我们的自动部署工具使用AWS EC2实例**t3.small**，默认配置为CPU 2核，内存 2G，SSD存储 80G。如果你手动搭建验证节点，可以参考这个配置。
+> 我们的自动部署工具可以选择使用AWS或者GCP，如果你手动搭建验证节点，可以参考以下配置：
+>
+> 如果使用AWS，默认配置为EC2实例**t3.small**，CPU 2核，内存 2G，SSD存储 80G。
+>
+> 如果使用GCP，默认配置为EC2实例**e2-small**，CPU 2核，内存 2G，SSD存储 128G。
 
-### 自动搭建验证节点
+### 使用AWS自动搭建验证节点
 
-> **注**：目前自动部署服务仅支持部署验证节点到 AWS 服务器。
-> 
 > 如果没有 AWS 账户，请先[创建和设置 AWS 账户](https://aws.amazon.com/cn/getting-started/guides/setup-environment/?nc1=h_ls)
 >
 > [创建 AWS Access Key](https://docs.aws.amazon.com/zh_cn/IAM/latest/UserGuide/id_credentials_access-keys.html)
@@ -33,6 +35,31 @@
 
 ![deploy success](../../images/maintain/validator_deploy_success.jpg)
 
+### 使用GCP自动搭建验证节点
+
+> 请先确保能登陆[GCP](https://console.cloud.google.com/)，如未注册请先注册。
+
+1. 在“我的节点”面板中登录您的 Google 帐户。
+![gcp-step1](../../images/maintain/gcp-step1.png)
+
+2. 登陆后，点击`Deploy A Node`
+![gcp-step2](../../images/maintain/gcp-step2.png)
+
+3. 选择[`Projects`](https://cloud.google.com/storage/docs/projects)和[`Deploy Region`](https://cloud.google.com/docs/geography-and-regions)，然后点击`Deploy`。
+![gcp-step3](../../images/maintain/gcp-step3.png)
+
+4. 此时可以看到节点状态为`Init`，同时生成了`Node ID`，点击`Apply`。
+![gcp-step4](../../images/maintain/gcp-step4.png)
+
+5. 此时状态变为Applying，代表节点在GCP上正在启动。点击Refresh可以查询状态。
+![gcp-step5](../../images/maintain/gcp-step5.png)
+
+6. 当看到以下页面时，状态变为Running，说明GCP的实例已经启动运行。
+![gcp-step6](../../images/maintain/gcp-step6.png)
+
+最后，如果您想删除节点，点击`Destroy`，然后点击`···`选择`Clear Access Key`。
+
+
 ### 检查节点是否完成同步
 
 1. 首先修改下载的密钥文件 'id_rsa' 的权限，通过执行以下命令：
@@ -42,10 +69,10 @@ chmod 400 <id_rsa文件路径>
 # 示例：chmod 400 ~/.ssh/id_rsa
 ```
 
-2. 打开终端，用 SSH 登录 AWS 实例
+2. 打开终端，用 SSH 登录实例
 
 ```bash
-ssh -i <id_rsa文件路径> ubuntu@<AWS实例的IP地址>
+ssh -i <id_rsa文件路径> ubuntu@<实例的IP地址>
 # 示例：ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
 ```
 
