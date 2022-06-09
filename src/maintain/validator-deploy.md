@@ -4,12 +4,15 @@ Octopus Network provides a auto-deploy service of validator nodes. Optionally, v
 
 > **About the hardware configuration**
 >
-> * In the test network, our auto-deploy service uses the AWS EC2 instance **t3.small**, the default configuration is 2 core, 2G, 80G SSD. If you manually set up your validator node, you could refer to this configuration.
-
-### Automatically Deploy
-
-> **Note**: Currently, the auto-deploy service only supports deploying validator nodes to AWS server.
+> Our auto-deploy service can choose to use AWS or GCP. If you manually set up your validator node, you could refer to following configuration:
 >
+> If using AWS, the default configuration is EC2 instance **t3.small**, CPU 2 cores, memory 2G, SSD storage 80G.
+>
+> If using GCP, the default configuration is instance **e2-small**, CPU 2 cores, memory 2G, SSD storage 128G.
+
+
+### Using AWS Automatically Deploy
+
 > If no AWS account, please firstly [create and setup AWS account](https://aws.amazon.com/getting-started/guides/setup-environment/?nc1=h_ls)
 >
 > To create [AWS Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
@@ -31,6 +34,30 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ![deploy success](../images/maintain/validator_deploy_success.jpg)
 
+### Using GCP Automatically Deploy
+
+> Please make sure that you can log in to [GCP](https://console.cloud.google.com/), if not, please register first.
+
+1. Log in to your Google account in `My Node` pannel.
+![gcp-step1](../images/maintain/gcp-step1.png)
+
+2. After logging in, click `Deploy A Node`
+![gcp-step2](../images/maintain/gcp-step2.png)
+
+3. Select [`Projects`](https://cloud.google.com/storage/docs/projects) and [`Deploy Region`](https://cloud.google.com/docs/geography-and-regions ), then click `Deploy`.
+![gcp-step3](../images/maintain/gcp-step3.png)
+
+4. At this point, you can see that the node status is `Init`, and the `Node ID` is generated at the same time, click `Apply`.
+![gcp-step4](../images/maintain/gcp-step4.png)
+
+5. At this point, the status changes to Applying, which means the node is starting up on GCP. Click Refresh to query the status.
+![gcp-step5](../images/maintain/gcp-step5.png)
+
+6. When you see the following page, the status changes to Running, indicating that the GCP instance has been started and running.
+![gcp-step6](../images/maintain/gcp-step6.png)
+
+Finally, if you want to delete the node, click `Destroy`, then click `...` to select `Clear Access Key`.
+
 ### Check the synchronization of the validator node
 
 For the validator node, it would last about 1~6 hours (it depends on how long the appchain had been running) to complete the synchronization of the appchain data.
@@ -42,10 +69,10 @@ chmod 400 <Path of the id_rsa file>
 # e.g. chmod 400 /home/ubuntu/.ssh/id_rsa
 ```
 
-2. Open a Terminal, and log in to the AWS instance via SSH;
+2. Open a Terminal, and log in to the instance via SSH;
 
 ```bash
-ssh -i <Path of the id_rsa file> ubuntu@<IP address of AWS instance>
+ssh -i <Path of the id_rsa file> ubuntu@<IP address of instance>
 # e.g. ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
 ```
 
