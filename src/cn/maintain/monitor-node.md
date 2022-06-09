@@ -4,10 +4,10 @@ Telemetry 会暴露节点的信息，你可以使用`--telemetry-url`选项连�
 
 > 注意：
 > * 对于测试网，使用`'wss://telemetry.mainnet.octopus.network/submit 9'`设置`--telemetry-url`选项，并访问 [telemetry](https://telemetry.testnet.octopus.network/) 查看节点状态。
-> * 如果使用了自动部署，`--name`节点名称将默认为`validator-[near account]`, 其中`[near account]`为near钱包的账户名，如下图。
+> * 如果使用了自动部署，验证人的节点名称将默认为`validator-[near account]`, 其中`[near account]`为验证人的NEAR账户名，如下图。
 ![telemetry](../../images/maintain/telemetry.png)
 
 ## 实例信息
 
-如果使用了自动部署，可以在`My Node`面板，点击`···`，选择`Instance Info`可以查看当前实例的运行硬件状态信息（比如CPU、硬盘、内存），如下图：
+如果使用了自动部署，可以在`My Node`面板，点击`···`，选择`Instance Info`可以查看运行验证节点实例的硬件状态信息（比如CPU、硬盘、内存），如下图：
 ![instance](../../images/maintain/instance_info.png)

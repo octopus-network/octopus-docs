@@ -8,7 +8,7 @@
 >
 > 如果使用AWS，默认配置为EC2实例**t3.small**，CPU 2核，内存 2G，SSD存储 80G。
 >
-> 如果使用GCP，默认配置为EC2实例**e2-small**，CPU 2核，内存 2G，SSD存储 128G。
+> 如果使用GCP，默认配置为实例**e2-small**，CPU 2核，内存 2G，SSD存储 128G。
 
 ### 使用AWS自动搭建验证节点
 

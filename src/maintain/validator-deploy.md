@@ -8,7 +8,7 @@ Octopus Network provides a auto-deploy service of validator nodes. Optionally, v
 >
 > If using AWS, the default configuration is EC2 instance **t3.small**, CPU 2 cores, memory 2G, SSD storage 80G.
 >
-> If using GCP, the default configuration is EC2 instance **e2-small**, CPU 2 cores, memory 2G, SSD storage 128G.
+> If using GCP, the default configuration is instance **e2-small**, CPU 2 cores, memory 2G, SSD storage 128G.
 
 
 ### Using AWS Automatically Deploy
