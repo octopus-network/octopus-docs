@@ -67,7 +67,7 @@ git clone https://github.com/octopus-network/barnacle
 Then, go into the cloned directory and enter the EVM branch.
 ```
 cd barnacle
-git switch release-v0.9.13-evm
+git switch release-v0.9.18-evm
 ```
 
 The current version of the Barnacle EVM is v0.9.13, but it will increment future updates. You can check the active branches within the Barnacle repository for the most recent updates.
