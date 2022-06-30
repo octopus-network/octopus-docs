@@ -136,14 +136,14 @@ npx hardhat run .maintain/deployment.js --network barnacle
 The deployment script also has tests in them, and it should return something like this:
 
 ```
-Deploying to network hardhat barnacle
-Deploying contracts with the account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
-Executor contracts with the account: 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+Deploying to network barnacle http://127.0.0.1:9933
+Deploying contracts with the account: 0x4FF637E5326Ff581E8F62cd66BD116dd27Ac800B
+Executor contracts with the account: 0x19Ee2F7736Dcb4A76d567F35bfEf55aE24f7A5Ae
 Contracts deployed!
-Deployed ERC20 contract address 0x5FbDB2315678afecb367f032d93F642f64180aa3
-Deployed Escrow Contract address 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Deployed ERC20 contract address 0xfBAf19640F23b36Df6d4d599aB8bCf2C92f95D69
+Deployed Escrow Contract address 0x5a51cE149EcD3312C994Febaae69E4Beb939A0c6
 Approved smart contract!
-Executor Account Balance:  9999999925130589727342
+Executor Account Balance:  340282366920938463462374562926906777218
 Executor ERC20 Account Balance:  80000000000000000000
 Executor ERC20 Account Balance:  50000000000000000000
 Executor ERC20 Account Balance:  80000000000000000000
@@ -152,6 +152,34 @@ Executor ERC20 Account Balance:  80000000000000000000
 There you go! You deployed your first (two) smart contracts on Barnacle EVM, an ERC20 token, and a simple escrow smart contract.
 
 You can interact with your smart contract like in any other network using `ethers.js`; you can look to the `.maintain/deployment.js` script for examples.
+
+### How to Connect Barnacle EVM to MetaMask
+
+You can connect your MetaMask account to Barnacle EVM.
+
+First, you need to open MetaMask find the "Add Network" button.
+
+![Add network](../images/guides/appchain-evm/image-1.png)
+
+Then fill in the Barnacle EVM details. Name the network "Barnacle EVM", then insert the default Barnacle EVM RPC "http://127.0.0.1:9933".
+
+The chain ID of this particular Barnacle EVM is [1008](https://github.com/octopus-network/barnacle/blob/33075c20577d9a796ead10c1a10977fce9e97371/runtime/src/lib.rs#L672).
+
+You can name the native token "DOLLAR".
+
+After you filled in the form, click "Save".
+
+![Describe network](../images/guides/appchain-evm/image-2.png)
+
+You might need to wait a second for the MetaMask to connect.
+
+![Waiting...](../images/guides/appchain-evm/image-3.png)
+
+If you are successfully connected you should see your default funds.
+
+![Waiting...](../images/guides/appchain-evm/image-4.png)
+
+Barnacle EVM uses H160 addresses and is compatible to the Ethereum EVM you can use your Ethereum wallet private keys on Barnacle just fine.
 
 ### Conclusion
 
