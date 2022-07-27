@@ -13,7 +13,7 @@
     * **Token Info**
         - **Token Name**: 应用链原生通证的名称
         - **Token Symbol**: 应用链原生通证的符号
-        - **Icon**: 应用链原生通证的图标链接
+        - **Icon**: 应用链原生通证的 SVG 格式图标链接
         - **Decimals**: 应用链原生通证的精度
     * **Website**: 应用链官网
     * **Function Spec**: 应用链功能规范文件的链接
