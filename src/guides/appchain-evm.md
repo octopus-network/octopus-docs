@@ -1,12 +1,13 @@
-## EVM Compatible Appchain
+## Appchain EVM Compatible
 
-The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm) is an EVM compatible appchain development template provided by Octopus Network. It uses the [Frontier](https://github.com/paritytech/frontier) developed by Parity.
+The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9.18-evm) is an EVM compatible appchain development template provided by Octopus Network. It uses the [Frontier](https://github.com/paritytech/frontier) developed by Parity.
 
 The developer team can use this template to develop an EVM-compatible Appchain. It supports the team directly deploying their DApp written by Solidity as an Appchain running in the Octopus Network. The Appchain benefits from being an autonomous blockchain. Also, it obtains what [Octopus Network](https://oct.network/) provides flexible leased security, out-of-the-box interoperability, rich infrastructure services, and an active community.
 
 The Barnacle EVM Appchain is **Running** in the [Octopus Testnet](https://testnet.oct.network/appchains).
 
-## How to Use Octopus Barnacle EVM 
+## How to Use Octopus Barnacle EVM
+ 
 ### A walkthrough on how you can use Octopus Network's Barnacle EVM
 
 Ethereum has become the Fat-Hub of the blockchain ecosystem. Follow the money - as they say. All interoperable blockchain projects that seek growth must connect to the Ethereum network because most Web 3.0 assets are there. Most independent blockchain projects have some EVM compatibility system in place. Some prefer bridges, and others create an EVM-compatible environment on their native chain. The goal of having an EVM-compatible Appchain is to streamline the environment for the validators and app users. App users use EVM toolsets like MetaMask, but validators still can use the Polkadot.js plugin wallet.
@@ -19,7 +20,7 @@ To give you a better feeling of how it works, you can follow along in this tutor
 
 ### Folder Structure
 
-Here is the folder structure that you will be working with. For further clarity, you can clone the branch repository: [https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm](https://github.com/octopus-network/barnacle/tree/release-v0.9.13-evm)
+Here is the folder structure that you will be working with. For further clarity, you can clone the branch repository: [https://github.com/octopus-network/barnacle/tree/release-v0.9.18-evm](https://github.com/octopus-network/barnacle/tree/release-v0.9.18-evm)
 
 ```
 -docs/
@@ -67,10 +68,10 @@ git clone https://github.com/octopus-network/barnacle
 Then, go into the cloned directory and enter the EVM branch.
 ```
 cd barnacle
-git switch release-v0.9.13-evm
+git switch release-v0.9.18-evm
 ```
 
-The current version of the Barnacle EVM is v0.9.13, but it will increment future updates. You can check the active branches within the Barnacle repository for the most recent updates.
+The current version of the Barnacle EVM is v0.9.18, but it will increment future updates. You can check the active branches within the Barnacle repository for the most recent updates.
 
 Barnacle EVM is a predisposed environment, and you don't need any fancy configurations. You can directly run the blockchain, and it will be ready to go!
 

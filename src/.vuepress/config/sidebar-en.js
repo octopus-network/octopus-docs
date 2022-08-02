@@ -13,17 +13,16 @@ module.exports = [
     },    
     {
       title: 'Developer Guides',
-      path: '/guides/appchain-develop',
+      path: '/guides/appchain-guide',
       collapsable: false,
       children: [
         '/guides/appchain-develop',
         '/guides/appchain-evm',
-        '/guides/appchain-indexer',
         '/guides/appchain-register',
         '/guides/appchain-startup',
-        '/guides/mainchain-stablecoin',
-        '/guides/appchain-nativetoken',
         '/guides/appchain-upgrade',
+        '/guides/appchain-indexer',
+        '/guides/assets-cross-chain',              
       ]
     },
     {

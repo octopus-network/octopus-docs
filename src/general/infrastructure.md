@@ -16,4 +16,4 @@ The users of the appchain can query the details of the transactions through the 
 
 ### Cross-chain Bridge
 
-The cross-chain bridge of the Octopus Network is a two-direction cross-chain bridge between the appchain and the NEAR network, through which the appchain team can [transfer assets](../guides/mainchain-stablecoin.md) on the two networks. At the same time, before the launch of the mainnet of the appchain, the appchain team can also [transfer some native tokens](../guides/appchain-nativetoken.md) through the cross-chain bridge for the IDO.
+The cross-chain bridge of the Octopus Network is a two-direction cross-chain bridge between the appchain and the NEAR network, through which the appchain team can [transfer assets](../guides/assets-cross-chain.md) on the two networks. At the same time, before the launch of the mainnet of the appchain, the appchain team can also [transfer some native tokens](../guides/assets-cross-chain.md) through the cross-chain bridge for the IDO.

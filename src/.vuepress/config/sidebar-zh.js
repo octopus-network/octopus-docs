@@ -13,16 +13,16 @@ module.exports = [
     },    
     {
       title: '开发者指南',
-      path: '/cn/guides/appchain-develop',
+      path: '/cn/guides/appchain-guide',
       collapsable: false,
       children: [
         '/cn/guides/appchain-develop',
         '/cn/guides/appchain-evm',
-        '/cn/guides/appchain-indexer',
         '/cn/guides/appchain-register',
         '/cn/guides/appchain-startup',
-        '/cn/guides/mainchain-stablecoin',
         '/cn/guides/appchain-upgrade',
+        '/cn/guides/appchain-indexer',
+        '/cn/guides/assets-cross-chain',        
       ]
     },
     {
