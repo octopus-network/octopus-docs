@@ -22,6 +22,7 @@ module.exports = [
         '/cn/guides/appchain-register',
         '/cn/guides/appchain-startup',
         '/cn/guides/mainchain-stablecoin',
+        '/cn/guides/appchain-upgrade',
       ]
     },
     {

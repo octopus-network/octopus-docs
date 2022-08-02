@@ -23,6 +23,7 @@ module.exports = [
         '/guides/appchain-startup',
         '/guides/mainchain-stablecoin',
         '/guides/appchain-nativetoken',
+        '/guides/appchain-upgrade',
       ]
     },
     {
