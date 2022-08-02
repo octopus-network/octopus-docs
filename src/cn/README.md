@@ -12,7 +12,7 @@
     * [应用链启动流程](./guides/appchain-startup.md)
     * [应用链升级](./guides/appchain-upgrade.md)
     * [应用链索引器](./guides/appchain-indexer.md)    
-    * [资产跨链](./guides/mainchain-stablecoin.md)   
+    * [资产跨链](./guides/assets-cross-chain.md)   
 * [用户指南](./guides/voting-appchain.md)
     * [应用链投票](./guides/voting-appchain.md)
 * [委托人指南](./maintain/delegator-delegate.md)

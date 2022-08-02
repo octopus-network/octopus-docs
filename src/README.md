@@ -12,7 +12,7 @@
     * [Appchain Startup](./guides/appchain-startup.md)
     * [Appchain Upgrade](./guides/appchain-upgrade.md)
     * [Appchain Indexer](./guides/appchain-indexer.md)        
-    * [Asset Cross-chain](./guides/assets-cross-chain.md)
+    * [Assets Cross-chain](./guides/assets-cross-chain.md)
 * [User Guides](./guides/appchain-develop.md)
     * [Voting for Appchain](./guides/voting-appchain.md)
 * [Delegator Guides](./maintain/delegator-delegate.md)
