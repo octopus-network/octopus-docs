@@ -4,10 +4,11 @@
 
 ## 开发测试
 
-搭建开发测试环境和熟悉必要的工具
+搭建开发测试环境
 
 + [安装 Rust 以及 Substrate](https://docs.substrate.io/main-docs/install/)
 + [Substrate 命令行工具](https://docs.substrate.io/reference/command-line-tools/)
++ [本地搭建一个多节点的应用链网络](https://docs.substrate.io/tutorials/get-started/simulate-network/)
 
 选择开发模板，基于章鱼网络提供的模板进行开发，我们提供
 
@@ -23,11 +24,7 @@
 选择Barnacle-evm进行业务逻辑开发
 
 + [应用链EVM兼容](https://docs.oct.network/cn/guides/appchain-evm.html#appchain-evm-compatible)
-+ [Moonbeam以太坊API](https://docs.moonbeam.network/builders/build/eth-api/)
-
-务必在本地环境搭建一个多节点的应用链网络，方便进行开发测试。
-
-+ [搭建Substrate私有网络](https://docs.substrate.io/tutorials/get-started/simulate-network/)
++ [开发Dapp](https://docs.moonbeam.network/builders/build/eth-api/)
 
 
 ## 测试网/主网启动
@@ -42,14 +39,14 @@
 主网启动流程和测试网一样。
 
 
-## 升级维护
+## 应用链升级
 
 [升级](https://docs.oct.network/cn/guides/appchain-upgrade.html#appchain-upgrade)
 
 
 ## 验证节点
 
-所有人可以作为验证人和委托人两种角色加入章鱼网络，并参与应用链的治理和质押
+章鱼网络中，OCT 持有者可以质押 OCT，成为应用链的验证人或委托人，从而为应用链提供安全保障。
 
 + [章鱼网络质押](https://docs.oct.network/cn/general/octopus-staking.html#octopus-network-staking)
 + [验证人指南](https://docs.oct.network/cn/maintain/validator-guide.html)
