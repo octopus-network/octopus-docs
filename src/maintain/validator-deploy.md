@@ -3,8 +3,10 @@
 Octopus Network provides a auto-deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
 > **About the hardware configuration**
+> 
+> Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future.
 >
-> Our auto-deploy service can choose to use AWS or GCP. If you manually set up your validator node, you could refer to following configuration:
+> If you manually set up your validator node, you could refer to following configuration:
 >
 > If using AWS, the default configuration is EC2 instance **t3.small**, CPU 2 cores, memory 2G, SSD storage 80G.
 >
@@ -19,24 +21,24 @@ Octopus Network provides a auto-deploy service of validator nodes. Optionally, v
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Go to **My Node** panel, click `Auto Deploy Node`, in the pop-up window, enter your `AWS Access Key` and click `Enter`;
+1. Go to **My Node** panel, enter your `AWS Access Key`, click `Deploy A Node`, and select the region where the instance would be deployed, click `Deploy`;
 
 ![deploy login](../images/maintain/validator_deploy_login.jpg)
 
 ![deploy node](../images/maintain/validator_deploy_node.jpg)
 
-2. After deployment initialization, click `Deploy`, enter your `AWS Access Secret` and finish.
+2. After deployment initialization, click `Deploy`, enter your `AWS Access Secret` and confirm.
 
+![deploy apply](../images/maintain/gcp-step4.png)
 
 **Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
 
-3. The deployment process lasts about 3-5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
+3. The deployment process lasts about 5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
 
 ![deploy success](../images/maintain/validator_deploy_success.jpg)
 
 ### Using GCP Automatically Deploy
 
-> GCP is only supported in Testnet and would be supported in Mainnet soon.
 > Please make sure that you can log in to [GCP](https://console.cloud.google.com/), if not, please register first.
 
 1. Log in to your Google account in `My Node` pannel.

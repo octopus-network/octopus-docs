@@ -4,7 +4,9 @@
 
 **关于验证节点的硬件配置**
 
-> 我们的自动部署工具可以选择使用AWS或者GCP，如果你手动搭建验证节点，可以参考以下配置：
+> 自动部署工具支持AWS，未来将支持 GCP 等其他的云服务。
+> 
+> 如果你手动搭建验证节点，可以参考以下配置：
 >
 > 如果使用AWS，默认配置为EC2实例**t3.small**，CPU 2核，内存 2G，SSD存储 80G。
 >
@@ -19,25 +21,24 @@
 
 验证人访问章鱼网络[主网](https://mainnet.oct.network) 或 [测试网](https://testnet.oct.network)，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
-1. 在应用链页面 **My Node** 区域，点击`Auto Deploy Node`，在弹出页面中，输入你的`AWS Access Key`，点击`Enter`；
+1. 在应用链页面 **My Node** 区域，输入你的`AWS Access Key`，点击`Deploy A Node`；选择实例部署的区域，点击`Deploy`。
 
 ![deploy login](../../images/maintain/validator_deploy_login.jpg)
 
 ![deploy node](../../images/maintain/validator_deploy_node.jpg)
 
-2. 完成初始化后，点击`Deploy`，输入你的`AWS Access Secret`，完成；
+2. 完成初始化后，点击`Apply`，输入你的`AWS Access Secret`，并确认；
 
-![deploy apply](../../images/maintain/validator_deploy_apply.jpg)
+![deploy apply](../../images/maintain/gcp-step4.png)
 
 **注**：AWS Secret Key 仅会被用于此次部署，并且不会在任何地方被存储，帐户的风险非常低。
 
-3. 部署过程大约持续3-5分钟，然后刷新页面查看状态，部署成功如下图所示。记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
+3. 部署过程大约持续5分钟左右，然后刷新页面查看状态，部署成功如下图所示。记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
 
 ![deploy success](../../images/maintain/validator_deploy_success.jpg)
 
 ### 使用GCP自动搭建验证节点
 
-> 目前仅在测试网中支持 GCP，主网很快将支持。
 > 请先确保能登陆[GCP](https://console.cloud.google.com/)，如未注册请先注册。
 
 1. 在“我的节点”面板中登录您的 Google 帐户。
