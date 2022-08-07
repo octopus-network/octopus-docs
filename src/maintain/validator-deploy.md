@@ -36,6 +36,7 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 ### Using GCP Automatically Deploy
 
+> GCP is only supported in Testnet and would be supported in Mainnet soon.
 > Please make sure that you can log in to [GCP](https://console.cloud.google.com/), if not, please register first.
 
 1. Log in to your Google account in `My Node` pannel.
