@@ -7,6 +7,7 @@
   "author": "Octopus Team",
   "license": "MIT",
   "devDependencies": {
+    "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
     "vuepress": "^1.8.2",
     "vuepress-theme-reco": "^1.6.6"
   },
