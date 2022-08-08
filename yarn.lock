@@ -902,6 +902,11 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
+"@dovyp/vuepress-plugin-clipboard-copy@^1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.npmmirror.com/@dovyp/vuepress-plugin-clipboard-copy/-/vuepress-plugin-clipboard-copy-1.0.0-alpha.7.tgz#2ddb29e05ccd3cd411b85133b54a663ec2f90042"
+  integrity sha512-K+hgi4+tgQwz2ZlqpYTik5AFgDFZ1CcSYrMCqhicR1AwZ9kDsfbU+iD+NYSrsKXVTJJke/kzQIDsBFzcmC4Fkg==
+
 "@leancloud/adapter-types@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@leancloud/adapter-types/-/adapter-types-3.0.0.tgz#71c5e8e37065bea4914650848b55a6262d658577"

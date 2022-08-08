@@ -1,6 +1,9 @@
 module.exports = {
   title: 'Octopus Documentation',
   theme: 'reco',
+  plugins: [
+    ['@dovyp/vuepress-plugin-clipboard-copy', true]
+  ],
 
   base: process.env.BASE_PATH || '/',
   dest: './dist',
