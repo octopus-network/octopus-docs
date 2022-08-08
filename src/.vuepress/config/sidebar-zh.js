@@ -51,6 +51,7 @@ module.exports = [
         '/cn/maintain/validator-deploy',
         '/cn/maintain/validator-set-session-keys',
         '/cn/maintain/validator-stake',
+        '/cn/maintain/validator-upgrade-node',
         '/cn/maintain/monitor-node',
       ]
     }

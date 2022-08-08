@@ -23,5 +23,6 @@
     * [Deploy Validator Node](./maintain/validator-deploy.md)
     * [Set Session Keys](./maintain/validator-set-session-keys.md)
     * [Stake OCT](./maintain/validator-stake.md)
+    * [Upgrade Validator Node](./maintain/validator-upgrade-node.md)
     * [Monitor Node](./maintain/monitor-node.md)
 

@@ -51,6 +51,7 @@ module.exports = [
         '/maintain/validator-deploy',
         '/maintain/validator-set-session-keys',
         '/maintain/validator-stake',
+        '/maintain/validator-upgrade-node',
         '/maintain/monitor-node',
         '/maintain/aws-new-user',
         '/maintain/aws-cost-optimization',
