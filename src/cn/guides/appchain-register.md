@@ -46,13 +46,13 @@ construct_runtime!(
 pub const MILLISECS_PER_BLOCK: Moment = 6000;
 pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
 ```
-+ 应用链Chain Spec JSON文件，ss58Format为42如果不需要转移主链（NEAR网络）的稳定币资产（USDN）到应用链，请将`assetIdByTokenId`配置为空。
++ 应用链Chain Spec JSON文件，ss58Format为42，如果不需要转移主链（NEAR网络）的稳定币资产（USDN）到应用链，请将`assetIdByTokenId`配置为空。
 
 ```
 "assetIdByTokenId": []
 ```
 
-+ 应用链注册时提供的应用链icon链接，确保为SVG格式。
++ 应用链注册时提供的应用链Token Icon链接，确保为SVG格式。
 
 ### 先决条件
 
