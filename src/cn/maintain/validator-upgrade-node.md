@@ -4,13 +4,13 @@
 
 使用自动部署功能部署验证节点的验证人，您只需要在应用链页面 **My Node** 区域，点击 `Upgrade Image` 即可完成升级。
 
-![upgrade image](../images/maintain/validator_upgrade_image.jpg)
+![upgrade image](../../images/maintain/validator_upgrade_image.jpg)
 
 确认 `Upgrade` 并输入 AWS secret key，确定后节点状态会变成 `Upgrading`。
 
-![upgrade image2](../images/maintain/validator_upgrade_image2.jpg)
+![upgrade image2](../../images/maintain/validator_upgrade_image2.jpg)
 
-![upgrade image3](../images/maintain/validator_upgrade_image3.jpg)
+![upgrade image3](../../images/maintain/validator_upgrade_image3.jpg)
 
 当节点状态从 `Upgrading` 变成 `Running`后，您可以访问[Telemetry](https://telemetry.mainnet.octopus.network/)，检查您验证节点的版本是否已正确升级。 
 
