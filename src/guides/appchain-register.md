@@ -1,12 +1,12 @@
 ## Appchain Register
 
-### Appchain check items
+### Checklist before registration
 
-This section aims to list the items that the appchain team needs to check before appchain registration to ensure a smooth launch.
+This section aims to list the items that the Appchain team needs to check before Appchain registration to ensure a smooth launch.
 
-+ The appchain is using the latest version of the barnacle/barnacle-evm template
-+ The version of Substrate used in Cargo.toml of appchain should be consistent with the template.
-+ The runtime code should be consistent with the definition of the integrated Pallets in the template construct_runtime!
++ The Appchain is using the latest version of the barnacle/barnacle-evm template.
++ The version of Substrate used in Cargo.toml of Appchain should be consistent with the template.
++ The below pallets defined in the `construct_runtime!` part in the Appchain runtime code (runtime/src/lib.rs) should be consistent with the template.
 
 ```rust
 construct_runtime!(
@@ -21,7 +21,7 @@ construct_runtime!(
 		Authorship: pallet_authorship,
 		Balances: pallet_balances,
 		TransactionPayment: pallet_transaction_payment,
-		OctopusAppchain: pallet_octopus_appchain, // must before session
+		OctopusAppchain: pallet_octopus_Appchain, // must before session
 		OctopusLpos: pallet_octopus_lpos,
 		OctopusUpwardMessages: pallet_octopus_upward_messages,
 		OctopusAssets: pallet_assets::<Instance1>,
@@ -40,23 +40,23 @@ construct_runtime!(
 );
 ```
 
-+ The block generation time of the appchain is consistent with the template, set to 6s.
++ The block time of the Appchain is consistent with the template, set to 6s.
 
 ```rust
 pub const MILLISECS_PER_BLOCK: Moment = 6000;
 pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
 ```
-+ In appchain Spec JSON file, ss58Format is 42, if you do not need to transfer the stablecoin assets (USDN) of the main chain (NEAR network) to appchain, please configure assetIdByTokenId to be empty.
++ In Appchain chain spec JSON file, the setting of `ss58Format` should be 42. Also, if Appchain does not support the stablecoin assets (USDN in the NEAR network) cross-chain transfer from the Mainchain to Appchain, please set `assetIdByTokenId` with `[]`.
 
 ```
 "assetIdByTokenId": []
 ```
 
-+ During appchain registration, the Token Icon of provided by appchain must be in SVG format.
++ During Appchain team registration, the Token Icon of provided by Appchain must be in SVG format.
 
 ### Prerequisites
 
-* NEAR account
+* NEAR account.
 * OCT token: The Appchain team needs pay 1k OCT tokens as an **Auditing Fee**. For the testnet, the Appchain team can request OCTs from Discord.
 
 ### Steps of Appchain Registration
