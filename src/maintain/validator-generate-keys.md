@@ -2,7 +2,7 @@
 
 Each validator must have a NEAR account and an appchain account. The NEAR account is used to do the OCT staking, and the appchain account is used to set session keys and manage appchain assets.
 
-> To create a NEAR account, please refer to [Creating a NEAR Account](https://docs.near.org/docs/develop/basics/create-account)
+> To create a NEAR account, please refer to [Creating a NEAR Account](https://docs.near.org/concepts/basics/accounts/creating-accounts)
 
 Appchain is developed based on the Substrate, so the ways to generate an appchain account is the same as other Sustrate-based chains (e.g. Polkadot). This section introduces 3 options to generate the appchain account. Regardless of which option you choose, be sure to record all of the outputs as you will need them later.
 

@@ -2,7 +2,7 @@
 
 每个验证人都必须有一个 NEAR 账户和一个应用链的账户，前者用于进行质押 OCT 的操作，后者用设置会话密钥及管理应用链的资产。
 
-> 创建 NEAR 账户的方法，请参考[创建 NEAR 账户](https://docs.near.org/zh-CN/docs/develop/basics/create-account)
+> 创建 NEAR 账户的方法，请参考[创建 NEAR 账户](https://docs.near.org/zh-CN/concepts/basics/accounts/creating-accounts)
 
 本节介绍了3种生成验证人应用链帐户的方式。无论选择哪种方式，请务必记下本节中的所有输出，以备日后使用。
 
