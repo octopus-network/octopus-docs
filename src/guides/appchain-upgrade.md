@@ -20,3 +20,5 @@ If you modify the code outside the runtime, or upgrade the Substrate version of 
 2. The Appchain team decides the date of the node upgrade and informs the Octopus Network team on its Discord channel;
 3. The Octopus Network team upgrades the Appchain nodes operated by the Octopus Foundation;
 4. The Octopus Network team notifies the Appchain validators of the Octopus community to upgrade their Appchain nodes;
+
+**Note**: Node upgrade is the same as the runtime upgrade, the `spec_version` in `runtime/src/lib.rs` must also be updated.
