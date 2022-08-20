@@ -4,7 +4,12 @@ The [Barnacle EVM](https://github.com/octopus-network/barnacle/tree/release-v0.9
 
 The developer team can use this template to develop an EVM-compatible Appchain. It supports the team directly deploying their DApp written by Solidity as an Appchain running in the Octopus Network. The Appchain benefits from being an autonomous blockchain. Also, it obtains what [Octopus Network](https://oct.network/) provides flexible leased security, out-of-the-box interoperability, rich infrastructure services, and an active community.
 
-The Barnacle EVM Appchain is **Running** in the [Octopus Testnet](https://testnet.oct.network/appchains).
+The Barnacle EVM Appchain is **Running** in the [Octopus Testnet](https://testnet.oct.network/appchains). The RPC connection of the Barnacle EVM Appchain:
+
+* RPC: https://gateway.testnet.octopus.network/barnacle-evm/wj1hhcverunusc35jifki19otd4od1n5
+* Chain Id: 1281
+* Symbol: EBAR
+
 
 ## How to Use Octopus Barnacle EVM
  
