@@ -39,7 +39,7 @@ The validator or delegator needs to manually claim the rewards via Octopus App. 
 
 ### Auto-unbond
 
-In LPoS, if the validator does not generate blocks normally within 3 consecutive reward cycles, the contract will automatically unbond the staking, and they can withdraw the staked OCTs after the unbond period.
+In LPoS, if the validator does not generate blocks normally within 3 consecutive reward cycles (about 3 days), it will be removed from the validator set. But the existing rewards still can be claimed, and the staked OCTs would be withdrawable after the unbond period.
 
 ### Slashing
 
