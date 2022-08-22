@@ -13,8 +13,8 @@
 1. 在应用链页面 **My Staking** 区域，点击`Register Validator`；
 
 2. 在弹出页面中，输入：
-    * `Validator Account`，验证人的应用链账号，是在[生成验证人帐户](./validator-generate-keys.md)步骤中生成的 SS58 地址。
-    * `Staking Amount`，验证人参与质押的 OCT 数量，主网最低为10,000 OCT；
+    * `Validator Account`，验证人的应用链账号，是在[生成验证人帐户](./validator-generate-keys.md)步骤中生成的地址。
+    * `Staking Amount`，验证人参与质押的 OCT 数量；
     * `Email`，验证人的联系邮箱；
     * `Twitter ID`，验证人的 Twitter 帐号;
     * 选择是否允许其他 OCT 持有者通过委托将 OCT 委托给验证人节点；
@@ -27,7 +27,7 @@
 
 登录章鱼网络[主网](https://mainnet.oct.network)或[测试网](https://testnet.oct.network)，点击 "Appchains"标签，选择参与质押的应用链，然后在 "My Staking" 区域，如果已成为验证人超过 1 个奖励周期，将会看到领取奖励的按钮 "Claim ..." ，点击按钮即可。
 
-**备注**：下图是以 DeBio 应用链为例。
+**备注**：下图是以 Discovol 应用链为例。
 
 ![claim](../../images/maintain/validator_claim_rewards.jpg)
 

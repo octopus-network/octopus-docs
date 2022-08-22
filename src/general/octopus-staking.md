@@ -37,6 +37,10 @@ The validator or delegator needs to manually claim the rewards via Octopus App. 
 
 **Warning**: If the validator or delegator does not claim his staking reward within the period, currently, the reward is locked in the contract, and can’t be claimed.
 
+### Auto-unbond
+
+In LPoS, if the validator does not generate blocks normally within 3 consecutive reward cycles, the contract will automatically unbond the staking, and they can withdraw the staked OCTs after the unbond period.
+
 ### Slashing
 
 In LPoS, if the validator node misbehaves in the network, both the validator and their delegators will be slashed, thus losing a certain percentage of the stake OCT.
