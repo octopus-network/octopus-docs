@@ -2,12 +2,10 @@
 
 Octopus Network provides a auto-deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
 
-> **About the hardware configuration**
-> 
-> Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future.
->
-> If you manually set up your validator node, you could refer to following configuration:
->
+### Hardware configuration
+
+Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future. If you manually set up your validator node, you could refer to following configuration:
+
 > If using AWS, the default configuration is EC2 instance **t3.small**, CPU 2 cores, memory 2G, SSD storage 80G.
 >
 > If using GCP, the default configuration is instance **e2-small**, CPU 2 cores, memory 2G, SSD storage 128G.
@@ -36,6 +34,21 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 3. The deployment process lasts about 5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
 
 ![deploy success](../images/maintain/validator_deploy_success.jpg)
+
+### Change the AWS Instance Type
+
+As appchain needs change, you can resize your AWS instance by changing its instance type. You need to find the auto deployed EC2 instance in AWS console. 
+
+First, stop instance. 
+
+![aws stop instance](../images/maintain/aws_stop_instance.jpg)
+
+And then, change instance.
+
+![aws change instance](../images/maintain/aws_change_instance.jpg)
+
+For detail information, you can refer to the AWS EC2 [Change instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html).
+
 
 ### Using GCP Automatically Deploy
 

@@ -2,11 +2,9 @@
 
 章鱼网络提供了自动部署验证节点的服务。这是为了简化部署过程，验证节点运营商也可以[手动搭建验证节点](./validator-deploy-manually.md)。
 
-**关于验证节点的硬件配置**
+### 硬件配置
 
-> 自动部署工具支持AWS，未来将支持 GCP 等其他的云服务。
-> 
-> 如果你手动搭建验证节点，可以参考以下配置：
+自动部署工具支持AWS，未来将支持 GCP 等其他的云服务。如果你手动搭建验证节点，可以参考以下配置：
 >
 > 如果使用AWS，默认配置为EC2实例**t3.small**，CPU 2核，内存 2G，SSD存储 80G。
 >
@@ -36,6 +34,20 @@
 3. 部署过程大约持续5分钟左右，然后刷新页面查看状态，部署成功如下图所示。记录 AWS 实例的登录信息，并点击`RSA`下载用于 SSH 登录 AWS 实例的密钥文件。
 
 ![deploy success](../../images/maintain/validator_deploy_success.jpg)
+
+### 更改 AWS 实例类型
+
+随着应用链需求的变化，您可以通过更改实例类型来调整 AWS 实例的大小。您需要在 AWS 控制台中找到自动部署的 EC2 实例。
+
+首先停止实例。
+
+![aws stop instance](../../images/maintain/aws_stop_instance.jpg)
+
+然后更改实例。
+
+![aws change instance](../../images/maintain/aws_change_instance.jpg)
+
+有关详细信息，您可以参考 AWS EC2 [更改实例类型](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-resize.html)。
 
 ### 使用GCP自动搭建验证节点
 
