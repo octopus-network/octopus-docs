@@ -16,9 +16,9 @@ In staking, there are two roles: validator and delegator. OCT holders can partic
 
 #### Reward Distribution
 
-In LPoS, rewards are calculated based on the bias of block generation and recorded per era (approximately 24 hours). If the bias of block generation of a validator reaches the expected 70% in an era, there will be the full reward of this era.
+In LPoS, rewards are calculated based on the bias of block generation and recorded per era (approximately 24 hours). If the bias of block generation of a validator reaches the expected 80% in an era, there will be the full reward of this era.
 
-Assuming a block is generated every 6 seconds, there will be 14,400 blocks in a day. If there are 100 validators, then one validator is expected to generate 144 blocks. As long as the number of blocks it generates in this era is higher than 144 * 70%, it will get the full reward, otherwise, there will be no reward.
+Assuming a block is generated every 6 seconds, there will be 14,400 blocks in a day. If there are 100 validators, then one validator is expected to generate 144 blocks. As long as the number of blocks it generates in this era is higher than 144 * 80%, it will get the full reward, otherwise, there will be no reward.
 
 Also, rewards are distributed based on the staking amount of the validator node, which means that the higher the stake amount, the higher the reward the validator node will receive when they’re 100% available when forming the consensus. For the staking reward of the validator node, the validator gets 20% as a commission fee, and then the remaining staking rewards are distributed between the validator and the delegator in proportion to the staking amount.
 
