@@ -39,6 +39,8 @@
 
 随着应用链需求的变化，您可以通过更改实例类型来调整 AWS 实例的大小。您需要在 AWS 控制台中找到自动部署的 EC2 实例。
 
+以 t3.small 更改为 c5.large 为例。
+
 首先停止实例。
 
 ![aws stop instance](../../images/maintain/aws_stop_instance.jpg)
@@ -46,6 +48,14 @@
 然后更改实例。
 
 ![aws change instance](../../images/maintain/aws_change_instance.jpg)
+
+![aws change apply](../../images/maintain/aws_change_apply.jpg)
+
+最后启动实例。
+
+![aws start instance](../../images/maintain/aws_start_instance.jpg)
+
+您可以访问[Telemetry](https://telemetry.mainnet.octopus.network/)，检查您的验证节点是否已正常运行。 
 
 有关详细信息，您可以参考 AWS EC2 [更改实例类型](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-resize.html)。
 

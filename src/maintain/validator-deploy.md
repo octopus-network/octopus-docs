@@ -39,6 +39,8 @@ Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](htt
 
 As appchain needs change, you can resize your AWS instance by changing its instance type. You need to find the auto deployed EC2 instance in AWS console. 
 
+An example of changing `t3.small` to `c5.large`.
+
 First, stop instance. 
 
 ![aws stop instance](../images/maintain/aws_stop_instance.jpg)
@@ -46,6 +48,14 @@ First, stop instance.
 And then, change instance.
 
 ![aws change instance](../images/maintain/aws_change_instance.jpg)
+
+![aws change appy](../images/maintain/aws_change_apply.jpg)
+
+Finally, start instance.
+
+![aws start instance](../images/maintain/aws_start_instance.jpg)
+
+You can go to [Telemetry](https://telemetry.mainnet.octopus.network/) to check if your validator is up and running.
 
 For detail information, you can refer to the AWS EC2 [Change instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html).
 
