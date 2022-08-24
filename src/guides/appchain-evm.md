@@ -189,7 +189,7 @@ Barnacle EVM uses H160 addresses and is compatible to the Ethereum EVM you can u
 
 ### Conclusion
 
-The Barnacle EVM is the basis for your EVM compatible Appchain. You can deploy your smart contracts in Barnacle EVM just like any other Testnet or Mainnet environment. While it is easy to mistake Barnacle EVM with Moonbeam because of its similarities, the Barnacle EVM is not just a Substrate-based EVM. The road that the Octopus developers chose is to give a streamline approach for the dApp users to use EVM toolsets like MetaMask, but validators still can use the Polkadot.js plugin wallet. Considering the good experience of EVM-compatible Appchain's validators and app users.
+The Barnacle EVM is the basis template for your EVM compatible Appchain. You can deploy your smart contracts in Barnacle EVM for testing just like any other Testnet environment.
 
 You can use any Ethereum development tools to interact with Barnacle EVM. In this walkthrough, you used Hardhat. But there are other environments that you can use, including Truffle, Remix, Brownie, and many more. You can read other examples in the Moonbeam docs.
 
