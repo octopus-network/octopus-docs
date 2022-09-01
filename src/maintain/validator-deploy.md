@@ -4,12 +4,18 @@ Octopus Network provides a auto-deploy service of validator nodes. Optionally, v
 
 ### Hardware configuration
 
-Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future. If you manually set up your validator node, you could refer to following configuration:
+Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future. The configuration and approximate cost of each Appchain validator node started by auto-deploy service.
 
-> If using AWS, the default configuration is EC2 instance **t3.small**, CPU 2 cores, memory 2G, SSD storage 80G.
->
-> If using GCP, the default configuration is instance **e2-small**, CPU 2 cores, memory 2G, SSD storage 128G.
+| Appchain | AWS Instance Type  | Storage | Data Transfer | Total per month |
+|------|------|------|------|------|
+| debionetwork | t3.small  | 120 GB | 100 GB | $45 |
+| myriad | t3.small  | 120 GB | 100 GB | $45 |
+| deip | t3.small  | 120 GB | 100 GB | $45 |
+| atocha | t3.small  | 120 GB | 100 GB | $45 |
+| fusotao | c5.large  | 250 GB | 1600 GB | $250 |
+| discovol | t3.small  | 120 GB | 100 GB | $45 |
 
+If you manually set up your validator node, you could refer to the configuration.
 
 ### Using AWS Automatically Deploy
 
