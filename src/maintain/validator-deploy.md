@@ -12,7 +12,7 @@ Auto-deploy service supports AWS, and will support other cloud services such as 
 | myriad | t3.small  | 120 GB | 100 GB | $45 |
 | deip | t3.small  | 120 GB | 100 GB | $45 |
 | atocha | t3.small  | 120 GB | 100 GB | $45 |
-| fusotao | c5.large  | 250 GB | 1600 GB | $250 |
+| fusotao | c5.large  | 250 GB | 3000 GB | $374 |
 | discovol | t3.small  | 120 GB | 100 GB | $45 |
 
 If you manually set up your validator node, you could refer to the configuration.

@@ -12,7 +12,7 @@
 | myriad | t3.small  | 120 GB | 100 GB | $45 |
 | deip | t3.small  | 120 GB | 100 GB | $45 |
 | atocha | t3.small  | 120 GB | 100 GB | $45 |
-| fusotao | c5.large  | 250 GB | 1600 GB | $250 |
+| fusotao | c5.large  | 250 GB | 3000 GB | $374 |
 | discovol | t3.small  | 120 GB | 100 GB | $45 |
 
 如果你手动搭建验证节点，可以参考以上配置。
