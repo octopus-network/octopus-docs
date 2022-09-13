@@ -71,14 +71,16 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
         - **Decimals**: 应用链原生通证的精度
     * **Website**: 应用链官网
     * **Function Spec**: 应用链功能规范文件的链接
-    * **Github**: 应用链的 Github 仓库
+    * **Github Address**: 应用链的 Github 仓库
     * **Github Release**: 应用链上线章鱼网络，发布版本的Github URL
     * **Initial Supply**: 应用链初始发行的原生通证数量
     * **Premined**: 初始发行总量中 Premined 到 NEAR 网络的 wrapped 通证数量
     * **Beneficiary**: 应用链团队接收 wrapped 通证的 NEAR 钱包账户
     * **IDO Amount**: 在主网上线前，应用链团队使用 Skyward 进行 IDO 的通证数量
-    * **Era Reward**: 应用链每天区块奖励的通证数量（1 era = 1天）
+    * **Daily Reward**: 应用链每天区块奖励的通证数量（1 era = 1天）
     * **Email**: 应用链联系人邮箱
+	* **Template Type**: 应用链使用的模板类型
+	* **Project Description**: 项目相关描述
 
    ![注册截图](../../images/guides/register.png)
 
