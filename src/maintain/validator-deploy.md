@@ -25,7 +25,7 @@ If you manually set up your validator node, you could refer to the configuration
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
 
-1. Go to **My Node** panel, enter your `AWS Access Key`, click `Deploy A Node`, and select the region where the instance would be deployed, click `Deploy`;
+1. Go to  **My Node**  panel, enter your `AWS Access Key`, click `Deploy A Node`, and select the region where the instance would be deployed, click `Deploy`;
 
 ![deploy login](../images/maintain/validator_deploy_login.jpg)
 

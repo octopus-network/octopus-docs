@@ -1,31 +1,39 @@
 ## 委托人操作
 
-委托人委托后，可以进行以下操作：
+委托人委托后，选择已委托的验证人，点击`Delegated`打开`Validator Profile`页面。
 
-* 增加委托
-* 减少委托
-* 领取奖励
-* 解绑委托（若有未领取的奖励，需先领取奖励）
+![delegator delegated](../../images/maintain/delegator_delegated.jpg)
 
-### 增加/减少委托
+可以进行以下操作：
 
-首先点击您的验证人，打开`Validator Profile`面板，然后通过点击下图中的“+”或者“-”，来“增加”或者“减少”委托。
+* 增加/减少质押量
+* 领取质押奖励
+* 解除委托
 
-![incr/decr delegator stakes](../../images/maintain/increase_decrease_stake_deleg.jpg)
+### 增加/减少质押量
 
+在`Validator Profile`页面中，点击`+`或者`-`，可以增加或者减少质押量。
 
-### 领取奖励
+### 领取质押奖励
 
-领取奖励分为两种情况，一种是在验证人正常情况下，通过点击上图中`Rewards`来领取奖励。
+在委托质押一个奖励周期大约 1 天后，委托人将会获得质押奖励，需要手动领取。在`Validator Profile`页面中，点击`Rewards`按钮，选择`Delegator Reward`，然后点击`Claim`领取质押奖励。
 
-另一种情况是，在验证人unbond后，如果您有尚未领取的奖励，可以通过点击下图`Validators`面板中的`Claim Rewards`领取。
+![delegator claim reward](../../images/maintain/delegator_claim_rewards.jpg)
 
-![delegator claim reward](../../images/maintain/delegator_claim_reward.jpg)
+### 解除委托
 
-### 解绑委托并提现质押
+如果打算解除委托，在`Validator Profile`页面中，点击`Unbond Delegation`按钮执行解除委托质押操作。
 
-您可以停止委托并取回您的质押，有一个延迟退出期，称为解绑期。委托人的解绑期详情见[章鱼网络质押](./../../cn/general/octopus-staking.html#章鱼网络质押)，在解绑期结束之前，您将无法转移您的代币，并且在此期间您不会获得任何质押奖励（因为您没有委托给任何验证人）。
+> **注意**，解除委托后，质押的 OCT 有一个解绑期，在解绑期结束之前，无法提现，并且也不会获得任何质押奖励。
 
-解绑期结束后，与验证人相同，您可以通过点击`My Staking`面板中的`Withdraw Stakes`按钮来取回质押。
+![delegator unbond](../../images/maintain/delegator_unbond.jpg)
+
+### 提现质押的 OCT
+
+与验证人相同，在应用链的 **My Staking** 区域，点击`···`，选择`Withdraw Stakes`。
+
+![unbond withdraw](../../images/maintain/unbond_withdraw.jpg)
+
+解绑期结束后，可以点击`Withdraw`提现质押的 OCT。
 
 ![withdraw stakes](../../images/maintain/withdraw_stakes.jpg)

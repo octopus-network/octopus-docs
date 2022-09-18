@@ -2,7 +2,7 @@
 
 When the Appchain releases a new version of node, validators need to upgrade their validator node.
 
-For validators who deployed the validator node with the auto-deploy service, you only need to go to the Appchain page, the **My Node** section, click `Upgrade Image` to complete the upgrade. 
+For validators who deployed the validator node with the auto-deploy service, you only need to go to the Appchain page, the  **My Node**  section, click `Upgrade Image` to complete the upgrade. 
 
 ![upgrade image](../images/maintain/validator_upgrade_image.jpg)
 

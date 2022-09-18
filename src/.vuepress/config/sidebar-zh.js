@@ -49,9 +49,7 @@ module.exports = [
       children: [
         '/cn/maintain/validator-generate-keys',
         '/cn/maintain/validator-deploy',
-        '/cn/maintain/validator-set-session-keys',
-        '/cn/maintain/validator-stake',
-        '/cn/maintain/validator-upgrade-node',
+        '/cn/maintain/validator-register',
         '/cn/maintain/monitor-node',
       ]
     }

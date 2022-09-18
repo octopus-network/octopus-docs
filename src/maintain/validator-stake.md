@@ -9,7 +9,7 @@ To become a validator of Appchain, you need to stake OCT.
 
 Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), click the `Appchains` tab and select the Appchain you wish to stake for, and then follow the steps:
 
-1. Go to **My Staking** panel, click `Register Validator`;
+1. Go to  **My Staking**  panel, click `Register Validator`;
 
 2. In the pop-up window, enter the below value:
     * `Validator Account`, the validator's appchain account, it is the address generated in the step [Generate Validator Account](./validator-generate-keys.md);
@@ -46,4 +46,4 @@ After the unbonding period, you can withdraw your stakes via clicking the `Withd
 
 If you plan to stop the validator node, firstly you **MUST** do the `Unbond` operation and keep the validator node running until the next round validators comes online（current era ended）.
 
-For one-click deployment, you can do the `Destory` operation in **My Node** panel. For manual deployment, you can manually stop the validator node.
+For one-click deployment, you can do the `Destory` operation in  **My Node**  panel. For manual deployment, you can manually stop the validator node.
