@@ -63,7 +63,7 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
 
 1. Log in to the Octopus apps via a NEAR account.
 2. Click the **Join Octopus** button, and then fill in the following information:
-    * **Appchain ID**: 3-20 characters consisting of lowercase letters, numbers and hyphen `-`, and cannot start with a number, and a hyphen `-` cannot be used at the beginning and end, a.k.a the regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?` 
+    * **Appchain ID**: 3-20 characters consisting of lowercase letters, numbers and hyphen `-`, and cannot start with a number, and a hyphen `-` cannot be used at the beginning and end, a.k.a the regular expression: `[a-z]([-a-z0-9]*[a-z0-9])?`
     * **Token Info**
         - **Token Name**: The name of the Appchain native token
         - **Token Symbol**: The symbol of the Appchain native token
@@ -71,14 +71,17 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
         - **Decimals**: The decimals of the Appchain native token
     * **Website**: The official website of the Appchain
     * **Function Spec**: The url of the Appchain functional specification file
-    * **Github**: The Github repository of Appchain
+    * **Github Address**: The Github repository of Appchain
     * **Github Release**: The Github URL of the release of the Appchain
     * **Initial Supply**: The Appchain native token amount of the initial issues
     * **Premined**: The number of wrapped tokens that be Premined to the NEAR network in the total initial issuance
     * **Beneficiary**: The NEAR account to receive the Premined wrapped token
     * **IDO Amount**: The number of tokens used by the Appchain team to use Skyward for IDO before the Mainnet launch
-    * **Era Reward**: The Appchain native token amount as its block reward for each day (1 era = 1 day)
+    * **Daily Reward**: The Appchain native token amount as its block reward for each day
     * **Email**: The contact email of the Appchain
+    * **Template Type**: The template type used by the Appchain
+    * **Project Description**: A single sentence introduction of the Appchain
+
 
    ![Register Screenshot](../images/guides/register.png)
 
