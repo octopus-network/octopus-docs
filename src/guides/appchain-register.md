@@ -77,10 +77,11 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Premined**: The number of wrapped tokens that be Premined to the NEAR network in the total initial issuance
     * **Beneficiary**: The NEAR account to receive the Premined wrapped token
     * **IDO Amount**: The number of tokens used by the Appchain team to use Skyward for IDO before the Mainnet launch
-    * **Daily Reward**: The Appchain native token amount as its block reward for each day (1 era = 1 day)
+    * **Daily Reward**: The Appchain native token amount as its block reward for each day
     * **Email**: The contact email of the Appchain
-	* **Template Type**: The template type of the Appchain
-	* **Project Description**: The description of the project
+    * **Template Type**: The template type used by the Appchain
+    * **Project Description**: A single sentence introduction of the Appchain
+
 
    ![Register Screenshot](../images/guides/register.png)
 

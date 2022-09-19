@@ -77,10 +77,10 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Premined**: 初始发行总量中 Premined 到 NEAR 网络的 wrapped 通证数量
     * **Beneficiary**: 应用链团队接收 wrapped 通证的 NEAR 钱包账户
     * **IDO Amount**: 在主网上线前，应用链团队使用 Skyward 进行 IDO 的通证数量
-    * **Daily Reward**: 应用链每天区块奖励的通证数量（1 era = 1天）
+    * **Daily Reward**: 应用链每天区块奖励的通证数量
     * **Email**: 应用链联系人邮箱
-	* **Template Type**: 应用链使用的模板类型
-	* **Project Description**: 项目相关描述
+    * **Template Type**: 应用链使用的模板类型
+    * **Project Description**: 应用链的一句话介绍
 
    ![注册截图](../../images/guides/register.png)
 
