@@ -1,21 +1,19 @@
 ## How to Delegate
 
-Delegators are one type of participant in the [staking]((../general/octopus-staking.md)) of Octopus Network. They are responsible for delegating their OCT to the validators who are the second type of participant. By delegating their OCT to the active set of validators, they are able to share in the block rewards that are paid out by appchain.
+Delegators are one type of participant in the [Staking]((../general/octopus-staking.md)) of Octopus Network. They are able to obtain the staking rewards by delegating their OCT to another type of participant - validators. 
 
-While the validators are active participants in the network that engage in the block production and finality mechanisms, delegators take a slightly more passive role. Being a delegator does not require running a node of your own, when looking for validators to delegate, a delegator should pay attention to their reputation for delegating a specific validator - as well as the risk that they bear of being slashed if the validator gets slashed.
+> The delegator does not need to run a validator node, but when looking for a validator to delegate, the delegator should check the stability of the validator node. If there is a problem with the validator, the delegator will not be able to obtain staking rewards.
 
-:warning: **Warning**: If the validator gets slashed, the delegators of this validator would also get slashed.
+The delegation steps are as follows:
 
-The delegating steps are as follows:
+1. Log in to [Octopus Network Mainnet](https://mainnet.oct.network) with your NEAR account, click the **Appchains** tab, select the appchain which you would like to do the staking, and then click it to open the appchain page.
 
-1. Log in to [Octopus Network Mainnet](https://mainnet.oct.network) with your NEAR account.
-2. Navigate to the **Appchains** page, select the appchain and click it.
-3. From the validators list, select the validator you want to delegate, and then click the "Delegate" button. You will see a pop-up window, input the amount of OCT you want to delegate, confirm the transaction, and you're done - you are now delegating.
+2. Select the validator you want to delegate from the **Validators** list, and then click it to open the `Validator Profile` page.
 
-**Note**: The following picture is the appchain Myriad as an example.
+![delegator open](../images/maintain/delegator_open.jpg)
 
-![delegator action](../images/maintain/delegator_action.jpg)
+3. Click the `+ Delegate` button on the `Validator Profile` page, input the amount of OCT you want to delegate on the pop-up page, and then click the `Deposit` button.
 
-**Note**: For delegator, the current minimum amount is 200 OCT. (From April 14th, 2022)
+![delegator delegate](../images/maintain/delegator_delegate.jpg)
 
-Your delegation will become active in the next Era. Eras last 24 hours by default - depending on when you do this, your delegation may become active almost immediately, or you may have to wait almost the entire 24 hours. When your delegation are active, you will start to get rewards allocated to you. In order to claim them (i.e. add them to your account), you must manually claim them.
+The delegation will become active in the next reward cycle (~1 day), and then the delegator will obtain the staking rewards.

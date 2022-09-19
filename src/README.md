@@ -21,8 +21,6 @@
 * [Validator Guides](./maintain/validator-guide.md)
     * [Generate Validator Account](./maintain/validator-generate-keys.md)
     * [Deploy Validator Node](./maintain/validator-deploy.md)
-    * [Set Session Keys](./maintain/validator-set-session-keys.md)
-    * [Stake OCT](./maintain/validator-stake.md)
-    * [Upgrade Validator Node](./maintain/validator-upgrade-node.md)
+    * [Register Validator](./maintain/validator-register.md)
     * [Monitor Node](./maintain/monitor-node.md)
 

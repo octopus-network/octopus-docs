@@ -1,12 +1,15 @@
 ## Manually Deploy Validator Node
 
-This guide takes [Barnacle Appchain](https://github.com/octopus-network/barnacle) as an example to introduce how to deploy a validator node manually in the Octopus Network.
+To manually deploy the validator node of the appchain, the validator can choose their favorite VPS provider, and generally using the **Ubuntu** operating system.
 
-The most common way to run a validator is on a Linux cloud server. You may choose whatever VPS provider that you prefer, and whatever operating system you are comfortable with. In this guide, we will be using **Ubuntu 18.04**, and the instructions should be applicable to other Unix-based OS.
+The following steps are required:
 
-### Prerequisites
+1. Install Rust
+2. Install Dependencies
+3. Get the appchain Node
+4. Run the appchain node
 
-#### 1. Install Rust
+### 1. Install Rust
 
 If you have never installed Rust, you should do this first. This command will fetch the latest version of Rust and install it.
 
@@ -26,7 +29,7 @@ rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 
 Run this command to install the necessary dependencies for compiling and running the substrate-based Appchain node software.
 
@@ -36,39 +39,41 @@ sudo apt update
 sudo apt install make clang pkg-config libssl-dev build-essential
 ```
 
-For other OSs, please refer to the [document of Substrate Developer Hub](https://substrate.dev/docs/en/knowledgebase/getting-started/#1-build-dependencies)。
+### 3. Get the appchain node
 
-### Deploy Validator Node
-
-#### 1. Get the Appchain Node Binary
-
-You can generate the Appchain node binary by compiling the source code from the Appchain repo. Please refer to the following command:
+You can generate the appchain node by compiling the source code from the appchain repository. Please refer to the following command:
 
 ```bash
-# Only for barnacle appchain
-git clone https://github.com/octopus-network/barnacle.git
-cd barnacle
+git clone <Appchain GitHub Repo>
+cd <Appchain>
 cargo build --release
 ```
 
-This step will take a while (generally 10 - 40 minutes, depending on your hardware).
+> `<Appchain GitHub Repo>`, the GitHub repository of appchain, navigate to it by clicking the `Github` icon on the appchain page
+>
+> `<Appchain>`, the name of the appchain repository
 
-> Note: if you run into compiling errors, you may have to switch to a more recent nightly version of Rust.
+After the compilation ends, the appchain node will be generated in the directory `./target/release/`. This step will take a while (10~40 minutes), depending on the hardware configuration of the server.
 
-#### 2. Start the validator node
+> Note: If it has the compiling errors, you may have to switch to a more recent nightly version of Rust.
 
-Set option `--chain` with the value `octopus-mainnet` for the [Mainnet](https://mainnet.oct.network/) and start the node in validator mode. E.g. for Barnacle by executing the following command:
+### 4. Run the validator node
+
+Run the validator node, please refer to the following command:
 
 ```bash
-./target/release/appchain-barnacle \
---base-path ./data \
+./target/release/<Appchain node> \
+--base-path ./chain_data \
 --chain octopus-mainnet \
+--name <Your validator name> \
 --validator \
---wasm-execution Compiled \
+--telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0" \  
 --enable-offchain-indexing true
 ```
 
-> Note: Set option `--chain` with the value `octopus-testnet` for the [testnet](https://testnet.oct.network/)
+> `<Appchain node>`, the generated node in the previous step
+>
+> `<Your validator name>`，the name of the validator node
 
 You can check whether the validator node complete the synchronization of the chain data, check the log whether there is an similar output as the following:
 
@@ -82,6 +87,12 @@ You can check whether the validator node complete the synchronization of the cha
 2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
 ```
 
-Previous step：[Generate Validator Account](./validator-generate-keys.md)
+After the node synchronization, the validator needs to [generate the Session Key](./validator-set-session-keys.md) for the next step [register validator](./validator-register.md).
 
-Next step：[Set Session Keys](./validator-set-session-keys.md)
+### Upgrade Validator Node
+
+When the appchain releases a new version of node, validators need to upgrade their validator node. Please follow the **validators-delegators** channel on Discord, the Octopus Network team will publish information about the new version of the appchain node. The validator need to:
+
+1. Compile the new version of appchain source code to generate a new appchain node;
+2. Stop the validator node before the upgrade;
+3. Launch the validator node with the new appchain node.

@@ -49,12 +49,8 @@ module.exports = [
       children: [
         '/maintain/validator-generate-keys',
         '/maintain/validator-deploy',
-        '/maintain/validator-set-session-keys',
-        '/maintain/validator-stake',
-        '/maintain/validator-upgrade-node',
+        '/maintain/validator-register',
         '/maintain/monitor-node',
-        '/maintain/aws-new-user',
-        '/maintain/aws-cost-optimization',
       ]
     }
 ];

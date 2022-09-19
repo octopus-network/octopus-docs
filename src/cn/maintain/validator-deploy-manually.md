@@ -44,12 +44,15 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 可以从应用链的源代码仓库中，编译源码生成应用链的节点二进制文件。
 
 ```bash
-git clone <Appchain>
+git clone <Appchain GitHub Repo>
 cd <Appchain>
 cargo build --release
 ```
 
-这一步骤将需要一段时间，大约为10~40分钟，取决于服务器的硬件配置。
+> `<Appchain GitHub Repo>`，在应用链页面的`Github`图标获取
+> `<Appchain>`，应用链仓库的名称
+
+编译完成后，在目录 `./target/release/` 下会生成应用链的节点二进制文件。这一步骤将需要一段时间，大约为10~40分钟，取决于服务器的硬件配置。
 
 > 备注：如果遇到编译错误，可能需要将 Rust 切换到一个较新的 nightly 版本。
 
@@ -67,7 +70,8 @@ cargo build --release
 --enable-offchain-indexing true
 ```
 
-其中`<Appchain node>`，`<Your validator name>`
+> `<Appchain node>`，上一步编译生成的节点二进制文件
+> `<Your validator name>`，验证节点的名称
 
 检查节点是否已完成链数据的同步，查看节点的日志，是否有类似的输出如下：
 

@@ -1,13 +1,17 @@
 ## Monitor Node
 
-The telemetry will expose the node’s information, you can connect to specified telemetry servers with the `--telemetry-url` option. If you decided to send your node’s information to public telemetry, for the mainnet, when starting the validator node, you can set the `--telemetry-url` option with the value `'wss://telemetry.mainnet.octopus.network/submit 9'` and set the `--name` option with the node name. And then you can access the [telemetry](https://telemetry.mainnet.octopus.network/), and check the status of node via the node name.
+Validator can check the validator node status through the [Telemetry](https://telemetry.mainnet.octopus.network/).
 
-> Note:
-> * For the testnet, set the `--telemetry-url` option with the value `'wss://telemetry.mainnet.octopus.network/submit 9'` and access the [telemetry](https://telemetry.testnet.octopus.network/) to check the status of node.
-> * If automatic deployment is used, the name of validator will be `validator-[near account]` defaultly, where the `[near account]` is the account name of the NEAR wallet, as shown below.
-![telemetry](../images/maintain/telemetry.png)
+If it is automatically deployed, the node name of the validator will default to `validator-[NEAR account]`, where `[NEAR account]` is the NEAR account used to log in to Octopus Network when the validator is registered.
 
-## Instance Information
+If it is manually deployed, the validator can use the `--telemetry-url` option when running the validator node, and set its value to `'wss://telemetry.mainnet.octopus.network/submit 9'`. Also, the validator can use the `--name` option to set the name of the validator node, so that the validator can check the node status by the node name.
 
-If automatic deployment is used, you can click `...` in the `My Node` panel, and select `Instance Info` to view the running hardware status information (such as CPU, hard disk, and memory) of the current validator instance, as shown in the following figure:
-![instance](../images/maintain/instance_info.png)
+### Validator status
+
+In the **Validators** list, validators mainly have the following status:
+
+* Registered, missing session keys, the validator need to set Session Key;
+* New, coming next day(era), the validator need to wait to enter the next validator set;
+* Validating, the validator works normally;
+* Validating, not producing blocks, the validator need to check whether the validator node is running normally;
+* Unstaking, the validator unbond the staking;

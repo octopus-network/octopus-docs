@@ -1,10 +1,10 @@
 ## Deploy Validator Node
 
-Octopus Network provides a auto-deploy service of validator nodes. Optionally, validator node operators can also [deploy and run it manually](./validator-deploy-manually.md).
+In order to simplify the deployment of the validator node, the Octopus Network team provides an automatic deployment service for the validator node. Currently, it supports AWS and will support other cloud servers such as Digital Ocean and GCP in the future. Also, the validator can choose to [manually deploy the validator node](./validator-deploy-manually.md).
 
 ### Hardware configuration
 
-Auto-deploy service supports AWS, and will support other cloud services such as GCP in the future. The configuration and approximate cost of each Appchain validator node started by auto-deploy service.
+The configuration and approximate cost of each Appchain validator node started by automatic deployment service.
 
 | Appchain | AWS Instance Type  | Storage | Data Transfer | Total per month |
 |------|------|------|------|------|
@@ -15,113 +15,46 @@ Auto-deploy service supports AWS, and will support other cloud services such as 
 | fusotao | c5.large  | 250 GB | 3000 GB | $374 |
 | discovol | t3.small  | 120 GB | 100 GB | $45 |
 
-If you manually set up your validator node, you could refer to the configuration.
-
 ### Using AWS Automatically Deploy
 
 > If no AWS account, please firstly [create and setup AWS account](https://aws.amazon.com/getting-started/guides/setup-environment/?nc1=h_ls)
 >
 > To create [AWS Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 
-Go to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)), select `Appchains` Tab ->  the corresponding appchain, follow the steps to deploy:
+Log in to the Octopus Network [mainnet](https://mainnet.oct.network) with the NEAR account created in [Generate Validator Account](./validator-generate-keys.md).
 
-1. Go to  **My Node**  panel, enter your `AWS Access Key`, click `Deploy A Node`, and select the region where the instance would be deployed, click `Deploy`;
+![validator login](../images/maintain/validator_login.jpg)
 
-![deploy login](../images/maintain/validator_deploy_login.jpg)
+Click the `Appchains` and select the appchain which would like to be a validator, click it to open the appchain page, then perform the following operations:
 
-![deploy node](../images/maintain/validator_deploy_node.jpg)
+1. In the **My Node** area of ​​the appchain page, input your `AWS Access Key` in the `Access Key` input box, then click `Deploy`;
 
-2. After deployment initialization, click `Deploy`, enter your `AWS Access Secret` and confirm.
+![aws access key](../images/maintain/validator_aws_accesskey.jpg)
 
-![deploy apply](../images/maintain/gcp-step4.png)
+2. The deployed AWS instance configuration information and approximate cost will be displayed in the **My Node** region. After confirmation, please input your `AWS Secret Key` in `Secret Key` input box and select the deployment area of the AWS instance in the `Deploy region` drop-down box, then click `Confirm`;
 
-**Note**: `AWS Access Secret` will only be used for this deployment and wouldn't be stored anywhere.
+![aws secret key](../images/maintain/validator_aws_secretkey.jpg)
 
-3. The deployment process lasts about 5 minutes, and then refresh the page to check the status, the successful deployment is as shown in the figure below. Record the login information of the instance and click the `RSA` to download the ssh key file.
+**Note**: The AWS Secret Key will only be used for this deployment and will not be stored anywhere.
 
-![deploy success](../images/maintain/validator_deploy_success.jpg)
+3. In the **My Node** area, the node status is `Applying` which means the automatic deployment service is deploying the node.
 
-### Change the AWS Instance Type
+![validator applying](../images/maintain/validator_aws_applying.jpg)
 
-As appchain needs change, you can resize your AWS instance by changing its instance type. You need to find the auto deployed EC2 instance in AWS console. 
+Please wait for about 3~5 minutes, the node status will change to `Syncing` which means the validator node is synchronizing the block data of the appchain. The earlier the appchain is online, the longer the node synchronization time will be. please wait patiently.
 
-An example of changing `t3.small` to `c5.large`.
+![validator syncing](../images/maintain/validator_aws_syncing.jpg)
 
-First, stop instance. 
+To check the synchronization of nodes, please refer to [Monitor Node](./monitor-node.md).
 
-![aws stop instance](../images/maintain/aws_stop_instance.jpg)
+After the node synchronization, the status in the **My Node** area will change to `Running`.
 
-And then, change instance.
+![validator running](../images/maintain/validator_aws_running.jpg)
 
-![aws change instance](../images/maintain/aws_change_instance.jpg)
+At this status, th validator can proceed to the next step [register validator](./validator-register.md).
 
-![aws change appy](../images/maintain/aws_change_apply.jpg)
+#### Change AWS instance type
 
-Finally, start instance.
+The validator can resize the AWS instance by changing the instance type as the appchain requirement change. Click the link to the right of `Instance` in the **My Node** region to open the console of the automatically deployed AWS EC2 instance, then, please refer to AWS EC2 [Changing the Instance Type](https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/ec2-instance-resize.html) to complete the operation.
 
-![aws start instance](../images/maintain/aws_start_instance.jpg)
-
-You can go to [Telemetry](https://telemetry.mainnet.octopus.network/) to check if your validator is up and running.
-
-For detail information, you can refer to the AWS EC2 [Change instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html).
-
-
-### Using GCP Automatically Deploy
-
-> Please make sure that you can log in to [GCP](https://console.cloud.google.com/), if not, please register first.
-
-1. Log in to your Google account in `My Node` pannel.
-![gcp-step1](../images/maintain/gcp-step1.png)
-
-2. After logging in, click `Deploy A Node`
-![gcp-step2](../images/maintain/gcp-step2.png)
-
-3. Select [`Projects`](https://cloud.google.com/storage/docs/projects) and [`Deploy Region`](https://cloud.google.com/docs/geography-and-regions ), then click `Deploy`.
-![gcp-step3](../images/maintain/gcp-step3.png)
-
-4. At this point, you can see that the node status is `Init`, and the `Node ID` is generated at the same time, click `Apply`.
-![gcp-step4](../images/maintain/gcp-step4.png)
-
-5. At this point, the status changes to Applying, which means the node is starting up on GCP. Click Refresh to query the status.
-![gcp-step5](../images/maintain/gcp-step5.png)
-
-6. When you see the following page, the status changes to Running, indicating that the GCP instance has been started and running.
-![gcp-step6](../images/maintain/gcp-step6.png)
-
-Finally, if you want to delete the node, click `Destroy`, then click `...` to select `Clear Access Key`.
-
-### Check the synchronization of the validator node
-
-For the validator node, it would last about 1~6 hours (it depends on how long the appchain had been running) to complete the synchronization of the appchain data.
-
-1. Firstly, please change the permissions of the downloaded ssh key file 'id_rsa' via executing the following command:
-
-```bash
-chmod 400 <Path of the id_rsa file>
-# e.g. chmod 400 /home/ubuntu/.ssh/id_rsa
-```
-
-2. Open a Terminal, and log in to the instance via SSH;
-
-```bash
-ssh -i <Path of the id_rsa file> ubuntu@<IP address of instance>
-# e.g. ssh -i /home/ubuntu/.ssh/id_rsa ubuntu@1.2.3.4
-```
-
-3. Check the docker logs of validator;
-
-```bash
-docker logs seashell
-```
-
-To check whether the best block number is the same with the current block number, like the following output:
-
-```bash
-2021-09-21 00:12:09 ✨ Imported #54411 (0x3566…3b0e)
-2021-09-21 00:12:12 ✨ Imported #54412 (0xdf36…2c87)
-2021-09-21 00:12:12 [54412] 🐙 Current block: 54412 (parent hash: 0x9cc7f31a20793f50cf885835de0e3977a1e080431ebc002469aa176046ba094a)
-......
-2021-09-21 00:13:18 ✨ Imported #54434 (0xba36…ee68)
-2021-09-21 00:13:18 [54434] 🐙 Current block: 54434 (parent hash: 0x84aa3d1b6455859f9503d6ecc70b50b183141fe08f5b0695357e00fe1d24d915)
-2021-09-21 00:13:18 💤 Idle (6 peers), best: #54434 (0xba36…ee68), finalized #54431 (0xd194…b319), ⬇ 22.0kiB/s ⬆ 21.9kiB/s
-```
+For the automatically deployed validator node, the validator can click `...` in the **My Node** area, and select `Instance Info` to check the hardware status information (such as CPU, hard disk, memory) of the running validator node instance.
