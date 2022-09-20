@@ -12,7 +12,7 @@ The configuration and approximate cost of each Appchain validator node started b
 | myriad | t3.small  | 120 GB | 100 GB | $45 |
 | deip | t3.small  | 120 GB | 100 GB | $45 |
 | atocha | t3.small  | 120 GB | 100 GB | $45 |
-| fusotao | c5.large  | 250 GB | 3000 GB | $374 |
+| fusotao | c5.large  | 250 GB | 4500 GB | $509 |
 | discovol | t3.small  | 120 GB | 100 GB | $45 |
 
 ### Using AWS Automatically Deploy
