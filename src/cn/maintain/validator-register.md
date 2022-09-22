@@ -22,13 +22,13 @@
 
 **注意**，确保验证节点已完成链数据的同步，并且验证人的应用链账户中已收到应用链的代币。
 
-在应用链页面 **My Node** 区域，点击`···`，选择`Set Session Key`，在弹出页面中，选择上一步注册中填写的应用链账户，对于自动部署的验证人，只需点击`Set`。
+在应用链页面 **My Node** 区域，点击`···`，选择`Set Session Key`，在弹出页面中，选择上一步注册中填写的应用链账户，使用自动部署服务，验证人只需点击`Set`。
 
 ![validator set sessionkey](../../images/maintain/validator_set_sessionkey.jpg)
 
 ![validator set sessionkey](../../images/maintain/validator_set_sessionkey2.jpg)
 
-对于手动部署的验证人，需要在`Session key`输入框中输入`author_rotateKeys`操作中输出的`result`字段的内容；
+手动部署，验证人需要在`Session key`输入框中输入`author_rotateKeys`操作中输出的`result`字段的内容；
 
 ![validator set sessionkey](../../images/maintain/validator_set_sessionkey1.jpg)
 
@@ -52,19 +52,29 @@
 
 ![validator claim rewards](../../images/maintain/validator_claim_rewards.jpg)
 
-### 停止验证人
+### 停止验证
 
-如果打算停止验证人，需要在验证人列表中选择验证人，点击`Manage`打开`Validator Profile`页面。
+停止验证需要完成解除质押和停止验证节点两步操作。
+
+### 解除质押
+
+在验证人列表中选择验证人，点击`Manage`打开`Validator Profile`页面。
 
 ![validator manage](../../images/maintain/validator_manage.jpg)
-
-> **注意**，停止验证人后，质押的 OCT 有一个解绑期，在解绑期结束之前，无法提现，并且也不会获得任何质押奖励。
 
 在`Validator Profile`页面中，点击`Unbond Validator`按钮执行解除质押操作。
 
 ![validator unbond](../../images/maintain/validator_unbond.jpg)
 
-然后，停止验证节点的运行。自动部署的验证节点，在 **My Node** 区域中，点击`Destory`按钮可以删除自动部署的实例。
+> **注意**：解除质押操作后，质押的 OCT 有一个解绑期，在解绑期结束之前，无法提现，并且也不会获得任何质押奖励。
+
+### 停止验证节点
+
+对于通过自动部署服务部署的验证节点，验证人可以点击 **My Node** 区域中的 `Destory` 按钮停止验证节点并删除自动部署的实例。
+
+手动部署的验证节点，验证人请记得停掉它。
+
+> **注意**：解除质押后，如果验证人立即停止验证节点，将没有最后一个质押周期的奖励。如果在一个奖励周期后停止它，则仍可以获得奖励。
 
 ### 提现质押的 OCT
 

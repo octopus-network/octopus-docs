@@ -9,7 +9,7 @@
 
 1. 保持旧的验证节点继续运行；
 2. 部署新的验证节点，等待链数据同步完成后，给新的验证节点[设置 Session Key](./validator-register.md#设置-session-key)；
-3. 停掉旧的验证节点。
+3. [停掉](./validator-register.md#停止验证节点)旧的验证节点。
 
 验证人也可以选择[手动部署验证节点](./validator-deploy-manually.md)。手动部署验证节点，可以参考自动部署使用的硬件配置。
 

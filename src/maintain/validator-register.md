@@ -56,7 +56,11 @@ After a reward cycle (~1 day), the validator will receive the staking reward, wh
 
 ![validator claim rewards](../images/maintain/validator_claim_rewards.jpg)
 
-### Unstaking validator
+### Stop validating
+
+To stop validating, it needs to unbond staking and stop the validator node.
+
+### Unbond staking
 
 Click `Manage` to open the `Validator Profile` page.
 
@@ -64,11 +68,17 @@ Click `Manage` to open the `Validator Profile` page.
 
 Click the `Unbond Validator` button on the `Validator Profile` page to perform the unstaking operation.
 
-> **Note**: After unbond, the staking OCT will have an unbonding period. Before the unbonding period ends, it cannot be withdrawable and you will not obtain any staking rewards.
-
 ![validator unbond](../images/maintain/validator_unbond.jpg)
 
-Then, stop the running validator node. For the automatically deployed validator, click the `Destory` button on the **My Node** area to delete the auto-deployed instance.
+> **Note**: After unbond, the staking OCT will have an unbonding period. Before the unbonding period ends, it cannot be withdrawable and you will not obtain any staking rewards.
+
+### Stop the validator node
+
+For the node which was deployed via the automatic deployment service, the validator can click the `Destory` button in the **My Node** area to stop the validator node and delete the instance of automatic deployment.
+
+For the node which was deployed manually, please remember to stop it.
+
+> **Note**: After unbond, if stop the node immediately, the validator will have no rewards for the last reward cycle. If stop it after one reward cycle, the validator will still have the rewards.
 
 ### Withdraw staking OCT
 
