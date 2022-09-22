@@ -13,22 +13,23 @@ The configuration and approximate cost of each Appchain validator node started b
 
 **AWS**
 
-| Appchain | AWS Instance Type  | Storage | Data Transfer | Total cost per month |
+| Appchain | EC2 Instance Type  | Storage | Data Transfer | Total cost per month |
 |------|------|------|------|------|
-| debionetwork | t3.small  | 120 GB | 100 GB | $45 |
-| myriad | t3.small  | 120 GB | 100 GB | $45 |
-| deip | t3.small  | 120 GB | 100 GB | $45 |
-| atocha | t3.small  | 120 GB | 100 GB | $45 |
-| fusotao | c5.large  | 250 GB | 4500 GB | $509 |
-| discovol | t3.small  | 120 GB | 100 GB | $45 |
+| debionetwork | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| myriad | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| deip | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| atocha | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 250 GB | 4500 GB | $509 |
+| discovol | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+
 
 **Digital Ocean**
 
 | Appchain | Droplet  | Storage | Data Transfer | Total cost per month |
 |------|------|------|------|------|
-| debionetwork | 2 GB / 2 CPUs | 120 GB | 3 TB | $33 |
-| myriad | 2 GB / 2 CPUs | 120 GB | 3 TB | $33 |
-| deip | 2 GB / 2 CPUs | 120 GB | 3 TB | $33 |
-| atocha | 2 GB / 2 CPUs | 120 GB | 3 TB | $33 |
-| fusotao | 8 GB / 4 CPUs  | 250 GB | 5 TB | $81 |
-| discovol | 2 GB / 2 CPUs | 120 GB | 3 TB | $33 |
+| debionetwork | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+| myriad | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+| deip | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+| atocha | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+| fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 5 TB | $81 |
+| discovol | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
