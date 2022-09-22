@@ -5,6 +5,12 @@ In order to simplify the deployment of the validator node, the Octopus Network t
 * [AWS](./validator-deploy-aws.md)
 * [Digital Ocean](./validator-deploy-do.md)
 
+For the validator who need to change the VPS provider of the  deployed node, please follow these steps:
+
+1. Keep the old validator node running;
+2. Deploy a new validator node, after the synchronization, [set the Session Key](./validator-register.md#set-session-key);
+3. Stop the old validator node.
+
 Also, the validator can choose to [manually deploy the validator node](./validator-deploy-manually.md).
 
 ### Hardware configuration
