@@ -5,12 +5,6 @@
 * [AWS](./validator-deploy-aws.md)
 * [Digital Ocean](./validator-deploy-do.md)
 
-如果已部署节点的验证人要更换 VPS 服务商，请遵循以下步骤：
-
-1. 保持旧的验证节点继续运行；
-2. 部署新的验证节点，等待链数据同步完成后，给新的验证节点[设置 Session Key](./validator-register.md#设置-session-key)；
-3. [停掉](./validator-register.md#停止验证节点)旧的验证节点。
-
 验证人也可以选择[手动部署验证节点](./validator-deploy-manually.md)。手动部署验证节点，可以参考自动部署使用的硬件配置。
 
 ### 硬件配置
@@ -38,3 +32,14 @@
 | atocha | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
 | fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 5 TB | $81 |
 | discovol | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+
+### 更换 VPS 服务商
+
+如果已部署节点的验证人要更换 VPS 服务商，请遵循以下步骤：
+
+1. 保持旧的验证节点继续运行；
+2. 部署新的验证节点；
+自动部署的验证节点，如果需要可以先 `Clear Local Storage`。
+![validator clear local](../../images/maintain/validator_clear_local.jpg)
+3. 链数据同步完成后，给新的验证节点[设置 Session Key](./validator-register.md#设置-session-key)；
+4. 下一个奖励周期后，[停掉](./validator-register.md#停止验证节点)旧的验证节点。

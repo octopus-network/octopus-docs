@@ -5,12 +5,6 @@ In order to simplify the deployment of the validator node, the Octopus Network t
 * [AWS](./validator-deploy-aws.md)
 * [Digital Ocean](./validator-deploy-do.md)
 
-For the validator who need to change the VPS provider of the  deployed node, please follow these steps:
-
-1. Keep the old validator node running;
-2. Deploy a new validator node, after the synchronization, [set the Session Key](./validator-register.md#set-session-key);
-3. [Stop](./validator-register.md#stop-the-validator-node) the old validator node.
-
 Also, the validator can choose to [manually deploy the validator node](./validator-deploy-manually.md).
 
 ### Hardware configuration
@@ -39,3 +33,13 @@ The configuration and approximate cost of each Appchain validator node which is 
 | atocha | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
 | fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 5 TB | $81 |
 | discovol | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+
+### Change VPS provider
+
+For the validator who need to change the VPS provider of the deployed node, please follow these steps:
+
+1. Keep the old validator node running;
+2. Deploy a new validator node. For the node which was deployed via the automatic deployment service, please `Clear Local Storage` if needed.
+![validator clear local](../images/maintain/validator_clear_local.jpg)
+3. When the new node done the synchronization, please [set the Session Key](./validator-register.md#set-session-key) for the new validator node;
+4. The validator could [stop](./validator-register.md#stop-the-validator-node) the old validator node until the next reward cycle.
