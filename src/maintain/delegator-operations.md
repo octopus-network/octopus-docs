@@ -28,12 +28,12 @@ Click the `Unbond Delegation` button on the `Validator Profile` page to perform 
 
 ![delegator unbond](../images/maintain/delegator_unbond.jpg)
 
-### Withdraw staking OCT
+### Withdraw OCT
 
 It is the same as the validator. Click `...` and select `Withdraw Stakes` on the **My Staking** area.
 
 ![unbond withdraw](../images/maintain/unbond_withdraw.jpg)
 
-After the unbonding period ends, you can click the `Withdraw` button to withdraw the staking OCT.
+After the unbonding period ends, you can click the `Withdraw` button to withdraw the staked OCT.
 
 ![withdraw stakes](../images/maintain/withdraw_stakes.jpg)
