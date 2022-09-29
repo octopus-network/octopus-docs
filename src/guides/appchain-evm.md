@@ -112,7 +112,7 @@ AccountId::from_str("f24FF3a9CF04c71Dbc94D0b566f7A27B94566cac").unwrap(),
 
 Note that there are two identical configurations in the file, but the difference is the running environment. Modify the configurations in `development_config()` if you run as development environment. Modify the configurations in `local_testnet_config()` if you run as local testnet environment.
 
-Then, go to your project's root directory, restart the Barnacle EVM and deploy the smart contracts:
+Then, go to your project's root directory, rebuild the Barnacle EVM and deploy the smart contracts:
 
 ```
 cd ~/*work directory*/barnacle
@@ -154,7 +154,7 @@ Then fill in the Barnacle EVM details. Name the network "Barnacle EVM", then ins
 
 The chain ID of this particular Barnacle EVM is [1281](https://github.com/octopus-network/barnacle/blob/release-v0.9.18-evm/runtime/src/lib.rs#L752).
 
-The barnacle EVM token named "EBAR" defaultly. However, you can name the native token "DOLLAR".
+The barnacle EVM token named "EBAR" defaultly. However, you can also name the native token whatever you like.
 
 After you filled in the form, click "Save".
 
@@ -162,7 +162,7 @@ After you filled in the form, click "Save".
 
 You might need to wait a second for the MetaMask to connect.
 
-![Waiting...](../images/guides/appchain-evm/image-3.png)
+<!-- ![Waiting...](../images/guides/appchain-evm/image-3.png) -->
 
 If you are successfully connected you should see your default funds.
 
