@@ -10,8 +10,8 @@
 
 在验证人列表中，验证人主要有以下几种状态：
 
-* Registered, missing session keys，需设置Session Key； 
-* New, coming next day(era)，需等待进入下个验证人集合；
-* Validating，验证人正常工作；
-* Validating, not producing blocks，需检查验证节点是否正常运行；
-* Unstaking，解除质押；
+* **Registered, missing session keys**，需设置Session Key； 
+* **New, coming next day(era)**，需等待进入下个验证人集合；
+* **Validating**，验证人正常工作；
+* **Validating, not producing blocks**，需检查验证节点是否正常运行；
+* **Unstaking**，解除质押；

@@ -20,6 +20,8 @@ After a reward cycle (~1 day), the delegator will obtain the staking rewards, wh
 
 ![delegator claim reward](../images/maintain/delegator_claim_rewards.jpg)
 
+**Warning**: The delegator needs to claim the rewards in time, and the rewards that exceed 84 days will not be claimable.
+
 ### Unbond delegation
 
 Click the `Unbond Delegation` button on the `Validator Profile` page to perform the unbond delegation operation.

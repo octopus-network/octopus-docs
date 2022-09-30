@@ -52,6 +52,8 @@
 
 ![validator claim rewards](../../images/maintain/validator_claim_rewards.jpg)
 
+**警告**：验证人需要及时领取质押奖励，超过 84 天的奖励将无法领取。
+
 ### 停止验证
 
 停止验证需要完成解除质押和停止验证节点两步操作。

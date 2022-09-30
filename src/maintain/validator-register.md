@@ -56,6 +56,8 @@ After a reward cycle (~1 day), the validator will receive the staking reward, wh
 
 ![validator claim rewards](../images/maintain/validator_claim_rewards.jpg)
 
+**Warning**: The validator needs to claim the rewards in time, and the rewards that exceed 84 days will not be claimable.
+
 ### Stop validating
 
 To stop validating, it needs to unbond staking and stop the validator node.

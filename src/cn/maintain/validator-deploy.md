@@ -13,7 +13,7 @@
 
 **AWS**
 
-| 应用链 | EC2 实例类型  | 存储 | 数据传输 | 每月总费用 |
+| 应用链 | EC2 实例类型  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
 | debionetwork | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
 | myriad | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
@@ -24,7 +24,7 @@
 
 **Digital Ocean**
 
-| 应用链 | Droplet  | 存储 | 数据传输 | 每月总费用 |
+| 应用链 | Droplet  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
 | debionetwork | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
 | myriad | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |

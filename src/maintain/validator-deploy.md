@@ -13,7 +13,7 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 **AWS**
 
-| Appchain | EC2 Instance Type  | Storage | Data Transfer | Total cost per month |
+| Appchain | EC2 Instance Type  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
 | debionetwork | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
 | myriad | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
@@ -25,7 +25,7 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 **Digital Ocean**
 
-| Appchain | Droplet  | Storage | Data Transfer | Total cost per month |
+| Appchain | Droplet  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
 | debionetwork | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
 | myriad | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |

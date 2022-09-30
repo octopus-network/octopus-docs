@@ -20,6 +20,8 @@
 
 ![delegator claim reward](../../images/maintain/delegator_claim_rewards.jpg)
 
+**警告**：委托人需要及时领取质押奖励，超过 84 天的奖励将无法领取。
+
 ### 解除委托
 
 如果打算解除委托，在`Validator Profile`页面中，点击`Unbond Delegation`按钮执行解除委托质押操作。
