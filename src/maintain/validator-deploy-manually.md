@@ -1,6 +1,6 @@
 ## Manually Deploy Validator Node
 
-> **DANGER**
+> **Warning**
 >
 > It is highly recommended that you have significant system administration experience before attempting to run your own validator manually.
 >
