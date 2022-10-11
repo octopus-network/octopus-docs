@@ -41,8 +41,9 @@ Run this command to install the necessary dependencies for compiling and running
 
 ```bash
 sudo apt update
+sudo apt install build-essential
 # May prompt for location information
-sudo apt install make clang pkg-config libssl-dev build-essential
+sudo apt install --assume-yes git clang curl libssl-dev llvm libudev-dev make protobuf-compiler
 ```
 
 ### 3. Get the appchain node
