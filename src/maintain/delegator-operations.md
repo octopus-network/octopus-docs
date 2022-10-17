@@ -16,7 +16,9 @@ Click `+` or `-` to increase or decrease the delegation amount on the `Validator
 
 ### Claim rewards
 
-After a reward cycle (~1 day), the delegator will obtain the staking rewards, which need to be claimed manually. Click the `Rewards` button on the `Validator Profile` page, then select `Delegator Reward` and click `Claim` to claim the rewards.
+After a reward cycle (~1 day), the delegator will obtain the staking rewards, which need to be claimed manually. In the **My Staking** area, click **Rewards** , and then click the `Claim All` button to claim the reward.
+
+![my staking](../images/maintain/my_staking.jpg)
 
 ![delegator claim reward](../images/maintain/delegator_claim_rewards.jpg)
 

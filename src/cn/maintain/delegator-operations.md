@@ -16,7 +16,9 @@
 
 ### 领取质押奖励
 
-在委托质押一个奖励周期大约 1 天后，委托人将会获得质押奖励，需要手动领取。在`Validator Profile`页面中，点击`Rewards`按钮，选择`Delegator Reward`，然后点击`Claim`领取质押奖励。
+在委托质押一个奖励周期大约 1 天后，委托人将会获得质押奖励，需要手动领取。在 **My Staking** 区域，点击**Rewards**，然后点击`Claim All`按钮领取奖励。
+
+![my staking](../../images/maintain/my_staking.jpg)
 
 ![delegator claim reward](../../images/maintain/delegator_claim_rewards.jpg)
 

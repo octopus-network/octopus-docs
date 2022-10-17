@@ -48,7 +48,9 @@
 
 ### 领取质押奖励
 
-在一个奖励周期大约 1 天后，验证人将会获得质押奖励，需要手动领取。在 **My Staking** 区域，点击**Rewards**，在`Validator Reward`列表页面中，点击`Claim`按钮领取奖励。
+在一个奖励周期大约 1 天后，验证人将会获得质押奖励，需要手动领取。在 **My Staking** 区域，点击**Rewards**，然后点击`Claim All`按钮领取奖励。
+
+![my staking](../../images/maintain/my_staking.jpg)
 
 ![validator claim rewards](../../images/maintain/validator_claim_rewards.jpg)
 

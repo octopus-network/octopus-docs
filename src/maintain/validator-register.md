@@ -52,7 +52,9 @@ Check whether the return value is consistent with the Session keys you have set.
 
 ### Claim rewards
 
-After a reward cycle (~1 day), the validator will receive the staking reward, which needs to be claimed manually. In the **My Staking** area, click **Rewards** , then select the `Validator Reward` and click the `Claim` button to claim the reward.
+After a reward cycle (~1 day), the validator will receive the staking reward, which needs to be claimed manually. In the **My Staking** area, click **Rewards** , and then click the `Claim All` button to claim the reward.
+
+![my staking](../images/maintain/my_staking.jpg)
 
 ![validator claim rewards](../images/maintain/validator_claim_rewards.jpg)
 
