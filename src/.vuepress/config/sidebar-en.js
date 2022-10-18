@@ -10,6 +10,26 @@ module.exports = [
         '/general/octopus-staking',
         '/general/octopus-faq',
       ]
+    },        
+    {
+      title: 'Validator Guides',
+      path: '/maintain/validator-guide',
+      collapsable: false,
+      children: [
+        '/maintain/validator-generate-keys',
+        '/maintain/validator-deploy',
+        '/maintain/validator-register',
+        '/maintain/monitor-node',
+      ]
+    },
+    {
+      title: 'Delegator Guides',
+      path: '/maintain/delegator-delegate',
+      collapsable: false,
+      children: [
+        '/maintain/delegator-delegate',
+        '/maintain/delegator-operations',
+      ]
     },    
     {
       title: 'Developer Guides',
@@ -31,26 +51,6 @@ module.exports = [
       collapsable: false,
       children: [
         '/guides/voting-appchain',
-      ]
-    },
-    {
-      title: 'Delegator Guides',
-      path: '/maintain/delegator-delegate',
-      collapsable: false,
-      children: [
-        '/maintain/delegator-delegate',
-        '/maintain/delegator-operations',
-      ]
-    },        
-    {
-      title: 'Validator Guides',
-      path: '/maintain/validator-guide',
-      collapsable: false,
-      children: [
-        '/maintain/validator-generate-keys',
-        '/maintain/validator-deploy',
-        '/maintain/validator-register',
-        '/maintain/monitor-node',
       ]
     }
 ];

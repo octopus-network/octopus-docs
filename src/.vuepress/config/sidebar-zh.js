@@ -12,6 +12,26 @@ module.exports = [
       ]
     },    
     {
+      title: '验证人指南',
+      path: '/cn/maintain/validator-guide',
+      collapsable: false,
+      children: [
+        '/cn/maintain/validator-generate-keys',
+        '/cn/maintain/validator-deploy',
+        '/cn/maintain/validator-register',
+        '/cn/maintain/monitor-node',
+      ]
+    },
+    {
+      title: '委托人指南',
+      path: '/cn/maintain/delegator-delegate',
+      collapsable: false,
+      children: [
+        '/cn/maintain/delegator-delegate',
+        '/cn/maintain/delegator-operations',
+      ]
+    },    
+    {
       title: '开发者指南',
       path: '/cn/guides/appchain-guide',
       collapsable: false,
@@ -31,26 +51,6 @@ module.exports = [
       collapsable: false,
       children: [
         '/cn/guides/voting-appchain',
-      ]
-    },
-    {
-      title: '委托人指南',
-      path: '/cn/maintain/delegator-delegate',
-      collapsable: false,
-      children: [
-        '/cn/maintain/delegator-delegate',
-        '/cn/maintain/delegator-operations',
-      ]
-    },    
-    {
-      title: '验证人指南',
-      path: '/cn/maintain/validator-guide',
-      collapsable: false,
-      children: [
-        '/cn/maintain/validator-generate-keys',
-        '/cn/maintain/validator-deploy',
-        '/cn/maintain/validator-register',
-        '/cn/maintain/monitor-node',
       ]
     }
 ];
