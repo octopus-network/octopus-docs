@@ -20,6 +20,7 @@ module.exports = [
         '/maintain/validator-deploy',
         '/maintain/validator-register',
         '/maintain/monitor-node',
+        '/maintain/node-instance-operations',
       ]
     },
     {

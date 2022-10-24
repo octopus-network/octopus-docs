@@ -10,6 +10,7 @@
     * [Deploy Validator Node](./maintain/validator-deploy.md)
     * [Register Validator](./maintain/validator-register.md)
     * [Monitor Node](./maintain/monitor-node.md)
+    * [Node Instance Operations](./maintain/node-instance-operations.md)
 * [Delegator Guides](./maintain/delegator-delegate.md)
     * [How to Delegate](./maintain/delegator-delegate.md)
     * [Delegate Operations](./maintain/delegator-operations.md) 

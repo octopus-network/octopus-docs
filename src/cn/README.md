@@ -10,6 +10,7 @@
     * [部署验证节点](./maintain/validator-deploy.md)
     * [注册验证人](./maintain/validator-register.md)
     * [监控验证节点](./maintain/monitor-node.md)
+    * [节点实例操作](./maintain/node-instance-operations.md)
 * [委托人指南](./maintain/delegator-delegate.md)
     * [委托质押](./maintain/delegator-delegate.md)
     * [委托人操作](./maintain/delegator-operations.md)
