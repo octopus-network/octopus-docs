@@ -48,9 +48,9 @@
 
 ### 领取质押奖励
 
-在一个奖励周期大约 1 天后，验证人将会获得质押奖励，需要手动领取。在 **My Staking** 区域，点击**Rewards**，然后点击`Claim All`按钮领取奖励。
+在一个奖励周期大约 1 天后，验证人将会获得质押奖励，需要手动领取。在 **My Rewards** 区域，点击**Claim**，然后点击`Claim All`按钮领取奖励。
 
-![my staking](../../images/maintain/my_staking.jpg)
+![my rewards](../../images/maintain/my_rewards.jpg)
 
 ![validator claim rewards](../../images/maintain/validator_claim_rewards.jpg)
 
@@ -74,7 +74,9 @@
 
 ### 停止验证节点
 
-对于通过自动部署服务部署的验证节点，验证人可以点击 **My Node** 区域中的 `Destory` 按钮停止验证节点并删除自动部署的实例。
+对于通过自动部署服务部署的验证节点，验证人可以在 **My Node** 区域中点击`···`，选择 `Destory` 停止验证节点并删除自动部署的实例。
+
+![validator destory node](../../images/maintain/validator_destory_node.jpg)
 
 手动部署的验证节点，验证人请记得停掉它。
 
@@ -82,7 +84,7 @@
 
 ### 提现质押的 OCT
 
-在应用链的 **My Staking** 区域，点击`···`，选择`Withdraw Stakes`。
+在应用链的 **My Rewards** 区域，点击`···`，选择`Withdraw Stakes`。
 
 ![unbond withdraw](../../images/maintain/unbond_withdraw.jpg)
 

@@ -7,22 +7,20 @@
 可以进行以下操作：
 
 * 增加/减少质押量
-* 领取质押奖励
+* 重新委托质押
 * 解除委托
 
 ### 增加/减少质押量
 
 在`Validator Profile`页面中，点击`+`或者`-`，可以增加或者减少质押量。
 
-### 领取质押奖励
+### 重新委托质押
 
-在委托质押一个奖励周期大约 1 天后，委托人将会获得质押奖励，需要手动领取。在 **My Staking** 区域，点击**Rewards**，然后点击`Claim All`按钮领取奖励。
+委托人可以通过重新委托操作选择同一条应用链上的其它验证人进行无等待期的验证人更换。
 
-![my staking](../../images/maintain/my_staking.jpg)
+如果想要重新委托质押，在`Validator Profile`页面中，点击`Redelegate`按钮执行重新委托质押操作。
 
-![delegator claim reward](../../images/maintain/delegator_claim_rewards.jpg)
-
-**警告**：委托人需要及时领取质押奖励，超过 84 天的奖励将无法领取。
+![redelegate](../../images/maintain/delegator_redelegate.jpg)
 
 ### 解除委托
 
@@ -34,7 +32,7 @@
 
 ### 提现质押的 OCT
 
-与验证人相同，在应用链的 **My Staking** 区域，点击`···`，选择`Withdraw Stakes`。
+与验证人相同，在应用链的 **My Rewards** 区域，点击`···`，选择`Withdraw Stakes`。
 
 ![unbond withdraw](../../images/maintain/unbond_withdraw.jpg)
 

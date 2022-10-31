@@ -17,3 +17,13 @@ The delegation steps are as follows:
 ![delegator delegate](../images/maintain/delegator_delegate.jpg)
 
 The delegation will become active in the next reward cycle (~1 day), and then the delegator will obtain the staking rewards.
+
+### Claim rewards
+
+After a reward cycle (~1 day), the delegator will obtain the staking rewards, which need to be claimed manually. In the **My Rewards** area, click **Claim** , and then click the `Claim All` button to claim the reward.
+
+![my rewards](../images/maintain/my_rewards.jpg)
+
+![delegator claim reward](../images/maintain/delegator_claim_rewards.jpg)
+
+**Warning**: The delegator needs to claim the rewards in time, and the rewards that exceed 84 days will not be claimable.

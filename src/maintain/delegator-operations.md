@@ -7,22 +7,20 @@ After the delegation, the delegator could select the delegated validator and cli
 Delegator can do the below operations on the `Validator Profile` page.
 
 * Increase/Decrease delegation
-* Claim rewards
+* Redelegate
 * Unbond delegation
 
 ### Increase/Decrease delegation
 
 Click `+` or `-` to increase or decrease the delegation amount on the `Validator Profile` page.
 
-### Claim rewards
+### Redelegate
 
-After a reward cycle (~1 day), the delegator will obtain the staking rewards, which need to be claimed manually. In the **My Staking** area, click **Rewards** , and then click the `Claim All` button to claim the reward.
+The delegator can change to another validator on the same Appchain without the waiting period via the redelegate operation.
 
-![my staking](../images/maintain/my_staking.jpg)
+Click the `Redelegate` button on the `Validator Profile` page to perform the redelegate operation.
 
-![delegator claim reward](../images/maintain/delegator_claim_rewards.jpg)
-
-**Warning**: The delegator needs to claim the rewards in time, and the rewards that exceed 84 days will not be claimable.
+![redelegate](../images/maintain/delegator_redelegate.jpg)
 
 ### Unbond delegation
 
@@ -34,7 +32,7 @@ Click the `Unbond Delegation` button on the `Validator Profile` page to perform 
 
 ### Withdraw OCT
 
-It is the same as the validator. Click `...` and select `Withdraw Stakes` on the **My Staking** area.
+It is the same as the validator. Click `...` and select `Withdraw Stakes` on the **My Rewards** area.
 
 ![unbond withdraw](../images/maintain/unbond_withdraw.jpg)
 

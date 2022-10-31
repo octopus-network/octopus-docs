@@ -39,7 +39,7 @@ The configuration and approximate cost of each Appchain validator node which is 
 For the validator who need to change the VPS provider of the deployed node, please follow these steps:
 
 1. Keep the old validator node running;
-2. Deploy a new validator node. For the node which was deployed via the automatic deployment service, please `Clear Local Storage` if needed.
-![validator clear local](../images/maintain/validator_clear_local.jpg)
+2. Deploy a new validator node. For the node which was deployed via the automatic deployment service, please `Clear Node Info` if needed.
+![validator clear node info](../images/maintain/validator_clear_nodeinfo.jpg)
 3. When the new node done the synchronization, please [set the Session Key](./validator-register.md#set-session-key) for the new validator node;
 4. The validator could [stop](./validator-register.md#stop-the-validator-node) the old validator node until the next reward cycle.

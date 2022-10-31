@@ -17,3 +17,13 @@
 ![delegator delegate](../../images/maintain/delegator_delegate.jpg)
 
 委托质押将在下一个奖励周期大约 1 天后生效，生效后委托人将获得质押奖励。
+
+### 领取质押奖励
+
+在委托质押一个奖励周期大约 1 天后，委托人将会获得质押奖励，需要手动领取。在 **My Rewards** 区域，点击**Claim**，然后点击`Claim All`按钮领取奖励。
+
+![my rewards](../../images/maintain/my_rewards.jpg)
+
+![delegator claim reward](../../images/maintain/delegator_claim_rewards.jpg)
+
+**警告**：委托人需要及时领取质押奖励，超过 84 天的奖励将无法领取。
