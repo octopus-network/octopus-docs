@@ -67,12 +67,10 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Token Info**
         - **Token Name**: The name of the Appchain native token
         - **Token Symbol**: The symbol of the Appchain native token
-        - **Icon**: The **SVG** format icon link of the Appchain native token
-        - **Decimals**: The decimals of the Appchain native token
+        - **Decimals**: The decimals of the Appchain native token, the default value is 18
+		- **Icon**: The **SVG** format icon link of the Appchain native token
     * **Website**: The official website of the Appchain
-    * **Function Spec**: The url of the Appchain functional specification file
     * **Github Address**: The Github repository of Appchain
-    * **Github Release**: The Github URL of the release of the Appchain
     * **Initial Supply**: The Appchain native token amount of the initial issues
     * **Premined**: The number of wrapped tokens that be Premined to the NEAR network in the total initial issuance
     * **Beneficiary**: The NEAR account to receive the Premined wrapped token
@@ -83,6 +81,6 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Project Description**: A single sentence introduction of the Appchain
 
 
-   ![Register Screenshot](../images/guides/register.png)
+   ![appchain register](../images/guides/appchain_register.jpg)
 
 3. Click *Submit* to send the registration request.

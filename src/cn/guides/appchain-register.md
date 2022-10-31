@@ -57,7 +57,7 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
 ### 先决条件
 
 * NEAR 帐户
-* OCT：应用链团队需要支付 1k OCT 作为**审计费**。测试网中，应用链团队可以从 Discord 请求测试网 OCT。
+* OCT：应用链团队需要支付 1k OCT 作为**审计费**。测试网中，应用链团队可以从 Discord 频道联系请求测试网 OCT。
 
 ### 应用链注册的操作步骤
 
@@ -67,12 +67,10 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Token Info**
         - **Token Name**: 应用链原生通证的名称
         - **Token Symbol**: 应用链原生通证的符号
-        - **Icon**: 应用链原生通证的 SVG 格式图标链接
-        - **Decimals**: 应用链原生通证的精度
+        - **Decimals**: 应用链原生通证的精度，默认为18
+		- **Icon**: 应用链原生通证的 SVG 格式图标链接
     * **Website**: 应用链官网
-    * **Function Spec**: 应用链功能规范文件的链接
     * **Github Address**: 应用链的 Github 仓库
-    * **Github Release**: 应用链上线章鱼网络，发布版本的Github URL
     * **Initial Supply**: 应用链初始发行的原生通证数量
     * **Premined**: 初始发行总量中 Premined 到 NEAR 网络的 wrapped 通证数量
     * **Beneficiary**: 应用链团队接收 wrapped 通证的 NEAR 钱包账户
@@ -82,6 +80,6 @@ pub const EPOCH_DURATION_IN_BLOCKS: BlockNumber = 4 * HOURS;
     * **Template Type**: 应用链使用的模板类型
     * **Project Description**: 应用链的一句话介绍
 
-   ![注册截图](../../images/guides/register.png)
+   ![appchain register](../../images/guides/appchain_register.jpg)
 
 3. 点击 *Submit* 发送注册交易。
