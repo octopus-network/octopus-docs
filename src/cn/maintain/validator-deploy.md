@@ -39,7 +39,7 @@
 
 1. 保持旧的验证节点继续运行；
 2. 部署新的验证节点；
-自动部署的验证节点，如果需要可以先 `Clear Local Storage`。
-![validator clear local](../../images/maintain/validator_clear_local.jpg)
+自动部署的验证节点，如果需要可以先 `Clear Node Info`。
+![validator clear node info](../../images/maintain/validator_clear_nodeinfo.jpg)
 3. 链数据同步完成后，给新的验证节点[设置 Session Key](./validator-register.md#设置-session-key)；
 4. 下一个奖励周期后，[停掉](./validator-register.md#停止验证节点)旧的验证节点。
