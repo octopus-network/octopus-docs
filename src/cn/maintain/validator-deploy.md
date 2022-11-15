@@ -26,12 +26,12 @@
 
 | 应用链 | Droplet  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
-| debionetwork | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
-| myriad | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
-| deip | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
-| atocha | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
-| fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $100 |
-| discovol | 2 GB Memory / 2 vCPUs | 120 GB | 3 TB | $33 |
+| debionetwork | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| myriad | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| deip | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| atocha | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $93 |
+| discovol | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
 
 ### 更换 VPS 服务商
 
