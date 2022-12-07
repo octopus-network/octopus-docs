@@ -1,15 +1,15 @@
 ## 应用链投票
 
-对于在 **Voting** 投票阶段的应用链，所有OCT持有者都可以对它们投赞成票或反对票，最终得分最高的应用链将会进入下个阶段。 投票步骤如下：
+对于在 **Voting** 投票阶段的应用链，所有[章鱼网络 DAO 理事会的成员](https://app.astrodao.com/dao/octopus-dao.sputnik-dao.near/groups/all)都可以在[Octopus DAO](https://app.astrodao.com/dao/octopus-dao.sputnik-dao.near)对启动应用链的提案进行投票-赞成或反对，最终获得赞成票数最高的应用链将会进入下个阶段。 投票步骤如下：
 
 1. 使用 NEAR 账号登录[章鱼网络主网](https://mainnet.oct.network)。
-2. 进入 **Appchains** 页面，在 **Voting** 中选择一条应用链并点击。
-3. 点击 **Upvote** 表示投票赞成或点击 **Downvote** 表示投票反对，并选择 **Deposit** 存入一定数量的 OCT 为应用链投票。愿意存入的 OCT 金额越多，投票权重就越大。可以随时提取 OCT。但是，为了计算选票，你必须将你的 OCT 留在存款中，直到投票阶段结束。
+2. 进入 **Appchains** 页面，在 **Voting** 中选择一条应用链并点击打开，然后点击 **AstroDAO Proposal** 链接。
+3. 打开 **AstroDAO Proposal** 页面并连接 NEAR 账号，投票赞成或投票反对。
+
+![voting proposal](../../images/guides/voting_proposal.jpg)
 
 ![voting appchain](../../images/guides/voting_appchain.jpg)
 
 > 备注：
 >
-> 每天 00:00 UTC 左右，章鱼团队的管理员会统计应用链的投票数，当天的分数是赞成票数减去反对票数。总得分是每天的累计分数之和。
->
-> 要保持对应用链的赞成（Upvote）票/反对（Downvote）票有效，你必须保留 OCT 直到该应用链的投票阶段结束。
+> 请在提案有效期内进行完成投票，默认有效期为 7 天。

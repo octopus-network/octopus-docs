@@ -7,22 +7,22 @@
 There are the below five phases:
 
 1. **Registered**: The appchain will go through the Registered phase after the appchain team submits the registration with the appchain information.
-2. **Auditing**: The Octopus team will start the audit within 1-2 weeks. During the Auditing phase, the Octopus team mainly audits for two aspects:
-    * The protocol functions are usable/valuable for business purposes;
-    * Both the protocol apps and appchain node are implemented as the same with the protocol function specification file provided;
-3. **Voting**: If the appchain passes the audit, it will go through the Voting phase. This is the **critical stage** for the appchain team to request support from OCT holders. OCT holders can [vote](./voting-appchain.md) to decide whether the appchain would go through the next phase.
-4. **Booting**: The appchain with the highest vote scores will go through the Booting phase, the Octopus team will do some preparations for the appchain to go live.
-5. **Running**: After the Octopus team boots the appchain and the appchain team activates the chain with the Sudo account,  the Octopus team will execute the go-live step, the appchain will go through the Running phase.
+2. **Audited**: The Octopus core team will start the audit within 1-2 weeks and mainly audits for two aspects:
+    * The appchain functions are usable/valuable for business purposes;
+    * The configurations of appchain are right;
+3. **Voting**: If the appchain passes the audit, it will go through the Voting phase. This is the **critical stage** for the appchain team to request support from the Octopus DAO Council. The DAO council members can [vote](./voting-appchain.md) to decide whether the appchain would go through the Booting phase.
+4. **Booting**: The appchain with the highest upvotes will go through the Booting phase, the Octopus core team will do some preparations for the appchain to go live.
+5. **Running**: After the Octopus core team boots the appchain and executes the go-live step, the appchain will go through the Running phase.
 
 ### Appchain booting process
 
-When an appchain is ready to boot, the Octopus team moves it to the booting phase. In this section, we will list what we need to do during **Booting** phase.
+In this section, we will list what needs to do during **Booting** phase.
 
-1. The Octopus team deploy an anchor contract and a wrapped token contract for the appchain.
+1. The Octopus core team will deploy an anchor contract and a wrapped token contract for the appchain.
 
     **Note**: By creating the wrapped token in NEAR network early, the appchain team can choose to do an IDO before the appchain launches. The appchain's tokens exist in two places, wrapped token in NEAR network and appchain native token in Appchain network. When an appchain is launched, users can use the Octopus Bridge to transfer tokens between these two places.
 
-    Also, the Octopus team will provide a snippet of the chainspec file that contains the session keys and staking information of the Octopus foundation validator nodes. For the foundation validator nodes, the default staking amount is `10000 * 10**18` OCT, and for these nodes, the default pre-allocated balance of natvie token is `10 * 10**18`, and the actual amount is determined by the appchain team.
+    Also, the Octopus team will provide a snippet of the chainspec file that contains the session keys and staking information of the Octopus foundation validator nodes. For the foundation validator nodes, the default staking amount is `50000 * 10**18` OCT, and for these nodes, the default pre-allocated balance of natvie token is `10 * 10**18`, and the actual amount is determined by the appchain team.
 
 2. The Appchain team generate a human-readable chainspec file. Example command:
 
@@ -30,7 +30,7 @@ When an appchain is ready to boot, the Octopus team moves it to the booting phas
    ./target/debug/debio build-spec --disable-default-bootnode --chain dev > debionetwork.json
    ```
 
-   And then, the Octopus team will provide the snippet information file directly to you. Please carefully copy the snippet information provided into the chainspec file. Example:
+   And then, the Octopus team will provide one chainspec snippet file (chainspec-snippet.json) to the Appchain team. The Appchain team need to copy the snippet information provided into the chainspec file. Example:
 
    ```bash
    
@@ -90,8 +90,6 @@ When an appchain is ready to boot, the Octopus team moves it to the booting phas
     "octopus-testnet" => Box::new(chain_spec::octopus_testnet_config()?),
     ```    
 
-3. The Octopus team use the code appchain team released to build a docker image, and then will launch a four-validators + four-bootnodes chain, deploy the API gateway, relayer and other services, and then send the wss endpoint of API gateway to the Appchain team.
+3. The Octopus team will build a docker image with the Appchain Mainnet release which the Appchain team released, and then will launch a appchain network with the four foundation validators, the four bootnodes, the API gateway, the relayer and other services. Also, the Octopus team will use `sudo` account to activate the appchain.
 
-4. The Appchain team connect the polkadotjs apps with the wss endpoint, and then use `sudo` account to activate the appchain, do the `sudo` call `octopusAppchain -> forceSetIsActivated` with `yes`.
-
-5. The Octopus team move the appchain to the running stage.
+4. The Octopus team move the appchain to the Running stage.

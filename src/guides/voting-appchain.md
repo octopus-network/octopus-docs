@@ -2,14 +2,14 @@
 
 For the Appchains in the **Voting** phase, all OCT holders can upvote or downvote an apphain. The Appchain which gets the highest scores will be promoted into the next phase. The voting steps are as follows:
 
-1. Log in to the Octopus Apps ([Mainnet](https://mainnet.oct.network) and [Testnet](https://testnet.oct.network)) via a NEAR account.
-2. Navigate to the **Appchains** page and select an Appchain in the **Voting**, and then click it.
-3. Click **Upvote** or **Downvote** and deposit a certain amount of ​OCTs for voting the Appchain. The more OCT amount you are willing to deposit, the stronger your vote will be weighted. You can withdraw your OCT tokens at any time. However, in order for your votes to be counted, you must leave your OCT in deposit until the conclusion of the Voting phase.
+1. Log in to the Octopus Apps ([Mainnet](https://mainnet.oct.network) via your NEAR account.
+2. Navigate to the **Appchains** page and select an Appchain in the **Voting** and click it, and then click the **AstroDAO Proposal**.
+3. Open the **AstroDAO Proposal** page and connect your NEAR account, vote Upvote or Downvote.
+
+![voting proposal](../images/guides/voting_proposal.jpg)
 
 ![voting appchain](../images/guides/voting_appchain.jpg)
 
 > Notes:
 >
-> Every day around 00:00 UTC, the admin of the Octopus Network team will count the number of votes in the appchain. The score for the day is the number of Upvotes minus the number of Downvotes. The total vote score is the sum of the accumulated scores for each day.
->
-> To keep Upvote/Downvote, you must keep OCT deposited until the Voting phase ends for the Appchain.
+> Please complete the vote before the validity period of the proposal, which is 7 days by default.
