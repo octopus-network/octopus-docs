@@ -30,11 +30,17 @@ For the automatically deployed validator, click `Set`.
 
 ![validator set sessionkey](../images/maintain/validator_set_sessionkey2.jpg)
 
-For the manually deployed validator, please input the content of the `result` field output in the `author_rotateKeys` operation into the `Session key` input box;
+### Set Session Key - manual deployment
 
-![validator set sessionkey](../images/maintain/validator_set_sessionkey1.jpg)
+For the manually deployed validator, you can set the Session keys by submitting the `setKeys` transaction via the PolkadotJS-APPS RPC. 
 
-![validator set sessionkey](../images/maintain/validator_set_sessionkey3.jpg)
+Attach the [PolkadotJS-Apps explorer](https://polkadot.js.org/apps/#/explorer) to the appchain gateway node, the validator can configure the `custom endpoint` with the appchain RPC Endpoit in the `Settings` tab.
+
+![RPC Endpoit](../images/maintain/appchain_rpc.jpg)
+
+Once ensuring that you have connected to appchain RPC endpoit, navigate to `Developer` tab and select `Extrinsics` then select the appchain account which you filled in the Register validator step, and select the `session > setKeys(keys, proof)`, input the content of the `result` field that you get from the [Generate Session Keys](./validator-set-session-keys) step as `keys`, input `0x0` as `proof`, finally, submit the transaction.
+
+![validator set sessionkey](../images/maintain/validator_session_setkeys.jpg)
 
 The validator will be added into the next round of validator sets after waiting for a reward cycle (~1 day).
 

@@ -4,6 +4,7 @@ In order to simplify the deployment of the validator node, the Octopus Network t
 
 * [AWS](./validator-deploy-aws.md)
 * [Digital Ocean](./validator-deploy-do.md)
+* [GCP](./validator-deploy-gcp.md)
 
 Also, the validator can choose to [manually deploy the validator node](./validator-deploy-manually.md).
 
@@ -15,12 +16,12 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 | Appchain | EC2 Instance Type  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| debionetwork | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| myriad | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| deip | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| atocha | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| debionetwork | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
+| myriad | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
+| deip | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
+| atocha | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
 | fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 250 GB | 4500 GB | $509 |
-| discovol | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| discovol | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
 
 
 **Digital Ocean**
@@ -33,6 +34,17 @@ The configuration and approximate cost of each Appchain validator node which is 
 | atocha | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
 | fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $93 |
 | discovol | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+
+**GCP**
+
+| Appchain | VM instance  | Storage | Data Transfer | Estimated monthly cost |
+|------|------|------|------|------|
+| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| deip | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| atocha | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 250 GB | 4500 GB | $588 |
+| discovol | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
 
 ### Change VPS provider
 

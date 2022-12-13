@@ -18,27 +18,35 @@
 
 注册成功后，请等待大约1～2分钟，验证人的应用链账户中会收到 1 个应用链的代币，用于进行下一步的操作。
 
-### 设置 Session Key
+### 设置 Session Key - 自动部署验证节点
 
 **注意**，确保验证节点已完成链数据的同步，并且验证人的应用链账户中已收到应用链的代币。
 
-在应用链页面 **My Node** 区域，点击`···`，选择`Set Session Key`，在弹出页面中，选择上一步注册中填写的应用链账户，使用自动部署服务，验证人只需点击`Set`。
+使用自动部署验证节点服务，验证人只需在应用链页面 **My Node** 区域，点击`···`，选择`Set Session Key`，在弹出页面中，选择上一步注册中填写的应用链账户，点击`Set`。
 
 ![validator set sessionkey](../../images/maintain/validator_set_sessionkey.jpg)
 
 ![validator set sessionkey](../../images/maintain/validator_set_sessionkey2.jpg)
 
-手动部署，验证人需要在`Session key`输入框中输入`author_rotateKeys`操作中输出的`result`字段的内容；
+### 设置 Session Key - 手动部署验证节点
 
-![validator set sessionkey](../../images/maintain/validator_set_sessionkey1.jpg)
+对于手动部署的验证节点，验证人需要通过 PolkadotJS APPS RPC 提交 `setKeys` 交易来设置会话密钥。
 
-![validator set sessionkey](../../images/maintain/validator_set_sessionkey3.jpg)
+将 [PolkadotJS-Apps](https://polkadot.js.org/apps/#/explorer) 链接到应用链网关节点，配置 Apps 的`自定义终端`，应用链的 RPC Endpoit 可以从该应用链在章鱼网络[主网](https://mainnet.oct.network)页面获得。
+
+![RPC Endpoit](../../images/maintain/appchain_rpc.jpg)
+
+确保已连接到应用链后，导航到`开发者`选项，选择“交易”，然后选择在`注册验证人`步骤中填写的应用链帐户，并选择`session > setKeys(keys, proof)`选项，并将[生成 Session Key](./validator-set-session-keys)步骤的`result`字段内容作为`keys`输入，将`0x0`作为`proof`输入，最后提交交易。
+
+![验证器设置会话密钥](../../images/maintain/validator_session_setkeys.jpg)
 
 设置成功后，并且验证节点正常运行，等待一个奖励周期大约 1 天，它将会进入新一轮的验证人集合中。
 
 #### 检查 Session key
 
 可以通过 PolkadotJS-Apps 检查会话密钥是否设置正确，配置 Apps 的`自定义终端`，应用链的 RPC Endpoit 可以从该应用链在章鱼网络[主网](https://mainnet.oct.network)页面获得。
+
+![RPC Endpoit](../../images/maintain/appchain_rpc.jpg)
 
 连接到应用链后导航到`开发者`选项，选择`链状态`，选择`session > nextKeys(AccountId32)`选项，选择验证节点使用的验证人账户，点击`+`。
 

@@ -10,7 +10,7 @@ Log in to the Octopus Network [mainnet](https://mainnet.oct.network) with the NE
 
 Click the `Appchains` and select the appchain which would like to be a validator, click it to open the appchain page, then perform the following operations:
 
-1. In the **My Node** area of ​​the appchain page, input your `AWS Access Key` in the `Access Key` input box, then click `Deploy`;
+1. In the **My Node** area of ​​the appchain page, select `AWS` and input your `AWS Access Key` in the `Access Key` input box, then click `Next`;
 
 ![aws access key](../images/maintain/validator_aws_accesskey.jpg)
 
@@ -34,7 +34,9 @@ After the node synchronization, the status in the **My Node** area will change t
 
 ![validator running](../images/maintain/validator_aws_running.jpg)
 
-For the automatically deployed validator node, the validator can click `...` in the **My Node** area, and select `Instance Info` to check the hardware status information (such as CPU, hard disk, memory) of the running validator node instance.
+For the automatically deployed validator node, in the **My Node** area, the validator can click the icon on the right of the `Instance Status` field to check the instance status information (such as CPU, hard disk, memory) of the running validator node instance.
+
+![validator instance status](../images/maintain/validator_instance_status.jpg)
 
 At the `Running` status, the validator can proceed to the next step [register validator](./validator-register.md).
 

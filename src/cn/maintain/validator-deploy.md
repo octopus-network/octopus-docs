@@ -4,6 +4,7 @@
 
 * [AWS](./validator-deploy-aws.md)
 * [Digital Ocean](./validator-deploy-do.md)
+* [GCP](./validator-deploy-gcp.md)
 
 验证人也可以选择[手动部署验证节点](./validator-deploy-manually.md)。手动部署验证节点，可以参考自动部署使用的硬件配置。
 
@@ -32,6 +33,17 @@
 | atocha | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
 | fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $93 |
 | discovol | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+
+**GCP**
+
+| 应用链 | 实例类型  | 存储 | 数据传输 | 每月预估费用 |
+|------|------|------|------|------|
+| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| deip | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| atocha | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 250 GB | 4500 GB | $588 |
+| discovol | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
 
 ### 更换 VPS 服务商
 

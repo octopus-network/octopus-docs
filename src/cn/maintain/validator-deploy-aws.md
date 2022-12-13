@@ -10,7 +10,7 @@
 
 然后点击`Appchains`选项，在应用链列表中，选择要成为验证人的应用链，点击进入应用链页面，进行以下操作：
 
-1. 在应用链页面 **My Node** 区域，选择 `AWS` 并在`Access Key`输入框输入你的`AWS Access Key`，点击`Deploy`；
+1. 在应用链页面 **My Node** 区域，选择 `AWS` 并在`Access Key`输入框输入你的`AWS Access Key`，点击`Next`；
 
 ![aws access key](../../images/maintain/validator_aws_accesskey.jpg)
 
@@ -34,7 +34,9 @@
 
 ![validator running](../../images/maintain/validator_aws_running.jpg)
 
-自动部署的验证节点，可以在 **My Node** 区域，点击`···`，选择`Instance Info`可以查看运行验证节点实例的硬件状态信息（比如CPU、硬盘、内存）。
+自动部署的验证节点，可以在 **My Node** 区域，点击`Instance Status`最右侧的图标，可以查看运行验证节点实例的硬件状态信息（比如CPU、硬盘、内存）。
+
+![validator instance status](../../images/maintain/validator_instance_status.jpg)
 
 节点状态为`Running`时，可进行下一步操作[注册验证人](./validator-register.md)。
 
