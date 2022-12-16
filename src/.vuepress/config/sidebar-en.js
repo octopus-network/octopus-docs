@@ -19,6 +19,7 @@ module.exports = [
         '/maintain/validator-generate-keys',
         '/maintain/validator-deploy',
         '/maintain/validator-register',
+        '/maintain/validator-operations',
         '/maintain/monitor-node',
         '/maintain/node-instance-operations',
       ]
