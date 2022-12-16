@@ -1,5 +1,5 @@
 
-## Validator operations
+## Validator Operations
 
 
 ### Claim rewards

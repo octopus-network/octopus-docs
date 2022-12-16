@@ -1,4 +1,4 @@
-## Delegator operations
+## Delegator Operations
 
 After the delegation, the delegator could select the delegated validator and click `Delegated` to open the `Validator Profile` page.
 
