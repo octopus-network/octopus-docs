@@ -24,7 +24,7 @@ npm install -g yarn
 yarn add -D vuepress
 ```
 
-### Config
+### Config.
 
 Sidebar config file is in `src/.vuepress/config`, `sidebar-en.js` is for english, `sidebar-zh.js` is for chinese.
 
