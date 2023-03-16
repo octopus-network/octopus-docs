@@ -2,7 +2,7 @@
 
 This is the source repo for Octopus documents.
 
-### Install
+### Install.
 
 This repo is build by [vuepress](https://vuepress.vuejs.org).
 
