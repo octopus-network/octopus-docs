@@ -1,4 +1,4 @@
-## Octopus Docs
+## Octopus Docs.
 
 This is the source repo for Octopus documents.
 
