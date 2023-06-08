@@ -1,62 +1,29 @@
-## Octopus Docs
+## Octopus Network Docs
 
-This is the source repo for Octopus documents.
+This web application contains all documentation for Octopus Network. It is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Install
+### Installation
 
-This repo is build by [vuepress](https://vuepress.vuejs.org).
-
-You should install Node.js and vuepress.
-
-```bash
-# install nvm https://github.com/nvm-sh/nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-source ~/.bashrc
-nvm --version
-
-# install Node.js https://nodejs.org/en/
-nvm install v14.16.1
-
-# install yarn
-npm install -g yarn
-
-# install vuepress
-yarn add -D vuepress
+```
+npm install
 ```
 
-### Config
+### Local Development
 
-Sidebar config file is in `src/.vuepress/config`, `sidebar-en.js` is for english, `sidebar-zh.js` is for chinese.
-
-```javascript
-[
-  {
-    title: 'MenuName',      // Required
-    path: '/MenuPath',      // Required, The path to jump
-    collapsable: false,     // Required, set it to false
-    children: [
-      'MenuSubpath'
-    ]
-  }
-]
+```
+npm run start
 ```
 
-### Local Run
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-```bash
-# Build
-$ yarn build
+### Build
 
-# Run
-$ yarn dev
+```
+npm run build
 ```
 
-### Deploy
-#### Publish to Netlify
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-1. In Netlify, config the GitHub repo with the following settings:
+### Deployment
 
-* Build Command: `yarn build`
-* Publish directory: `dist`
-
-2. Click the **Deploy** button.
+The application automatically deployed to production using Vercel upon merge into main.
