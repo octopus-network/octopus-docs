@@ -8,29 +8,24 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Octopus Network Docs',
   tagline: 'Develop Appchain on Octopus Network',
-  trailingSlash: false,
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
   url: 'https://docs.oct.network',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'octopus-network', // Usually your GitHub org/user name.
-  projectName: 'octopus-docs', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  organizationName: 'octopus-network',
+  projectName: 'octopus-docs',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
@@ -41,12 +36,10 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           breadcrumbs: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
+          showLastUpdateTime: true,
+          editUrl: 'https://github.com/octopus-network/octopus-docs/tree/main/',
         },
-        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -58,54 +51,57 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Octopus Network Docs',
+        title: '',
         logo: {
           href: '/',
           alt: 'Octopus Network Logo',
           src: 'img/logo-blue.png',
         },
-        items: [
-          {
-            position: 'left',
-            label: 'Use',
-            to: '/use',
-          },
-          {
-            position: 'left',
-            label: 'Validate',
-            to: '/validate',  
-          },
-          {
-            position: 'left',
-            label: 'Protocol',
-            to: '/protocol',  
-          },          
+        items: [       
           {
             href: 'https://github.com/octopus-network',
-            className: 'pseudo-icon github-icon',
+            label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://medium.com/oct-network',
+            label: 'Blog',
+            position: 'right',
+          },          
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Network',
             items: [
               {
-                label: 'Become a Validator',
-                to: '/validate',
+                label: 'Mainnet',
+                href: 'https://mainnet.oct.network/',
+              },
+              {
+                label: 'Testnet',
+                href: 'https://testnet.oct.network/',
               },
             ],
-          },
+          },          
           {
             title: 'Community',
             items: [
               {
+                label: 'Forum',
+                href: 'https://forum.oct.network/',
+              },
+              {
                 label: 'Discord',
                 href: 'https://discord.com/invite/6GTJBkZA9Q',
-              },
+              },              
+            ],
+          },          
+          {
+            title: 'Social',
+            items: [
               {
                 label: 'Telegram',
                 href: 'https://t.me/octopusnetwork',
@@ -116,21 +112,8 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'https://medium.com/oct-network',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/octopus-network',
-              },
-            ],
-          },
         ],
-        copyright: `Built with ❤️ by the Octopus Network Core Development Team. © ${new Date().getFullYear()} All rights reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Octopus Network. All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
