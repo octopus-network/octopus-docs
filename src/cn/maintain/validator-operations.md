@@ -32,6 +32,8 @@
 
 ![validator destory node](../../images/maintain/validator_destory_node.jpg)
 
+> **注意** 使用 Digital Ocean 自动部署的验证节点，需要手动删除存储，具体操作可参考[如何删除存储](https://docs.digitalocean.com/products/volumes/how-to/delete/)
+
 手动部署的验证节点，验证人请记得停掉它。
 
 > **注意**：解除质押后，如果验证人立即停止验证节点，将没有最后一个质押周期的奖励。如果在一个奖励周期后停止它，则仍可以获得奖励。

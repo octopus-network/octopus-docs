@@ -32,6 +32,8 @@ Click the `Unbond Validator` button on the `Validator Profile` page to perform t
 
 For the node which was deployed via the automatic deployment service, the validator can click `...` and select `Destory` in the **My Node** area to stop the validator node and delete the instance of automatic deployment.
 
+> **Note** For the node which was deployed to Digital Ocean via the automatic deployment service, you need to manually delete the volume. Please refer to [How to Delete Volumes](https://docs.digitalocean.com/products/volumes/how-to/delete/)
+
 ![validator destory node](../images/maintain/validator_destory_node.jpg)
 
 For the node which was deployed manually, please remember to stop it.
