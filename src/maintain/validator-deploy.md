@@ -16,11 +16,10 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 | Appchain | EC2 Instance Type  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| debionetwork | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
-| myriad | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
-| deip | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
+| debionetwork | c5.large<br/>4 GB Memory / 2 vCPUs | 200 GB | 100 GB | $99 |
+| myriad | c5.large<br/>4 GB Memory / 2 vCPUs | 200 GB | 100 GB | $99 |
 | atocha | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
-| fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 250 GB | 4500 GB | $509 |
+| fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 260 GB | 4500 GB | $510 |
 | discovol | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
 
 
@@ -28,22 +27,20 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 | Appchain | Droplet  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| debionetwork | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| myriad | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| deip | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| debionetwork | 8 GB Memory / 4 vCPUs | 200 GB | 5 TB | $68 |
+| myriad | 8 GB Memory / 4 vCPUs | 200 GB | 5 TB | $68 |
 | atocha | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $93 |
+| fusotao | 8 GB Memory / 4 vCPUs  | 260 GB | 7 TB | $94 |
 | discovol | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
 
 **GCP**
 
 | Appchain | VM instance  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| deip | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 200 GB | 100 GB | $90 |
+| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 200 GB | 100 GB | $90 |
 | atocha | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 250 GB | 4500 GB | $588 |
+| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 260 GB | 4500 GB | $589 |
 | discovol | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
 
 ### Change VPS provider

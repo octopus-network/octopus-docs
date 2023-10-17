@@ -16,33 +16,30 @@
 
 | 应用链 | EC2 实例类型  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
-| debionetwork | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| myriad | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| deip | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| atocha | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
-| fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 250 GB | 4500 GB | $509 |
-| discovol | t3.small<br/>2 GB Memory / 2 vCPUs | 120 GB | 100 GB | $45 |
+| debionetwork | c5.large<br/>4 GB Memory / 2 vCPUs | 200 GB | 100 GB | $99 |
+| myriad | c5.large<br/>4 GB Memory / 2 vCPUs | 200 GB | 100 GB | $99 |
+| atocha | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
+| fusotao | c5.large<br/>4 GB Memory / 2 vCPUs | 260 GB | 4500 GB | $510 |
+| discovol | c5.large<br/>4 GB Memory / 2 vCPUs | 120 GB | 100 GB | $93 |
 
 **Digital Ocean**
 
 | 应用链 | Droplet  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
-| debionetwork | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| myriad | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| deip | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
+| debionetwork | 8 GB Memory / 4 vCPUs | 200 GB | 5 TB | $68 |
+| myriad | 8 GB Memory / 4 vCPUs | 200 GB | 5 TB | $68 |
 | atocha | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
-| fusotao | 8 GB Memory / 4 vCPUs  | 250 GB | 7 TB | $93 |
+| fusotao | 8 GB Memory / 4 vCPUs  | 260 GB | 7 TB | $94 |
 | discovol | 8 GB Memory / 4 vCPUs | 120 GB | 5 TB | $60 |
 
 **GCP**
 
 | 应用链 | 实例类型  | 存储 | 数据传输 | 每月预估费用 |
 |------|------|------|------|------|
-| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| deip | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
+| debionetwork | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 200 GB | 100 GB | $90 |
+| myriad | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 200 GB | 100 GB | $90 |
 | atocha | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
-| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 250 GB | 4500 GB | $588 |
+| fusotao | e2-standard-2<br/>8 GB Memory / 2 vCPUs  | 260 GB | 4500 GB | $559 |
 | discovol | e2-standard-2<br/>8 GB Memory / 2 vCPUs | 120 GB | 100 GB | $82 |
 
 ### 更换 VPS 服务商
