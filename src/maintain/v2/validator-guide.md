@@ -1,6 +1,7 @@
 ## Validator Guide
 
 > **Note**
+>
 > Before running a validator node, make sure you can handle node issues and exceptions. If there is a problem with the node, both the validator and its delegators will not be able to receive staking rewards.
 
 To run a validator node of appchain in the Octopus network, you need to complete the following steps:

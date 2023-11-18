@@ -9,7 +9,7 @@ module.exports = {
   dest: './dist',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'https://oct.network/favicon.ico' }],
     [
       'meta',
       {
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   themeConfig: {
-    logo: '/logo-blue.png',
+    logo: 'https://oct.network/v2/logo-blue.png',
     lastUpdated: true,
     editLinks: false,
     sidebar: 'auto',

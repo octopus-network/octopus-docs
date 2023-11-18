@@ -10,9 +10,18 @@ module.exports = [
         '/general/octopus-staking',
         '/general/octopus-faq',
       ]
-    },        
+    },
     {
-      title: 'Validator Guides',
+      title: '2.0 - Validator Guides',
+      path: '/maintain/v2/validator-guide',
+      collapsable: false,
+      children: [
+        '/maintain/v2/validator-generate-keys',
+        '/maintain/v2/validator-deploy-manually',
+      ]
+    },
+    {
+      title: '1.0 - Validator Guides',
       path: '/maintain/validator-guide',
       collapsable: false,
       children: [

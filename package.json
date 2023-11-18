@@ -16,5 +16,7 @@
     "build": "vuepress build src",
     "build:gh_pages": "BASE_PATH=/octopus-docs/ vuepress build src"
   },
-  "dependencies": {}
+  "dependencies": {
+    "16": "^0.0.2"
+  }
 }
