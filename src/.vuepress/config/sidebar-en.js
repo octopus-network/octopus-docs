@@ -18,6 +18,15 @@ module.exports = [
       children: [
         '/maintain/v2/validator-generate-keys',
         '/maintain/v2/validator-deploy-manually',
+        '/maintain/v2/validator-register-manually',
+      ]
+    },
+    {
+      title: '2.0 - Delegator Guides',
+      path: '/maintain/v2/delegator-delegate',
+      collapsable: false,
+      children: [
+        '/maintain/v2/delegator-delegate',
       ]
     },
     {
@@ -34,14 +43,14 @@ module.exports = [
       ]
     },
     {
-      title: 'Delegator Guides',
+      title: '1.0 - Delegator Guides',
       path: '/maintain/delegator-delegate',
       collapsable: false,
       children: [
         '/maintain/delegator-delegate',
         '/maintain/delegator-operations',
       ]
-    },    
+    },
     {
       title: 'Developer Guides',
       path: '/guides/appchain-guide',

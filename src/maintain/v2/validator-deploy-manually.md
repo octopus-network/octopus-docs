@@ -112,4 +112,4 @@ ottod start
 6:23AM INF indexed block exents height=2 module=txindex server=node
 ```
 
-After the node synchronization, the validator needs to [register validator](./validator-register.md).
+After the node synchronization, the validator needs to [register validator](./validator-register-manually.md).
