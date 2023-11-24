@@ -52,7 +52,7 @@ Download the `genesis.json` file from the appchain repo and copy it over to the 
 An example of using OttoChain `ottod` is as follows:
 
 ```bash
-wget -P ~/.ottod/config https://raw.githubusercontent.com/octopus-appchains/otto/main/tests/genesis.json
+wget -O ~/.ottod/config/genesis.json https://raw.githubusercontent.com/octopus-appchains/otto/main/tests/genesis.json
 ```
 
 #### Add Persistent Peers
