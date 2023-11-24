@@ -40,7 +40,7 @@ You can find your validator pubkey on your validator node by running `show-valid
 An example of using OttoChain `ottod` is as follows:
 
 ```bash
-ottod tendermint show-validator --home ~/.valiator-node
+ottod tendermint show-validator
 
 {"@type":"/cosmos.crypto.ed25519.PubKey","key":"2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c="}
 ```
