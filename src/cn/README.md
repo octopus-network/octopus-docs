@@ -20,5 +20,5 @@
     * [应用链升级](./guides/appchain-upgrade.md)
     * [应用链索引器](./guides/appchain-indexer.md)    
     * [资产跨链](./guides/assets-cross-chain.md)   
-* [用户指南](./guides/voting-appchain.md)
-    * [应用链投票](./guides/voting-appchain.md)
+* [治理指南](./guides/voting-appchain.md)
+    * [1.0 - 应用链投票](./guides/voting-appchain.md)

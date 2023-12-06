@@ -1,4 +1,4 @@
-## Voting for Appchain
+## 1.0 - Voting for Appchain
 
 For the Appchains in the **Voting** phase, all OCT holders can upvote or downvote an apphain. The Appchain which gets the highest scores will be promoted into the next phase. The voting steps are as follows:
 

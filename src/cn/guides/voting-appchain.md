@@ -1,4 +1,4 @@
-## 应用链投票
+## 1.0 - 应用链投票
 
 对于在 **Voting** 投票阶段的应用链，所有[章鱼网络 DAO 理事会的成员](https://app.astrodao.com/dao/octopus-dao.sputnik-dao.near/groups/all)都可以在[Octopus DAO](https://app.astrodao.com/dao/octopus-dao.sputnik-dao.near)对启动应用链的提案进行投票-赞成或反对，最终获得赞成票数最高的应用链将会进入下个阶段。 投票步骤如下：
 

@@ -66,7 +66,7 @@ module.exports = [
       ]
     },
     {
-      title: 'User Guides',
+      title: 'Governance Guides',
       path: '/guides/voting-appchain',
       collapsable: false,
       children: [

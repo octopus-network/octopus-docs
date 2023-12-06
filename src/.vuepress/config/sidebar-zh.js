@@ -48,7 +48,7 @@ module.exports = [
       ]
     },
     {
-      title: '用户指南',
+      title: '治理指南',
       path: '/cn/guides/voting-appchain',
       collapsable: false,
       children: [

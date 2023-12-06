@@ -24,5 +24,5 @@
     * [Appchain Upgrade](./guides/appchain-upgrade.md)
     * [Appchain Indexer](./guides/appchain-indexer.md)        
     * [Assets Cross-chain](./guides/assets-cross-chain.md)
-* [User Guides](./guides/appchain-develop.md)
-    * [Voting for Appchain](./guides/voting-appchain.md)
+* [Governance Guides](./guides/appchain-develop.md)
+    * [1.0 - Voting for Appchain](./guides/voting-appchain.md)
