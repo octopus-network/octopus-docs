@@ -21,7 +21,7 @@ Restaking your staked $NEAR to bond an appchain via the following steps:
 
 3. Select the appchian which you want to bond, input your validator pubkey which is used to create a new validator by restaking $NEAR.
 
-![Restaking bond](../../images/maintain/v2/v2_restaking_bond.jpg)
+![Restaking bond](../../images/maintain/v2/v2_validator_bond_key.jpg)
 
 
 #### Get the validator pubkey
