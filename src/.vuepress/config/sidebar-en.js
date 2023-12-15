@@ -17,8 +17,9 @@ module.exports = [
       collapsable: false,
       children: [
         '/maintain/v2/validator-generate-keys',
-        '/maintain/v2/validator-deploy-manually',
-        '/maintain/v2/validator-register-manually',
+        '/maintain/v2/validator-register',
+        '/maintain/v2/validator-deploy',
+        '/maintain/v2/validator-operations',
       ]
     },
     {
