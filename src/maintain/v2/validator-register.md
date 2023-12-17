@@ -9,7 +9,7 @@ Learn how to register validator of the appchain via the following steps:
 * Connect wallet
 * Staking $NEAR
 
-1. Log in to Octopus Network [V2 Mainnet](https://v2-mainnet.oct.network/) with the NEAR account created in [Generate Validator Account](./validator-generate-keys.md).
+1. Log in to Octopus Network [V2 Mainnet](https://v2.oct.network/) with the NEAR account created in [Generate Validator Account](./validator-generate-keys.md).
 
 ![Connect wallet](../../images/maintain/v2/v2_connect_wallet.jpg)
 
