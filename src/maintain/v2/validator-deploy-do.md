@@ -8,7 +8,7 @@
 > 
 > Please remember the **Token Name**, and then timely copy and save the personal **Access Token**. If the Token expires, please create a new Access Token with the same Token Name. If using a new Digital Ocean account, please create the Access Token with a new Token Name.
 
-Log in to the Octopus Network [V2 Mainnet](https://v2-mainnet.oct.network/) with the NEAR account created in [Generate Validator Account](./validator-generate-keys.md).
+Log in to the Octopus Network [V2 Mainnet](https://v2.oct.network/) with the NEAR account created in [Generate Validator Account](./validator-generate-keys.md).
 
 ![Connect wallet](../../images/maintain/v2/v2_connect_wallet.jpg)
 
