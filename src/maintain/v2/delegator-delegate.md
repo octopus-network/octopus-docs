@@ -6,7 +6,7 @@
 
 The delegation steps are as follows:
 
-1. Log in to Octopus Network [Mainnet](https://mainnet.oct.network) with your NEAR account.
+1. Log in to Octopus Network [V2 Mainnet](https://v2.oct.network) with your NEAR account.
 
 ![Connect wallet](../../images/maintain/v2/v2_connect_wallet.jpg)
 
