@@ -28,6 +28,7 @@ module.exports = [
       collapsable: false,
       children: [
         '/maintain/v2/delegator-delegate',
+        '/maintain/v2/delegator-operations',
       ]
     },
     {

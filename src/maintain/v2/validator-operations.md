@@ -38,7 +38,7 @@ ottod tendermint show-validator
 
 ### Claim rewards
 
-After a reward cycle (~2 hours), the validator will receive the restaking rewards, which needs to be claimed manually.
+After a reward cycle (~1 day), the validator will receive the restaking rewards, which needs to be claimed manually.
 
 Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and then click the `Claim` button to claim the rewards.
 

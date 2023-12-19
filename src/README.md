@@ -9,6 +9,7 @@
     * [Validator Operations](./maintain/v2/validator-operations.md)
 * [2.0 - Delegator Guides](./maintain/v2/delegator-delegate.md)
     * [How to Delegate](./maintain/v2/delegator-delegate.md)
+    * [Delegator Operations](./maintain/v2/delegator-operations.md)
 * [1.0 - Validator Guides](./maintain/validator-guide.md)
     * [Validator Operations](./maintain/validator-operations.md)
     * [Monitor Node](./maintain/monitor-node.md)
