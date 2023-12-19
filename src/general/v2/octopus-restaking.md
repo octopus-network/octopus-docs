@@ -25,7 +25,7 @@ For Octopus Network 2.0 Restaking, there are two roles: validator and delegator.
 
 Rewards are distributed based on the restaked NEAR amount of the Appchain node, which means that the higher amount, the higher reward the validator node will receive when they’re 100% available when forming the consensus. Also, **70%** of Appchain rewards will be used as restaking rewards, and **30%** will be used to repurchase OCT. For the restaking rewards of the validator node, the validator gets **20%** as a commission fee, and then the remaining restaking rewards are distributed between the validator and the delegators in proportion to the restaking amount.
 
-We assume that: a validator node, the validator A restaked amount is 10,000 NEAR, the delegator B, and C respectively delegate 3,000 NEAR, and 5,000 NEAR, and the restaking reward of the validator node is 5,479 OCT every day, the total restaked amount of Appchain is 150,000 NEAR, then the reward distribution is shown in the following table:
+We assume that: a validator node, the validator A restaked amount is 10,000 NEAR, the delegator B, and C respectively delegate 3,000 NEAR, and 5,000 NEAR. For example, the Otto Appchain rewards is 5,479 OCT every day, the total restaked amount of Otto Appchain is 150,000 NEAR, then the reward distribution is shown in the following table:
 
 * The restaking rewards every day = 5479 * 70% = 3835.3 OCT
 * The validator node rewards every day = 10,000 / 150,000 * 3835.3 = 255.68 OCT
