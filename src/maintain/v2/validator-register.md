@@ -1,8 +1,10 @@
 ## Register Validator
 
-> **Note**
+> **Prerequisites**
 >
-> The following instructions assume you have already [set up an appchain node](./validator-deploy.md) and are synchonised to the latest blockheight.
+> Every validator must have a NEAR account, which used to log in to the Octopus network and register the validator.
+>
+> To create a NEAR account, please refer to [Creating a NEAR Account](https://docs.near.org/concepts/basics/accounts/creating-accounts)
 
 Learn how to register validator of the appchain via the following steps:
 
@@ -15,11 +17,11 @@ Learn how to register validator of the appchain via the following steps:
 
 2. Navigate to open the tab **Staking** page and click the link **Register to be a validator**.
 
-![Staking page](../../images/maintain/v2/v2_staking.jpg)
+![Staking page](../../images/maintain/v2/v2_validator_register.jpg)
 
 And then complete the following steps to deploy and stake $NEAR:
 
 * Input the amount of $NEAR
 * Select a staking pool to stake $NEAR
 
-![Staking $NEAR](../../images/maintain/v2/v2_deploy_stake.jpg)
+![Staking $NEAR](../../images/maintain/v2/v2_validator_deploy_stake.jpg)

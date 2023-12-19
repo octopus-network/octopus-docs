@@ -1,6 +1,10 @@
-## Manually Deploy Validator Node
+## Manually Deploy Appchain Node
 
-Learn how to run a validator node. To manually deploy the validator node of the appchain, the validator can choose their favorite VPS provider, and generally using the **Ubuntu** operating system.
+> **Note**
+>
+> Before manually running an Appchain node, make sure you can handle node issues and exceptions. If there is a problem with the node, both the validator and its delegators will not be able to receive restaking rewards.
+
+Learn how to run an Appchain node. To manually deploy the Appchain node, the validator can choose their favorite VPS provider, and generally using the **Ubuntu** operating system.
 
 > **Note**
 >
@@ -41,6 +45,18 @@ An example of using OttoChain `ottod` is as follows:
 
 ```bash
 ottod init my-validator --chain-id otto_9100-1
+```
+
+#### Get the validator pubkey
+
+Validator need to get the validator pubkey (**only for the validator who manually deploy Appchain node**), which used to set it to the Appchain node. You can get your validator pubkey on your validator node by running `show-validator` command.
+
+An example of using OttoChain `ottod` is as follows:
+
+```bash
+ottod tendermint show-validator
+
+{"@type":"/cosmos.crypto.ed25519.PubKey","key":"2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c="}
 ```
 
 ### Get the Genesis & Peers

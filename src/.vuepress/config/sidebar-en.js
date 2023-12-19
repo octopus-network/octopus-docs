@@ -16,7 +16,6 @@ module.exports = [
       path: '/maintain/v2/validator-guide',
       collapsable: false,
       children: [
-        '/maintain/v2/validator-generate-keys',
         '/maintain/v2/validator-register',
         '/maintain/v2/validator-deploy',
         '/maintain/v2/validator-operations',

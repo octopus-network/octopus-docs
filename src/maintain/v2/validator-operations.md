@@ -23,19 +23,6 @@ Restaking your staked $NEAR to bond an appchain via the following steps:
 
 ![Restaking bond](../../images/maintain/v2/v2_validator_bond_key.jpg)
 
-
-#### Get the validator pubkey
-
-You can find your validator pubkey on your validator node by running `show-validator` command.
-
-An example of using OttoChain `ottod` is as follows:
-
-```bash
-ottod tendermint show-validator
-
-{"@type":"/cosmos.crypto.ed25519.PubKey","key":"2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c="}
-```
-
 ### Claim rewards
 
 After a reward cycle (~1 day), the validator will receive the restaking rewards, which needs to be claimed manually.
