@@ -12,6 +12,14 @@ module.exports = [
       ]
     },
     {
+      title: '2.0 - Restaking',
+      path: '/general/v2/octopus-restaking.md',
+      collapsable: false,
+      children: [
+        '/general/v2/octopus-restaking.md',
+      ]
+    },
+    {
       title: '2.0 - Validator Guides',
       path: '/maintain/v2/validator-guide',
       collapsable: false,
