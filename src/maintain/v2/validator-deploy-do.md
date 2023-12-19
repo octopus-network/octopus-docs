@@ -28,7 +28,7 @@ The deployment will take about 3~5 minutes, please wait patiently.
 
 ![validator syncing](../../images/maintain/v2/v2_validator_syncing.jpg)
 
-3. After the node synchronization, the validator can do the restaking by clicking `Band Now` button.
+3. After the node synchronization, the validator can do the restaking by clicking `Bond Now` button.
 
 ![validator bond](../../images/maintain/v2/v2_validator_bond_now.jpg)
 
