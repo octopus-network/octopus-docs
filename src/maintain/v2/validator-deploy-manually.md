@@ -76,6 +76,12 @@ ottod tendermint show-validator
 
 ### Get the Genesis & Peers
 
+You can get genesis file & peers from the GitHub repo of Appchain.
+
+For example:
+
+![appchain info](../../images/maintain/v2/v2_appchain_info_2.jpg)
+
 #### Copy the Genesis File
 
 Download the `genesis.json` file from the appchain repo and copy it over to the config directory (e.g. `~/.<appchain_binary>/config`).
