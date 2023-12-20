@@ -8,13 +8,28 @@ Learn how to run an Appchain node. To manually deploy the Appchain node, the val
 
 > **Note**
 >
-> Make sure you have the right version of the Appchain binary installed.
+> Make sure your server has installed the [Go](https://go.dev/doc/install) which would be used to build Appchain node binary.
 
 The following steps are required:
 
-1. Initialize Node
-2. Get the Genesis & Peers
-3. Run the Appchain Node
+1. Build Appchain node binary
+2. Initialize Node
+3. Get the Genesis & Peers
+4. Run the Appchain Node
+
+### Build Appchain node binary
+
+Click the `Appchains` and select the appchain which would like to be a validator, click it to open the appchain page, you can get the GitHub repo and Chain ID of Appchain.
+
+![appchain page](../../images/maintain/v2/v2_appchain_info.jpg)
+
+An example of building the Ottochain node binary is as follows:
+
+```bash
+git clone https://github.com/ottochain/otto.git
+cd otto
+make install
+```
 
 ### Initialize Node
 
@@ -44,7 +59,7 @@ You can easily change the default directory by using the `--home` flag.
 An example of using OttoChain `ottod` is as follows:
 
 ```bash
-ottod init my-validator --chain-id otto_9100-1
+ottod init my-validator --chain-id otto_8900-1
 ```
 
 #### Get the validator pubkey
@@ -68,7 +83,7 @@ Download the `genesis.json` file from the appchain repo and copy it over to the 
 An example of using OttoChain `ottod` is as follows:
 
 ```bash
-wget -O ~/.ottod/config/genesis.json https://raw.githubusercontent.com/octopus-appchains/otto/main/tests/genesis.json
+wget -O ~/.ottod/config/genesis.json https://raw.githubusercontent.com/ottochain/otto/main/mainnet/genesis.json
 ```
 
 #### Add Persistent Peers
@@ -92,8 +107,8 @@ persistent_peers = ""
 You can also use `sed` to include them into the configuration. An example of using OttoChain `ottod` is as follows:
 
 ```bash
-PEERS="58ca8716508f50d51d2918c9b70758c1c25bb498@34.81.140.131:26656, 834bbc8f2738313679c414df63136eb3197048a7@35.201.135.223:26656"
-sed -i.bak "s/persistent_peers = \"\"/persistent_peers = \"${PEERS}\"/" ~/.ottod/config/config.toml
+persistent_peers = "38b8a6277c277e63a7bcace0f8d3c0bce3d3fd1b@157.230.120.27:26656,c5373de49272255b85d1f1f55c42851de2d61a81@146.190.99.126:26656,146e4ff134270d8a641b0028445db42fee53e51a@34.71.98.174:26656,47f6ca01467e753208e170f053761fb99549de72@34.42.214.220:26656"
+sed -i.bak "s/persistent_peers = \"\"/persistent_peers = \"${persistent_peers}\"/" ~/.ottod/config/config.toml
 ```
 
 ### Run the Appchain Node
@@ -114,7 +129,7 @@ ottod start
 6:23AM INF Unlocking keyring module=server
 6:23AM INF starting ABCI with Tendermint module=server
 6:23AM INF starting node with ABCI Tendermint in-process module=server
-6:23AM INF InitChain chainID=otto_9100-1 initialHeight=1 module=server
+6:23AM INF InitChain chainID=otto_8900-1 initialHeight=1 module=server
 ...
 6:23AM INF This node is a validator addr=76CBD1E7565B06A74811C2F592689A6F487B7D38 module=consensus pubKey=2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c= server=node
 6:23AM INF P2P Node ID ID=e25881e99f8a79028b7949bad1de4536802d74e0 file=/root/.ottod/config/node_key.json module=p2p server=node
