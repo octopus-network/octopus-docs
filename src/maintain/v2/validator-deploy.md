@@ -3,6 +3,7 @@
 In order to simplify the deployment of the validator node, the Octopus Network team provides an automatic deployment service for the validator node. Currently, it supports:
 
 * [Digital Ocean](./validator-deploy-do.md)
+* AWS (coming soon)
 
 Also, the validator can choose to [manually deploy the validator node](./validator-deploy-manually.md).
 
