@@ -11,14 +11,14 @@ Learn how to run an Appchain node. To manually deploy the Appchain node, the val
 > Make sure your server has installed Go and necessary libraries which would be used to build Appchain node binary.
 >
 > * [Install Go](https://go.dev/doc/install) 
-> * Install libraries: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y curl make git libc-dev bash gcc`
+> * Install libraries: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y curl make git libc-dev bash gcc jq`
 
 
 The following steps are required:
 
 1. Build Appchain node binary
 2. Initialize Node
-3. Get the Genesis & Peers
+3. Config Node
 4. Run the Appchain Node
 
 ### Build Appchain node binary
@@ -33,7 +33,11 @@ An example of building the Ottochain node binary is as follows:
 git clone https://github.com/ottochain/otto.git
 cd otto
 make install
+
+ottod -h
 ```
+
+If you get the error `ottod: command not found`, please run the `go env` to check your `GOPATH`, and then run `cp $GOPATH/bin/ottod /usr/local/go/bin/ottod`. Now `ottod -h` should work fine.
 
 ### Initialize Node
 
@@ -78,9 +82,11 @@ ottod tendermint show-validator
 {"@type":"/cosmos.crypto.ed25519.PubKey","key":"2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c="}
 ```
 
-### Get the Genesis & Peers
+You need to save the value of key(e.g.`2CKdA3Sbl1hh6+Exdqy7LfspfGcgUtNhV1VwUAZcy7c=`) for the next step - [bond validator](./validator-operations.md).
 
-You can get genesis file & peers from the GitHub repo of Appchain.
+### Config Node
+
+You can get appchain configuration from the GitHub repo of Appchain and then config your node.
 
 For example:
 
@@ -117,22 +123,39 @@ persistent_peers = ""
 You can also use `sed` to include them into the configuration. An example of using OttoChain `ottod` is as follows:
 
 ```bash
-persistent_peers = "38b8a6277c277e63a7bcace0f8d3c0bce3d3fd1b@157.230.120.27:26656,c5373de49272255b85d1f1f55c42851de2d61a81@146.190.99.126:26656,146e4ff134270d8a641b0028445db42fee53e51a@34.71.98.174:26656,47f6ca01467e753208e170f053761fb99549de72@34.42.214.220:26656"
+export persistent_peers="38b8a6277c277e63a7bcace0f8d3c0bce3d3fd1b@157.230.120.27:26656,c5373de49272255b85d1f1f55c42851de2d61a81@146.190.99.126:26656,146e4ff134270d8a641b0028445db42fee53e51a@34.71.98.174:26656,47f6ca01467e753208e170f053761fb99549de72@34.42.214.220:26656"
 sed -i.bak "s/persistent_peers = \"\"/persistent_peers = \"${persistent_peers}\"/" ~/.ottod/config/config.toml
+```
+
+#### Set `minimum-gas-prices`
+
+You can use `sed` to change the `minimum-gas-prices` in the file `app.toml`.
+
+An example of using OttoChain `ottod` is as follows:
+
+```bash
+export IBC_TOKEN_DENOM=`jq -r '.app_state.crisis.constant_fee.denom' ~/.ottod/config/genesis.json`
+sed -i.bak "s#minimum-gas-prices = \"0aotto\"#minimum-gas-prices = \"20000000000${IBC_TOKEN_DENOM}\"#" ~/.ottod/config/app.toml
 ```
 
 ### Run the Appchain Node
 
-Run the following command to start the appchain node:
+Run the following command to start the appchain node in background:
 
 ```bash
-<appchain_binary> start
+nohup <appchain_binary> start &
 ```
 
 An example of using OttoChain `ottod` is as follows:
 
 ```bash
-ottod start
+nohup ottod start &
+```
+
+And to check the log run the following command:
+
+```bash
+tail -f nohup.out
 ```
 
 ```bash
