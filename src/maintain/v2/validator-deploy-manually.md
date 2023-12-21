@@ -8,7 +8,11 @@ Learn how to run an Appchain node. To manually deploy the Appchain node, the val
 
 > **Note**
 >
-> Make sure your server has installed the [Go](https://go.dev/doc/install) which would be used to build Appchain node binary.
+> Make sure your server has installed Go and necessary libraries which would be used to build Appchain node binary.
+>
+> * [Install Go](https://go.dev/doc/install) 
+> * Install libraries: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install -y curl make git libc-dev bash gcc`
+
 
 The following steps are required:
 
