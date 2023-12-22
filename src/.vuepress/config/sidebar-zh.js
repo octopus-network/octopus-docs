@@ -44,7 +44,7 @@ module.exports = [
         '/cn/guides/appchain-startup',
         '/cn/guides/appchain-upgrade',
         '/cn/guides/appchain-indexer',
-        '/cn/guides/assets-cross-chain',        
+        '/cn/guides/assets-cross-chain',
       ]
     },
     {

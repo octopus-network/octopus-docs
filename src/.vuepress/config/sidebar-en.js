@@ -13,10 +13,10 @@ module.exports = [
     },
     {
       title: '2.0 - Restaking',
-      path: '/general/v2/octopus-restaking.md',
+      path: '/general/v2/octopus-restaking',
       collapsable: false,
       children: [
-        '/general/v2/octopus-restaking.md',
+        '/general/v2/octopus-restaking',
       ]
     },
     {
