@@ -1,4 +1,4 @@
-## Frequently Asked Questions (FAQs)
+## FAQ
 
 *This FAQ focuses on technical questions for users interested in developing Octopus Appchain. If you have more general questions, please search for the answers in our [Octopus Network FAQ](https://oct.network/faqs). Furthermore, feel free to ask questions on [Octopus Discord](https://discord.gg/6GTJBkZA9Q).*
 

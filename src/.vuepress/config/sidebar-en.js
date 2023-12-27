@@ -17,6 +17,7 @@ module.exports = [
       collapsable: false,
       children: [
         '/general/v2/octopus-restaking',
+        '/general/v2/octopus-faq',
       ]
     },
     {
