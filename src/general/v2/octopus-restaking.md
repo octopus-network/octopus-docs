@@ -19,13 +19,13 @@ For Octopus Network 2.0 Restaking, there are two roles: validator and delegator.
 
 ## Validator Commission Fee
 
-In the validator set, the validator with the largest staking amount has a commission fee of **20%**, for every **1%** lower staking amount of other validators, the commission fee will be reduced by **0.2%**, and the lowest commission fee is close to 0%.
+In the validator set, the validator with the largest staking amount has a commission fee of **20%**, for every **1%** lower staking amount of other validators, the commission fee will be reduced by **0.2%** (round up to 1 decimal), and the lowest commission fee is close to 0%.
 
 We assume that the staking amount of a validator is M, and the largest staking amount is N, the calculation formula is: 
 
 `commission fee = M / N * 20`
 
-For example: The validator A has the largest staking amount with 355,000 NEAR, and the staking amount of validator B is 79,000 NEAR, so the commission fee of validator A: 20%, and the commission fee of validator B: 4.45%.
+For example: The validator A has the largest staking amount with 355,000 NEAR, and the staking amount of validator B is 79,000 NEAR, so the commission fee of validator A: 20%, and the commission fee of validator B: 4.5%.
 
 ## Rewards
 

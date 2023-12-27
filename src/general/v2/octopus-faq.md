@@ -1,4 +1,4 @@
-## FAQ
+## Restaking FAQ
 
 **What is the difference between Octopus Network's NEAR Restaking and NEAR protocol's staking?**
 
