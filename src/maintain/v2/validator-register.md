@@ -24,8 +24,6 @@ And then complete the following steps to deploy and stake $NEAR:
 * Input the amount of $NEAR
 * Select a NEAR staking pool to stake $NEAR
 
-To make the $NEAR staking more decentralized, the staking pools that have been selected by the current validators will not appear in the NEAR Staking Pool list.
-
-Also, if you are the owner of the staking pool or desire to stake a dedicated staking pool, you can stake the staking pool by clicking the **manual input** and then input its name.
+To make the $NEAR staking more decentralized, the staking pools that have been chosen will not appear in the pool list. But, if you are the owner of the staking pool, you can choose your pool by manually input its name.
 
 ![Staking $NEAR](../../images/maintain/v2/v2_validator_deploy_stake.jpg)
