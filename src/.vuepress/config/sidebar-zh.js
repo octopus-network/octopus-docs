@@ -8,11 +8,10 @@ module.exports = [
         '/cn/general/octopus-overview',
         '/cn/general/infrastructure',
         '/cn/general/octopus-staking',
-        '/cn/general/octopus-faq',
       ]
-    },    
+    },
     {
-      title: '验证人指南',
+      title: '1.0 - 验证人指南',
       path: '/cn/maintain/validator-guide',
       collapsable: false,
       children: [
@@ -25,7 +24,7 @@ module.exports = [
       ]
     },
     {
-      title: '委托人指南',
+      title: '1.0 - 委托人指南',
       path: '/cn/maintain/delegator-delegate',
       collapsable: false,
       children: [
@@ -34,7 +33,7 @@ module.exports = [
       ]
     },    
     {
-      title: '开发者指南',
+      title: '1.0 - 开发者指南',
       path: '/cn/guides/appchain-guide',
       collapsable: false,
       children: [

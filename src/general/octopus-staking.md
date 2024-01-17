@@ -1,8 +1,6 @@
-## Octopus Network Staking
+## 1.0 Staking
 
-The LPoS (Leased Proof-of-Stake) of Octopus Network is to select a group of network maintainers from the OCT holders participating in the staking. The validator with the normal operation will get the rewards, but if it was unable to perform its duties normally, the staked assets will get slashed.
-
-In staking, there are two roles: validator and delegator. OCT holders can participate in the staking to become:
+This section is the OCT Staking on Octopus Network 1.0. In staking, there are two roles: validator and delegator. OCT holders can participate in the staking to become:
 
 * Validator
     - Choose appchain and stake 5,000 OCT at least;

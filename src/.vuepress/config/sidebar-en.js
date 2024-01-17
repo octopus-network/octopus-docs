@@ -8,14 +8,6 @@ module.exports = [
         '/general/octopus-overview',
         '/general/infrastructure',
         '/general/octopus-staking',
-        '/general/octopus-faq',
-      ]
-    },
-    {
-      title: '2.0 - Restaking',
-      path: '/general/v2/octopus-restaking',
-      collapsable: false,
-      children: [
         '/general/v2/octopus-restaking',
         '/general/v2/octopus-faq',
       ]
@@ -62,7 +54,7 @@ module.exports = [
       ]
     },
     {
-      title: 'Developer Guides',
+      title: '1.0 - Developer Guides',
       path: '/guides/appchain-guide',
       collapsable: false,
       children: [
