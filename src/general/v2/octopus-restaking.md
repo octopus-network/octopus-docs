@@ -63,3 +63,11 @@ After a reward cycle (~1 day), the validator and the delegator will receive the 
 2. Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and then click the `Claim` button to claim the rewards.
 
 ![claim rewards](../../images/maintain/v2/v2_claim_rewards.jpg)
+
+### Jail Validator
+
+When the validator node signed blocks less than a certain amount over a period of time (e.g. the settings of Ottochain is less than 50% blocks in latest 300 blocks), the validator will be jailed. When the validator is jailed status, the validator and its delegators will not be able to earn rewards during the reward calculation period. The length of the reward calculation period (e.g. it is *6h* for Ottochain) depends on the settings in the corresponding Appchain.
+
+> **Note**
+>
+> The reward calculation period is different from the reward distribution cycle.

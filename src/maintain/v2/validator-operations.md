@@ -4,6 +4,7 @@ The validator operations includes:
 
 * Bond
 * Claim rewards
+* Unjail
 * Unbond
 * Unstake $NEAR
 
@@ -30,3 +31,13 @@ After a reward cycle (~1 day), the validator will receive the restaking rewards,
 Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and then click the `Claim` button to claim the rewards.
 
 ![claim rewards](../../images/maintain/v2/v2_claim_rewards.jpg)
+
+### Unjail
+
+When the validator status is jailed, the validator first should check the validator node, make it run normally, and then execute the unjail operation to inform the Appchain that your validator node is online again.
+
+Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and then click the `Jailed` and click `unjail` button to execute unjail operation.
+
+![jailed unjail](../../images/maintain/v2/v2_validator_jailed_unjail.jpg)
+
+If you are not sure what is wrong with your node, you can ask help from the **validator-assistance** channel under the **VALIDATORS & DELEGATORS** category on [Discord](https://discord.gg/6GTJBkZA9Q).
