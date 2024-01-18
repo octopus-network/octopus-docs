@@ -36,7 +36,7 @@ Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and 
 
 When the validator status is jailed, the validator first should check the validator node, make it run normally, and then execute the unjail operation to inform the Appchain that your validator node is online again.
 
-Navigate to click the tab **Portfolio** and open the **My Portfolio** page, and then click the `Jailed` and click `unjail` button to execute unjail operation.
+Navigate to click the tab **Staking** and open the **Validators** page, and then click **Manage my validator** and open the Valiator Profile page, click the `Jailed` and click `unjail` button to execute unjail operation.
 
 ![jailed unjail](../../images/maintain/v2/v2_validator_jailed_unjail.jpg)
 
