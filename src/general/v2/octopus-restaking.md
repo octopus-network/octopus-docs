@@ -40,17 +40,17 @@ Appchain rewards are distributed based on the restaked NEAR amount of the Appcha
 We assume that: a validator node, the validator A restaked amount is 10,000 NEAR, the delegator B, and C respectively delegate 3,000 NEAR, and 5,000 NEAR. For example, the Otto Appchain rewards is 5,479 OCT every day, the total restaked amount of Otto Appchain is 150,000 NEAR, then the reward distribution is shown in the following table:
 
 * The restaking rewards every day = 5479 * 70% = 3835.3 OCT
-* The validator node rewards every day = 10,000 / 150,000 * 3835.3 = 255.68 OCT
-* The validator A rewards every day = 10,000 / 18,000 * 255.68 + 8,000 / 18,000 * 255.68 * 20% = 164.77 OCT
-* The delegator B rewards every day = 3,000 / 18,000 * 255.68 * 80% = 34.09 OCT
-* The delegator C rewards every day = 5,000 / 18,000 * 255.68 * 80% = 56.81 OCT
+* The validator node rewards every day = 18,000 / 150,000 * 3835.3 = 460.23 OCT
+* The validator A rewards every day = 10,000 / 18,000 * 460.23 + 8,000 / 18,000 * 460.23 * 20% = 296.58 OCT
+* The delegator B rewards every day = 3,000 / 18,000 * 460.23 * 80% = 61.36 OCT
+* The delegator C rewards every day = 5,000 / 18,000 * 460.23 * 80% = 102.27 OCT
 
 |             | Restaked (NEAR) | Rewards (OCT) |
 | ----------- | ------------ | ------------- |
-| Validator Node | 18,000        | 255.68          |
-| Validator A | 10,000        | 164.77          |
-| Delegator B | 3,000         | 34.09            |
-| Delegator C | 5,000         | 56.81            |
+| Validator Node | 18,000        | 460.23          |
+| Validator A | 10,000        | 296.58          |
+| Delegator B | 3,000         | 61.36            |
+| Delegator C | 5,000         | 102.27            |
 
 ### Claim rewards
 
