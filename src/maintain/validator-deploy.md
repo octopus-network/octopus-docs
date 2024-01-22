@@ -52,3 +52,80 @@ For the validator who need to change the VPS provider of the deployed node, plea
 ![validator clear node info](../images/maintain/validator_clear_nodeinfo.jpg)
 3. When the new node done the synchronization, please [set the Session Key](./validator-register.md#set-session-key) for the new validator node;
 4. The validator could [stop](./validator-register.md#stop-the-validator-node) the old validator node until the next reward cycle.
+
+### Change the pruning mode
+
+If the node is running as a validator, the default pruning mode is `archive` to keep all block states. The validator can specify the maximum number of block states to keep by setting the value of `--blocks-pruning` with a number.
+
+**Automatic deployment**
+
+For the automatically deployed validator node, please follow these steps:
+
+1. Login to your server (AWS/Digital Ocean/GCP) via SSH;
+2. Stop the appchain node container via executing the command:
+
+    ```bash
+    docker compose -f /home/ubuntu/seashell/docker-compose.yaml stop
+    ```
+
+3. Update the file `docker-compose.yaml` under the path `/home/ubuntu/seashell` to add a new line `--blocks-pruning 14400` into `command` part;
+
+    An example of `docker-compose.yaml` for Fusotao is as follows:
+
+    ```yaml
+    version: "3.8"
+    services:
+    seashell:
+        image: us-central1-docker.pkg.dev/octopus-prod/octopus-appchains/fusotao@sha256:50430509b90c57bd8737aece60e9d02d47980667c125b3305e1e2e77f249dc70
+        container_name: seashell
+        command: >
+        --base-path /data/chain_data
+        --chain octopus-mainnet
+        --rpc-external
+        --rpc-methods Unsafe
+        --name validator-alice_near
+        --validator
+        --prometheus-external
+        --prometheus-port 9616
+        --enable-offchain-indexing true
+        --wasm-execution Compiled
+        --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0"
+        --blocks-pruning 14400
+        ports:
+        - 127.0.0.1:9616:9616
+        - 127.0.0.1:9933:9933
+        - 30333:30333
+        volumes:
+        - /mnt/volume_54aadaee_1a2c_1d42_abb4_0fef51801fda/chain_data:/data/chain_data
+        logging:
+        driver: "json-file"
+        options:
+            max-size: "20m"
+            max-file: "5"
+        restart: always
+        user: root
+    ```
+
+4. Start the appchain node container via executing the command:
+
+    ```bash
+    docker compose -f /home/ubuntu/seashell/docker-compose.yaml up -d
+    ```
+
+
+**Manual deployment**
+
+For the manually deployed validator node, please follow these steps:
+
+1. Stop your appchain node;
+2. Start your node to add a new option `--blocks-pruning` with the value `14400`. An example of using Fusotao `fuso` is as follows:
+
+    ```bash
+    fuso --base-path ./chain_data \
+    --chain octopus-mainnet \
+    --name fuso-validator-1 \
+    --validator \
+    --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0" \
+    --enable-offchain-indexing true \
+    --blocks-pruning 14400
+    ```
