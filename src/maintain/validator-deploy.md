@@ -57,6 +57,10 @@ For the validator who need to change the VPS provider of the deployed node, plea
 
 If the node is running as a validator, the default pruning mode is `archive` to keep all block states. The validator can specify the maximum number of block states to keep by setting the value of `--blocks-pruning` with a number.
 
+> **Note**
+>
+> The automatic deployment service sets the pruning mode with the value `14400` after Jan 23, 2024. So the validators who use the automatic deployment before this date need to change it manually.
+
 **Automatic deployment**
 
 For the automatically deployed validator node, please follow these steps:
@@ -75,31 +79,31 @@ For the automatically deployed validator node, please follow these steps:
     ```yaml
     version: "3.8"
     services:
-    seashell:
+      seashell:
         image: us-central1-docker.pkg.dev/octopus-prod/octopus-appchains/fusotao@sha256:50430509b90c57bd8737aece60e9d02d47980667c125b3305e1e2e77f249dc70
         container_name: seashell
         command: >
-        --base-path /data/chain_data
-        --chain octopus-mainnet
-        --rpc-external
-        --rpc-methods Unsafe
-        --name validator-alice_near
-        --validator
-        --prometheus-external
-        --prometheus-port 9616
-        --enable-offchain-indexing true
-        --wasm-execution Compiled
-        --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0"
-        --blocks-pruning 14400
+          --base-path /data/chain_data
+          --chain octopus-mainnet
+          --rpc-external
+          --rpc-methods Unsafe
+          --name validator-alice_near
+          --validator
+          --prometheus-external
+          --prometheus-port 9616
+          --enable-offchain-indexing true
+          --wasm-execution Compiled
+          --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0"
+          --blocks-pruning 14400
         ports:
-        - 127.0.0.1:9616:9616
-        - 127.0.0.1:9933:9933
-        - 30333:30333
+          - 127.0.0.1:9616:9616
+          - 127.0.0.1:9933:9933
+          - 30333:30333
         volumes:
-        - /mnt/volume_54aadaee_1a2c_1d42_abb4_0fef51801fda/chain_data:/data/chain_data
+          - /mnt/volume_54aadaee_1a2c_1d42_abb4_0fef51801fda/chain_data:/data/chain_data
         logging:
-        driver: "json-file"
-        options:
+          driver: "json-file"
+          options:
             max-size: "20m"
             max-file: "5"
         restart: always
@@ -122,10 +126,10 @@ For the manually deployed validator node, please follow these steps:
 
     ```bash
     fuso --base-path ./chain_data \
-    --chain octopus-mainnet \
-    --name fuso-validator-1 \
-    --validator \
-    --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0" \
-    --enable-offchain-indexing true \
-    --blocks-pruning 14400
+      --chain octopus-mainnet \
+      --name fuso-validator-1 \
+      --validator \
+      --telemetry-url "wss://telemetry.mainnet.octopus.network/submit 0" \
+      --enable-offchain-indexing true \
+      --blocks-pruning 14400
     ```
