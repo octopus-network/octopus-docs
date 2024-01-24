@@ -55,7 +55,7 @@ For the validator who need to change the VPS provider of the deployed node, plea
 
 ### Change the pruning mode
 
-If the node is running as a validator, the default pruning mode is `archive` to keep all block states. The validator can specify the maximum number of block states to keep by setting the value of `--blocks-pruning` with a number.
+If the node is running as a validator, the default pruning mode is `archive` to keep all block states. The validator can specify the maximum number of block states to keep by setting the value of the pruning mode with a number.
 
 > **Note**
 >
@@ -65,14 +65,17 @@ If the node is running as a validator, the default pruning mode is `archive` to 
 
 For the automatically deployed validator node, please follow these steps:
 
-1. Login to your server (AWS/Digital Ocean/GCP) via SSH;
+1. Login to your server (AWS/DigitalOcean/GCP) via SSH;
 2. Stop the appchain node container via executing the command:
 
     ```bash
     docker compose -f /home/ubuntu/seashell/docker-compose.yaml stop
     ```
 
-3. Update the file `docker-compose.yaml` under the path `/home/ubuntu/seashell` to add a new line `--blocks-pruning 14400` into `command` part;
+3. Update the file `docker-compose.yaml` under the path `/home/ubuntu/seashell` to add the following content into `command` part:
+
+    * for Debio, Myriad, Fusotao, add a new line `--blocks-pruning 14400`;
+    * for Atocha, Discovol, add a new line `--unsafe-pruning --pruning 14400`;
 
     An example of `docker-compose.yaml` for Fusotao is as follows:
 
@@ -122,7 +125,12 @@ For the automatically deployed validator node, please follow these steps:
 For the manually deployed validator node, please follow these steps:
 
 1. Stop your appchain node;
-2. Start your node to add a new option `--blocks-pruning` with the value `14400`. An example of using Fusotao `fuso` is as follows:
+2. Start your node to add the new option:
+
+    * for Debio, Myriad, Fusotao, add a new option `--blocks-pruning 14400`;
+    * for Atocha, Discovol, add a new option `--unsafe-pruning --pruning 14400`;
+    
+    An example of using Fusotao `fuso` is as follows:
 
     ```bash
     fuso --base-path ./chain_data \
