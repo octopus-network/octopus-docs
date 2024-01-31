@@ -7,11 +7,11 @@ For Octopus Network 2.0 Restaking, there are two roles: validator and delegator.
     - Run the Appchain node, ensure its availability is as high as possible;
     - The update cycle of the validator set is 1 day;
     - The distribution cycle of the restaking rewards is 1 day;
-    - The unbond period is 21 days;
+    - The unbond period is 7 days;
 * Delegator
     - Choose validator and delegate 100 NEAR at least;
     - The distribution cycle of the delegation rewards is 1 day;
-    - The unbond period is 21 days;
+    - The unbond period is 7 days;
 
 > **Note**
 >
