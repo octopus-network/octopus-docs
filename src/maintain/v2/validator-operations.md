@@ -5,7 +5,7 @@ The validator operations includes:
 * Bond
 * Claim rewards
 * Unjail
-* Unbond
+* Unbond restaking
 * Unstake $NEAR
 
 ### Bond
@@ -41,3 +41,41 @@ Navigate to click the tab **Staking** and open the **Validators** page, and then
 ![jailed unjail](../../images/maintain/v2/v2_validator_jailed_unjail.jpg)
 
 If you are not sure what is wrong with your node, you can ask help from the **validator-assistance** channel under the **VALIDATORS & DELEGATORS** category on [Discord](https://discord.gg/6GTJBkZA9Q).
+
+### Unbond restaking
+
+If you would like to unbond your staked $NEAR from an appchain via the following steps:
+
+1. Navigate to click the tab **Staking** to open the **Validators** page, and then click the link **Manage my validator**.
+
+![validator](../../images/maintain/v2/v2_validators.jpg)
+
+2. Click the **Manage** and select the **Unbond** operation.
+
+![validator manage](../../images/maintain/v2/v2_validator_manage.jpg)
+
+>
+> **Note**: 
+> 
+> After **Unbond**, you are still the NEAR validator, and your $NEAR are still **staked** in a NEAR staking pool.
+
+### Unstake $NEAR
+
+If you would like to withdraw your staked $NEAR via the following steps:
+
+1. Navigate to click the tab **Staking** to open the **Validators** page, and then click the link **Manage my validator**.
+
+![validator](../../images/maintain/v2/v2_validators.jpg)
+
+2. Click the **Manage** and select the **Unstake** operation.
+
+![validator manage](../../images/maintain/v2/v2_validator_manage.jpg)
+
+>
+> **Note**: 
+> 
+> For **Unstake**:
+>
+> * If you didn't Unbond operation, you would receive your staked $NEAR after the unbond period(7 days).
+>
+> * If you did Unbond operation, you would receive your staked $NEAR after 2-4 days.
