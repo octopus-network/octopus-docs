@@ -57,7 +57,7 @@ If you would like to unbond your staked $NEAR from an appchain via the following
 >
 > **Note**: 
 > 
-> After **Unbond**, you are still the NEAR validator, and your $NEAR are still **staked** in a NEAR staking pool.
+> After **Unbond** restaking, you are still the NEAR validator, and your $NEAR are still **staked** in a NEAR staking pool. So, please note that these $NEAR cannot be withdrawn.
 
 ### Unstake $NEAR
 
@@ -74,8 +74,8 @@ If you would like to withdraw your staked $NEAR via the following steps:
 >
 > **Note**: 
 > 
-> For **Unstake**:
+> For **Unstaking**:
 >
-> * If you didn't Unbond operation, you would receive your staked $NEAR after the unbond period(7 days).
+> In case you have not done the Unbond operation, your staked $NEAR will be returned to you after the unbonding period of 7 days.
 >
-> * If you did Unbond operation, you would receive your staked $NEAR after 2-4 days.
+> However, if you have already executed the Unbond operation, you can expect to receive your staked $NEAR within 2~4 days.
