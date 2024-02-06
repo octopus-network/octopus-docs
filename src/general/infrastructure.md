@@ -1,4 +1,4 @@
-## Octopus Network Infrastructure
+## Infrastructure
 
 Octopus Network provides infrastructure supports for appchains within the ecosystem, including testnet, RPC gateway, indexer, block explorer, cross-chain bridge, and more.
 
