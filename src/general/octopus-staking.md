@@ -1,4 +1,4 @@
-## 1.0 Staking
+## Staking
 
 This section is the OCT Staking on Octopus Network 1.0. In staking, there are two roles: validator and delegator. OCT holders can participate in the staking to become:
 

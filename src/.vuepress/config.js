@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Octopus Documentation',
+  title: 'Octopus Network Documentation',
   theme: 'reco',
   plugins: [
     ['@dovyp/vuepress-plugin-clipboard-copy', true]
@@ -48,7 +48,6 @@ module.exports = {
             rel: '',
             icon: 'reco-home'
           },
-          { text: 'Index', link: '/' }
         ],
         sidebar: require('./config/sidebar-en')
       },
@@ -62,7 +61,6 @@ module.exports = {
             rel: '',
             icon: 'reco-home'
           },
-          { text: '首页', link: '/cn/', icon: '' }
         ],
         sidebar: require('./config/sidebar-zh')
       }

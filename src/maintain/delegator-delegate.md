@@ -1,4 +1,4 @@
-## How to Delegate
+## Delegator Guide
 
 Delegators are one type of participant in the [Staking]((../general/octopus-staking.md)) of Octopus Network. They are able to obtain the staking rewards by delegating their OCT to another type of participant - validators. 
 
@@ -6,7 +6,7 @@ Delegators are one type of participant in the [Staking]((../general/octopus-stak
 
 The delegation steps are as follows:
 
-1. Log in to Octopus Network [V2 Mainnet](https://v2-interface-ten.vercel.app/) with your NEAR account, click the **Appchains** tab, select the appchain which you would like to do the staking, and then click it to open the appchain page.
+1. Log in to Octopus Network [Mainnet](https://mainnet.oct.network) with your NEAR account, click the **Appchains** tab, select the appchain which you would like to do the staking, and then click it to open the appchain page.
 
 2. Select the validator you want to delegate from the **Validators** list, and then click it to open the `Validator Profile` page.
 

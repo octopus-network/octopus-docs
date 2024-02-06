@@ -1,4 +1,4 @@
-## How to Delegate
+## Delegator Guide
 
 > **Note**
 >
