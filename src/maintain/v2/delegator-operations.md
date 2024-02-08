@@ -25,6 +25,10 @@ Click `Manage` button and then select `Increase` or `Decrease` to increase or de
 
 Click `Manage` button and then select `Undelegate` to perform the unbond delegation operation.
 
-> **Note**: Both `Decrease` and `Undelegate` operations have the unbonding period. The NEAR cannot be withdrawable and no restaking rewards during the unbonding period.
+> **Note**:
+>
+> Both `Decrease` and `Undelegate` operations have the unbonding period. The NEAR cannot be withdrawable and no restaking rewards during the unbonding period.
+>
+> When a validator chosen by a delegator unstakes and exits from the validator list, the delegated $NEAR will automatically enter the unbonding period, and then the delegator can select a new validator for delegation.
 
 ![delegator manage](../../images/maintain/v2/v2_delegator_manage.jpg)
