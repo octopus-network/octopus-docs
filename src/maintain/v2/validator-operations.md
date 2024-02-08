@@ -54,7 +54,6 @@ If you would like to unbond your staked $NEAR from an appchain via the following
 
 ![validator manage](../../images/maintain/v2/v2_validator_manage.jpg)
 
->
 > **Note**: 
 > 
 > After **Unbond** restaking, you are still the NEAR validator, and your $NEAR are still **staked** in a NEAR staking pool. So, please note that these $NEAR cannot be withdrawn.
@@ -74,8 +73,8 @@ If you would like to withdraw your staked $NEAR via the following steps:
 >
 > **Note**: 
 > 
-> For **Unstaking**:
+> Following the execution of the `Unstake` operation by a validator, the staked $NEAR will be returned:
 >
-> In case you have not done the Unbond operation, your staked $NEAR will be returned to you after the unbonding period of 7 days.
+> 7 days of the unbonding period if the validator has not previously initiated the `Unbond` operation;
 >
-> However, if you have already executed the Unbond operation, you can expect to receive your staked $NEAR within 2~4 days.
+> 2~4 days if the validator is not bonded to any Appchain or has already executed the `Unbond` operation.
