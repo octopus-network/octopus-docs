@@ -3,11 +3,11 @@
 ## Octopus Network 2.0
 
 * [Restaking](./general/v2/octopus-restaking.md)
-    * [Restaking FAQ](./general/v2/octopus-faq.md)
 * [Validator Guides](./maintain/v2/validator-guide.md)
     * [Validator Operations](./maintain/v2/validator-operations.md)
 * [Delegator Guides](./maintain/v2/delegator-delegate.md)
     * [Delegator Operations](./maintain/v2/delegator-operations.md)
+* [FAQ](./general/v2/octopus-faq.md)
 
 ## Octopus Network 1.0
 

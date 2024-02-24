@@ -9,12 +9,10 @@ module.exports = [
         title: 'Restaking',
         path: '/general/v2/octopus-restaking',
         collapsable: false,
-        children: [
-          '/general/v2/octopus-faq',
-        ]
+        children: []
       },
       {
-        title: 'Validator Guides',
+        title: 'Validator Guide',
         path: '/maintain/v2/validator-guide',
         collapsable: false,
         children: [
@@ -24,12 +22,17 @@ module.exports = [
         ]
       },
       {
-        title: 'Delegator Guides',
+        title: 'Delegator Guide',
         path: '/maintain/v2/delegator-delegate',
         collapsable: false,
         children: [
           '/maintain/v2/delegator-operations',
         ]
+      },
+      {
+        title: 'FAQ',
+        path: '/general/v2/octopus-faq',
+        collapsable: false,
       }
     ]
   },
@@ -48,7 +51,7 @@ module.exports = [
         ]
       },
       {
-        title: 'Validator Guides',
+        title: 'Validator Guide',
         path: '/maintain/validator-guide',
         collapsable: false,
         children: [
@@ -61,7 +64,7 @@ module.exports = [
         ]
       },
       {
-        title: 'Delegator Guides',
+        title: 'Delegator Guide',
         path: '/maintain/delegator-delegate',
         collapsable: false,
         children: [
@@ -69,7 +72,7 @@ module.exports = [
         ]
       },
       {
-        title: 'Developer Guides',
+        title: 'Developer Guide',
         path: '/guides/appchain-guide',
         collapsable: false,
         children: [
@@ -83,7 +86,7 @@ module.exports = [
         ]
       },
       {
-        title: 'Governance Guides',
+        title: 'Governance Guide',
         path: '/guides/voting-appchain',
         collapsable: false,
         children: [
