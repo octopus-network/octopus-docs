@@ -11,9 +11,9 @@ Also, the validator can choose to [manually deploy the validator node](./validat
 
 To run the validator nodes, you will need a machine with the following minimum hardware requirements:
 
-* 2 or more physical CPU cores
+* 4 or more physical CPU cores
 * At least 100GB of NVME SSD disk storage. Hard drive I/O speed is crucial!
-* At least 4GB of memory (RAM)
+* At least 8GB of memory (RAM)
 
 We anticipate that network requirements will be low initially. Bandwidth, CPU and memory requirements will rise as the network grows. As the usage of the blockchain grows, the server requirements may increase as well, so you should have a plan for updating your server as well.
 
@@ -23,11 +23,11 @@ The configuration and approximate cost of each Appchain validator node which is 
 
 | Appchain | EC2 Instance Type  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| ottochain | t3.medium<br/>4 GB Memory / 2 vCPUs | 100 GB | 100 GB | $24 |
+| ottochain | t3.xlarge<br/>16 GB Memory / 4 vCPUs | 100 GB | 5 T | $84 |
 
 
 **Digital Ocean**
 
 | Appchain | Droplet  | Storage | Data Transfer | Estimated monthly cost |
 |------|------|------|------|------|
-| ottochain | 4 GB Memory / 2 vCPUs | 100 GB | 2 T | $24 |
+| ottochain | s-4vcpu-8gb<br/>8 GB Memory / 4 vCPUs | 160 GB | 5 T | $48 |
